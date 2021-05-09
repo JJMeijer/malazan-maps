@@ -1,0 +1,9 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintUseMinimalCheckers": false,
+  "python.linting.pylintArgs": [
+    "--load-plugins pylint_django",
+  ],
+  "editor.tabSize": 4
+}
