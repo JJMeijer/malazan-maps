@@ -3,7 +3,9 @@
   "python.linting.enabled": true,
   "python.linting.pylintUseMinimalCheckers": false,
   "python.linting.pylintArgs": [
-    "--load-plugins pylint_django",
+    "--load-plugins=pylint_django",
+    "--django-settings-module=malazan_maps.settings",
+    "--disable=C0114,C0115"
   ],
   "editor.tabSize": 4
 }

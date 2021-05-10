@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
+    'mapsdata.apps.MapsdataConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -117,6 +118,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Media Files (Added through Admin Interface)
+# https://docs.djangoproject.com/en/3.2/ref/settings/#media-root
+
+MEDIA_ROOT = 'media/'
+MEDIA_URL = 'content/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

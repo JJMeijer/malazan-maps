@@ -1,10 +1,13 @@
 asgiref==3.3.4
 astroid==2.5.6
+autopep8==1.5.7
 colorama==0.4.4
 Django==3.2.2
 isort==5.8.0
 lazy-object-proxy==1.6.0
 mccabe==0.6.1
+Pillow==8.2.0
+pycodestyle==2.7.0
 pylint==2.8.2
 pylint-django==2.4.4
 pylint-plugin-utils==0.6
