@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from .models import Book, City, Region, Continent, Map
+from .models import Book, City, Region, Continent, Map, CityPointer, RegionPointer
 
 
 @admin.register(Book)
@@ -25,6 +25,42 @@ class BookAdmin(admin.ModelAdmin):
         )
 
 
+class CityPointersInlineMaps(admin.TabularInline):
+    model = CityPointer
+
+    fields = (
+        'x',
+        'y',
+        'city',
+    )
+
+    extra = 1
+
+
+class RegionPointersInlineMaps(admin.TabularInline):
+    model = RegionPointer
+
+    fields = (
+        'x',
+        'y',
+        'region',
+    )
+
+    extra = 1
+
+
+class CityPointersInlineCities(admin.TabularInline):
+    model = CityPointer
+
+    fields = (
+        'x',
+        'y',
+        'map',
+    )
+
+    extra = 1
+
+
 @admin.register(Map)
 class MapAdmin(admin.ModelAdmin):
     fields = (
@@ -46,6 +82,8 @@ class MapAdmin(admin.ModelAdmin):
         'name',
         'book',
         'map_image',
+        'width',
+        'height',
     )
 
     list_filter = (
@@ -62,17 +100,50 @@ class MapAdmin(admin.ModelAdmin):
         else:
             return format_html('<p>-</p>')
 
+    inlines = (CityPointersInlineMaps, RegionPointersInlineMaps,)
+
 
 @admin.register(City)
 class CityAdmin(admin.ModelAdmin):
-    pass
+    fields = (
+        'name',
+        'wiki_link',
+        'continent',
+    )
+
+    list_display = (
+        'name',
+        'continent',
+    )
+
+    list_filter = (
+        'continent',
+    )
+
+    inlines = (CityPointersInlineCities,)
 
 
 @admin.register(Region)
 class RegionAdmin(admin.ModelAdmin):
-    pass
+    fields = (
+        'name',
+        'wiki_link',
+        'continent',
+    )
+
+    list_display = (
+        'name',
+        'continent',
+    )
 
 
 @admin.register(Continent)
 class ContinentAdmin(admin.ModelAdmin):
-    pass
+    fields = (
+        'name',
+        'wiki_link',
+    )
+
+    list_display = (
+        'name',
+    )

@@ -9,6 +9,9 @@ class Continent(models.Model):
     name = models.CharField(max_length=100)
     wiki_link = models.URLField(max_length=200)
 
+    def __str__(self) -> str:
+        return self.name
+
 
 class Region(models.Model):
     created = models.DateTimeField(default=timezone.now)
@@ -22,6 +25,9 @@ class Region(models.Model):
         related_name='regions',
         on_delete=models.CASCADE
     )
+
+    def __str__(self) -> str:
+        return self.name
 
 
 class Book(models.Model):
@@ -50,14 +56,11 @@ class City(models.Model):
         on_delete=models.CASCADE
     )
 
-    book = models.ForeignKey(
-        to=Book,
-        related_name='cities',
-        on_delete=models.CASCADE
-    )
-
     class Meta:
         verbose_name_plural = 'cities'
+
+    def __str__(self) -> str:
+        return self.name
 
 
 class Map(models.Model):
@@ -77,15 +80,15 @@ class Map(models.Model):
     )
 
     def __str__(self) -> str:
-        return self.name
+        return f'{self.name} ({self.width}x{self.height})'
 
 
 class CityPointer(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    x = models.DecimalField(max_digits=5, decimal_places=4, verbose_name='X Coordinate')
-    y = models.DecimalField(max_digits=4, decimal_places=4, verbose_name='Y Coordinate')
+    x = models.IntegerField(verbose_name='X Pixel')
+    y = models.IntegerField(verbose_name='Y Pixel')
 
     map = models.ForeignKey(
         to=Map,
@@ -104,8 +107,8 @@ class RegionPointer(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    x = models.DecimalField(max_digits=5, decimal_places=4, verbose_name='X Coordinate')
-    y = models.DecimalField(max_digits=4, decimal_places=4, verbose_name='Y Coordinate')
+    x = models.IntegerField(verbose_name='X Pixel')
+    y = models.IntegerField(verbose_name='Y Pixel')
 
     map = models.ForeignKey(
         to=Map,
@@ -124,8 +127,8 @@ class ContinentPointer(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    x = models.DecimalField(max_digits=5, decimal_places=4, verbose_name='X Coordinate')
-    y = models.DecimalField(max_digits=4, decimal_places=4, verbose_name='Y Coordinate')
+    x = models.IntegerField(verbose_name='X Pixel')
+    y = models.IntegerField(verbose_name='Y Pixel')
 
     map = models.ForeignKey(
         to=Map,

@@ -1,0 +1,14 @@
+{
+  "name": "malazan-maps",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "postcss css/tailwind.css -o ../static/css/tailwind-dist.css -w --env development --verbose",
+    "build:dev": "postcss css/tailwind.css -o ../static/css/tailwind-dist.css --env development",
+    "build:prod": "postcss css/tailwind.css -o ../static/css/tailwind-dist.css --env production"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  }
+}
