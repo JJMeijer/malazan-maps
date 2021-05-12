@@ -8,6 +8,30 @@
         <link rel="stylesheet" type="text/css" href="{% static "css/tailwind-dist.css" %}">
     </head>
     <body>
-        {% block content %}{% endblock %}
+        <div class="h-screen text-gray-800 flex flex-col">
+            <div class="flex flex-col justify-content items-center w-full mt-4">
+                <img src="{%static "img/malazan_soft_grayscale.webp" %}" class="object-contain max-w-3/4">
+                <h1 class="font-bold text-lg mt-4">
+                    Malazan Maps
+                </h1>
+                <div class="w-80 sm:w-1/3 my-8 flex flex-col">
+                    <div class="rounded-md flex flex-wrap justify-center border-gray-400 border shadow-lg">
+                      <input
+                        spellcheck="false"
+                        id="url"
+                        type="url"
+                        class="p-2 w-full sm:w-3/4 h-12 rounded-t-md sm:rounded-l-md sm:rounded-t-none border-b border-gray-400 sm:border-white focus:outline-none focus:border-gray-800"
+                        placeholder="Search..."
+                      />
+                      <button
+                        id="submit"
+                        class="p-2 w-full sm:w-1/4 rounded-b-md sm:rounded-b-none sm:rounded-r-md font-bold bg-gray-200 text-gray-800 border-b border-transparent hover:bg-gray-300 focus:outline-none focus:border-gray-800 disabled:opacity-50"
+                      >
+                        Search
+                      </button>
+                    </div>
+            </div>
+            {% block content %}{% endblock %}
+        </div>
     </body>
 </html>

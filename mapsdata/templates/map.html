@@ -5,5 +5,11 @@
 {% endblock %}
 
 {% block content %}
-    <p class="text-green-900 lowercase">Hello World!</p>
+    <div class="h-full flex flex-col">
+        <div class="flex flex-row items-start justify-center">
+            <img src="{{ map_image_src }}" class="object-contain w-1/2">
+            <div class="border-gray-800 border rounded-lg w-72 h-72 mt-36 -ml-8 shadow-2xl opacity-80 bg-gray-100">
+            </div>
+        </div>
+    </div>
 {% endblock %}

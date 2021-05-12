@@ -11,7 +11,8 @@ def map_view(request, map_id):
         raise Http404("Map ID does not exist") from err
 
     context = {
-        'page_title': instance.name
+        'page_title': instance.name,
+        'map_image_src': instance.image.url
     }
 
     return render(request, 'map.html', context)
