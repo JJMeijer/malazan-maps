@@ -65,6 +65,7 @@ class CityPointersInlineCities(admin.TabularInline):
 class MapAdmin(admin.ModelAdmin):
     fields = (
         'name',
+        'short_name',
         'image',
         'width',
         'height',

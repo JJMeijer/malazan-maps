@@ -1,7 +1,8 @@
 from django.urls import path
 
-from .views import map_view
+from .views import map_view, home_view
 
 urlpatterns = [
-    path('<int:map_id>/', map_view, name='map'),
+    path('maps/<str:map_short_name>/', map_view, name='maps'),
+    path('', home_view, name='home'),
 ]

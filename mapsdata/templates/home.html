@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="flex flex-col justify-center items-center w-full sm:w-2/3 p-4">
+        <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat nunc id metus dictum congue. Sed et justo nec nunc gravida molestie. Sed blandit ac enim sed finibus. Aenean eget consequat elit.
+        </p>
+        <div class="w-full flex flex-col sm:flex-row -space-y-36 sm:-space-x-36 sm:-space-y-0 mt-8">
+            <a class="flex flex-col items-center sm:flex-row" href="{% url 'maps' hero_1.short_name %}">
+                <img
+                    src="{{ hero_1.image.url }}"
+                    class="w-11/12 shadow-lg border-gray-400 border rounded-lg z-0 hover:border-gray-600 hover:shadow-2xl"
+                >
+            </a>
+            <a class="flex flex-col items-end sm:flex-row" href="{% url 'maps' hero_2.short_name %}">
+                <img
+                    src="{{ hero_2.image.url }}"
+                    class="w-11/12 shadow-lg border-gray-400 border rounded-lg z-10 hover:border-gray-600 hover:shadow-2xl"
+                >
+            </a>
+            <a class="flex flex-col items-start sm:flex-row" href="{% url 'maps' hero_3.short_name %}">
+                <img
+                    src="{{ hero_3.image.url }}"
+                    class="w-11/12 shadow-lg border-gray-400 border rounded-lg z-20 hover:border-gray-600 hover:shadow-2xl"
+                >
+            </a>
+        </div>
+
+    </div>
+{% endblock %}

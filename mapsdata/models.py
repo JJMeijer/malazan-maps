@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 
+from .validators import validate_shortname
+
 
 class Continent(models.Model):
     created = models.DateTimeField(default=timezone.now)
@@ -68,6 +70,7 @@ class Map(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     name = models.CharField(max_length=200)
+    short_name = models.CharField(max_length=200, null=True, validators=[validate_shortname])
 
     height = models.IntegerField()
     width = models.IntegerField()
