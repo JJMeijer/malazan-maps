@@ -1,5 +1,5 @@
-import random
-
+from django.core.serializers.json import DjangoJSONEncoder
+from django.core.serializers import serialize
 from django.http import Http404
 from django.shortcuts import render
 
@@ -14,7 +14,9 @@ def map_view(request, map_short_name):
 
     context = {
         'page_title': instance.name,
-        'map_image_src': instance.image.url
+        'map_image_src': instance.image.url,
+        'city_pointers': serialize('json', instance.city_pointers.all(), cls=DjangoJSONEncoder),
+        'region_pointers': serialize('json', instance.region_pointers.all(), cls=DjangoJSONEncoder)
     }
 
     return render(request, 'map.html', context)

@@ -105,6 +105,9 @@ class CityPointer(models.Model):
         on_delete=models.CASCADE
     )
 
+    def __str__(self):
+        return f'{self.city} - ({self.x}x{self.y})'
+
 
 class RegionPointer(models.Model):
     created = models.DateTimeField(default=timezone.now)
@@ -122,25 +125,5 @@ class RegionPointer(models.Model):
     region = models.ForeignKey(
         to=Region,
         related_name='region_pointers',
-        on_delete=models.CASCADE
-    )
-
-
-class ContinentPointer(models.Model):
-    created = models.DateTimeField(default=timezone.now)
-    updated = models.DateTimeField(auto_now=True)
-
-    x = models.IntegerField(verbose_name='X Pixel')
-    y = models.IntegerField(verbose_name='Y Pixel')
-
-    map = models.ForeignKey(
-        to=Map,
-        related_name='continent_pointers',
-        on_delete=models.CASCADE
-    )
-
-    continent = models.ForeignKey(
-        to=Continent,
-        related_name='continent_pointers',
         on_delete=models.CASCADE
     )

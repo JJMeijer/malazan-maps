@@ -8,4 +8,10 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        window.pointers = {
+            city: JSON.parse('{{ city_pointers|safe }}'),
+            region: JSON.parse("{{ region_pointers }}")
+        }
+    </script>
 {% endblock %}
