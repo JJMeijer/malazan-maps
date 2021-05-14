@@ -1,9 +1,10 @@
-from django.core.serializers.json import DjangoJSONEncoder
-from django.core.serializers import serialize
+import json
+
 from django.http import Http404
 from django.shortcuts import render
 
 from .models import Map
+from .serializers import MapSerializer
 
 def map_view(request, map_short_name):
     """Map View that returns a Map"""
@@ -12,11 +13,12 @@ def map_view(request, map_short_name):
     except Map.DoesNotExist as err:
         raise Http404("Map ID does not exist") from err
 
+    pointers_json = json.dumps(MapSerializer(instance).data)
+
     context = {
         'page_title': instance.name,
         'map_image_src': instance.image.url,
-        'city_pointers': serialize('json', instance.city_pointers.all(), cls=DjangoJSONEncoder),
-        'region_pointers': serialize('json', instance.region_pointers.all(), cls=DjangoJSONEncoder)
+        'pointers': pointers_json
     }
 
     return render(request, 'map.html', context)
@@ -24,7 +26,7 @@ def map_view(request, map_short_name):
 
 def home_view(request):
     """Homepage View"""
-    hero_1 = Map.objects.get(short_name='seven-cities')
+    hero_1 = Map.objects.get(short_name='seven-cities-dg')
     hero_2 = Map.objects.get(short_name='darujhistan')
     hero_3 = Map.objects.get(short_name='chain-of-dogs-1')
 

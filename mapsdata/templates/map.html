@@ -1,17 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="h-full flex flex-col">
-        <div class="flex flex-row items-start justify-center">
-            <img src="{{ map_image_src }}" class="object-contain w-1/2">
-            <div class="border-gray-800 border rounded-lg w-72 h-72 mt-36 -ml-8 shadow-2xl opacity-80 bg-gray-100">
+    <div class="flex flex-col">
+        <div class="flex flex-col items-start lg:flex-row lg:justify-center mb-8">
+            <img src="{{ map_image_src }}" class="object-contain border border-gray-600 rounded-md lg:w-2/3">
+            <div class="border-gray-600 border rounded-lg w-72 h-48 m-8 shadow-lg bg-gray-100">
             </div>
         </div>
     </div>
     <script type="text/javascript">
-        window.pointers = {
-            city: JSON.parse('{{ city_pointers|safe }}'),
-            region: JSON.parse("{{ region_pointers }}")
-        }
+        window.pointers = JSON.parse('{{ pointers|safe }}')
     </script>
 {% endblock %}

@@ -1,8 +1,11 @@
 asgiref==3.3.4
 astroid==2.5.6
 autopep8==1.5.7
+beautifulsoup4==4.9.3
 colorama==0.4.4
 Django==3.2.2
+django-rest-framework==0.1.0
+djangorestframework==3.12.4
 isort==5.8.0
 lazy-object-proxy==1.6.0
 mccabe==0.6.1
@@ -12,6 +15,9 @@ pylint==2.8.2
 pylint-django==2.4.4
 pylint-plugin-utils==0.6
 pytz==2021.1
+six==1.16.0
+soupsieve==2.2.1
 sqlparse==0.4.1
 toml==0.10.2
+tornado==6.1
 wrapt==1.12.1

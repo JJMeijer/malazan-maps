@@ -85,6 +85,7 @@ class MapAdmin(admin.ModelAdmin):
         'map_image',
         'width',
         'height',
+        'pointer_counter',
     )
 
     list_filter = (
@@ -100,6 +101,11 @@ class MapAdmin(admin.ModelAdmin):
             )
         else:
             return format_html('<p>-</p>')
+
+    def pointer_counter(self, obj):
+        """Counter of how much pointers are defined for the Map"""
+        return len(obj.city_pointers.all()) + len(obj.region_pointers.all())
+    pointer_counter.description = 'pointers'
 
     inlines = (CityPointersInlineMaps, RegionPointersInlineMaps,)
 
