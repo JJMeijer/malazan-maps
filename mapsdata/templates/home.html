@@ -1,27 +1,29 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="flex flex-col justify-center items-center w-full sm:w-2/3 p-4">
-        <p class="text-center sm:h-1/3">
-            Simple search engine to find places in the world of Malazan: Book of the Fallen.
-        </p>
-        <div class="w-full sm:h-2/3 flex flex-col sm:flex-row -space-y-36 sm:-space-x-24 sm:-space-y-0 mt-8">
-            <a class="flex flex-col items-center sm:flex-row" href="{% url 'maps' hero_1.short_name %}">
+    <div class="flex flex-col items-center w-3/4">
+        <div class="mb-8">
+            <p class="text-center">
+                Simple search engine to find places in the world of Malazan: Book of the Fallen.
+            </p>
+        </div>
+        <div class="flex flex-col -space-y-48 lg:flex-row lg:-space-x-32 lg:-space-y-0">
+            <a class="" href="{% url 'maps' hero_1.short_name %}">
                 <img
                     src="{{ hero_1.image.url }}"
-                    class="w-11/12 shadow-lg border-gray-400 border rounded-lg z-0 hover:border-gray-600 hover:shadow-2xl"
+                    class="border border-gray-300 rounded-md shadow-md ml-12 hover:border-gray-600 lg:mt-12 lg:ml-0"
                 >
             </a>
-            <a class="flex flex-col items-end sm:flex-row" href="{% url 'maps' hero_2.short_name %}">
+            <a class="" href="{% url 'maps' hero_2.short_name %}">
                 <img
                     src="{{ hero_2.image.url }}"
-                    class="w-11/12 shadow-lg border-gray-400 border rounded-lg z-10 hover:border-gray-600 hover:shadow-2xl"
+                    class="border border-gray-300 rounded-md shadow-md -ml-12 hover:border-gray-600 lg:-ml-0"
                 >
             </a>
-            <a class="flex flex-col items-start sm:flex-row" href="{% url 'maps' hero_3.short_name %}">
+            <a class="" href="{% url 'maps' hero_3.short_name %}">
                 <img
                     src="{{ hero_3.image.url }}"
-                    class="w-11/12 shadow-lg border-gray-400 border rounded-lg z-20 hover:border-gray-600 hover:shadow-2xl"
+                    class="border border-gray-300 rounded-md shadow-md ml-6 hover:border-gray-600 lg:mt-24 lg:ml-0"
                 >
             </a>
         </div>
