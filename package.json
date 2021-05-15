@@ -1,0 +1,19 @@
+{
+  "name": "malazan-maps",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "postcss tailwind/tailwind.css -o static/css/tailwind-dist.css -w --env development --verbose",
+    "build:dev": "set TAILWIND_MODE=build & postcss tailwind/tailwind.css -o static/css/tailwind-dist.css --env development",
+    "build:prod": "postcss tailwind/tailwind.css -o static/css/tailwind-dist.css --env production"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.2"
+  }
+}

@@ -3,6 +3,7 @@ from django.utils.html import format_html
 
 from .models import Book, City, Region, Continent, Map, CityPointer, RegionPointer
 
+admin.site.enable_nav_sidebar = False
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
@@ -104,10 +105,10 @@ class MapAdmin(admin.ModelAdmin):
         else:
             return format_html('<p>-</p>')
 
+    @admin.display(description='pointers')
     def pointer_counter(self, obj):
         """Counter of how much pointers are defined for the Map"""
         return len(obj.city_pointers.all()) + len(obj.region_pointers.all())
-    pointer_counter.description = 'pointers'
 
     inlines = (CityPointersInlineMaps, RegionPointersInlineMaps,)
 

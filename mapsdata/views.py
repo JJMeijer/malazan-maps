@@ -34,7 +34,7 @@ def city_view(request, city_short_name):
     pointers = instance.city_pointers.all()
 
     context = {
-        'page_title': f'Malazan Maps | {instance.name}',
+        'page_title': f'{instance.name} | Malazan Maps',
         'city_name': instance.name,
         'pointers': pointers
     }
@@ -49,7 +49,7 @@ def home_view(request):
     hero_3 = Map.objects.get(short_name='chain-of-dogs-1')
 
     context = {
-        'page_title': 'Malazan Maps | Home',
+        'page_title': 'Home | Malazan Maps',
         'hero_1': hero_1,
         'hero_2': hero_2,
         'hero_3': hero_3
