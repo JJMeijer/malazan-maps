@@ -3,7 +3,7 @@ import json
 from django.http import Http404
 from django.shortcuts import render
 
-from .models import Map
+from .models import Map, City
 from .serializers import MapSerializer
 
 def map_view(request, map_short_name):
@@ -11,7 +11,7 @@ def map_view(request, map_short_name):
     try:
         instance = Map.objects.get(short_name=map_short_name)
     except Map.DoesNotExist as err:
-        raise Http404("Map ID does not exist") from err
+        raise Http404("Map is not known") from err
 
     pointers_json = json.dumps(MapSerializer(instance).data)
 
@@ -22,6 +22,24 @@ def map_view(request, map_short_name):
     }
 
     return render(request, 'map.html', context)
+
+
+def city_view(request, city_short_name):
+    """City View"""
+    try:
+        instance = City.objects.get(short_name=city_short_name)
+    except City.DoesNotExist as err:
+        raise Http404("City is not known") from err
+
+    pointers = instance.city_pointers.all()
+
+    context = {
+        'page_title': f'Malazan Maps | {instance.name}',
+        'city_name': instance.name,
+        'pointers': pointers
+    }
+
+    return render(request, 'city.html', context)
 
 
 def home_view(request):

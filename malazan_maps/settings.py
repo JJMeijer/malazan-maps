@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
+    'admin_interface',
+    'colorfield',
     'mapsdata.apps.MapsdataConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -134,3 +136,7 @@ MEDIA_URL = 'content/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Needed for Django admin interface
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+SILENCED_SYSTEM_CHECKS = ['security.W019']

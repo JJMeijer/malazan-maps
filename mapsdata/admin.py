@@ -92,6 +92,8 @@ class MapAdmin(admin.ModelAdmin):
         'book',
     )
 
+    list_per_page = 20
+
     def map_image(self, obj):
         """Generates HTML to display the Image of the Map"""
         if obj.image:
@@ -114,6 +116,7 @@ class MapAdmin(admin.ModelAdmin):
 class CityAdmin(admin.ModelAdmin):
     fields = (
         'name',
+        'short_name',
         'wiki_link',
         'continent',
     )
@@ -134,6 +137,7 @@ class CityAdmin(admin.ModelAdmin):
 class RegionAdmin(admin.ModelAdmin):
     fields = (
         'name',
+        'short_name',
         'wiki_link',
         'continent',
     )

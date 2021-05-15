@@ -20,6 +20,7 @@ class Region(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     name = models.CharField(max_length=100)
+    short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
     wiki_link = models.URLField(max_length=200)
 
     continent = models.ForeignKey(
@@ -50,6 +51,7 @@ class City(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     name = models.CharField(max_length=100)
+    short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
     wiki_link = models.URLField(max_length=200)
 
     continent = models.ForeignKey(
@@ -106,7 +108,7 @@ class CityPointer(models.Model):
     )
 
     def __str__(self):
-        return f'{self.city} - ({self.x}x{self.y})'
+        return f'{self.city} - ({self.x},{self.y})'
 
 
 class RegionPointer(models.Model):
