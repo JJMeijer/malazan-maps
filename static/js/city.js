@@ -22,56 +22,69 @@
         };
     };
 
-    const setupImageSelector = () => {
+    const placeImageMarker = (mapId) => {
+        const mapElement = document.getElementById(`map-image-${mapId}`);
+        const markerElement = document.getElementById(`map-marker-${mapId}`);
+
+        const mapNaturalDimensions = getElementNaturalDimensions(mapElement);
+        const mapRealDimensions = getElementRealDimensions(mapElement);
+
+        const markerRealDimensions = getElementRealDimensions(markerElement);
+
+        const { markerx, markery } = markerElement.dataset;
+
+        const markerRelativeX = Math.round(
+            (markerx * mapRealDimensions.width) / mapNaturalDimensions.naturalWidth - (markerRealDimensions.width / 2)
+        );
+
+        const markerRelativeY = Math.round(
+            (markery * mapRealDimensions.height) / mapNaturalDimensions.naturalHeight - markerRealDimensions.height
+        );
+
+        markerElement.style.top = `${markerRelativeY}px`;
+        markerElement.style.left = `${markerRelativeX}px`;
+
+        if (markerElement.classList.contains('opacity-0')) {
+            markerElement.classList.remove('opacity-0');
+        }
+    };
+
+    const handleMapSelectorChange = (event) => {
+        const mapId = getMapId(event.target.id);
+
+        const mapWrappers = document.querySelectorAll('[id^=map-imagewrapper-]');
+
+        // Hide all maps
+        mapWrappers.forEach((mapWrapper) => {
+            if (!mapWrapper.classList.contains('hidden')) {
+                mapWrapper.classList.add('hidden');
+            }
+        });
+
+        // Remove hidden from selected Map
+        document.getElementById(`map-imagewrapper-${mapId}`).classList.remove('hidden');
+
+        // Place Marker in Selected Map
+        placeImageMarker(mapId);
+    };
+
+    const setImageSelectorListener = () => {
         const mapButtons = document.querySelectorAll('input[name="map-selector"]');
-        const maps = document.querySelectorAll('[id^=map-imagewrapper-]');
 
         mapButtons.forEach((element) => {
-            element.addEventListener('change', (event) => {
-                const mapId = getMapId(event.target.id);
-
-                maps.forEach((map) => {
-                    if (!map.classList.contains('hidden')) {
-                        map.classList.add('hidden');
-                    }
-                });
-
-                document.getElementById(`map-imagewrapper-${mapId}`).classList.remove('hidden');
-            });
+            element.addEventListener('change', handleMapSelectorChange);
         });
     };
 
-    const setupImageMarkers = () => {
-        const markers = document.querySelectorAll('[id^=map-marker-');
+    const placeVisibleMarker = () => {
+        const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
+        const mapId = getMapId(visibleImageWrapper.id);
 
-        // Initial setup
-        markers.forEach((marker) => {
-            const mapId = getMapId(marker.id);
-            const mapElement = document.getElementById(`map-image-${mapId}`);
-            const markerElement = document.getElementById(`map-marker-${mapId}`);
-
-            const mapNaturalDimensions = getElementNaturalDimensions(mapElement);
-            const mapRealDimensions = getElementRealDimensions(mapElement);
-
-            const markerRealDimensions = getElementRealDimensions(markerElement);
-
-            const { markerx, markery } = marker.dataset;
-
-            const markerRelativeX = Math.round(
-                (markerx * mapRealDimensions.width) / mapNaturalDimensions.naturalWidth - (markerRealDimensions.width / 2)
-            );
-
-            const markerRelativeY = Math.round(
-                (markery * mapRealDimensions.height) / mapNaturalDimensions.naturalHeight - markerRealDimensions.height
-            );
-
-            marker.style.top = `${markerRelativeY}px`;
-            marker.style.left = `${markerRelativeX}px`;
-
-            marker.classList.remove('opacity-0');
-        });
+        placeImageMarker(mapId);
     };
 
-    setupImageSelector();
-    setupImageMarkers();
+    window.addEventListener('resize', placeVisibleMarker);
+
+    setImageSelectorListener();
+    placeVisibleMarker();
 }());
