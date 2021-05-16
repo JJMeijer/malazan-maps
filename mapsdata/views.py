@@ -40,7 +40,8 @@ def city_view(request, city_short_name):
         'page_title': f'{instance.name} | Malazan Maps',
         'city_name': instance.name,
         'markers': markers,
-        'description': description
+        'description': description,
+        'wiki_link': instance.wiki_link
     }
 
     return render(request, 'city.html', context)
