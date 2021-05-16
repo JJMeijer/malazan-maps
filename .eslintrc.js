@@ -11,5 +11,12 @@ module.exports = {
     },
     rules: {
         indent: ['error', 4],
+        'max-len': ['error', 125, 4],
+        'no-param-reassign': ['error', { props: false }],
+        'comma-dangle': ['error', {
+            objects: 'always-multiline',
+            arrays: 'always-multiline',
+            functions: 'never',
+        }],
     },
 };

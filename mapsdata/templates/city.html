@@ -5,19 +5,29 @@
 {% block  content %}
     <div class="flex flex-col items-center justify-center border-t border-gray-200 mt-8">
         <div class="flex flex-row my-4">
-            {% for pointer in pointers %}
-                <label class="{% if pointers|length == 1 %}hidden{% endif %}" for="map-selector-{{ forloop.counter }}">
+            {% for marker in markers %}
+                <label class="{% if markers|length == 1 %}hidden{% endif %}" for="map-selector-{{ forloop.counter }}">
                     <input class="hidden" type="radio" id="map-selector-{{ forloop.counter }}" name="map-selector" {% if forloop.counter == 1 %}checked{% endif %}>
-                    <span class="p-2 m-2 rounded-md border border-gray-600 label-checked:border-2">{{ pointer.map.name }}</span>
+                    <span class="p-2 m-2 rounded-md border border-gray-600 label-checked:border-2">{{ marker.map.name }}</span>
                 </label>
             {% endfor %}
         </div>
         <div class="flex flex-col items-start lg:flex-row lg:justify-center mb-8">
-            {% for pointer in pointers %}
-                <img
-                    src="{{ pointer.map.image.url }}"
-                    class="{% if forloop.counter > 1 %}hidden{% endif %} bg-white p-2 object-contain border border-gray-600 rounded-md lg:w-2/3"
-                    id="map-image-{{ forloop.counter }}">
+            {% for marker in markers %}
+                <div class="{% if forloop.counter > 1 %}hidden{% endif %} relative w-full lg:w-2/3" id="map-imagewrapper-{{ forloop.counter }}">
+                    <img
+                        src="{{ marker.map.image.url }}"
+                        class="object-contain border border-gray-600 rounded-md"
+                        id="map-image-{{ forloop.counter }}"
+                    >
+                    <img
+                        src="{% static "img/marker-1.png" %}"
+                        class="opacity-0 absolute top-0 left-0 w-10 h-10 object-contain"
+                        id="map-marker-{{ forloop.counter }}"
+                        data-markerx={{ marker.x }}
+                        data-markery={{ marker.y }}
+                    >
+                </div>
             {% endfor %}
             <div class="border-gray-600 border rounded-lg w-96 h-48 mt-8 ml-8 shadow-lg bg-gray-100">
                 <div class="bg-gray-200 rounded-t-md w-full flex items-center justify-center p-2 border-b border-gray-600">

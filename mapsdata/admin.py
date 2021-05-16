@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from .models import Book, City, Region, Continent, Map, CityPointer, RegionPointer
+from .models import Book, City, Region, Continent, Map, CityMarker, RegionMarker
 
 admin.site.enable_nav_sidebar = False
 
@@ -26,8 +26,8 @@ class BookAdmin(admin.ModelAdmin):
         )
 
 
-class CityPointersInlineMaps(admin.TabularInline):
-    model = CityPointer
+class CityMarkersInlineMaps(admin.TabularInline):
+    model = CityMarker
 
     fields = (
         'x',
@@ -38,8 +38,8 @@ class CityPointersInlineMaps(admin.TabularInline):
     extra = 1
 
 
-class RegionPointersInlineMaps(admin.TabularInline):
-    model = RegionPointer
+class RegionMarkersInlineMaps(admin.TabularInline):
+    model = RegionMarker
 
     fields = (
         'x',
@@ -50,8 +50,8 @@ class RegionPointersInlineMaps(admin.TabularInline):
     extra = 1
 
 
-class CityPointersInlineCities(admin.TabularInline):
-    model = CityPointer
+class CityMarkersInlineCities(admin.TabularInline):
+    model = CityMarker
 
     fields = (
         'x',
@@ -86,7 +86,7 @@ class MapAdmin(admin.ModelAdmin):
         'map_image',
         'width',
         'height',
-        'pointer_counter',
+        'marker_counter',
     )
 
     list_filter = (
@@ -105,12 +105,12 @@ class MapAdmin(admin.ModelAdmin):
         else:
             return format_html('<p>-</p>')
 
-    @admin.display(description='pointers')
-    def pointer_counter(self, obj):
-        """Counter of how much pointers are defined for the Map"""
-        return len(obj.city_pointers.all()) + len(obj.region_pointers.all())
+    @admin.display(description='markers')
+    def marker_counter(self, obj):
+        """Counter of how much markers are defined for the Map"""
+        return len(obj.city_markers.all()) + len(obj.region_markers.all())
 
-    inlines = (CityPointersInlineMaps, RegionPointersInlineMaps,)
+    inlines = (CityMarkersInlineMaps, RegionMarkersInlineMaps,)
 
 
 @admin.register(City)
@@ -125,13 +125,19 @@ class CityAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'continent',
+        'marker_counter',
     )
 
     list_filter = (
         'continent',
     )
 
-    inlines = (CityPointersInlineCities,)
+    inlines = (CityMarkersInlineCities,)
+
+    @admin.display(description='markers')
+    def marker_counter(self, obj):
+        """Counter of how much markers are defined for the Map"""
+        return len(obj.city_markers.all())
 
 
 @admin.register(Region)

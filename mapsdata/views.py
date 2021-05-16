@@ -13,12 +13,12 @@ def map_view(request, map_short_name):
     except Map.DoesNotExist as err:
         raise Http404("Map is not known") from err
 
-    pointers_json = json.dumps(MapSerializer(instance).data)
+    markers_json = json.dumps(MapSerializer(instance).data)
 
     context = {
         'page_title': instance.name,
         'map_image_src': instance.image.url,
-        'pointers': pointers_json
+        'markers': markers_json
     }
 
     return render(request, 'map.html', context)
@@ -31,12 +31,12 @@ def city_view(request, city_short_name):
     except City.DoesNotExist as err:
         raise Http404("City is not known") from err
 
-    pointers = instance.city_pointers.all()
+    markers = instance.city_markers.all()
 
     context = {
         'page_title': f'{instance.name} | Malazan Maps',
         'city_name': instance.name,
-        'pointers': pointers
+        'markers': markers
     }
 
     return render(request, 'city.html', context)

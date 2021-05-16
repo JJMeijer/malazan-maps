@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import CityPointer, City, Map, Region, RegionPointer
+from .models import CityMarker, City, Map, Region, RegionMarker
 
 
 class CitySerializer(serializers.ModelSerializer):
@@ -12,11 +12,11 @@ class CitySerializer(serializers.ModelSerializer):
         )
 
 
-class CityPointerSerializer(serializers.ModelSerializer):
+class CityMarkerSerializer(serializers.ModelSerializer):
     city = CitySerializer()
 
     class Meta:
-        model = CityPointer
+        model = CityMarker
         fields = (
             'x',
             'y',
@@ -33,11 +33,11 @@ class RegionSerializer(serializers.ModelSerializer):
         )
 
 
-class RegionPointerSerializer(serializers.ModelSerializer):
+class RegionMarkerSerializer(serializers.ModelSerializer):
     region = RegionSerializer()
 
     class Meta:
-        model = RegionPointer
+        model = RegionMarker
         fields = (
             'x',
             'y',
@@ -46,12 +46,12 @@ class RegionPointerSerializer(serializers.ModelSerializer):
 
 
 class MapSerializer(serializers.ModelSerializer):
-    city_pointers = CityPointerSerializer(many=True)
-    region_pointers =RegionPointerSerializer(many=True)
+    city_markers = CityMarkerSerializer(many=True)
+    region_markers =RegionMarkerSerializer(many=True)
 
     class Meta:
         model = Map
         fields = (
-            'city_pointers',
-            'region_pointers',
+            'city_markers',
+            'region_markers',
         )

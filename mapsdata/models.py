@@ -88,7 +88,7 @@ class Map(models.Model):
         return f'{self.name} ({self.width}x{self.height})'
 
 
-class CityPointer(models.Model):
+class CityMarker(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
@@ -97,13 +97,13 @@ class CityPointer(models.Model):
 
     map = models.ForeignKey(
         to=Map,
-        related_name='city_pointers',
+        related_name='city_markers',
         on_delete=models.CASCADE
     )
 
     city = models.ForeignKey(
         to=City,
-        related_name='city_pointers',
+        related_name='city_markers',
         on_delete=models.CASCADE
     )
 
@@ -111,7 +111,7 @@ class CityPointer(models.Model):
         return f'{self.city} - ({self.x},{self.y})'
 
 
-class RegionPointer(models.Model):
+class RegionMarker(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
@@ -120,12 +120,12 @@ class RegionPointer(models.Model):
 
     map = models.ForeignKey(
         to=Map,
-        related_name='region_pointers',
+        related_name='region_markers',
         on_delete=models.CASCADE
     )
 
     region = models.ForeignKey(
         to=Region,
-        related_name='region_pointers',
+        related_name='region_markers',
         on_delete=models.CASCADE
     )
