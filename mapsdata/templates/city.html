@@ -8,7 +8,7 @@
             {% for marker in markers %}
                 <label class="{% if markers|length == 1 %}hidden{% endif %}" for="map-selector-{{ forloop.counter }}">
                     <input class="hidden" type="radio" id="map-selector-{{ forloop.counter }}" name="map-selector" {% if forloop.counter == 1 %}checked{% endif %}>
-                    <span class="p-2 m-2 rounded-md border border-gray-600 label-checked:border-2">{{ marker.map.name }}</span>
+                    <span class="p-2 m-2 shadow-sm rounded-md border border-gray-600 label-checked:border-2">{{ marker.map.name }}</span>
                 </label>
             {% endfor %}
         </div>
@@ -32,6 +32,9 @@
             <div class="border-gray-600 border rounded-lg w-96 h-48 mt-8 ml-8 shadow-lg bg-gray-100">
                 <div class="bg-gray-200 rounded-t-md w-full flex items-center justify-center p-2 border-b border-gray-600">
                     <p class="text-center text-2xl">{{ city_name }}</p>
+                </div>
+                <div class="p-2">
+                    <p class=""> {{ description }}</p>
                 </div>
             </div>
         </div>
