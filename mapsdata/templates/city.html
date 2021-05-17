@@ -7,8 +7,18 @@
         <div class="flex flex-row my-4">
             {% for marker in markers %}
                 <label class="{% if markers|length == 1 %}hidden{% endif %}" for="map-selector-{{ forloop.counter }}">
-                    <input class="hidden" type="radio" id="map-selector-{{ forloop.counter }}" name="map-selector" {% if forloop.counter == 1 %}checked{% endif %}>
-                    <span class="p-2 m-2 shadow-sm rounded-md border border-gray-600 label-checked:border-2">{{ marker.map.name }}</span>
+                    <input
+                        class="hidden"
+                        type="radio"
+                        id="map-selector-{{ forloop.counter }}"
+                        name="map-selector"
+                        {% if forloop.counter == 1 %}checked{% endif %}
+                    >
+                    <span
+                        class="p-2 m-2 shadow-sm rounded-2xl border border-gray-600 label-checked:border-2"
+                    >
+                        {{ marker.map.name }}
+                    </span>
                 </label>
             {% endfor %}
         </div>
