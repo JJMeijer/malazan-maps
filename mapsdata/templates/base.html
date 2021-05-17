@@ -17,20 +17,23 @@
                         Malazan Maps
                     </h1>
                 </a>
-                <div class="relative flex flex-row h-10 w-2/3 my-8 rounded-2xl border-gray-400 border shadow-md lg:w-1/2">
-                    <a class="h-full" href="{% url "home" %}">
-                        <img class="h-full p-2 opacity-40" src="{% static "img/search-1.png" %}">
-                    </a>
-                    <input
-                        spellcheck="false"
-                        id="search"
-                        type="text"
-                        class="w-5/6 focus:outline-none text-gray-600"
-                        placeholder="Search..."
-                    />
+                <div class="relative flex flex-col h-10 w-2/3 my-8 rounded-2xl border-gray-400 border shadow-md lg:w-1/2">
+                    <div class="flex flex-row h-full z-20 bg-white rounded-2xl">
+                        <a class="h-full" href="{% url "home" %}">
+                            <img class="h-full p-2 opacity-40" src="{% static "img/search-1.png" %}">
+                        </a>
+                        <input
+                            spellcheck="false"
+                            id="search"
+                            type="text"
+                            class="w-5/6 focus:outline-none text-gray-600 rounded-2xl"
+                            placeholder="Search..."
+                        />
+                    </div>
                     <div
                         id="search-results"
-                        class="absolute left-0 top-0 border border-gray-800 w-full h-10"
+                        class="absolute z-10 left-0 top-0 border-r border-l border-b bg-gray-600
+                               opacity-40 border-gray-800 w-full h-48 rounded-2xl"
                     ></div>
                 </div>
             </div>
