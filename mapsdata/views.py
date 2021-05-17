@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 from .models import Map, City
 from .serializers import MapSerializer
-from .mediawiki_api import get_first_paragraph
+
 
 def map_view(request, map_short_name):
     """Map View that returns a Map"""
@@ -34,13 +34,11 @@ def city_view(request, city_short_name):
 
     markers = instance.city_markers.all()
 
-    description = get_first_paragraph(instance.name)
-
     context = {
         'page_title': f'{instance.name} | Malazan Maps',
         'city_name': instance.name,
         'markers': markers,
-        'description': description,
+        'description': instance.description,
         'wiki_link': instance.wiki_link
     }
 

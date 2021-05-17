@@ -29,13 +29,18 @@
                     >
                 </div>
             {% endfor %}
-            <div class="border-gray-600 border rounded-lg w-96 h-48 mt-8 ml-8 shadow-lg bg-gray-100">
+            <div class="border-gray-600 border rounded-lg w-96 mt-8 ml-8 shadow-lg bg-gray-100">
                 <div class="bg-gray-200 rounded-t-md w-full flex items-center justify-center p-2 border-b border-gray-600">
                     <p class="text-center text-2xl">{{ city_name }}</p>
                 </div>
                 <div class="p-2">
-                    <p class=""> {{ description }}</p>
-                    <a href="{{ wiki_link }}">wiki</a>
+                    <p class="mb-2"> {{ description }}</p>
+                    <a
+                        class="text-blue-600 underline hover:text-blue-900 visited:text-purple-600"
+                        href="{{ wiki_link }}"
+                    >
+                        wiki link
+                    </a>
                 </div>
             </div>
         </div>

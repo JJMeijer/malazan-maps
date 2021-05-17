@@ -52,7 +52,9 @@ class City(models.Model):
 
     name = models.CharField(max_length=100)
     short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
+
     wiki_link = models.URLField(max_length=200)
+    description = models.CharField(max_length=2000, null=False, default='-')
 
     continent = models.ForeignKey(
         to=Continent,
