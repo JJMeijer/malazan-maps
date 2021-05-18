@@ -9,6 +9,7 @@ class Continent(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     name = models.CharField(max_length=100)
+    short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
     wiki_link = models.URLField(max_length=200)
 
     def __str__(self) -> str:
@@ -37,13 +38,14 @@ class Book(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    title = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, verbose_name='title')
+    short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
     cover = models.ImageField(upload_to='covers/', null=True)
 
     wiki_link = models.URLField(max_length=200)
 
     def __str__(self) -> str:
-        return self.title
+        return self.name
 
 
 class City(models.Model):

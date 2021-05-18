@@ -8,13 +8,19 @@ admin.site.enable_nav_sidebar = False
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     fields = (
-        'title',
+        'name',
+        'short_name',
         'cover',
         'wiki_link',
+        'cover_image',
+    )
+
+    readonly_fields = (
+        'cover_image',
     )
 
     list_display = (
-        'title',
+        'name',
         'cover_image',
     )
 
@@ -159,6 +165,7 @@ class RegionAdmin(admin.ModelAdmin):
 class ContinentAdmin(admin.ModelAdmin):
     fields = (
         'name',
+        'short_name',
         'wiki_link',
     )
 

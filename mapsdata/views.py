@@ -1,10 +1,8 @@
-import json
-
 from django.http import Http404
 from django.shortcuts import render
 
 from .models import Map, City
-from .serializers import MapSerializer
+from .serializers import serialize_all
 
 
 def map_view(request, map_short_name):
@@ -14,12 +12,11 @@ def map_view(request, map_short_name):
     except Map.DoesNotExist as err:
         raise Http404("Map is not known") from err
 
-    markers_json = json.dumps(MapSerializer(instance).data)
-
     context = {
         'page_title': instance.name,
         'map_image_src': instance.image.url,
-        'markers': markers_json
+        'entries': serialize_all(),
+        'markers': '{}'
     }
 
     return render(request, 'map.html', context)
@@ -39,7 +36,8 @@ def city_view(request, city_short_name):
         'city_name': instance.name,
         'markers': markers,
         'description': instance.description,
-        'wiki_link': instance.wiki_link
+        'wiki_link': instance.wiki_link,
+        'entries': serialize_all()
     }
 
     return render(request, 'city.html', context)
@@ -55,7 +53,8 @@ def home_view(request):
         'page_title': 'Home | Malazan Maps',
         'hero_1': hero_1,
         'hero_2': hero_2,
-        'hero_3': hero_3
+        'hero_3': hero_3,
+        'entries': serialize_all()
     }
 
     return render(request, 'home.html', context)

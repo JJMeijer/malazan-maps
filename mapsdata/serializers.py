@@ -1,57 +1,98 @@
+import json
+
 from rest_framework import serializers
 
-from .models import CityMarker, City, Map, Region, RegionMarker
+from .models import Book, City, Region, Continent
 
 
 class CitySerializer(serializers.ModelSerializer):
+    type = serializers.SerializerMethodField()
+
+    @staticmethod
+    def get_type(_obj):
+        """Static method to add type to serialized objects"""
+        return 'city'
+
     class Meta:
         model = City
         fields = (
             'name',
-            'wiki_link',
-        )
-
-
-class CityMarkerSerializer(serializers.ModelSerializer):
-    city = CitySerializer()
-
-    class Meta:
-        model = CityMarker
-        fields = (
-            'x',
-            'y',
-            'city'
+            'short_name',
+            'type',
         )
 
 
 class RegionSerializer(serializers.ModelSerializer):
+    type = serializers.SerializerMethodField()
+
+    @staticmethod
+    def get_type(_obj):
+        """Static method to add type to serialized objects"""
+        return 'region'
+
     class Meta:
         model = Region
         fields = (
             'name',
-            'wiki_link',
+            'short_name',
+            'type',
         )
 
 
-class RegionMarkerSerializer(serializers.ModelSerializer):
-    region = RegionSerializer()
+class ContinentSerializer(serializers.ModelSerializer):
+    type = serializers.SerializerMethodField()
+
+    @staticmethod
+    def get_type(_obj):
+        """Static method to add type to serialized objects"""
+        return 'continent'
 
     class Meta:
-        model = RegionMarker
+        model = Continent
         fields = (
-            'x',
-            'y',
-            'region'
+            'name',
+            'short_name',
+            'type',
         )
 
 
-class MapSerializer(serializers.ModelSerializer):
-    city_markers = CityMarkerSerializer(many=True)
-    region_markers =RegionMarkerSerializer(many=True)
+class BookSerializer(serializers.ModelSerializer):
+    type = serializers.SerializerMethodField()
+
+    @staticmethod
+    def get_type(_obj):
+        """Static method to add type to serialized objects"""
+        return 'book'
 
     class Meta:
-        model = Map
+        model = Book
         fields = (
-            'city_markers',
-            'region_markers',
+            'name',
+            'short_name',
+            'type',
         )
+
+
+def serialize_all():
+    """Serialize all Cities, Regions, Continens & Books in the Database as JSON"""
+    books = BookSerializer(
+        instance=Book.objects.all(),
+        many=True
+    ).data
+
+    cities = CitySerializer(
+        instance=City.objects.all(),
+        many=True
+    ).data
+
+    regions = RegionSerializer(
+        instance=Region.objects.all(),
+        many=True
+    ).data
+
+    continents = ContinentSerializer(
+        instance=Continent.objects.all(),
+        many=True
+    ).data
+
+    return json.dumps(cities + regions + books + continents)

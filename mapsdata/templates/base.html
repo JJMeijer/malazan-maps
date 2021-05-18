@@ -32,12 +32,17 @@
                     </div>
                     <div
                         id="search-results"
-                        class="absolute z-10 left-0 top-0 border-r border-l border-b bg-gray-600
+                        class="hidden absolute z-10 left-0 top-0 border-r border-l border-b bg-gray-600
                                opacity-40 border-gray-800 w-full h-48 rounded-2xl"
                     ></div>
                 </div>
             </div>
             {% block content %}{% endblock %}
         </div>
+        <script>
+            malazan = {};
+            malazan.entries = JSON.parse('{{ entries|safe }}')
+        </script>
+        <script src="{% static "js/base.js" %}"></script>
     </body>
 </html>
