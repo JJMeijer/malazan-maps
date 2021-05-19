@@ -1,5 +1,78 @@
-import { getMapId } from './get-map-id';
-import { placeImageMarker } from './place-image-marker';
+export interface NaturalDimensions {
+    naturalWidth: number;
+    naturalHeight: number;
+}
+
+export interface RealDimensions {
+    width: number;
+    height: number;
+}
+
+const getElementNaturalDimensions = (element: HTMLImageElement): NaturalDimensions => {
+    const { naturalHeight, naturalWidth } = element;
+
+    return {
+        naturalHeight,
+        naturalWidth,
+    };
+};
+
+const getElementRealDimensions = (element: HTMLElement): RealDimensions => {
+    const { width, height } = element.getBoundingClientRect();
+
+    return {
+        width,
+        height,
+    };
+};
+
+export const placeImageMarker = (mapId: string): void => {
+    const mapElement = document.getElementById(`map-image-${mapId}`);
+    const markerElement = document.getElementById(`map-marker-${mapId}`);
+
+    if (mapElement instanceof HTMLImageElement && markerElement instanceof HTMLElement) {
+        const mapNaturalDimensions = getElementNaturalDimensions(mapElement);
+        const mapRealDimensions = getElementRealDimensions(mapElement);
+
+        const markerRealDimensions = getElementRealDimensions(markerElement);
+
+        const { markerx, markery } = markerElement.dataset;
+
+        if (markerx && markery) {
+            const markerRelativeX = Math.round(
+                (parseInt(markerx) * mapRealDimensions.width) / mapNaturalDimensions.naturalWidth -
+                    markerRealDimensions.width / 2,
+            );
+
+            const markerRelativeY = Math.round(
+                (parseInt(markery) * mapRealDimensions.height) /
+                    mapNaturalDimensions.naturalHeight -
+                    markerRealDimensions.height,
+            );
+
+            markerElement.style.top = `${markerRelativeY}px`;
+            markerElement.style.left = `${markerRelativeX}px`;
+
+            if (markerElement.classList.contains('opacity-0')) {
+                markerElement.classList.remove('opacity-0');
+            }
+        } else {
+            throw new Error('Marker coordinates not provided');
+        }
+    } else {
+        throw new Error('Invalid Map or Marker element');
+    }
+};
+
+const getMapId = (text: string): string => {
+    const lastKebabCaseItem = text.split('-').slice(-1);
+
+    if (lastKebabCaseItem[0]) {
+        return lastKebabCaseItem[0];
+    }
+
+    throw new Error('Map ID not found');
+};
 
 const handleMapSelectorChange = (event: Event) => {
     const target = event.target as HTMLElement; // Assumption that event.target exists
@@ -41,7 +114,8 @@ const placeVisibleMarker = () => {
     }
 };
 
-window.addEventListener('resize', placeVisibleMarker);
-
-setImageSelectorListener();
-placeVisibleMarker();
+document.addEventListener('DOMContentLoaded', () => {
+    placeVisibleMarker();
+    window.addEventListener('resize', placeVisibleMarker);
+    setImageSelectorListener();
+});
