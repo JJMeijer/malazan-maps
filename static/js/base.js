@@ -23,7 +23,7 @@
         const searchBox = document.getElementById('search');
 
         searchBox.addEventListener('input', (event) => {
-            //
+            const { entries } = window.malazan;
         });
     };
 
