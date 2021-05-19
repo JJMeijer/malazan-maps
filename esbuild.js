@@ -7,5 +7,6 @@ require('esbuild')
         minify: false,
         sourcemap: true,
         target: 'es2015',
+        watch: true,
     })
     .catch(() => process.exit(1));

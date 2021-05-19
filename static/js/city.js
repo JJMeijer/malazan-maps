@@ -12,7 +12,7 @@ const getElementRealDimensions = (element) => {
     height
   };
 };
-export const placeImageMarker = (mapId) => {
+const placeImageMarker = (mapId) => {
   const mapElement = document.getElementById(`map-image-${mapId}`);
   const markerElement = document.getElementById(`map-marker-${mapId}`);
   if (mapElement instanceof HTMLImageElement && markerElement instanceof HTMLElement) {

@@ -26,7 +26,7 @@ const getElementRealDimensions = (element: HTMLElement): RealDimensions => {
     };
 };
 
-export const placeImageMarker = (mapId: string): void => {
+const placeImageMarker = (mapId: string): void => {
     const mapElement = document.getElementById(`map-image-${mapId}`);
     const markerElement = document.getElementById(`map-marker-${mapId}`);
 
