@@ -17,10 +17,17 @@
                         Malazan Maps
                     </h1>
                 </a>
-                <div class="relative flex flex-col h-10 w-2/3 my-8 rounded-2xl border-gray-400 border shadow-md lg:w-1/2">
+                <div
+                    id="search-wrapper"
+                    class="relative flex flex-col h-10 w-2/3 my-8 rounded-2xl
+                        border-gray-400 border shadow-md lg:w-1/2"
+                >
                     <div class="flex flex-row h-full z-20 bg-white rounded-2xl">
                         <a class="h-full" href="{% url "home" %}">
-                            <img class="h-full p-2 opacity-40" src="{% static "img/search-1.png" %}">
+                            <img
+                                class="h-full p-2 opacity-40"
+                                src="{% static "img/search-1.png" %}"
+                            >
                         </a>
                         <input
                             spellcheck="false"
@@ -32,7 +39,7 @@
                     </div>
                     <div
                         id="search-results"
-                        class="hidden absolute z-10 pt-10 text left-0 top-0 border-r border-l border-b bg-gray-600
+                        class="hidden absolute z-10 pt-10 text-gray-200 left-0 top-0 border-r border-l border-b bg-gray-600
                                opacity-80 border-gray-800 w-full rounded-t-2xl rounded-b-md"
                     ></div>
                 </div>

@@ -1,5 +1,5 @@
 {
-  "include": ["static/ts/*.ts"],
+  "include": ["static/ts/**/*.ts"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
