@@ -2,11 +2,12 @@
 
 require('esbuild')
     .build({
-        entryPoints: ['static/ts/city.ts', 'static/ts/base.ts'],
+        entryPoints: ['static/ts/marker.ts', 'static/ts/base.ts'],
         outdir: 'static/js',
         minify: false,
         sourcemap: true,
         target: 'es2015',
         watch: true,
+        bundle: true,
     })
     .catch(() => process.exit(1));

@@ -59,9 +59,16 @@ export const handleSearchKeys = (event: KeyboardEvent, searchResultsBox: HTMLEle
         event.preventDefault();
         const { focusIndex } = getCurrentFocusResult();
 
-        if (focusIndex < searchResultsBox.children.length - 1) {
+        const maxResultIndex = searchResultsBox.children.length - 1;
+
+        if (focusIndex < maxResultIndex) {
             unSetFocusResult(focusIndex);
             setFocusResult(focusIndex + 1);
+        }
+
+        if (focusIndex === maxResultIndex) {
+            unSetFocusResult(focusIndex);
+            setFocusResult(0);
         }
     }
 
@@ -69,9 +76,16 @@ export const handleSearchKeys = (event: KeyboardEvent, searchResultsBox: HTMLEle
         event.preventDefault();
         const { focusIndex } = getCurrentFocusResult();
 
+        const maxResultIndex = searchResultsBox.children.length - 1;
+
         if (focusIndex > 0) {
             unSetFocusResult(focusIndex);
             setFocusResult(focusIndex - 1);
+        }
+
+        if (focusIndex === 0) {
+            unSetFocusResult(focusIndex);
+            setFocusResult(maxResultIndex);
         }
     }
 
@@ -80,5 +94,10 @@ export const handleSearchKeys = (event: KeyboardEvent, searchResultsBox: HTMLEle
         const { focusHref } = getCurrentFocusResult();
 
         window.location.href = focusHref;
+    }
+
+    if (key === 'Tab') {
+        const { focusIndex } = getCurrentFocusResult();
+        unSetFocusResult(focusIndex);
     }
 };

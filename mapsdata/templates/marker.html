@@ -39,9 +39,9 @@
                     >
                 </div>
             {% endfor %}
-            <div class="border-gray-600 border rounded-lg w-96 mt-8 ml-8 shadow-lg bg-gray-100">
+            <div class="border-gray-600 border rounded-lg w-5/6 lg:w-96 mt-8 ml-8 shadow-lg bg-gray-100">
                 <div class="bg-gray-200 rounded-t-md w-full flex items-center justify-center p-2 border-b border-gray-600">
-                    <p class="text-center text-2xl">{{ city_name }}</p>
+                    <p class="text-center text-xl">{{ marker_name }}</p>
                 </div>
                 <div class="p-2">
                     <p class="mb-2"> {{ description }}</p>
@@ -55,5 +55,5 @@
             </div>
         </div>
     </div>
-    <script src="{% static "js/city.js" %}"></script>
+    <script src="{% static "js/marker.js" %}"></script>
 {% endblock %}

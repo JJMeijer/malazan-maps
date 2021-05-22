@@ -1,13 +1,17 @@
-import { FOCUS_RESULT_CLASS, FOCUS_CLASSES } from './constants';
+import { RESULT_INDEX_ATTRIBUTE, RESULT_NAME_ATTRIBUTE, RESULT_HREF_ATTRIBUTE } from './constants';
 import { FocusResultInformation } from './types';
+
+const FOCUS_RESULT_CLASS = 'focus-result';
+
+const FOCUS_CLASSES = [FOCUS_RESULT_CLASS, 'bg-gray-200', 'text-gray-800'];
 
 export const getCurrentFocusResult = (): FocusResultInformation => {
     const element = document.querySelector(`.${FOCUS_RESULT_CLASS}`);
 
     if (element instanceof HTMLElement) {
-        const focusIndex = element.dataset['index'];
-        const focusName = element.dataset['name'];
-        const focusHref = element.dataset['link'];
+        const focusIndex = element.dataset[RESULT_INDEX_ATTRIBUTE];
+        const focusName = element.dataset[RESULT_NAME_ATTRIBUTE];
+        const focusHref = element.dataset[RESULT_HREF_ATTRIBUTE];
 
         if (focusName && focusIndex && focusHref) {
             return {

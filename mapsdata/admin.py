@@ -67,6 +67,17 @@ class CityMarkersInlineCities(admin.TabularInline):
 
     extra = 1
 
+class RegionMarkersInlineRegions(admin.TabularInline):
+    model = RegionMarker
+
+    fields = (
+        'x',
+        'y',
+        'map',
+    )
+
+    extra = 1
+
 
 @admin.register(Map)
 class MapAdmin(admin.ModelAdmin):
@@ -142,7 +153,7 @@ class CityAdmin(admin.ModelAdmin):
 
     @admin.display(description='markers')
     def marker_counter(self, obj):
-        """Counter of how much markers are defined for the Map"""
+        """Counter of how much markers are defined for the City"""
         return len(obj.city_markers.all())
 
 
@@ -158,7 +169,17 @@ class RegionAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'continent',
+        'marker_counter',
     )
+
+    inlines = (
+        RegionMarkersInlineRegions,
+    )
+
+    @admin.display(description='markers')
+    def marker_counter(self, obj):
+        """Counter of how much markers are defined for the Region"""
+        return len(obj.region_markers.all())
 
 
 @admin.register(Continent)

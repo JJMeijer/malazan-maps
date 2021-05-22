@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
     searchBox.addEventListener('focus', (event) => handleSearchInput(event, searchResultsBox));
     searchBox.addEventListener('keydown', (event) => handleSearchKeys(event, searchResultsBox));
 
-    searchBoxWrapper.addEventListener('focusout', (event) => {
-        const relatedTarget = event.relatedTarget;
-        if (relatedTarget === null) {
-            searchResultsBox.classList.add('hidden');
-        }
+    // searchBoxWrapper.addEventListener('focusout', (event) => {
+    //     const relatedTarget = event.relatedTarget;
+    //     if (relatedTarget === null) {
+    //         searchResultsBox.classList.add('hidden');
+    //     }
 
-        if (relatedTarget instanceof HTMLElement && !relatedTarget.matches('#search-wrapper *')) {
-            searchResultsBox.classList.add('hidden');
-        }
-    });
+    //     if (relatedTarget instanceof HTMLElement && !relatedTarget.matches('#search-wrapper *')) {
+    //         searchResultsBox.classList.add('hidden');
+    //     }
+    // });
 });

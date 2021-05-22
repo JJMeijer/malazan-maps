@@ -8,7 +8,7 @@ const generateLink = (short_name: string, type: string): string => {
 const partialBoldString = (fullText: string, boldText: string): string => {
     return fullText.replace(
         new RegExp(`(${boldText})`, 'gi'),
-        `<span class="font-extrabold text-white">$1</span>`,
+        `<span class="font-extrabold text-gray-800">$1</span>`,
     );
 };
 
@@ -21,7 +21,7 @@ export const createSearchResult = (
     const resultHref = generateLink(short_name, type);
 
     const resultWrapper = document.createElement('div');
-    resultWrapper.classList.add('flex', 'flex-col', 'p-2', 'text-md');
+    resultWrapper.classList.add('flex', 'flex-col', 'p-2', 'text-md', 'hover:bg-gray-200');
     resultWrapper.setAttribute(`data-${RESULT_INDEX_ATTRIBUTE}`, String(index));
     resultWrapper.setAttribute(`data-${RESULT_NAME_ATTRIBUTE}`, short_name);
     resultWrapper.setAttribute(`data-${RESULT_HREF_ATTRIBUTE}`, resultHref);

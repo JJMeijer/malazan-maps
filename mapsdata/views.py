@@ -1,8 +1,25 @@
 from django.http import Http404
 from django.shortcuts import render
 
-from .models import Map, City
+from .models import Map, City, Region
 from .serializers import serialize_all
+
+
+def home_view(request):
+    """Homepage View"""
+    hero_1 = Map.objects.get(short_name='seven-cities-dg')
+    hero_2 = Map.objects.get(short_name='darujhistan')
+    hero_3 = Map.objects.get(short_name='chain-of-dogs-1')
+
+    context = {
+        'page_title': 'Home | Malazan Maps',
+        'hero_1': hero_1,
+        'hero_2': hero_2,
+        'hero_3': hero_3,
+        'entries': serialize_all()
+    }
+
+    return render(request, 'home.html', context)
 
 
 def map_view(request, map_short_name):
@@ -33,28 +50,33 @@ def city_view(request, city_short_name):
 
     context = {
         'page_title': f'{instance.name} | Malazan Maps',
-        'city_name': instance.name,
+        'marker_name': instance.name,
         'markers': markers,
         'description': instance.description,
         'wiki_link': instance.wiki_link,
         'entries': serialize_all()
     }
 
-    return render(request, 'city.html', context)
+    return render(request, 'marker.html', context)
 
 
-def home_view(request):
-    """Homepage View"""
-    hero_1 = Map.objects.get(short_name='seven-cities-dg')
-    hero_2 = Map.objects.get(short_name='darujhistan')
-    hero_3 = Map.objects.get(short_name='chain-of-dogs-1')
+def region_view(request, region_short_name):
+    """Region View"""
+    try:
+        instance = Region.objects.get(short_name=region_short_name)
+    except Region.DoesNotExist as err:
+        raise Http404("Region is not known") from err
+
+    markers = instance.region_markers.all()
 
     context = {
-        'page_title': 'Home | Malazan Maps',
-        'hero_1': hero_1,
-        'hero_2': hero_2,
-        'hero_3': hero_3,
+        'page_title': f'{instance.name} | Malazan Maps',
+        'marker_name': instance.name,
+        'markers': markers,
+        'description': instance.description,
+        'wiki_link': instance.wiki_link,
         'entries': serialize_all()
     }
 
-    return render(request, 'home.html', context)
+    return render(request, 'marker.html', context)
+
