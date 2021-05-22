@@ -3,7 +3,7 @@ import time
 from django.core.management.base import BaseCommand, CommandError
 from mediawiki.exceptions import PageError
 
-from mapsdata.models import City, Region
+from mapsdata.models import City, Region, Book
 from mapsdata.wikia import get_first_paragraph
 
 class Command(BaseCommand):
@@ -47,5 +47,22 @@ class Command(BaseCommand):
                 self.stdout.write(
                     msg = self.style.SUCCESS(
                         text= f'Successfully {operation} description for "{region.name}"'
+                    )
+                )
+
+        for book in Book.objects.all():
+            if book.description == '-' or options['update']:
+                try:
+                    book.description = get_first_paragraph(book.name)
+                    book.save()
+                    time.sleep(1)
+                except PageError as err:
+                    raise CommandError('No page found for "%s"' % book.name) from err
+
+                operation = 'updated' if options['update'] else 'fetched'
+
+                self.stdout.write(
+                    msg = self.style.SUCCESS(
+                        text= f'Successfully {operation} description for "{book.name}"'
                     )
                 )

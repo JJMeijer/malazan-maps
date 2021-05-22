@@ -1,8 +1,8 @@
 from django.http import Http404
 from django.shortcuts import render
 
-from .models import Map, City, Region
-from .serializers import serialize_all
+from .models import Book, Map, City, Region
+from .serializers import serialize_all, RegionSerializer, CitySerializer
 
 
 def home_view(request):
@@ -80,3 +80,33 @@ def region_view(request, region_short_name):
 
     return render(request, 'marker.html', context)
 
+
+def book_view(request, book_short_name):
+    """Book View"""
+    try:
+        instance = Book.objects.get(short_name=book_short_name)
+    except Book.DoesNotExist as err:
+        raise Http404("Book is not known") from err
+
+    cities = CitySerializer(
+        instance=City.objects.filter(city_markers__map__book__short_name=book_short_name),
+        many=True
+    ).data
+
+    regions = RegionSerializer(
+        instance=Region.objects.filter(region_markers__map__book__short_name=book_short_name),
+        many=True
+    ).data
+
+    places = cities + regions
+
+    context = {
+        'book_name': instance.name,
+        'description': instance.description,
+        'wiki_link': instance.wiki_link,
+        'cover_url': instance.cover.url,
+        'places': places,
+        'entries': serialize_all()
+    }
+
+    return render(request, 'book.html', context)

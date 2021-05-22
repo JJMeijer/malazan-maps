@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="flex flex-col items-center border-t border-gray-200 py-8 w-full">
+        <div class="border-gray-600 border rounded-lg w-5/6 lg:w-96 shadow-lg bg-gray-100">
+            <div class="bg-gray-200 rounded-t-md w-full flex items-center justify-center p-2 border-b border-gray-600">
+                <p class="text-center text-xl">{{ book_name }}</p>
+            </div>
+            <div class="flex flex-row justify-center p-2">
+                <div class="flex flex-col w-3/4">
+                    <p class="p-2"> {{ description }}</p>
+                    <a
+                        class="text-blue-600 p-2 underline hover:text-blue-900 visited:text-purple-600"
+                        href="{{ wiki_link }}"
+                        target="_blank"
+                    >
+                        wiki link
+                    </a>
+                </div>
+                <div class="flex p-2 flex-col w-1/4 justify-center">
+                    <img src="{{ cover_url }}">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col mt-8 py-4 border-t border-gray-200 w-full items-center">
+            <p class="text-xl">
+                Places
+            </p>
+            <div class="flex flex-wrap">
+                {% for place in places %}
+                    <a href="/{{ place.type }}/{{ place.short_name }}" class="w-1/2">
+                        {{ place.name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

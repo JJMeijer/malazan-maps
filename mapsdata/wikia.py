@@ -12,6 +12,8 @@ def get_first_paragraph(title):
 
     soup = BeautifulSoup(page.html, 'html.parser')
 
-    first_paragraph = soup.select('.mw-parser-output > p:first-of-type')[0].text
+    all_paragraphs = soup.select('.mw-parser-output > p')
 
-    return first_paragraph
+    for paragraph in all_paragraphs:
+        if not paragraph.find('aside'):
+            return paragraph.text

@@ -45,6 +45,7 @@ class Book(models.Model):
     cover = models.ImageField(upload_to='covers/', null=True)
 
     wiki_link = models.URLField(max_length=200)
+    description = models.CharField(max_length=2000, null=False, default='-')
 
     def __str__(self) -> str:
         return self.name
