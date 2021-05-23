@@ -104,10 +104,15 @@ class MapAdmin(admin.ModelAdmin):
         'width',
         'height',
         'marker_counter',
+        'updated',
     )
 
     list_filter = (
         'book',
+    )
+
+    ordering = (
+        '-updated',
     )
 
     list_per_page = 20

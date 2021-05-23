@@ -27,9 +27,8 @@
         const markerRelativeY = Math.round(parseInt(markery) * mapRealDimensions.height / mapNaturalDimensions.naturalHeight - markerRealDimensions.height);
         markerElement.style.top = `${markerRelativeY}px`;
         markerElement.style.left = `${markerRelativeX}px`;
-        if (markerElement.classList.contains("opacity-0")) {
-          markerElement.classList.remove("opacity-0");
-        }
+        markerElement.classList.remove("opacity-0");
+        markerElement.classList.add("opacity-90");
       } else {
         throw new Error("Marker coordinates not provided");
       }
