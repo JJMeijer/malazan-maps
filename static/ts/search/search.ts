@@ -17,7 +17,7 @@ export const handleSearchInput = (event: Event, searchResultsBox: HTMLElement): 
             return name.match(new RegExp(value, 'i'));
         });
 
-        const resultElements = results.map((result, index) => {
+        const resultElements = results.slice(0, 9).map((result, index) => {
             return createSearchResult(result, value, index);
         });
 
@@ -26,15 +26,15 @@ export const handleSearchInput = (event: Event, searchResultsBox: HTMLElement): 
         if (HAS_RESULT) {
             resultElements.forEach((element) => searchResultsBox.appendChild(element));
 
-            const recycledResulFocusIndex = results.findIndex(
+            const recycledResultFocusIndex = results.findIndex(
                 ({ short_name }) => short_name === focusName,
             );
 
-            if (recycledResulFocusIndex > -1) {
-                setFocusResult(recycledResulFocusIndex);
+            if (recycledResultFocusIndex > -1) {
+                setFocusResult(recycledResultFocusIndex);
             }
 
-            if (recycledResulFocusIndex === -1) {
+            if (recycledResultFocusIndex === -1) {
                 setFocusResult(0);
             }
         }

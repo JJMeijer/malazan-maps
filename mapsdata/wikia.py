@@ -1,3 +1,5 @@
+import re
+
 from mediawiki import MediaWiki
 from bs4 import BeautifulSoup
 
@@ -16,4 +18,5 @@ def get_first_paragraph(title):
 
     for paragraph in all_paragraphs:
         if not paragraph.find('aside'):
-            return paragraph.text
+            cleaned_text = re.sub(r"\[\d+\]", '', paragraph.text)
+            return cleaned_text

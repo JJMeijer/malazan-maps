@@ -92,17 +92,17 @@
       const results = entries.filter(({ name }) => {
         return name.match(new RegExp(value, "i"));
       });
-      const resultElements = results.map((result, index) => {
+      const resultElements = results.slice(0, 9).map((result, index) => {
         return createSearchResult(result, value, index);
       });
       const HAS_RESULT = resultElements.length > 0;
       if (HAS_RESULT) {
         resultElements.forEach((element) => searchResultsBox.appendChild(element));
-        const recycledResulFocusIndex = results.findIndex(({ short_name }) => short_name === focusName);
-        if (recycledResulFocusIndex > -1) {
-          setFocusResult(recycledResulFocusIndex);
+        const recycledResultFocusIndex = results.findIndex(({ short_name }) => short_name === focusName);
+        if (recycledResultFocusIndex > -1) {
+          setFocusResult(recycledResultFocusIndex);
         }
-        if (recycledResulFocusIndex === -1) {
+        if (recycledResultFocusIndex === -1) {
           setFocusResult(0);
         }
       }

@@ -98,14 +98,13 @@ def book_view(request, book_short_name):
         many=True
     ).data
 
-    places = cities + regions
-
     context = {
         'book_name': instance.name,
         'description': instance.description,
         'wiki_link': instance.wiki_link,
         'cover_url': instance.cover.url,
-        'places': places,
+        'cities': cities,
+        'regions': regions,
         'entries': serialize_all()
     }
 

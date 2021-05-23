@@ -1,7 +1,10 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
+from import_export.admin import ImportExportModelAdmin
+
 from .models import Book, City, Region, Continent, Map, CityMarker, RegionMarker
+from .resources import CityMarkerResource, CityResource, RegionResource, RegionMarkerResource
 
 admin.site.enable_nav_sidebar = False
 
@@ -136,7 +139,9 @@ class MapAdmin(admin.ModelAdmin):
 
 
 @admin.register(City)
-class CityAdmin(admin.ModelAdmin):
+class CityAdmin(ImportExportModelAdmin):
+    resource_class = CityResource
+
     fields = (
         'name',
         'short_name',
@@ -163,7 +168,9 @@ class CityAdmin(admin.ModelAdmin):
 
 
 @admin.register(Region)
-class RegionAdmin(admin.ModelAdmin):
+class RegionAdmin(ImportExportModelAdmin):
+    resource_class = RegionResource
+
     fields = (
         'name',
         'short_name',
@@ -197,4 +204,52 @@ class ContinentAdmin(admin.ModelAdmin):
 
     list_display = (
         'name',
+    )
+
+
+@admin.register(CityMarker)
+class CityMarkerAdmin(ImportExportModelAdmin):
+    resource_class = CityMarkerResource
+
+    fields = (
+        'city',
+        'x',
+        'y',
+        'map',
+    )
+
+    list_display = (
+        'city',
+        'x',
+        'y',
+        'map',
+    )
+
+    list_filter = (
+        'city',
+        'map',
+    )
+
+
+@admin.register(RegionMarker)
+class RegionMarkerAdmin(ImportExportModelAdmin):
+    resource_class = RegionMarkerResource
+
+    fields = (
+        'region',
+        'x',
+        'y',
+        'map',
+    )
+
+    list_display = (
+        'region',
+        'x',
+        'y',
+        'map',
+    )
+
+    list_filter = (
+        'region',
+        'map',
     )

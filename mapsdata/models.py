@@ -114,6 +114,17 @@ class CityMarker(models.Model):
         on_delete=models.CASCADE
     )
 
+    class Meta:
+        constraints = (
+            models.UniqueConstraint(
+                fields=(
+                    'map',
+                    'city',
+                ),
+                name='unique_city_marker'
+            ),
+        )
+
     def __str__(self):
         return f'{self.city} - ({self.x},{self.y})'
 
@@ -136,3 +147,17 @@ class RegionMarker(models.Model):
         related_name='region_markers',
         on_delete=models.CASCADE
     )
+
+    class Meta:
+        constraints = (
+            models.UniqueConstraint(
+                fields=(
+                    'map',
+                    'region',
+                ),
+                name='unique_region_marker'
+            ),
+        )
+
+    def __str__(self):
+        return f'{self.region} - ({self.x},{self.y})'
