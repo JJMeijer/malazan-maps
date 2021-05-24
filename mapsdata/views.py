@@ -89,12 +89,12 @@ def book_view(request, book_short_name):
         raise Http404("Book is not known") from err
 
     cities = CitySerializer(
-        instance=City.objects.filter(city_markers__map__book__short_name=book_short_name),
+        instance=City.objects.filter(city_markers__map__books__short_name=book_short_name),
         many=True
     ).data
 
     regions = RegionSerializer(
-        instance=Region.objects.filter(region_markers__map__book__short_name=book_short_name),
+        instance=Region.objects.filter(region_markers__map__books__short_name=book_short_name),
         many=True
     ).data
 

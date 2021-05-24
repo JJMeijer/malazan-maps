@@ -46,9 +46,10 @@
             </div>
             {% block content %}{% endblock %}
         </div>
+        {{ entries|json_script:"entries"}}
         <script>
             malazan = {};
-            malazan.entries = JSON.parse('{{ entries|safe }}')
+            malazan.entries = JSON.parse(document.getElementById('entries').textContent)
         </script>
         <script src="{% static "js/base.js" %}"></script>
     </body>

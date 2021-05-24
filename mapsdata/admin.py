@@ -1,10 +1,13 @@
+from django.db import models
 from django.contrib import admin
 from django.utils.html import format_html
+from django.forms import CheckboxSelectMultiple
 
 from import_export.admin import ImportExportModelAdmin
 
-from .models import Book, City, Region, Continent, Map, CityMarker, RegionMarker
-from .resources import CityMarkerResource, CityResource, RegionResource, RegionMarkerResource
+from .models import Book, City, Region, Continent, Map, CityMarker, RegionMarker, ContinentMarker
+from .resources import CityMarkerResource, CityResource, RegionResource
+from .resources import RegionMarkerResource, ContinentMarkerResource
 
 admin.site.enable_nav_sidebar = False
 
@@ -35,83 +38,27 @@ class BookAdmin(admin.ModelAdmin):
         )
 
 
-class CityMarkersInlineMaps(admin.TabularInline):
-    model = CityMarker
-
-    fields = (
-        'x',
-        'y',
-        'city',
-    )
-
-    extra = 1
-
-
-class RegionMarkersInlineMaps(admin.TabularInline):
-    model = RegionMarker
-
-    fields = (
-        'x',
-        'y',
-        'region',
-    )
-
-    extra = 1
-
-
-class CityMarkersInlineCities(admin.TabularInline):
-    model = CityMarker
-
-    fields = (
-        'x',
-        'y',
-        'map',
-    )
-
-    extra = 1
-
-class RegionMarkersInlineRegions(admin.TabularInline):
-    model = RegionMarker
-
-    fields = (
-        'x',
-        'y',
-        'map',
-    )
-
-    extra = 1
-
-
 @admin.register(Map)
 class MapAdmin(admin.ModelAdmin):
     fields = (
         'name',
         'short_name',
+        'continent',
         'image',
-        'width',
-        'height',
-        'book',
-        'map_image',
-    )
-
-    readonly_fields = (
-        'width',
-        'height',
-        'map_image',
+        'books',
     )
 
     list_display = (
         'name',
-        'book',
-        'map_image',
-        'width',
-        'height',
+        'continent',
+        'get_books',
         'marker_counter',
         'updated',
     )
 
     list_filter = (
-        'book',
+        'books',
+        'continent',
     )
 
     ordering = (
@@ -120,22 +67,19 @@ class MapAdmin(admin.ModelAdmin):
 
     list_per_page = 20
 
-    def map_image(self, obj):
-        """Generates HTML to display the Image of the Map"""
-        if obj.image:
-            return format_html(
-                '<img href="{0}" src="{0}" width="150" height="150" style="object-fit: contain;" />',
-                obj.image.url
-            )
-        else:
-            return format_html('<p>-</p>')
+    @admin.display(description='books')
+    def get_books(self, obj):
+        """Get related books as newline-seperated string"""
+        return ", ".join([book.name for book in obj.books.all()])
 
     @admin.display(description='markers')
     def marker_counter(self, obj):
         """Counter of how much markers are defined for the Map"""
         return len(obj.city_markers.all()) + len(obj.region_markers.all())
 
-    inlines = (CityMarkersInlineMaps, RegionMarkersInlineMaps,)
+    formfield_overrides = {
+        models.ManyToManyField: {'widget': CheckboxSelectMultiple},
+    }
 
 
 @admin.register(City)
@@ -159,8 +103,6 @@ class CityAdmin(ImportExportModelAdmin):
         'continent',
     )
 
-    inlines = (CityMarkersInlineCities,)
-
     @admin.display(description='markers')
     def marker_counter(self, obj):
         """Counter of how much markers are defined for the City"""
@@ -182,10 +124,6 @@ class RegionAdmin(ImportExportModelAdmin):
         'name',
         'continent',
         'marker_counter',
-    )
-
-    inlines = (
-        RegionMarkersInlineRegions,
     )
 
     @admin.display(description='markers')
@@ -230,6 +168,12 @@ class CityMarkerAdmin(ImportExportModelAdmin):
         'map',
     )
 
+    list_per_page = 25
+
+    search_fields = (
+        'city__name',
+    )
+
 
 @admin.register(RegionMarker)
 class RegionMarkerAdmin(ImportExportModelAdmin):
@@ -252,4 +196,39 @@ class RegionMarkerAdmin(ImportExportModelAdmin):
     list_filter = (
         'region',
         'map',
+    )
+
+    list_per_page = 25
+
+    search_fields = (
+        'region__name',
+    )
+
+
+@admin.register(ContinentMarker)
+class ContinentMarkerAdmin(ImportExportModelAdmin):
+    resource_class = ContinentMarkerResource
+
+    fields = (
+        'continent',
+        'x',
+        'y',
+        'map',
+    )
+
+    list_display = (
+        'continent',
+        'x',
+        'y',
+        'map',
+    )
+
+    list_filter = (
+        'map',
+    )
+
+    list_per_page = 25
+
+    search_fields = (
+        'continent__name',
     )

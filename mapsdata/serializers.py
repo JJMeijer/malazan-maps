@@ -1,5 +1,3 @@
-import json
-
 from rest_framework import serializers
 
 from .models import Book, City, Region, Continent
@@ -95,4 +93,4 @@ def serialize_all():
         many=True
     ).data
 
-    return json.dumps(cities + regions + books + continents)
+    return cities + regions + books + continents

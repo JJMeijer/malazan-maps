@@ -1,7 +1,7 @@
 from import_export import resources, fields
 from import_export.widgets import ForeignKeyWidget
 
-from mapsdata.models import City, Continent, CityMarker, Map, Region, RegionMarker
+from mapsdata.models import City, Continent, CityMarker, Map, Region, RegionMarker, ContinentMarker
 
 class CityResource(resources.ModelResource):
     continent = fields.Field(
@@ -129,6 +129,41 @@ class RegionMarkerResource(resources.ModelResource):
 
         export_order = (
             'region',
+            'x',
+            'y',
+            'map',
+        )
+
+class ContinentMarkerResource(resources.ModelResource):
+    map = fields.Field(
+        column_name='map',
+        attribute='map',
+        widget=ForeignKeyWidget(Map, 'short_name')
+    )
+
+    continent = fields.Field(
+        column_name='continent',
+        attribute='continent',
+        widget=ForeignKeyWidget(Continent, 'short_name')
+    )
+
+    class Meta:
+        model = ContinentMarker
+
+        import_id_fields = ('continent', 'map',)
+
+        skip_unchanged = True
+        report_skipped = True
+
+        fields = (
+            'continent',
+            'x',
+            'y',
+            'map',
+        )
+
+        export_order = (
+            'continent',
             'x',
             'y',
             'map',

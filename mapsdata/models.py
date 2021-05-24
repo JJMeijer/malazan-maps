@@ -11,6 +11,7 @@ class Continent(models.Model):
     name = models.CharField(max_length=100)
     short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
     wiki_link = models.URLField(max_length=200)
+    description = models.CharField(max_length=2000, null=False, default='-')
 
     def __str__(self) -> str:
         return self.name
@@ -85,10 +86,16 @@ class Map(models.Model):
     width = models.IntegerField()
     image = models.ImageField(upload_to='maps/', height_field='height', width_field='width')
 
-    book = models.ForeignKey(
+    books = models.ManyToManyField(
         to=Book,
+        related_name='maps'
+    )
+
+    continent = models.ForeignKey(
+        to=Continent,
         related_name='maps',
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        null=True
     )
 
     def __str__(self) -> str:
@@ -161,3 +168,37 @@ class RegionMarker(models.Model):
 
     def __str__(self):
         return f'{self.region} - ({self.x},{self.y})'
+
+
+class ContinentMarker(models.Model):
+    created = models.DateTimeField(default=timezone.now)
+    updated = models.DateTimeField(auto_now=True)
+
+    x = models.IntegerField(verbose_name='X Pixel')
+    y = models.IntegerField(verbose_name='Y Pixel')
+
+    map = models.ForeignKey(
+        to=Map,
+        related_name='continent_markers',
+        on_delete=models.CASCADE
+    )
+
+    continent = models.ForeignKey(
+        to=Continent,
+        related_name='continent_markers',
+        on_delete=models.CASCADE
+    )
+
+    class Meta:
+        constraints = (
+            models.UniqueConstraint(
+                fields=(
+                    'map',
+                    'continent',
+                ),
+                name='unique_continent_marker'
+            ),
+        )
+
+    def __str__(self):
+        return f'{self.continent} - ({self.x},{self.y})'
