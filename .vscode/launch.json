@@ -30,8 +30,7 @@
             "program": "${workspaceFolder}\\manage.py",
             "args": [
                 "fetchdescriptions",
-                "Reaper's Gale",
-                "--update"
+                "Karas Sea"
             ],
             "django": true,
             "justMyCode": false

@@ -8,6 +8,7 @@ from import_export.admin import ImportExportModelAdmin
 from .models import Book, City, Region, Continent, Map, CityMarker, RegionMarker, ContinentMarker
 from .resources import CityMarkerResource, CityResource, RegionResource
 from .resources import RegionMarkerResource, ContinentMarkerResource
+from .filters import CityZeroMarkerFilter, RegionZeroMarkerFilter
 
 admin.site.enable_nav_sidebar = False
 
@@ -101,12 +102,19 @@ class CityAdmin(ImportExportModelAdmin):
 
     list_filter = (
         'continent',
+        CityZeroMarkerFilter,
     )
 
     @admin.display(description='markers')
     def marker_counter(self, obj):
         """Counter of how much markers are defined for the City"""
         return len(obj.city_markers.all())
+
+    list_per_page = 25
+
+    search_fields = (
+        'name',
+    )
 
 
 @admin.register(Region)
@@ -126,10 +134,21 @@ class RegionAdmin(ImportExportModelAdmin):
         'marker_counter',
     )
 
+    list_filter = (
+        'continent',
+        RegionZeroMarkerFilter,
+    )
+
     @admin.display(description='markers')
     def marker_counter(self, obj):
         """Counter of how much markers are defined for the Region"""
         return len(obj.region_markers.all())
+
+    list_per_page = 25
+
+    search_fields = (
+        'name',
+    )
 
 
 @admin.register(Continent)
@@ -151,8 +170,7 @@ class CityMarkerAdmin(ImportExportModelAdmin):
 
     fields = (
         'city',
-        'x',
-        'y',
+        ('x', 'y'),
         'map',
     )
 

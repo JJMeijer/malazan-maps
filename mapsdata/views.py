@@ -1,7 +1,7 @@
 from django.http import Http404
 from django.shortcuts import render
 
-from .models import Book, Map, City, Region
+from .models import Book, Continent, Map, City, Region
 from .serializers import serialize_all, RegionSerializer, CitySerializer
 
 
@@ -33,7 +33,6 @@ def map_view(request, map_short_name):
         'page_title': instance.name,
         'map_image_src': instance.image.url,
         'entries': serialize_all(),
-        'markers': '{}'
     }
 
     return render(request, 'map.html', context)
@@ -99,13 +98,30 @@ def book_view(request, book_short_name):
     ).data
 
     context = {
+        'page_title': f'{instance.name} | Malazan Maps',
         'book_name': instance.name,
         'description': instance.description,
         'wiki_link': instance.wiki_link,
         'cover_url': instance.cover.url,
+        'maps': instance.maps.all(),
         'cities': cities,
         'regions': regions,
         'entries': serialize_all()
     }
 
     return render(request, 'book.html', context)
+
+
+def continent_view(request, continent_short_name):
+    """Continent View"""
+    try:
+        instance = Continent.objects.get(short_name=continent_short_name)
+    except Continent.DoesNotExist as err:
+        raise Http404("Continent is not known") from err
+
+    context = {
+        'page_title': f'{instance.name} | Malazan Maps',
+        'entries': serialize_all()
+    }
+
+    return render(request, 'continent.html', context)
