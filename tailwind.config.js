@@ -7,9 +7,14 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
-            serif: ['Merriweather', 'ui-serif', 'Georgia', 'Cambria'],
+            serif: ['Merriweather', 'ui-serif', 'Cambria'],
         },
-        extend: {},
+        extend: {
+            colors: {
+                primary: '#082915',
+                secondary: '#92bfb1',
+            },
+        },
     },
     variants: {
         extend: {
