@@ -1,52 +1,11 @@
 from rest_framework import serializers
 
-from .models import Book, City, Region, Continent
+from mapsdata.models import Book, Place, Marker
 
 
-class CitySerializer(serializers.ModelSerializer):
-    type = serializers.SerializerMethodField()
-
-    @staticmethod
-    def get_type(_obj):
-        """Static method to add type to serialized objects"""
-        return 'city'
-
+class PlaceSerializer(serializers.ModelSerializer):
     class Meta:
-        model = City
-        fields = (
-            'name',
-            'short_name',
-            'type',
-        )
-
-
-class RegionSerializer(serializers.ModelSerializer):
-    type = serializers.SerializerMethodField()
-
-    @staticmethod
-    def get_type(_obj):
-        """Static method to add type to serialized objects"""
-        return 'region'
-
-    class Meta:
-        model = Region
-        fields = (
-            'name',
-            'short_name',
-            'type',
-        )
-
-
-class ContinentSerializer(serializers.ModelSerializer):
-    type = serializers.SerializerMethodField()
-
-    @staticmethod
-    def get_type(_obj):
-        """Static method to add type to serialized objects"""
-        return 'continent'
-
-    class Meta:
-        model = Continent
+        model = Place
         fields = (
             'name',
             'short_name',
@@ -78,19 +37,31 @@ def serialize_all():
         many=True
     ).data
 
-    cities = CitySerializer(
-        instance=City.objects.all(),
+    places = PlaceSerializer(
+        instance=Place.objects.all(),
         many=True
     ).data
 
-    regions = RegionSerializer(
-        instance=Region.objects.all(),
-        many=True
-    ).data
+    return books + places
 
-    continents = ContinentSerializer(
-        instance=Continent.objects.all(),
-        many=True
-    ).data
 
-    return cities + regions + books + continents
+class PlaceForMarkerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Place
+        fields = (
+            'name',
+            'short_name',
+            'description',
+        )
+
+
+class MarkerSerializer(serializers.ModelSerializer):
+    place = PlaceForMarkerSerializer()
+
+    class Meta:
+        model = Marker
+        fields = (
+            'place',
+            'x',
+            'y',
+        )

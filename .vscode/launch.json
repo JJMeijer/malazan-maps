@@ -24,6 +24,17 @@
             "justMyCode": false
         },
         {
+            "name": "Migrate",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\manage.py",
+            "args": [
+                "migrate"
+            ],
+            "django": true,
+            "justMyCode": false
+        },
+        {
             "name": "FetchDescriptions",
             "type": "python",
             "request": "launch",

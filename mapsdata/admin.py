@@ -5,10 +5,9 @@ from django.forms import CheckboxSelectMultiple
 
 from import_export.admin import ImportExportModelAdmin
 
-from .models import Book, City, Region, Continent, Map, CityMarker, RegionMarker, ContinentMarker
-from .resources import CityMarkerResource, CityResource, RegionResource
-from .resources import RegionMarkerResource, ContinentMarkerResource
-from .filters import CityZeroMarkerFilter, RegionZeroMarkerFilter
+from mapsdata.models import Book, Place, Marker, Continent, Map
+from mapsdata.resources import PlaceResource, MarkerResource
+from mapsdata.filters import PlaceZeroMarkerFilter
 
 admin.site.enable_nav_sidebar = False
 
@@ -76,73 +75,42 @@ class MapAdmin(admin.ModelAdmin):
     @admin.display(description='markers')
     def marker_counter(self, obj):
         """Counter of how much markers are defined for the Map"""
-        return len(obj.city_markers.all()) + len(obj.region_markers.all())
+        return len(obj.markers.all())
 
     formfield_overrides = {
         models.ManyToManyField: {'widget': CheckboxSelectMultiple},
     }
 
 
-@admin.register(City)
-class CityAdmin(ImportExportModelAdmin):
-    resource_class = CityResource
+@admin.register(Place)
+class PlaceAdmin(ImportExportModelAdmin):
+    resource_class = PlaceResource
 
     fields = (
         'name',
         'short_name',
         'wiki_link',
         'continent',
+        'type',
     )
 
     list_display = (
         'name',
+        'type',
         'continent',
         'marker_counter',
     )
 
     list_filter = (
         'continent',
-        CityZeroMarkerFilter,
+        'type',
+        PlaceZeroMarkerFilter,
     )
 
     @admin.display(description='markers')
     def marker_counter(self, obj):
-        """Counter of how much markers are defined for the City"""
-        return len(obj.city_markers.all())
-
-    list_per_page = 25
-
-    search_fields = (
-        'name',
-    )
-
-
-@admin.register(Region)
-class RegionAdmin(ImportExportModelAdmin):
-    resource_class = RegionResource
-
-    fields = (
-        'name',
-        'short_name',
-        'wiki_link',
-        'continent',
-    )
-
-    list_display = (
-        'name',
-        'continent',
-        'marker_counter',
-    )
-
-    list_filter = (
-        'continent',
-        RegionZeroMarkerFilter,
-    )
-
-    @admin.display(description='markers')
-    def marker_counter(self, obj):
-        """Counter of how much markers are defined for the Region"""
-        return len(obj.region_markers.all())
+        """Counter of how much markers are defined for the Place"""
+        return len(obj.markers.all())
 
     list_per_page = 25
 
@@ -164,78 +132,19 @@ class ContinentAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(CityMarker)
-class CityMarkerAdmin(ImportExportModelAdmin):
-    resource_class = CityMarkerResource
+@admin.register(Marker)
+class MarkerAdmin(ImportExportModelAdmin):
+    resource_class = MarkerResource
 
     fields = (
-        'city',
+        'place',
         ('x', 'y'),
         'map',
     )
 
     list_display = (
-        'city',
-        'x',
-        'y',
-        'map',
-    )
-
-    list_filter = (
-        'city',
-        'map',
-    )
-
-    list_per_page = 25
-
-    search_fields = (
-        'city__name',
-    )
-
-
-@admin.register(RegionMarker)
-class RegionMarkerAdmin(ImportExportModelAdmin):
-    resource_class = RegionMarkerResource
-
-    fields = (
-        'region',
-        'x',
-        'y',
-        'map',
-    )
-
-    list_display = (
-        'region',
-        'x',
-        'y',
-        'map',
-    )
-
-    list_filter = (
-        'region',
-        'map',
-    )
-
-    list_per_page = 25
-
-    search_fields = (
-        'region__name',
-    )
-
-
-@admin.register(ContinentMarker)
-class ContinentMarkerAdmin(ImportExportModelAdmin):
-    resource_class = ContinentMarkerResource
-
-    fields = (
-        'continent',
-        'x',
-        'y',
-        'map',
-    )
-
-    list_display = (
-        'continent',
+        'place',
+        'get_type',
         'x',
         'y',
         'map',
@@ -248,5 +157,10 @@ class ContinentMarkerAdmin(ImportExportModelAdmin):
     list_per_page = 25
 
     search_fields = (
-        'continent__name',
+        'place__name',
     )
+
+    @admin.display(description='type')
+    def get_type(self, instance):
+        """Get Type of the related place"""
+        return instance.place.type

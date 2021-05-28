@@ -20,7 +20,7 @@
                 <div
                     id="search-wrapper"
                     class="relative flex flex-col h-10 w-2/3 my-8
-                        lg:w-1/2"
+                        lg:w-1/3"
                 >
                     <div class="flex flex-row h-full z-20 bg-white rounded-md">
                         <a class="h-full" href="{% url "home" %}">
@@ -43,13 +43,16 @@
                                w-full rounded-t-2xl rounded-b-md"
                     ></div>
                 </div>
+                <p class="text-center text-gray-100 text-lg px-16">
+                    Find places in the world of Malazan: Book of the Fallen.
+                </p>
             </div>
             {% block content %}{% endblock %}
         </div>
         {{ entries|json_script:"entries"}}
         <script>
-            malazan = {};
-            malazan.entries = JSON.parse(document.getElementById('entries').textContent)
+            window.malazan = window.malazan || {};
+            window.malazan.entries = JSON.parse(document.getElementById('entries').textContent)
         </script>
         <script src="{% static "js/base.js" %}"></script>
     </body>

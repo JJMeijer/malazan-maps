@@ -1,13 +1,10 @@
-export {};
+import { Entry, Marker } from './types';
 
 declare global {
     interface Window {
         malazan: {
-            entries: Array<{
-                name: string;
-                short_name: string;
-                type: 'city' | 'region' | 'continent' | 'book';
-            }>;
+            entries: Entry[];
+            markers: Marker[];
         };
     }
 }

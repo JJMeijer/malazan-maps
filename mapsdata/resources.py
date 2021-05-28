@@ -1,9 +1,9 @@
 from import_export import resources, fields
 from import_export.widgets import ForeignKeyWidget
 
-from mapsdata.models import City, Continent, CityMarker, Map, Region, RegionMarker, ContinentMarker
+from mapsdata.models import Marker, Place, Continent, Map
 
-class CityResource(resources.ModelResource):
+class PlaceResource(resources.ModelResource):
     continent = fields.Field(
         column_name='continent',
         attribute='continent',
@@ -11,7 +11,7 @@ class CityResource(resources.ModelResource):
     )
 
     class Meta:
-        model = City
+        model = Place
 
         import_id_fields = ('name',)
 
@@ -21,149 +21,52 @@ class CityResource(resources.ModelResource):
         fields = (
             'name',
             'short_name',
+            'type',
             'wiki_link',
             'continent',
+            'description',
         )
 
         export_order = (
             'name',
             'short_name',
+            'type',
             'wiki_link',
             'continent',
+            'description',
         )
 
 
-class RegionResource(resources.ModelResource):
-    continent = fields.Field(
-        column_name='continent',
-        attribute='continent',
-        widget=ForeignKeyWidget(Continent, 'name')
-    )
-
-    class Meta:
-        model = Region
-
-        import_id_fields = ('name',)
-
-        skip_unchanged = True
-        report_skipped = True
-
-        fields = (
-            'name',
-            'short_name',
-            'wiki_link',
-            'continent',
-        )
-
-        export_order = (
-            'name',
-            'short_name',
-            'wiki_link',
-            'continent',
-        )
-
-
-class CityMarkerResource(resources.ModelResource):
+class MarkerResource(resources.ModelResource):
     map = fields.Field(
         column_name='map',
         attribute='map',
         widget=ForeignKeyWidget(Map, 'short_name')
     )
 
-    city = fields.Field(
-        column_name='city',
-        attribute='city',
-        widget=ForeignKeyWidget(City, 'short_name')
+    place = fields.Field(
+        column_name='place',
+        attribute='place',
+        widget=ForeignKeyWidget(Place, 'short_name')
     )
 
     class Meta:
-        model = CityMarker
+        model = Marker
 
-        import_id_fields = ('city', 'map',)
+        import_id_fields = ('place', 'map',)
 
         skip_unchanged = True
         report_skipped = True
 
         fields = (
-            'city',
+            'place',
             'x',
             'y',
             'map',
         )
 
         export_order = (
-            'city',
-            'x',
-            'y',
-            'map',
-        )
-
-
-class RegionMarkerResource(resources.ModelResource):
-    map = fields.Field(
-        column_name='map',
-        attribute='map',
-        widget=ForeignKeyWidget(Map, 'short_name')
-    )
-
-    region = fields.Field(
-        column_name='region',
-        attribute='region',
-        widget=ForeignKeyWidget(Region, 'short_name')
-    )
-
-    class Meta:
-        model = RegionMarker
-
-        import_id_fields = ('region', 'map',)
-
-        skip_unchanged = True
-        report_skipped = True
-
-        fields = (
-            'region',
-            'x',
-            'y',
-            'map',
-        )
-
-        export_order = (
-            'region',
-            'x',
-            'y',
-            'map',
-        )
-
-class ContinentMarkerResource(resources.ModelResource):
-    map = fields.Field(
-        column_name='map',
-        attribute='map',
-        widget=ForeignKeyWidget(Map, 'short_name')
-    )
-
-    continent = fields.Field(
-        column_name='continent',
-        attribute='continent',
-        widget=ForeignKeyWidget(Continent, 'short_name')
-    )
-
-    class Meta:
-        model = ContinentMarker
-
-        import_id_fields = ('continent', 'map',)
-
-        skip_unchanged = True
-        report_skipped = True
-
-        fields = (
-            'continent',
-            'x',
-            'y',
-            'map',
-        )
-
-        export_order = (
-            'continent',
+            'place',
             'x',
             'y',
             'map',

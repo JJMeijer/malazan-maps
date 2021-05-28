@@ -17,26 +17,6 @@ class Continent(models.Model):
         return self.name
 
 
-class Region(models.Model):
-    created = models.DateTimeField(default=timezone.now)
-    updated = models.DateTimeField(auto_now=True)
-
-    name = models.CharField(max_length=100)
-    short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
-
-    wiki_link = models.URLField(max_length=200)
-    description = models.CharField(max_length=2000, null=False, default='-')
-
-    continent = models.ForeignKey(
-        to=Continent,
-        related_name='regions',
-        on_delete=models.CASCADE
-    )
-
-    def __str__(self) -> str:
-        return self.name
-
-
 class Book(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
@@ -47,29 +27,6 @@ class Book(models.Model):
 
     wiki_link = models.URLField(max_length=200)
     description = models.CharField(max_length=2000, null=False, default='-')
-
-    def __str__(self) -> str:
-        return self.name
-
-
-class City(models.Model):
-    created = models.DateTimeField(default=timezone.now)
-    updated = models.DateTimeField(auto_now=True)
-
-    name = models.CharField(max_length=100)
-    short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
-
-    wiki_link = models.URLField(max_length=200)
-    description = models.CharField(max_length=2000, null=False, default='-')
-
-    continent = models.ForeignKey(
-        to=Continent,
-        related_name='cities',
-        on_delete=models.CASCADE
-    )
-
-    class Meta:
-        verbose_name_plural = 'cities'
 
     def __str__(self) -> str:
         return self.name
@@ -102,90 +59,49 @@ class Map(models.Model):
         return f'{self.name} ({self.width}x{self.height})'
 
 
-class CityMarker(models.Model):
+class Place(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    x = models.IntegerField(verbose_name='X Pixel')
-    y = models.IntegerField(verbose_name='Y Pixel')
+    name = models.CharField(max_length=100)
+    short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
 
-    map = models.ForeignKey(
-        to=Map,
-        related_name='city_markers',
-        on_delete=models.CASCADE
+    wiki_link = models.URLField(max_length=200)
+    description = models.CharField(max_length=2000, null=False, default='-')
+
+    PLACE_TYPES = (
+        ('city', 'City',),
+        ('region', 'Region',),
     )
 
-    city = models.ForeignKey(
-        to=City,
-        related_name='city_markers',
-        on_delete=models.CASCADE
-    )
-
-    class Meta:
-        constraints = (
-            models.UniqueConstraint(
-                fields=(
-                    'map',
-                    'city',
-                ),
-                name='unique_city_marker'
-            ),
-        )
-
-    def __str__(self):
-        return f'{self.city} - ({self.x},{self.y})'
-
-
-class RegionMarker(models.Model):
-    created = models.DateTimeField(default=timezone.now)
-    updated = models.DateTimeField(auto_now=True)
-
-    x = models.IntegerField(verbose_name='X Pixel')
-    y = models.IntegerField(verbose_name='Y Pixel')
-
-    map = models.ForeignKey(
-        to=Map,
-        related_name='region_markers',
-        on_delete=models.CASCADE
-    )
-
-    region = models.ForeignKey(
-        to=Region,
-        related_name='region_markers',
-        on_delete=models.CASCADE
-    )
-
-    class Meta:
-        constraints = (
-            models.UniqueConstraint(
-                fields=(
-                    'map',
-                    'region',
-                ),
-                name='unique_region_marker'
-            ),
-        )
-
-    def __str__(self):
-        return f'{self.region} - ({self.x},{self.y})'
-
-
-class ContinentMarker(models.Model):
-    created = models.DateTimeField(default=timezone.now)
-    updated = models.DateTimeField(auto_now=True)
-
-    x = models.IntegerField(verbose_name='X Pixel')
-    y = models.IntegerField(verbose_name='Y Pixel')
-
-    map = models.ForeignKey(
-        to=Map,
-        related_name='continent_markers',
-        on_delete=models.CASCADE
-    )
+    type = models.CharField(max_length=6, choices=PLACE_TYPES)
 
     continent = models.ForeignKey(
         to=Continent,
-        related_name='continent_markers',
+        related_name='places',
+        on_delete=models.CASCADE
+    )
+
+    def __str__(self) -> str:
+        return self.name
+
+
+class Marker(models.Model):
+    created = models.DateTimeField(default=timezone.now)
+    updated = models.DateTimeField(auto_now=True)
+
+    x = models.IntegerField(verbose_name='X Pixel')
+    y = models.IntegerField(verbose_name='Y Pixel')
+
+    map = models.ForeignKey(
+        to=Map,
+        related_name='markers',
+        on_delete=models.CASCADE
+    )
+
+    place = models.ForeignKey(
+        to=Place,
+        related_name='markers',
         on_delete=models.CASCADE
     )
 
@@ -193,12 +109,13 @@ class ContinentMarker(models.Model):
         constraints = (
             models.UniqueConstraint(
                 fields=(
+                    'place',
                     'map',
-                    'continent',
                 ),
-                name='unique_continent_marker'
+                name='unique_place_marker'
             ),
         )
 
     def __str__(self):
-        return f'{self.continent} - ({self.x},{self.y})'
+        return f'{self.place} - ({self.x},{self.y})'
+

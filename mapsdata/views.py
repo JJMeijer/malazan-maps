@@ -1,8 +1,8 @@
 from django.http import Http404
 from django.shortcuts import render
 
-from .models import Book, Continent, Map, City, Region
-from .serializers import serialize_all, RegionSerializer, CitySerializer
+from mapsdata.models import Book, Map, Place
+from mapsdata.serializers import serialize_all, MarkerSerializer
 
 
 def home_view(request):
@@ -29,44 +29,26 @@ def map_view(request, map_short_name):
     except Map.DoesNotExist as err:
         raise Http404("Map is not known") from err
 
+    markers = MarkerSerializer(instance.markers.all(), many=True).data
+
     context = {
         'page_title': instance.name,
         'map_image_src': instance.image.url,
         'entries': serialize_all(),
+        'markers': markers
     }
 
     return render(request, 'map.html', context)
 
 
-def city_view(request, city_short_name):
-    """City View"""
+def place_view(request, place_short_name):
+    """Place View"""
     try:
-        instance = City.objects.get(short_name=city_short_name)
-    except City.DoesNotExist as err:
-        raise Http404("City is not known") from err
+        instance = Place.objects.get(short_name=place_short_name)
+    except Place.DoesNotExist as err:
+        raise Http404("Place is not known") from err
 
-    markers = instance.city_markers.all()
-
-    context = {
-        'page_title': f'{instance.name} | Malazan Maps',
-        'marker_name': instance.name,
-        'markers': markers,
-        'description': instance.description,
-        'wiki_link': instance.wiki_link,
-        'entries': serialize_all()
-    }
-
-    return render(request, 'marker.html', context)
-
-
-def region_view(request, region_short_name):
-    """Region View"""
-    try:
-        instance = Region.objects.get(short_name=region_short_name)
-    except Region.DoesNotExist as err:
-        raise Http404("Region is not known") from err
-
-    markers = instance.region_markers.all()
+    markers = instance.markers.all()
 
     context = {
         'page_title': f'{instance.name} | Malazan Maps',
@@ -87,16 +69,6 @@ def book_view(request, book_short_name):
     except Book.DoesNotExist as err:
         raise Http404("Book is not known") from err
 
-    cities = CitySerializer(
-        instance=City.objects.filter(city_markers__map__books__short_name=book_short_name),
-        many=True
-    ).data
-
-    regions = RegionSerializer(
-        instance=Region.objects.filter(region_markers__map__books__short_name=book_short_name),
-        many=True
-    ).data
-
     context = {
         'page_title': f'{instance.name} | Malazan Maps',
         'book_name': instance.name,
@@ -104,24 +76,7 @@ def book_view(request, book_short_name):
         'wiki_link': instance.wiki_link,
         'cover_url': instance.cover.url,
         'maps': instance.maps.all(),
-        'cities': cities,
-        'regions': regions,
         'entries': serialize_all()
     }
 
     return render(request, 'book.html', context)
-
-
-def continent_view(request, continent_short_name):
-    """Continent View"""
-    try:
-        instance = Continent.objects.get(short_name=continent_short_name)
-    except Continent.DoesNotExist as err:
-        raise Http404("Continent is not known") from err
-
-    context = {
-        'page_title': f'{instance.name} | Malazan Maps',
-        'entries': serialize_all()
-    }
-
-    return render(request, 'continent.html', context)
