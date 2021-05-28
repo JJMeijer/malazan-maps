@@ -1,14 +1,14 @@
-import { Marker } from './types';
+// import { Marker } from './types';
 
-const createMarker = (marker: Marker, wrapperElement: HTMLElement): HTMLElement => {
+// const createMarker = (marker: Marker, wrapperElement: HTMLElement): HTMLElement => {
 
-    const markerElement = document.createElement('div');
-};
+//     const markerElement = document.createElement('div');
+// };
 
-document.addEventListener('DOMContentLoaded', () => {
-    const { markers } = window.malazan;
+// document.addEventListener('DOMContentLoaded', () => {
+//     const { markers } = window.malazan;
 
-    markers.forEach((marker) {
+//     markers.forEach((marker) {
 
-    })
-});
+//     })
+// });

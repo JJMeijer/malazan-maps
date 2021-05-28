@@ -6,7 +6,10 @@
 
   // static/ts/search/result-element.ts
   var generateLink = (short_name, type) => {
-    return `/${type}/${short_name}`;
+    if (type === "book") {
+      return `/book/${short_name}`;
+    }
+    return `/place/${short_name}`;
   };
   var partialBoldString = (fullText, boldText) => {
     return fullText.replace(new RegExp(`(${boldText})`, "gi"), `<span class="font-extrabold text-gray-800">$1</span>`);
@@ -172,6 +175,15 @@
     searchBox.addEventListener("input", (event) => handleSearchInput(event, searchResultsBox));
     searchBox.addEventListener("focus", (event) => handleSearchInput(event, searchResultsBox));
     searchBox.addEventListener("keydown", (event) => handleSearchKeys(event, searchResultsBox));
+    searchBoxWrapper.addEventListener("focusout", (event) => {
+      const relatedTarget = event.relatedTarget;
+      if (relatedTarget === null) {
+        searchResultsBox.classList.add("hidden");
+      }
+      if (relatedTarget instanceof HTMLElement && !relatedTarget.matches("#search-wrapper *")) {
+        searchResultsBox.classList.add("hidden");
+      }
+    });
   });
 })();
 //# sourceMappingURL=base.js.map

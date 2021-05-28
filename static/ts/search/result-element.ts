@@ -2,7 +2,11 @@ import { RESULT_HREF_ATTRIBUTE, RESULT_INDEX_ATTRIBUTE, RESULT_NAME_ATTRIBUTE } 
 import { ResultData } from './types';
 
 const generateLink = (short_name: string, type: string): string => {
-    return `/${type}/${short_name}`;
+    if (type === 'book') {
+        return `/book/${short_name}`;
+    }
+
+    return `/place/${short_name}`;
 };
 
 const partialBoldString = (fullText: string, boldText: string): string => {
