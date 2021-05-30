@@ -2,6 +2,25 @@
 
 {% load static %}
 
+{% block breadcrumb %}
+    <p class="px-1">
+        >
+    </p>
+    <a href="{% url "map_list" %}">
+        <p class="p-2 text-md">
+            maps
+        </p>
+    </a>
+    <p class="px-1">
+        >
+    </p>
+    <a href="{% url "map_detail" map_short_name %}">
+        <p class="p-2 text-md">
+            {{ page_title }}
+        </p>
+    </a>
+{% endblock breadcrumb %}
+
 {% block content %}
     <div class="flex flex-col -my-24 mx-2 bg-white rounded-md
                 lg:mx-8">

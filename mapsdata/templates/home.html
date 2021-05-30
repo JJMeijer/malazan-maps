@@ -1,21 +1,32 @@
 {% extends "base.html" %}
 
+{% block breadcrumb %}
+    <p class="px-1">
+        >
+    </p>
+    <a href="{% url "home" %}">
+        <p class="p-2 text-lg">
+            home
+        </p>
+    </a>
+{% endblock %}
+
 {% block content %}
     <div class="flex flex-col items-center -mt-24 mx-8 bg-white rounded-md">
         <div class="flex flex-col p-8 -space-y-48 lg:flex-row lg:-space-x-32 lg:-space-y-0">
-            <a class="" href="{% url 'map' hero_1.short_name %}">
+            <a class="" href="{% url 'map_detail' hero_1.short_name %}">
                 <img
                     src="{{ hero_1.image.url }}"
                     class="bg-white p-2 border border-gray-300 rounded-md shadow-md ml-12 hover:border-gray-600 lg:mt-12 lg:ml-0"
                 >
             </a>
-            <a class="" href="{% url 'map' hero_2.short_name %}">
+            <a class="" href="{% url 'map_detail' hero_2.short_name %}">
                 <img
                     src="{{ hero_2.image.url }}"
                     class="border border-gray-300 rounded-md shadow-md -ml-12 hover:border-gray-600 lg:-ml-0"
                 >
             </a>
-            <a class="" href="{% url 'map' hero_3.short_name %}">
+            <a class="" href="{% url 'map_detail' hero_3.short_name %}">
                 <img
                     src="{{ hero_3.image.url }}"
                     class="border border-gray-300 rounded-md shadow-md ml-6 hover:border-gray-600 lg:mt-24 lg:ml-0"

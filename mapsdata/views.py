@@ -12,7 +12,7 @@ def home_view(request):
     hero_3 = Map.objects.get(short_name='chain-of-dogs-1')
 
     context = {
-        'page_title': 'Home | Malazan Maps',
+        'page_title': 'Home',
         'hero_1': hero_1,
         'hero_2': hero_2,
         'hero_3': hero_3,
@@ -22,7 +22,19 @@ def home_view(request):
     return render(request, 'home.html', context)
 
 
-def map_view(request, map_short_name):
+def map_list_view(request):
+    """Map List View that lists all Maps"""
+    maps = Map.objects.all()
+
+    context = {
+        'page_title': 'Maps',
+        'entries': serialize_all(),
+        'maps': maps
+    }
+
+    return render(request, 'map_list.html', context)
+
+def map_detail_view(request, map_short_name):
     """Map View that returns a Map"""
     try:
         instance = Map.objects.get(short_name=map_short_name)
@@ -33,12 +45,13 @@ def map_view(request, map_short_name):
 
     context = {
         'page_title': instance.name,
+        'map_short_name': instance.short_name,
         'map_image_src': instance.image.url,
         'entries': serialize_all(),
         'markers': markers
     }
 
-    return render(request, 'map.html', context)
+    return render(request, 'map_detail.html', context)
 
 
 def place_view(request, place_short_name):
@@ -51,7 +64,7 @@ def place_view(request, place_short_name):
     markers = instance.markers.all()
 
     context = {
-        'page_title': f'{instance.name} | Malazan Maps',
+        'page_title': f'{instance.name}',
         'marker_name': instance.name,
         'markers': markers,
         'description': instance.description,
@@ -61,8 +74,20 @@ def place_view(request, place_short_name):
 
     return render(request, 'marker.html', context)
 
+def book_list_view(request):
+    """Book List View"""
+    books = Book.objects.all()
 
-def book_view(request, book_short_name):
+    context = {
+        'page_title': 'Books',
+        'books': books,
+        'entries': serialize_all()
+    }
+
+    return render(request, 'book_list.html', context)
+
+
+def book_detail_view(request, book_short_name):
     """Book View"""
     try:
         instance = Book.objects.get(short_name=book_short_name)
@@ -70,8 +95,9 @@ def book_view(request, book_short_name):
         raise Http404("Book is not known") from err
 
     context = {
-        'page_title': f'{instance.name} | Malazan Maps',
+        'page_title': f'{instance.name}',
         'book_name': instance.name,
+        'book_short_name': instance.short_name,
         'description': instance.description,
         'wiki_link': instance.wiki_link,
         'cover_url': instance.cover.url,
@@ -79,4 +105,4 @@ def book_view(request, book_short_name):
         'entries': serialize_all()
     }
 
-    return render(request, 'book.html', context)
+    return render(request, 'book_detail.html', context)

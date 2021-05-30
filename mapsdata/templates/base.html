@@ -4,22 +4,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <title>{{ page_title }}</title>
+        <title>{{ page_title }} | Malazan Maps</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{% static "css/tailwind-dist.css" %}">
     </head>
     <body class="font-serif">
         <div class="h-screen text-gray-800 flex flex-col items-center">
-            <div class="text-gray-100 bg-primary pt-8 pb-36 flex flex-col justify-content items-center w-full">
-                <a href="{% url "home" %}">
-                    <h1 class=" font-bold text-4xl my-4 text-center">
-                        Malazan Maps
-                    </h1>
-                </a>
+            <div class="text-gray-100 bg-primary pb-36 flex flex-col items-center w-full">
+                <div class="p-1 flex flex-row items-center w-full border-b border-gray-600">
+                    <a href="{% url "home" %}">
+                        <p class="ml-4 p-2 text-2xl">
+                            Malazan Maps
+                        </p>
+                    </a>
+                    {% block breadcrumb %}{% endblock breadcrumb %}
+                </div>
                 <div
                     id="search-wrapper"
-                    class="relative flex flex-col h-10 w-2/3 my-8
+                    class="relative flex flex-col h-10 w-2/3 my-16
                         lg:w-1/3"
                 >
                     <div class="flex flex-row h-full z-20 bg-white rounded-md">

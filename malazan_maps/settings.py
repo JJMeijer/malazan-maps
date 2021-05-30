@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_distill',
 ]
 
 MIDDLEWARE = [
@@ -120,11 +121,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATICFILES_DIRS = (
-    './static',
-)
+# STATICFILES_DIRS = (
+#     './public',
+# )
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = './static/'
 
 
 # Media Files (Added through Admin Interface)
@@ -141,3 +144,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Needed for Django admin interface
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 SILENCED_SYSTEM_CHECKS = ['security.W019']
+
+# Static site generation
+DISTILL_DIR = 'dist'
+
+DISTILL_PUBLISH = {
+    'default': {
+        'ENGINE': 'django_distill.backends.google_storage',
+        'PUBLIC_URL': 'https://storage.googleapis.com/malazan-maps-01/',
+        'JSON_CREDENTIALS': './gcs-credentials.json',
+        'BUCKET': 'malazan-maps-01',
+    }
+}
