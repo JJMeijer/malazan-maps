@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'django_distill',
 ]
 
@@ -121,9 +122,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-# STATICFILES_DIRS = (
-#     './public',
-# )
+STATICFILES_DIRS = ()
 
 STATIC_URL = '/static/'
 

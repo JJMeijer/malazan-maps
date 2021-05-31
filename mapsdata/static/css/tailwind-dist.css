@@ -1921,7 +1921,7 @@ video {
 
 .divide-primary > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
-  border-color: rgba(4, 33, 14, var(--tw-divide-opacity));
+  border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
 }
 
 .divide-secondary > :not([hidden]) ~ :not([hidden]) {
@@ -2533,7 +2533,7 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+  background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -2961,7 +2961,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-pink-900 {
 
 input[type="radio"]:checked ~ .label-checked\:bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+  background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
 input[type="radio"]:checked ~ .label-checked\:bg-secondary {
@@ -3389,7 +3389,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .group:hover .group-hover\:bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+  background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-secondary {
@@ -3817,7 +3817,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .focus-within\:bg-primary:focus-within {
   --tw-bg-opacity: 1;
-  background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+  background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-secondary:focus-within {
@@ -4245,7 +4245,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+  background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
 .hover\:bg-secondary:hover {
@@ -4673,7 +4673,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .focus\:bg-primary:focus {
   --tw-bg-opacity: 1;
-  background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+  background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
 .focus\:bg-secondary:focus {
@@ -5138,8 +5138,8 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .from-primary {
-  --tw-gradient-from: #04210e;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+  --tw-gradient-from: #082915;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
 .from-secondary {
@@ -5484,7 +5484,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .via-primary {
-  --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
 .via-secondary {
@@ -5828,7 +5828,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .to-primary {
-  --tw-gradient-to: #04210e;
+  --tw-gradient-to: #082915;
 }
 
 .to-secondary {
@@ -6256,8 +6256,8 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .hover\:from-primary:hover {
-  --tw-gradient-from: #04210e;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+  --tw-gradient-from: #082915;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
 .hover\:from-secondary:hover {
@@ -6602,7 +6602,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .hover\:via-primary:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
 .hover\:via-secondary:hover {
@@ -6946,7 +6946,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .hover\:to-primary:hover {
-  --tw-gradient-to: #04210e;
+  --tw-gradient-to: #082915;
 }
 
 .hover\:to-secondary:hover {
@@ -7374,8 +7374,8 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .focus\:from-primary:focus {
-  --tw-gradient-from: #04210e;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+  --tw-gradient-from: #082915;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
 .focus\:from-secondary:focus {
@@ -7720,7 +7720,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .focus\:via-primary:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
 .focus\:via-secondary:focus {
@@ -8064,7 +8064,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 }
 
 .focus\:to-primary:focus {
-  --tw-gradient-to: #04210e;
+  --tw-gradient-to: #082915;
 }
 
 .focus\:to-secondary:focus {
@@ -8871,7 +8871,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+  border-color: rgba(8, 41, 21, var(--tw-border-opacity));
 }
 
 .border-secondary {
@@ -9299,7 +9299,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .group:hover .group-hover\:border-primary {
   --tw-border-opacity: 1;
-  border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+  border-color: rgba(8, 41, 21, var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:border-secondary {
@@ -9727,7 +9727,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .focus-within\:border-primary:focus-within {
   --tw-border-opacity: 1;
-  border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+  border-color: rgba(8, 41, 21, var(--tw-border-opacity));
 }
 
 .focus-within\:border-secondary:focus-within {
@@ -10155,7 +10155,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+  border-color: rgba(8, 41, 21, var(--tw-border-opacity));
 }
 
 .hover\:border-secondary:hover {
@@ -10583,7 +10583,7 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .focus\:border-primary:focus {
   --tw-border-opacity: 1;
-  border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+  border-color: rgba(8, 41, 21, var(--tw-border-opacity));
 }
 
 .focus\:border-secondary:focus {
@@ -17544,17 +17544,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .placeholder-primary::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+  color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
 }
 
 .placeholder-primary:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+  color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
 }
 
 .placeholder-primary::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+  color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
 }
 
 .placeholder-secondary::-moz-placeholder {
@@ -18828,17 +18828,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .focus\:placeholder-primary:focus::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+  color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-primary:focus:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+  color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-primary:focus::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+  color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-secondary:focus::-moz-placeholder {
@@ -22735,7 +22735,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 }
 
 .ring-offset-primary {
-  --tw-ring-offset-color: #04210e;
+  --tw-ring-offset-color: #082915;
 }
 
 .ring-offset-secondary {
@@ -23079,7 +23079,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 }
 
 .focus-within\:ring-offset-primary:focus-within {
-  --tw-ring-offset-color: #04210e;
+  --tw-ring-offset-color: #082915;
 }
 
 .focus-within\:ring-offset-secondary:focus-within {
@@ -23423,7 +23423,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 }
 
 .focus\:ring-offset-primary:focus {
-  --tw-ring-offset-color: #04210e;
+  --tw-ring-offset-color: #082915;
 }
 
 .focus\:ring-offset-secondary:focus {
@@ -23910,7 +23910,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .ring-primary {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
 }
 
 .ring-secondary {
@@ -24338,7 +24338,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .focus-within\:ring-primary:focus-within {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
 }
 
 .focus-within\:ring-secondary:focus-within {
@@ -24766,7 +24766,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .focus\:ring-primary:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
 }
 
 .focus\:ring-secondary:focus {
@@ -25418,7 +25418,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-text-opacity));
+  color: rgba(8, 41, 21, var(--tw-text-opacity));
 }
 
 .text-secondary {
@@ -25846,7 +25846,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-text-opacity));
+  color: rgba(8, 41, 21, var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-secondary {
@@ -26274,7 +26274,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .focus-within\:text-primary:focus-within {
   --tw-text-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-text-opacity));
+  color: rgba(8, 41, 21, var(--tw-text-opacity));
 }
 
 .focus-within\:text-secondary:focus-within {
@@ -26702,7 +26702,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-text-opacity));
+  color: rgba(8, 41, 21, var(--tw-text-opacity));
 }
 
 .hover\:text-secondary:hover {
@@ -27130,7 +27130,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
 .focus\:text-primary:focus {
   --tw-text-opacity: 1;
-  color: rgba(4, 33, 14, var(--tw-text-opacity));
+  color: rgba(8, 41, 21, var(--tw-text-opacity));
 }
 
 .focus\:text-secondary:focus {
@@ -34074,7 +34074,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-divide-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
   }
 
   .sm\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
@@ -34686,7 +34686,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .sm\:bg-secondary {
@@ -35114,7 +35114,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   input[type="radio"]:checked ~ .sm\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   input[type="radio"]:checked ~ .sm\:label-checked\:bg-secondary {
@@ -35542,7 +35542,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .sm\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-secondary {
@@ -35970,7 +35970,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-secondary:focus-within {
@@ -36398,7 +36398,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-secondary:hover {
@@ -36826,7 +36826,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .sm\:focus\:bg-secondary:focus {
@@ -37291,8 +37291,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:from-primary {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .sm\:from-secondary {
@@ -37637,7 +37637,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:via-primary {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .sm\:via-secondary {
@@ -37981,7 +37981,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:to-primary {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .sm\:to-secondary {
@@ -38409,8 +38409,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:hover\:from-primary:hover {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .sm\:hover\:from-secondary:hover {
@@ -38755,7 +38755,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:hover\:via-primary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .sm\:hover\:via-secondary:hover {
@@ -39099,7 +39099,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:hover\:to-primary:hover {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .sm\:hover\:to-secondary:hover {
@@ -39527,8 +39527,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:focus\:from-primary:focus {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .sm\:focus\:from-secondary:focus {
@@ -39873,7 +39873,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:focus\:via-primary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .sm\:focus\:via-secondary:focus {
@@ -40217,7 +40217,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:focus\:to-primary:focus {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .sm\:focus\:to-secondary:focus {
@@ -41024,7 +41024,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .sm\:border-secondary {
@@ -41452,7 +41452,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .sm\:group-hover\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .group:hover .sm\:group-hover\:border-secondary {
@@ -41880,7 +41880,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus-within\:border-primary:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .sm\:focus-within\:border-secondary:focus-within {
@@ -42308,7 +42308,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:hover\:border-primary:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .sm\:hover\:border-secondary:hover {
@@ -42736,7 +42736,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .sm\:focus\:border-secondary:focus {
@@ -49697,17 +49697,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:placeholder-primary::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-primary:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-primary::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-secondary::-moz-placeholder {
@@ -50981,17 +50981,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus\:placeholder-primary:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-secondary:focus::-moz-placeholder {
@@ -54875,7 +54875,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:ring-offset-primary {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .sm\:ring-offset-secondary {
@@ -55219,7 +55219,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:focus-within\:ring-offset-primary:focus-within {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .sm\:focus-within\:ring-offset-secondary:focus-within {
@@ -55563,7 +55563,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .sm\:focus\:ring-offset-primary:focus {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .sm\:focus\:ring-offset-secondary:focus {
@@ -56050,7 +56050,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:ring-primary {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .sm\:ring-secondary {
@@ -56478,7 +56478,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus-within\:ring-primary:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .sm\:focus-within\:ring-secondary:focus-within {
@@ -56906,7 +56906,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .sm\:focus\:ring-secondary:focus {
@@ -57558,7 +57558,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .sm\:text-secondary {
@@ -57986,7 +57986,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .sm\:group-hover\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .group:hover .sm\:group-hover\:text-secondary {
@@ -58414,7 +58414,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus-within\:text-primary:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-secondary:focus-within {
@@ -58842,7 +58842,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:hover\:text-primary:hover {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .sm\:hover\:text-secondary:hover {
@@ -59270,7 +59270,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .sm\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .sm\:focus\:text-secondary:focus {
@@ -66057,7 +66057,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-divide-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
   }
 
   .md\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
@@ -66669,7 +66669,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .md\:bg-secondary {
@@ -67097,7 +67097,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   input[type="radio"]:checked ~ .md\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   input[type="radio"]:checked ~ .md\:label-checked\:bg-secondary {
@@ -67525,7 +67525,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .md\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-secondary {
@@ -67953,7 +67953,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-secondary:focus-within {
@@ -68381,7 +68381,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-secondary:hover {
@@ -68809,7 +68809,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .md\:focus\:bg-secondary:focus {
@@ -69274,8 +69274,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:from-primary {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .md\:from-secondary {
@@ -69620,7 +69620,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:via-primary {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .md\:via-secondary {
@@ -69964,7 +69964,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:to-primary {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .md\:to-secondary {
@@ -70392,8 +70392,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:hover\:from-primary:hover {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .md\:hover\:from-secondary:hover {
@@ -70738,7 +70738,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:hover\:via-primary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .md\:hover\:via-secondary:hover {
@@ -71082,7 +71082,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:hover\:to-primary:hover {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .md\:hover\:to-secondary:hover {
@@ -71510,8 +71510,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:focus\:from-primary:focus {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .md\:focus\:from-secondary:focus {
@@ -71856,7 +71856,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:focus\:via-primary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .md\:focus\:via-secondary:focus {
@@ -72200,7 +72200,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:focus\:to-primary:focus {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .md\:focus\:to-secondary:focus {
@@ -73007,7 +73007,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .md\:border-secondary {
@@ -73435,7 +73435,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .md\:group-hover\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .group:hover .md\:group-hover\:border-secondary {
@@ -73863,7 +73863,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus-within\:border-primary:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .md\:focus-within\:border-secondary:focus-within {
@@ -74291,7 +74291,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:hover\:border-primary:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .md\:hover\:border-secondary:hover {
@@ -74719,7 +74719,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .md\:focus\:border-secondary:focus {
@@ -81680,17 +81680,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:placeholder-primary::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-primary:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-primary::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-secondary::-moz-placeholder {
@@ -82964,17 +82964,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus\:placeholder-primary:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-secondary:focus::-moz-placeholder {
@@ -86858,7 +86858,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:ring-offset-primary {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .md\:ring-offset-secondary {
@@ -87202,7 +87202,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:focus-within\:ring-offset-primary:focus-within {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .md\:focus-within\:ring-offset-secondary:focus-within {
@@ -87546,7 +87546,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .md\:focus\:ring-offset-primary:focus {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .md\:focus\:ring-offset-secondary:focus {
@@ -88033,7 +88033,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:ring-primary {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .md\:ring-secondary {
@@ -88461,7 +88461,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus-within\:ring-primary:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .md\:focus-within\:ring-secondary:focus-within {
@@ -88889,7 +88889,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .md\:focus\:ring-secondary:focus {
@@ -89541,7 +89541,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .md\:text-secondary {
@@ -89969,7 +89969,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .md\:group-hover\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .group:hover .md\:group-hover\:text-secondary {
@@ -90397,7 +90397,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus-within\:text-primary:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-secondary:focus-within {
@@ -90825,7 +90825,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:hover\:text-primary:hover {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .md\:hover\:text-secondary:hover {
@@ -91253,7 +91253,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .md\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .md\:focus\:text-secondary:focus {
@@ -98040,7 +98040,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-divide-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
   }
 
   .lg\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
@@ -98652,7 +98652,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .lg\:bg-secondary {
@@ -99080,7 +99080,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   input[type="radio"]:checked ~ .lg\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   input[type="radio"]:checked ~ .lg\:label-checked\:bg-secondary {
@@ -99508,7 +99508,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .lg\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-secondary {
@@ -99936,7 +99936,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-secondary:focus-within {
@@ -100364,7 +100364,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-secondary:hover {
@@ -100792,7 +100792,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .lg\:focus\:bg-secondary:focus {
@@ -101257,8 +101257,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:from-primary {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .lg\:from-secondary {
@@ -101603,7 +101603,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:via-primary {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .lg\:via-secondary {
@@ -101947,7 +101947,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:to-primary {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .lg\:to-secondary {
@@ -102375,8 +102375,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:hover\:from-primary:hover {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .lg\:hover\:from-secondary:hover {
@@ -102721,7 +102721,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:hover\:via-primary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .lg\:hover\:via-secondary:hover {
@@ -103065,7 +103065,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:hover\:to-primary:hover {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .lg\:hover\:to-secondary:hover {
@@ -103493,8 +103493,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:focus\:from-primary:focus {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .lg\:focus\:from-secondary:focus {
@@ -103839,7 +103839,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:focus\:via-primary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .lg\:focus\:via-secondary:focus {
@@ -104183,7 +104183,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:focus\:to-primary:focus {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .lg\:focus\:to-secondary:focus {
@@ -104990,7 +104990,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .lg\:border-secondary {
@@ -105418,7 +105418,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .lg\:group-hover\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .group:hover .lg\:group-hover\:border-secondary {
@@ -105846,7 +105846,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus-within\:border-primary:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .lg\:focus-within\:border-secondary:focus-within {
@@ -106274,7 +106274,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:hover\:border-primary:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .lg\:hover\:border-secondary:hover {
@@ -106702,7 +106702,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .lg\:focus\:border-secondary:focus {
@@ -113663,17 +113663,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:placeholder-primary::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-primary:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-primary::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-secondary::-moz-placeholder {
@@ -114947,17 +114947,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus\:placeholder-primary:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-secondary:focus::-moz-placeholder {
@@ -118841,7 +118841,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:ring-offset-primary {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .lg\:ring-offset-secondary {
@@ -119185,7 +119185,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:focus-within\:ring-offset-primary:focus-within {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .lg\:focus-within\:ring-offset-secondary:focus-within {
@@ -119529,7 +119529,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .lg\:focus\:ring-offset-primary:focus {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .lg\:focus\:ring-offset-secondary:focus {
@@ -120016,7 +120016,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:ring-primary {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .lg\:ring-secondary {
@@ -120444,7 +120444,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus-within\:ring-primary:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .lg\:focus-within\:ring-secondary:focus-within {
@@ -120872,7 +120872,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .lg\:focus\:ring-secondary:focus {
@@ -121524,7 +121524,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .lg\:text-secondary {
@@ -121952,7 +121952,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .lg\:group-hover\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:text-secondary {
@@ -122380,7 +122380,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus-within\:text-primary:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-secondary:focus-within {
@@ -122808,7 +122808,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:hover\:text-primary:hover {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-secondary:hover {
@@ -123236,7 +123236,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .lg\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .lg\:focus\:text-secondary:focus {
@@ -130023,7 +130023,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-divide-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
   }
 
   .xl\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
@@ -130635,7 +130635,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .xl\:bg-secondary {
@@ -131063,7 +131063,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   input[type="radio"]:checked ~ .xl\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   input[type="radio"]:checked ~ .xl\:label-checked\:bg-secondary {
@@ -131491,7 +131491,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .xl\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-secondary {
@@ -131919,7 +131919,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-secondary:focus-within {
@@ -132347,7 +132347,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-secondary:hover {
@@ -132775,7 +132775,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .xl\:focus\:bg-secondary:focus {
@@ -133240,8 +133240,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:from-primary {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .xl\:from-secondary {
@@ -133586,7 +133586,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:via-primary {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .xl\:via-secondary {
@@ -133930,7 +133930,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:to-primary {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .xl\:to-secondary {
@@ -134358,8 +134358,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:hover\:from-primary:hover {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .xl\:hover\:from-secondary:hover {
@@ -134704,7 +134704,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:hover\:via-primary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .xl\:hover\:via-secondary:hover {
@@ -135048,7 +135048,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:hover\:to-primary:hover {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .xl\:hover\:to-secondary:hover {
@@ -135476,8 +135476,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:focus\:from-primary:focus {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .xl\:focus\:from-secondary:focus {
@@ -135822,7 +135822,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:focus\:via-primary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .xl\:focus\:via-secondary:focus {
@@ -136166,7 +136166,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:focus\:to-primary:focus {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .xl\:focus\:to-secondary:focus {
@@ -136973,7 +136973,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .xl\:border-secondary {
@@ -137401,7 +137401,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .xl\:group-hover\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .group:hover .xl\:group-hover\:border-secondary {
@@ -137829,7 +137829,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus-within\:border-primary:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .xl\:focus-within\:border-secondary:focus-within {
@@ -138257,7 +138257,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:hover\:border-primary:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .xl\:hover\:border-secondary:hover {
@@ -138685,7 +138685,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .xl\:focus\:border-secondary:focus {
@@ -145646,17 +145646,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:placeholder-primary::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-primary:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-primary::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-secondary::-moz-placeholder {
@@ -146930,17 +146930,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus\:placeholder-primary:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-secondary:focus::-moz-placeholder {
@@ -150824,7 +150824,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:ring-offset-primary {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .xl\:ring-offset-secondary {
@@ -151168,7 +151168,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:focus-within\:ring-offset-primary:focus-within {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .xl\:focus-within\:ring-offset-secondary:focus-within {
@@ -151512,7 +151512,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .xl\:focus\:ring-offset-primary:focus {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .xl\:focus\:ring-offset-secondary:focus {
@@ -151999,7 +151999,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:ring-primary {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .xl\:ring-secondary {
@@ -152427,7 +152427,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus-within\:ring-primary:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .xl\:focus-within\:ring-secondary:focus-within {
@@ -152855,7 +152855,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .xl\:focus\:ring-secondary:focus {
@@ -153507,7 +153507,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .xl\:text-secondary {
@@ -153935,7 +153935,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .xl\:group-hover\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .group:hover .xl\:group-hover\:text-secondary {
@@ -154363,7 +154363,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus-within\:text-primary:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-secondary:focus-within {
@@ -154791,7 +154791,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:hover\:text-primary:hover {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .xl\:hover\:text-secondary:hover {
@@ -155219,7 +155219,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .xl\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .xl\:focus\:text-secondary:focus {
@@ -162006,7 +162006,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-divide-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
   }
 
   .\32xl\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
@@ -162618,7 +162618,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-secondary {
@@ -163046,7 +163046,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   input[type="radio"]:checked ~ .\32xl\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   input[type="radio"]:checked ~ .\32xl\:label-checked\:bg-secondary {
@@ -163474,7 +163474,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .\32xl\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-secondary {
@@ -163902,7 +163902,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-secondary:focus-within {
@@ -164330,7 +164330,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-secondary:hover {
@@ -164758,7 +164758,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(4, 33, 14, var(--tw-bg-opacity));
+    background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus\:bg-secondary:focus {
@@ -165223,8 +165223,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:from-primary {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .\32xl\:from-secondary {
@@ -165569,7 +165569,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:via-primary {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .\32xl\:via-secondary {
@@ -165913,7 +165913,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:to-primary {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .\32xl\:to-secondary {
@@ -166341,8 +166341,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:hover\:from-primary:hover {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .\32xl\:hover\:from-secondary:hover {
@@ -166687,7 +166687,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:hover\:via-primary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .\32xl\:hover\:via-secondary:hover {
@@ -167031,7 +167031,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:hover\:to-primary:hover {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .\32xl\:hover\:to-secondary:hover {
@@ -167459,8 +167459,8 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:focus\:from-primary:focus {
-    --tw-gradient-from: #04210e;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-from: #082915;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .\32xl\:focus\:from-secondary:focus {
@@ -167805,7 +167805,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:focus\:via-primary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #04210e, var(--tw-gradient-to, rgba(4, 33, 14, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
   .\32xl\:focus\:via-secondary:focus {
@@ -168149,7 +168149,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:focus\:to-primary:focus {
-    --tw-gradient-to: #04210e;
+    --tw-gradient-to: #082915;
   }
 
   .\32xl\:focus\:to-secondary:focus {
@@ -168956,7 +168956,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .\32xl\:border-secondary {
@@ -169384,7 +169384,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .\32xl\:group-hover\:border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:border-secondary {
@@ -169812,7 +169812,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus-within\:border-primary:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .\32xl\:focus-within\:border-secondary:focus-within {
@@ -170240,7 +170240,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:hover\:border-primary:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .\32xl\:hover\:border-secondary:hover {
@@ -170668,7 +170668,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(4, 33, 14, var(--tw-border-opacity));
+    border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
   .\32xl\:focus\:border-secondary:focus {
@@ -177629,17 +177629,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:placeholder-primary::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-primary:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-primary::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-secondary::-moz-placeholder {
@@ -178913,17 +178913,17 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus\:placeholder-primary:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-placeholder-opacity));
+    color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-secondary:focus::-moz-placeholder {
@@ -182807,7 +182807,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:ring-offset-primary {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .\32xl\:ring-offset-secondary {
@@ -183151,7 +183151,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:focus-within\:ring-offset-primary:focus-within {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .\32xl\:focus-within\:ring-offset-secondary:focus-within {
@@ -183495,7 +183495,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   }
 
   .\32xl\:focus\:ring-offset-primary:focus {
-    --tw-ring-offset-color: #04210e;
+    --tw-ring-offset-color: #082915;
   }
 
   .\32xl\:focus\:ring-offset-secondary:focus {
@@ -183982,7 +183982,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:ring-primary {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .\32xl\:ring-secondary {
@@ -184410,7 +184410,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus-within\:ring-primary:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus-within\:ring-secondary:focus-within {
@@ -184838,7 +184838,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(4, 33, 14, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus\:ring-secondary:focus {
@@ -185490,7 +185490,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .\32xl\:text-secondary {
@@ -185918,7 +185918,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .group:hover .\32xl\:group-hover\:text-primary {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:text-secondary {
@@ -186346,7 +186346,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus-within\:text-primary:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-secondary:focus-within {
@@ -186774,7 +186774,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:hover\:text-primary:hover {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .\32xl\:hover\:text-secondary:hover {
@@ -187202,7 +187202,7 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 
   .\32xl\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
-    color: rgba(4, 33, 14, var(--tw-text-opacity));
+    color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
   .\32xl\:focus\:text-secondary:focus {

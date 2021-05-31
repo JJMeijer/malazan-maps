@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from mapsdata.models import Book, Place, Marker
+from mapsdata.models import Book, Place
 
 
 class PlaceSerializer(serializers.ModelSerializer):
@@ -43,25 +43,3 @@ def serialize_all():
     ).data
 
     return books + places
-
-
-class PlaceForMarkerSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Place
-        fields = (
-            'name',
-            'short_name',
-            'description',
-        )
-
-
-class MarkerSerializer(serializers.ModelSerializer):
-    place = PlaceForMarkerSerializer()
-
-    class Meta:
-        model = Marker
-        fields = (
-            'place',
-            'x',
-            'y',
-        )

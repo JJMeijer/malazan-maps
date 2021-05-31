@@ -1,9 +1,15 @@
 from django_distill import distill_path
 
+from django.contrib.sitemaps.views import sitemap
+from django.urls import path
+
 from mapsdata.models import Map, Book, Place
 
 from mapsdata.views import book_list_view, book_detail_view, map_list_view, map_detail_view
 from mapsdata.views import home_view, place_view
+
+from mapsdata.sitemaps import sitemaps
+
 
 def distill_no_params():
     """Function for Route that needs no parameters during static
@@ -36,7 +42,7 @@ urlpatterns = [
         distill_func=distill_no_params
     ),
     distill_path(
-        'map/<str:map_short_name>/',
+        'maps/<str:map_short_name>/',
         map_detail_view,
         name='map_detail',
         distill_func=distill_maps
@@ -48,15 +54,15 @@ urlpatterns = [
         distill_func=distill_no_params
     ),
     distill_path(
-        'book/<str:book_short_name>/',
+        'books/<str:book_short_name>/',
         book_detail_view,
         name='book_detail',
         distill_func=distill_books
     ),
     distill_path(
-        'place/<str:place_short_name>/',
+        'places/<str:place_short_name>/',
         place_view,
-        name='place',
+        name='place_detail',
         distill_func=distill_places
     ),
     distill_path(
@@ -65,5 +71,11 @@ urlpatterns = [
         name='home',
         distill_func=distill_no_params,
         distill_file='index.html'
+    ),
+    path(
+        'sitemap.xml',
+        sitemap,
+        {'sitemaps': sitemaps},
+        name='django.contrib.sitemaps.views.sitemap'
     ),
 ]
