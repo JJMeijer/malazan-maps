@@ -2,8 +2,12 @@
 
 require('esbuild')
     .build({
-        entryPoints: ['static/ts/marker.ts', 'static/ts/base.ts', 'static/ts/map.ts'],
-        outdir: 'static/js',
+        entryPoints: [
+            'mapsdata/src/ts/marker.ts',
+            'mapsdata/src/ts/base.ts',
+            'mapsdata/src/ts/map.ts',
+        ],
+        outdir: 'mapsdata/static/js',
         minify: false,
         sourcemap: true,
         target: 'es2015',

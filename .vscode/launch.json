@@ -5,12 +5,33 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Runserver",
+            "name": "Django: Runserver",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}\\manage.py",
             "args": [
                 "runserver"
+            ],
+            "django": true,
+            "justMyCode": false
+        },
+        {
+            "name": "Django: Collectstatic",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\manage.py",
+            "args": [
+                "collectstatic",
+                "-i",
+                "import_export",
+                "-i",
+                "admin",
+                "-i",
+                "admin_interface",
+                "-i",
+                "colorfield",
+                "-i",
+                "ckeditor"
             ],
             "django": true,
             "justMyCode": false
@@ -24,7 +45,7 @@
             "disableNetworkCache": true
         },
         {
-            "name": "Build Static Site",
+            "name": "Distill: Build Local",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}\\manage.py",
@@ -36,7 +57,7 @@
 
         },
         {
-            "name": "Publish Static Site",
+            "name": "Distill: Publish to GCS",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}\\manage.py",

@@ -16,7 +16,8 @@
         "prettier/prettier": "error"
     },
     "ignorePatterns": [
-        "static/js/*.js"
+        "static/js/*.js",
+        "mapsdata/static/js/*.js"
     ],
     "overrides": [
         {

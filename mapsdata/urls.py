@@ -48,7 +48,7 @@ urlpatterns = [
         distill_func=distill_maps
     ),
     distill_path(
-        'books',
+        'books/',
         book_list_view,
         name='book_list',
         distill_func=distill_no_params
