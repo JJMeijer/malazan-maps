@@ -3,7 +3,7 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ page_title }} | Malazan Maps</title>
         <meta name="description" content="{{ page_description }}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,14 +19,19 @@
                             Malazan Maps
                         </p>
                     </a>
-                    {% block breadcrumb %}{% endblock breadcrumb %}
+                    <p class="px-1">
+                        >
+                    </p>
+                    <p class="p-2 text-md">
+                        {{ page_title }}
+                    </p>
                 </div>
                 <div
                     id="search-wrapper"
                     class="relative flex flex-col h-10 w-2/3 my-16
                         lg:w-1/3"
                 >
-                    <div class="flex flex-row h-full z-20 bg-white rounded-md">
+                    <div class="flex flex-row h-full z-30 bg-white rounded-md">
                         <a class="h-full" href="{% url "home" %}">
                             <img
                                 class="h-full p-2 opacity-40"
@@ -43,15 +48,13 @@
                     </div>
                     <div
                         id="search-results"
-                        class="hidden absolute z-10 pt-11 pb-2 text-gray-800 left-0 top-0 shadow-md bg-white
+                        class="hidden absolute z-20 pt-11 pb-2 text-gray-800 left-0 top-0 shadow-md bg-white
                                w-full rounded-t-2xl rounded-b-md"
                     ></div>
                 </div>
-                <p class="text-center text-gray-100 text-lg px-16">
-                    Find places in the world of Malazan: Book of the Fallen.
-                </p>
+                {% block upper_content %}{% endblock upper_content %}
             </div>
-            {% block content %}{% endblock %}
+            {% block lower_content %}{% endblock %}
         </div>
         {{ entries|json_script:"entries"}}
         <script>

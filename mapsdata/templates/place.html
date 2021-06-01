@@ -2,7 +2,14 @@
 
 {% load static %}
 
-{% block  content %}
+{% block upper_content %}
+    <p class="text-center text-gray-100 px-16">
+        {{ description }}
+    </p>
+{% endblock %}
+
+
+{% block lower_content %}
     <div class="flex flex-col items-center justify-center -mt-24 mx-8 bg-white rounded-md z-10">
         <div class="flex flex-row my-4">
             {% for marker in markers %}
@@ -39,21 +46,6 @@
                     >
                 </div>
             {% endfor %}
-            <div class="border-gray-600 border rounded-lg w-5/6 lg:w-96 mt-8 ml-8 shadow-lg bg-gray-100">
-                <div class="bg-gray-200 rounded-t-md w-full flex items-center justify-center p-2 border-b border-gray-600">
-                    <p class="text-center text-xl">{{ marker_name }}</p>
-                </div>
-                <div class="p-2">
-                    <p class="mb-2"> {{ description }}</p>
-                    <a
-                        class="text-blue-600 underline hover:text-blue-900 visited:text-purple-600"
-                        href="{{ wiki_link }}"
-                        target="_blank"
-                    >
-                        wiki link
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
     <script src="{% static "js/marker.js" %}"></script>

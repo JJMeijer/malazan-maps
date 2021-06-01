@@ -42,6 +42,7 @@ class Map(models.Model):
     height = models.IntegerField()
     width = models.IntegerField()
     image = models.ImageField(upload_to='maps/', height_field='height', width_field='width')
+    thumbnail = models.ImageField(upload_to='maps/thumbnails/', null=True, blank=False)
 
     books = models.ManyToManyField(
         to=Book,

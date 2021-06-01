@@ -5,8 +5,7 @@ from django.urls import path
 
 from mapsdata.models import Map, Book, Place
 
-from mapsdata.views import book_list_view, book_detail_view, map_list_view, map_detail_view
-from mapsdata.views import home_view, place_view
+from mapsdata.views import home_view, place_view, map_view, book_view
 
 from mapsdata.sitemaps import sitemaps
 
@@ -36,33 +35,21 @@ def distill_places():
 
 urlpatterns = [
     distill_path(
-        'maps/',
-        map_list_view,
-        name='map_list',
-        distill_func=distill_no_params
-    ),
-    distill_path(
         'maps/<str:map_short_name>/',
-        map_detail_view,
-        name='map_detail',
+        map_view,
+        name='map',
         distill_func=distill_maps
     ),
     distill_path(
-        'books/',
-        book_list_view,
-        name='book_list',
-        distill_func=distill_no_params
-    ),
-    distill_path(
         'books/<str:book_short_name>/',
-        book_detail_view,
-        name='book_detail',
+        book_view,
+        name='book',
         distill_func=distill_books
     ),
     distill_path(
         'places/<str:place_short_name>/',
         place_view,
-        name='place_detail',
+        name='place',
         distill_func=distill_places
     ),
     distill_path(

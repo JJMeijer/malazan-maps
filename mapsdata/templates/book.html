@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block lower_content %}
+    <div class="flex flex-col items-start p-8 -my-24 mx-8 bg-white rounded-md
+                lg:flex-row">
+
+        <div class="flex flex-wrap w-full justify-center items-start px-4">
+            {% for map in maps %}
+                <div class="w-2/5 flex items-end">
+                    <a
+                        href="{% url "map" map.short_name %}"
+                        class="group p-2">
+                        <img
+                            src="{{ map.thumbnail.url }}"
+                            class="border border-gray-400 rounded-md shadow-md
+                                    group-hover:opacity-60"/>
+                        <p class="text-center group-hover:underline">
+                            {{ map.name }}
+                        </p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

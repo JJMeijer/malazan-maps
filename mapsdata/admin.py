@@ -45,6 +45,7 @@ class MapAdmin(admin.ModelAdmin):
         'short_name',
         'continent',
         'image',
+        'thumbnail',
         'books',
     )
 

@@ -7,36 +7,17 @@ from mapsdata.serializers import serialize_all
 
 def home_view(request):
     """Homepage View"""
-    hero_1 = Map.objects.get(short_name='seven-cities-dg')
-    hero_2 = Map.objects.get(short_name='darujhistan')
-    hero_3 = Map.objects.get(short_name='chain-of-dogs-1')
-
     context = {
         'page_title': 'Home',
         'page_description': 'Malazan Maps Search Engine. Find all places mentioned in the books of the Malazan: Book of the Fallen series.',
-        'hero_1': hero_1,
-        'hero_2': hero_2,
-        'hero_3': hero_3,
+        'header_image': Map.objects.get(short_name='darujhistan'),
         'entries': serialize_all()
     }
 
     return render(request, 'home.html', context)
 
 
-def map_list_view(request):
-    """Map List View that lists all Maps"""
-    maps = Map.objects.all()
-
-    context = {
-        'page_title': 'Maps',
-        'page_description': 'Find all maps of the world of Malazan: Book of the Fallen',
-        'entries': serialize_all(),
-        'maps': maps
-    }
-
-    return render(request, 'map_list.html', context)
-
-def map_detail_view(request, map_short_name):
+def map_view(request, map_short_name):
     """Map View that returns a Map"""
     try:
         instance = Map.objects.get(short_name=map_short_name)
@@ -51,7 +32,7 @@ def map_detail_view(request, map_short_name):
         'entries': serialize_all()
     }
 
-    return render(request, 'map_detail.html', context)
+    return render(request, 'map.html', context)
 
 
 def place_view(request, place_short_name):
@@ -73,23 +54,10 @@ def place_view(request, place_short_name):
         'entries': serialize_all()
     }
 
-    return render(request, 'marker.html', context)
-
-def book_list_view(request):
-    """Book List View"""
-    books = Book.objects.all()
-
-    context = {
-        'page_title': 'Books',
-        'page_description': 'All books that take place in the world of Malazan: Book of the Fallen',
-        'books': books,
-        'entries': serialize_all()
-    }
-
-    return render(request, 'book_list.html', context)
+    return render(request, 'place.html', context)
 
 
-def book_detail_view(request, book_short_name):
+def book_view(request, book_short_name):
     """Book View"""
     try:
         instance = Book.objects.get(short_name=book_short_name)
@@ -108,4 +76,4 @@ def book_detail_view(request, book_short_name):
         'entries': serialize_all()
     }
 
-    return render(request, 'book_detail.html', context)
+    return render(request, 'book.html', context)
