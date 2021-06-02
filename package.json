@@ -4,8 +4,10 @@
   "license": "MIT",
   "scripts": {
     "build-css:dev": "set TAILWIND_MODE=build & postcss mapsdata/static/css/tailwind.css -o mapsdata/static/css/tailwind-dist.css --env development",
-    "build-css:prod": "postcss mapsdata/static/css/tailwind.css -o mapsdata/static/css/tailwind-dist.css --env production",
-    "build-js": "node esbuild.js"
+    "build-css:prod": "set TAILWIND_MODE=build & postcss mapsdata/static/css/tailwind.css -o mapsdata/static/css/tailwind-dist.css --env production",
+    "build-js:prod": "node esbuild-prod.js",
+    "build-js:dev": "node esbuild-dev.js",
+    "build-js:watch": "node esbuild-watch.js"
   },
   "dependencies": {
     "autoprefixer": "^10.2.5",

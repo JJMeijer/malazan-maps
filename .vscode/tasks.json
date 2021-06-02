@@ -1,0 +1,146 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Yarn: Build Prod CSS",
+        "type": "shell",
+        "command": "yarn build-css:prod",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Shell: Clear dirs",
+        "type": "shell",
+        "command": "Remove-Item -R ./mapsdata/static/js; Remove-Item -R ./static",
+        "group": "build",
+        "problemMatcher": [],
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        }
+      },
+      {
+        "label": "Yarn: Build Prod JS",
+        "type": "shell",
+        "command": "yarn build-js:prod",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Django: Migrations",
+        "type": "shell",
+        "command": "./.venv/Scripts/activate; python manage.py makemigrations; python manage.py migrate",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Django: Collectstatic",
+        "type": "shell",
+        "command": "./.venv/Scripts/activate; python manage.py collectstatic --noinput -i import_export -i admin -i admin_interface -i colorfield -i ckeditor",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Django-Distill: Publish to GCS",
+        "type": "shell",
+        "command": "./.venv/Scripts/activate; python manage.py distill-publish --force",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Yarn: Rebuild Dev CSS",
+        "type": "shell",
+        "command": "yarn build-css:dev",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Yarn: Rebuild Dev JS",
+        "type": "shell",
+        "command": "yarn build-js:dev",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Build",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "dependsOn": [
+          "Yarn: Build Prod CSS",
+          "Shell: Clear dirs",
+          "Yarn: Build Prod JS",
+          "Django: Migrations",
+          "Django: Collectstatic",
+          "Django-Distill: Publish to GCS",
+          "Yarn: Rebuild Dev CSS",
+          "Yarn: Rebuild Dev JS"
+        ],
+        "problemMatcher": [],
+        "dependsOrder": "sequence"
+      }
+    ]
+  }

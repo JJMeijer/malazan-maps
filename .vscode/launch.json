@@ -16,27 +16,6 @@
             "justMyCode": false
         },
         {
-            "name": "Django: Collectstatic",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}\\manage.py",
-            "args": [
-                "collectstatic",
-                "-i",
-                "import_export",
-                "-i",
-                "admin",
-                "-i",
-                "admin_interface",
-                "-i",
-                "colorfield",
-                "-i",
-                "ckeditor"
-            ],
-            "django": true,
-            "justMyCode": false
-        },
-        {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "pwa-chrome",
@@ -51,18 +30,6 @@
             "program": "${workspaceFolder}\\manage.py",
             "args": [
                 "distill-local"
-            ],
-            "django": true,
-            "justMyCode": false
-
-        },
-        {
-            "name": "Distill: Publish to GCS",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}\\manage.py",
-            "args": [
-                "distill-publish"
             ],
             "django": true,
             "justMyCode": false
