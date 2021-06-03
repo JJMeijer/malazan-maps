@@ -3,7 +3,7 @@ import time
 from django.core.management.base import BaseCommand, CommandError
 from mediawiki.exceptions import PageError
 
-from mapsdata.models import City, Region, Book, Continent
+from mapsdata.models import Place, Book, Continent
 from mapsdata.wikia import get_first_paragraph
 
 class Command(BaseCommand):
@@ -34,12 +34,8 @@ class Command(BaseCommand):
 
     def fetch_single(self, name, is_update):
         """Fetch or update description of a single object by name"""
-        if City.objects.filter(name=name).exists():
-            obj = City.objects.get(name=name)
-            self.fetch_description(obj, is_update)
-
-        if Region.objects.filter(name=name).exists():
-            obj = Region.objects.get(name=name)
+        if Place.objects.filter(name=name).exists():
+            obj = Place.objects.get(name=name)
             self.fetch_description(obj, is_update)
 
         if Continent.objects.filter(name=name).exists():
@@ -52,11 +48,8 @@ class Command(BaseCommand):
 
     def fetch_all(self, is_update):
         """Fetch or update descriptions of all items in db"""
-        for city in City.objects.all():
-            self.fetch_description(city, is_update)
-
-        for region in Region.objects.all():
-            self.fetch_description(region, is_update)
+        for place in Place.objects.all():
+            self.fetch_description(place, is_update)
 
         for book in Book.objects.all():
             self.fetch_description(book, is_update)
