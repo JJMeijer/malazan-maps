@@ -990,6 +990,11 @@ input[type="radio"]:checked ~ .label-checked\:border-2 {
     margin-right: 2rem;
   }
 
+  .lg\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .lg\:p-8 {
     padding: 2rem;
   }

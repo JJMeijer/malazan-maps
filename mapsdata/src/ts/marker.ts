@@ -113,8 +113,35 @@ const placeVisibleMarker = () => {
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+const getVisibleImage = (): HTMLElement | null => {
+    const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
+
+    if (visibleImageWrapper) {
+        const mapId = getMapId(visibleImageWrapper.id);
+        return document.querySelector(`#map-image-${mapId}`);
+    }
+
+    return null;
+};
+
+const initMarkerPage = (): void => {
     placeVisibleMarker();
     window.addEventListener('resize', placeVisibleMarker);
     setImageSelectorListener();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const visibleImage = getVisibleImage();
+
+    if (visibleImage === null || !(visibleImage instanceof HTMLImageElement)) {
+        throw new Error('No Image Available on Marker page');
+    }
+
+    if (visibleImage.complete) {
+        initMarkerPage();
+    } else {
+        visibleImage.addEventListener('load', () => {
+            initMarkerPage();
+        });
+    }
 });

@@ -3,10 +3,10 @@ import { ResultData } from './types';
 
 const generateLink = (short_name: string, type: string): string => {
     if (type === 'book') {
-        return `/books/${short_name}`;
+        return `/books/${short_name}/`;
     }
 
-    return `/places/${short_name}`;
+    return `/places/${short_name}/`;
 };
 
 const partialBoldString = (fullText: string, boldText: string): string => {
