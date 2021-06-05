@@ -146,7 +146,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 SILENCED_SYSTEM_CHECKS = ['security.W019']
 
 # Static site generation
-DISTILL_DIR = 'dist'
+DISTILL_DIR = 'dist/www'
 
 DISTILL_PUBLISH = {
     'default': {

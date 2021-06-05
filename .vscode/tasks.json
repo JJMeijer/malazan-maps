@@ -79,9 +79,24 @@
         "problemMatcher": []
       },
       {
-        "label": "Django-Distill: Publish to GCS",
+        "label": "Django-Distill: Build Locally",
         "type": "shell",
-        "command": "./.venv/Scripts/activate; python manage.py distill-publish --force",
+        "command": "./.venv/Scripts/activate; python manage.py distill-local",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Google Cloud: Deploy App",
+        "type": "shell",
+        "command": "cd dist; gcloud app deploy",
         "group": "build",
         "presentation": {
           "echo": true,
@@ -135,7 +150,8 @@
           "Yarn: Build Prod JS",
           "Django: Migrations",
           "Django: Collectstatic",
-          "Django-Distill: Publish to GCS",
+          "Django-Distill: Build Locally",
+          "Google Cloud: Deploy App",
           "Yarn: Rebuild Dev CSS",
           "Yarn: Rebuild Dev JS"
         ],

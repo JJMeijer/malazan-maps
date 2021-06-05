@@ -6,6 +6,14 @@ const generateLink = (short_name: string, type: string): string => {
         return `/books/${short_name}/`;
     }
 
+    if (type === 'map') {
+        return `/maps/${short_name}/`;
+    }
+
+    if (type !== 'region' && type !== 'city') {
+        throw new Error('Unexpected search result type');
+    }
+
     return `/places/${short_name}/`;
 };
 
