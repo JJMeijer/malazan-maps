@@ -25,10 +25,7 @@ SECRET_KEY = 'django-insecure-#0y4gc=oh9g(378micm%lvf=_4mg_ig1y&i)&5hjq*_ap&-!w8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'testserver',
-    'localhost',
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,6 +35,7 @@ INSTALLED_APPS = [
     'mapsdata.apps.MapsdataConfig',
     'import_export',
     'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -158,3 +156,5 @@ DISTILL_PUBLISH = {
         'BUCKET': 'malazan-maps-01',
     }
 }
+
+SITE_ID = 1
