@@ -66,8 +66,6 @@ class StaticSitemap(Sitemap):
         """Get Items to include in the sitemap"""
         return (
             'home',
-            'map_list',
-            'book_list',
         )
 
     def location(self, item):

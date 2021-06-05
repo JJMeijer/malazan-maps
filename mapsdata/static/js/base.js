@@ -7,9 +7,9 @@
   // mapsdata/src/ts/search/result-element.ts
   var generateLink = (short_name, type) => {
     if (type === "book") {
-      return `/books/${short_name}`;
+      return `/books/${short_name}/`;
     }
-    return `/places/${short_name}`;
+    return `/places/${short_name}/`;
   };
   var partialBoldString = (fullText, boldText) => {
     return fullText.replace(new RegExp(`(${boldText})`, "gi"), `<span class="font-extrabold text-gray-800">$1</span>`);

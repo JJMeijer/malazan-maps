@@ -1,7 +1,6 @@
 from django_distill import distill_path
 
 from django.contrib.sitemaps.views import sitemap
-from django.urls import path
 
 from mapsdata.models import Map, Book, Place
 
@@ -33,6 +32,11 @@ def distill_places():
     for place in Place.objects.all():
         yield {'place_short_name': place.short_name}
 
+def distill_sitemap():
+    """Function that generates all possible sitemap URLs parameters during static
+    site generation"""
+    yield {'sitemaps': sitemaps}
+
 urlpatterns = [
     distill_path(
         'maps/<str:map_short_name>/',
@@ -59,10 +63,11 @@ urlpatterns = [
         distill_func=distill_no_params,
         distill_file='index.html'
     ),
-    path(
+    distill_path(
         'sitemap.xml',
         sitemap,
         {'sitemaps': sitemaps},
-        name='django.contrib.sitemaps.views.sitemap'
+        name='django.contrib.sitemaps.views.sitemap',
+        distill_func=distill_sitemap
     ),
 ]
