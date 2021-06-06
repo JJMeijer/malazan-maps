@@ -1,1 +1,195 @@
-(()=>{var m="index",p="name",E="href";var I=(t,e)=>{if(e==="book")return`/books/${t}/`;if(e==="map")return`/maps/${t}/`;if(e!=="region"&&e!=="city")throw new Error("Unexpected search result type");return`/places/${t}/`},w=(t,e)=>t.replace(new RegExp(`(${e})`,"gi"),'<span class="font-extrabold text-gray-800">$1</span>'),L=(t,e,r)=>{let{name:n,short_name:o,type:u}=t,f=I(o,u),c=document.createElement("div");c.classList.add("flex","flex-col","p-2","text-md","hover:bg-gray-200"),c.setAttribute(`data-${m}`,String(r)),c.setAttribute(`data-${p}`,o),c.setAttribute(`data-${E}`,f);let s=document.createElement("a");s.href=f,s.classList.add("flex","flex-row");let a=document.createElement("p");a.innerHTML=w(n,e),a.classList.add("w-3/4");let T=document.createElement("p");return T.innerHTML=u,T.classList.add("w-1/4","opacity-50","text-right"),s.appendChild(a),s.appendChild(T),c.appendChild(s),c},x=()=>{let t=document.createElement("div");t.classList.add("p-2","text-md","w-full");let e=document.createElement("p");return e.innerHTML="No Results",t.appendChild(e),t};var R="focus-result",g=[R,"bg-gray-200","text-gray-800"],d=()=>{let t=document.querySelector(`.${R}`);if(t instanceof HTMLElement){let e=t.dataset[m],r=t.dataset[p],n=t.dataset[E];if(r&&e&&n)return{focusName:r,focusIndex:parseInt(e),focusHref:n};throw new Error("Focussed Result had unexpected format")}return{focusName:"",focusIndex:0,focusHref:""}},l=t=>{let e=document.querySelector(`[data-index="${t}"]`);e!==null&&e.classList.remove(...g)},i=t=>{let e=document.querySelector(`[data-index="${t}"]`);e!==null&&e.classList.add(...g)};var h=(t,e)=>{if(!(t.target instanceof HTMLInputElement))throw new Error("Unexpected target of search input event.");let{value:r}=t.target,{focusName:n}=d(),{entries:o}=window.malazan;if(e.innerHTML="",r.length>0){let u=o.filter(({name:s})=>s.match(new RegExp(r,"i"))),f=u.slice(0,9).map((s,a)=>L(s,r,a)),c=f.length>0;if(c){f.forEach(a=>e.appendChild(a));let s=u.findIndex(({short_name:a})=>a===n);s>-1&&i(s),s===-1&&i(0)}if(!c){let s=x();e.appendChild(s)}e.classList.remove("hidden")}r.length===0&&e.classList.add("hidden")},S=(t,e)=>{let{key:r}=t;if(r==="ArrowDown"){t.preventDefault();let{focusIndex:n}=d(),o=e.children.length-1;n<o&&(l(n),i(n+1)),n===o&&(l(n),i(0))}if(r==="ArrowUp"){t.preventDefault();let{focusIndex:n}=d(),o=e.children.length-1;n>0&&(l(n),i(n-1)),n===0&&(l(n),i(o))}if(r==="Enter"){t.preventDefault();let{focusHref:n}=d();window.location.href=n}if(r==="Tab"){let{focusIndex:n}=d();l(n)}};document.addEventListener("DOMContentLoaded",()=>{let t=document.getElementById("search-wrapper"),e=document.getElementById("search"),r=document.getElementById("search-results");if(!(t instanceof HTMLElement))throw new Error("SearchboxWrapper is unexpectedly missing");if(!(e instanceof HTMLInputElement))throw new Error("Searchbox is unexpectedly missing");if(!(r instanceof HTMLElement))throw new Error("SearchResultsBox is unexpectedly missing");e.addEventListener("input",n=>h(n,r)),e.addEventListener("focus",n=>h(n,r)),e.addEventListener("keydown",n=>S(n,r)),t.addEventListener("focusout",n=>{let o=n.relatedTarget;o===null&&r.classList.add("hidden"),o instanceof HTMLElement&&!o.matches("#search-wrapper *")&&r.classList.add("hidden")})});})();
+(() => {
+  // mapsdata/src/ts/search/constants.ts
+  var RESULT_INDEX_ATTRIBUTE = "index";
+  var RESULT_NAME_ATTRIBUTE = "name";
+  var RESULT_HREF_ATTRIBUTE = "href";
+
+  // mapsdata/src/ts/search/result-element.ts
+  var generateLink = (short_name, type) => {
+    if (type === "book") {
+      return `/books/${short_name}/`;
+    }
+    if (type === "map") {
+      return `/maps/${short_name}/`;
+    }
+    if (type !== "region" && type !== "city") {
+      throw new Error("Unexpected search result type");
+    }
+    return `/places/${short_name}/`;
+  };
+  var partialBoldString = (fullText, boldText) => {
+    return fullText.replace(new RegExp(`(${boldText})`, "gi"), `<span class="font-extrabold text-gray-800">$1</span>`);
+  };
+  var createSearchResult = (resultData, query, index) => {
+    const { name, short_name, type } = resultData;
+    const resultHref = generateLink(short_name, type);
+    const resultWrapper = document.createElement("div");
+    resultWrapper.classList.add("flex", "flex-col", "p-2", "text-md", "hover:bg-gray-200");
+    resultWrapper.setAttribute(`data-${RESULT_INDEX_ATTRIBUTE}`, String(index));
+    resultWrapper.setAttribute(`data-${RESULT_NAME_ATTRIBUTE}`, short_name);
+    resultWrapper.setAttribute(`data-${RESULT_HREF_ATTRIBUTE}`, resultHref);
+    const resultLink = document.createElement("a");
+    resultLink.href = resultHref;
+    resultLink.classList.add("flex", "flex-row");
+    const resultName = document.createElement("p");
+    resultName.innerHTML = partialBoldString(name, query);
+    resultName.classList.add("w-3/4");
+    const resultType = document.createElement("p");
+    resultType.innerHTML = type;
+    resultType.classList.add("w-1/4", "opacity-50", "text-right");
+    resultLink.appendChild(resultName);
+    resultLink.appendChild(resultType);
+    resultWrapper.appendChild(resultLink);
+    return resultWrapper;
+  };
+  var createNoResult = () => {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add(...["p-2", "text-md", "w-full"]);
+    const text = document.createElement("p");
+    text.innerHTML = "No Results";
+    wrapper.appendChild(text);
+    return wrapper;
+  };
+
+  // mapsdata/src/ts/search/result-focus.ts
+  var FOCUS_RESULT_CLASS = "focus-result";
+  var FOCUS_CLASSES = [FOCUS_RESULT_CLASS, "bg-gray-200", "text-gray-800"];
+  var getCurrentFocusResult = () => {
+    const element = document.querySelector(`.${FOCUS_RESULT_CLASS}`);
+    if (element instanceof HTMLElement) {
+      const focusIndex = element.dataset[RESULT_INDEX_ATTRIBUTE];
+      const focusName = element.dataset[RESULT_NAME_ATTRIBUTE];
+      const focusHref = element.dataset[RESULT_HREF_ATTRIBUTE];
+      if (focusName && focusIndex && focusHref) {
+        return {
+          focusName,
+          focusIndex: parseInt(focusIndex),
+          focusHref
+        };
+      }
+      throw new Error("Focussed Result had unexpected format");
+    }
+    return {
+      focusName: "",
+      focusIndex: 0,
+      focusHref: ""
+    };
+  };
+  var unSetFocusResult = (resultIndex) => {
+    const element = document.querySelector(`[data-index="${resultIndex}"]`);
+    if (element !== null) {
+      element.classList.remove(...FOCUS_CLASSES);
+    }
+  };
+  var setFocusResult = (resultIndex) => {
+    const element = document.querySelector(`[data-index="${resultIndex}"]`);
+    if (element !== null) {
+      element.classList.add(...FOCUS_CLASSES);
+    }
+  };
+
+  // mapsdata/src/ts/search/search.ts
+  var handleSearchInput = (event, searchResultsBox) => {
+    if (!(event.target instanceof HTMLInputElement)) {
+      throw new Error("Unexpected target of search input event.");
+    }
+    const { value } = event.target;
+    const { focusName } = getCurrentFocusResult();
+    const { entries } = window.malazan;
+    searchResultsBox.innerHTML = "";
+    if (value.length > 0) {
+      const results = entries.filter(({ name }) => {
+        return name.match(new RegExp(value, "i"));
+      });
+      const resultElements = results.slice(0, 9).map((result, index) => {
+        return createSearchResult(result, value, index);
+      });
+      const HAS_RESULT = resultElements.length > 0;
+      if (HAS_RESULT) {
+        resultElements.forEach((element) => searchResultsBox.appendChild(element));
+        const recycledResultFocusIndex = results.findIndex(({ short_name }) => short_name === focusName);
+        if (recycledResultFocusIndex > -1) {
+          setFocusResult(recycledResultFocusIndex);
+        }
+        if (recycledResultFocusIndex === -1) {
+          setFocusResult(0);
+        }
+      }
+      if (!HAS_RESULT) {
+        const noResultElement = createNoResult();
+        searchResultsBox.appendChild(noResultElement);
+      }
+      searchResultsBox.classList.remove("hidden");
+    }
+    if (value.length === 0) {
+      searchResultsBox.classList.add("hidden");
+    }
+  };
+  var handleSearchKeys = (event, searchResultsBox) => {
+    const { key } = event;
+    if (key === "ArrowDown") {
+      event.preventDefault();
+      const { focusIndex } = getCurrentFocusResult();
+      const maxResultIndex = searchResultsBox.children.length - 1;
+      if (focusIndex < maxResultIndex) {
+        unSetFocusResult(focusIndex);
+        setFocusResult(focusIndex + 1);
+      }
+      if (focusIndex === maxResultIndex) {
+        unSetFocusResult(focusIndex);
+        setFocusResult(0);
+      }
+    }
+    if (key === "ArrowUp") {
+      event.preventDefault();
+      const { focusIndex } = getCurrentFocusResult();
+      const maxResultIndex = searchResultsBox.children.length - 1;
+      if (focusIndex > 0) {
+        unSetFocusResult(focusIndex);
+        setFocusResult(focusIndex - 1);
+      }
+      if (focusIndex === 0) {
+        unSetFocusResult(focusIndex);
+        setFocusResult(maxResultIndex);
+      }
+    }
+    if (key === "Enter") {
+      event.preventDefault();
+      const { focusHref } = getCurrentFocusResult();
+      window.location.href = focusHref;
+    }
+    if (key === "Tab") {
+      const { focusIndex } = getCurrentFocusResult();
+      unSetFocusResult(focusIndex);
+    }
+  };
+
+  // mapsdata/src/ts/base.ts
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchBoxWrapper = document.getElementById("search-wrapper");
+    const searchBox = document.getElementById("search");
+    const searchResultsBox = document.getElementById("search-results");
+    if (!(searchBoxWrapper instanceof HTMLElement)) {
+      throw new Error("SearchboxWrapper is unexpectedly missing");
+    }
+    if (!(searchBox instanceof HTMLInputElement)) {
+      throw new Error("Searchbox is unexpectedly missing");
+    }
+    if (!(searchResultsBox instanceof HTMLElement)) {
+      throw new Error("SearchResultsBox is unexpectedly missing");
+    }
+    searchBox.addEventListener("input", (event) => handleSearchInput(event, searchResultsBox));
+    searchBox.addEventListener("focus", (event) => handleSearchInput(event, searchResultsBox));
+    searchBox.addEventListener("keydown", (event) => handleSearchKeys(event, searchResultsBox));
+    searchBoxWrapper.addEventListener("focusout", (event) => {
+      const relatedTarget = event.relatedTarget;
+      if (relatedTarget === null) {
+        searchResultsBox.classList.add("hidden");
+      }
+      if (relatedTarget instanceof HTMLElement && !relatedTarget.matches("#search-wrapper *")) {
+        searchResultsBox.classList.add("hidden");
+      }
+    });
+  });
+})();
+//# sourceMappingURL=base.js.map
