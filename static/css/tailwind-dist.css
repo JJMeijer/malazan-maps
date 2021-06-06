@@ -1,4 +1,4 @@
-/*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -605,6 +605,10 @@ input[type="radio"]:checked ~ .label-checked\:border-2 {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -662,6 +666,11 @@ input[type="radio"]:checked ~ .label-checked\:border-2 {
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .my-4 {
