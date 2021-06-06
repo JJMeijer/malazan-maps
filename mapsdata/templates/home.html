@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block upper_content %}
     <p class="text-center text-gray-100 text-lg px-16">
         Find places in the world of Malazan: Book of the Fallen.
@@ -12,7 +14,7 @@
         <div class="relative flex p-2
                     lg:p-8"
             id="map-image-wrapper">
-            <img src="{{ header_image.image.url }}" class="object-contain">
+            <img src="{% static "/img/header-1.jpg" %}" class="object-contain">
         </div>
     </div>
 {% endblock %}

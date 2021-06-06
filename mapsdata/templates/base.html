@@ -10,8 +10,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{% static "img/favicon-32x32.png" %}">
         <link rel="icon" type="image/png" sizes="16x16" href="{% static "img/favicon-16x16.png" %}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{% static "css/tailwind-dist.css" %}">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" media="screen">
+        <link rel="stylesheet" type="text/css" href="{% static "css/tailwind-dist.css" %}" media="screen">
     </head>
     <body class="font-serif">
         <div class="h-screen text-gray-800 flex flex-col items-center">
@@ -38,7 +38,7 @@
                         <a class="h-full" href="{% url "home" %}">
                             <img
                                 class="h-full p-2 opacity-40"
-                                src="{% static "img/search-1.png" %}"
+                                src="{% static "img/search-2.svg" %}"
                             >
                         </a>
                         <input
