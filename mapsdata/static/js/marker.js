@@ -1,1 +1,101 @@
-(()=>{var h=e=>{let{naturalHeight:t,naturalWidth:n}=e;return{naturalHeight:t,naturalWidth:n}},l=e=>{let{width:t,height:n}=e.getBoundingClientRect();return{width:t,height:n}},c=e=>{let t=document.getElementById(`map-image-${e}`),n=document.getElementById(`map-marker-${e}`);if(t instanceof HTMLImageElement&&n instanceof HTMLElement){let i=h(t),a=l(t),r=l(n),{markerx:o,markery:m}=n.dataset;if(o&&m){let u=Math.round(parseInt(o)*a.width/i.naturalWidth-r.width/2),g=Math.round(parseInt(m)*a.height/i.naturalHeight-r.height);n.style.top=`${g}px`,n.style.left=`${u}px`,n.classList.remove("opacity-0"),n.classList.add("opacity-90")}else throw new Error("Marker coordinates not provided")}else throw new Error("Invalid Map or Marker element")},s=e=>{let t=e.split("-").slice(-1);if(t[0])return t[0];throw new Error("Map ID not found")},E=e=>{let t=e.target,n=s(t.id);document.querySelectorAll("[id^=map-imagewrapper-]").forEach(r=>{r.classList.contains("hidden")||r.classList.add("hidden")});let a=document.getElementById(`map-imagewrapper-${n}`);a&&a.classList.remove("hidden"),c(n)},I=()=>{document.querySelectorAll('input[name="map-selector"]').forEach(t=>{t.addEventListener("change",E)})},d=()=>{let e=document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');if(e){let t=s(e.id);c(t)}},M=()=>{let e=document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');if(e){let t=s(e.id);return document.querySelector(`#map-image-${t}`)}return null},p=()=>{d(),window.addEventListener("resize",d),I()};document.addEventListener("DOMContentLoaded",()=>{let e=M();if(e===null||!(e instanceof HTMLImageElement))throw new Error("No Image Available on Marker page");e.complete?p():e.addEventListener("load",()=>{p()})});})();
+(() => {
+  // mapsdata/src/ts/marker.ts
+  var getElementNaturalDimensions = (element) => {
+    const { naturalHeight, naturalWidth } = element;
+    return {
+      naturalHeight,
+      naturalWidth
+    };
+  };
+  var getElementRealDimensions = (element) => {
+    const { width, height } = element.getBoundingClientRect();
+    return {
+      width,
+      height
+    };
+  };
+  var placeImageMarker = (mapId) => {
+    const mapElement = document.getElementById(`map-image-${mapId}`);
+    const markerElement = document.getElementById(`map-marker-${mapId}`);
+    if (mapElement instanceof HTMLImageElement && markerElement instanceof HTMLElement) {
+      const mapNaturalDimensions = getElementNaturalDimensions(mapElement);
+      const mapRealDimensions = getElementRealDimensions(mapElement);
+      const markerRealDimensions = getElementRealDimensions(markerElement);
+      const { markerx, markery } = markerElement.dataset;
+      if (markerx && markery) {
+        const markerRelativeX = Math.round(parseInt(markerx) * mapRealDimensions.width / mapNaturalDimensions.naturalWidth - markerRealDimensions.width / 2);
+        const markerRelativeY = Math.round(parseInt(markery) * mapRealDimensions.height / mapNaturalDimensions.naturalHeight - markerRealDimensions.height);
+        markerElement.style.top = `${markerRelativeY}px`;
+        markerElement.style.left = `${markerRelativeX}px`;
+        markerElement.classList.remove("opacity-0");
+        markerElement.classList.add("opacity-90");
+      } else {
+        throw new Error("Marker coordinates not provided");
+      }
+    } else {
+      throw new Error("Invalid Map or Marker element");
+    }
+  };
+  var getMapId = (text) => {
+    const lastKebabCaseItem = text.split("-").slice(-1);
+    if (lastKebabCaseItem[0]) {
+      return lastKebabCaseItem[0];
+    }
+    throw new Error("Map ID not found");
+  };
+  var handleMapSelectorChange = (event) => {
+    const target = event.target;
+    const mapId = getMapId(target.id);
+    const mapWrappers = document.querySelectorAll("[id^=map-imagewrapper-]");
+    mapWrappers.forEach((mapWrapper) => {
+      if (!mapWrapper.classList.contains("hidden")) {
+        mapWrapper.classList.add("hidden");
+      }
+    });
+    const selectedImageWrapper = document.getElementById(`map-imagewrapper-${mapId}`);
+    if (selectedImageWrapper) {
+      selectedImageWrapper.classList.remove("hidden");
+    }
+    placeImageMarker(mapId);
+  };
+  var setImageSelectorListener = () => {
+    const mapButtons = document.querySelectorAll('input[name="map-selector"]');
+    mapButtons.forEach((element) => {
+      element.addEventListener("change", handleMapSelectorChange);
+    });
+  };
+  var placeVisibleMarker = () => {
+    const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
+    if (visibleImageWrapper) {
+      const mapId = getMapId(visibleImageWrapper.id);
+      placeImageMarker(mapId);
+    }
+  };
+  var getVisibleImage = () => {
+    const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
+    if (visibleImageWrapper) {
+      const mapId = getMapId(visibleImageWrapper.id);
+      return document.querySelector(`#map-image-${mapId}`);
+    }
+    return null;
+  };
+  var initMarkerPage = () => {
+    placeVisibleMarker();
+    window.addEventListener("resize", placeVisibleMarker);
+    setImageSelectorListener();
+  };
+  document.addEventListener("DOMContentLoaded", () => {
+    const visibleImage = getVisibleImage();
+    if (visibleImage === null || !(visibleImage instanceof HTMLImageElement)) {
+      throw new Error("No Image Available on Marker page");
+    }
+    if (visibleImage.complete) {
+      initMarkerPage();
+    } else {
+      visibleImage.addEventListener("load", () => {
+        initMarkerPage();
+      });
+    }
+  });
+})();
+//# sourceMappingURL=marker.js.map
