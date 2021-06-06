@@ -83,6 +83,17 @@ class MapAdmin(admin.ModelAdmin):
     }
 
 
+class PlaceMarkersInline(admin.TabularInline):
+    model = Marker
+    extra = 1
+
+    fields = (
+        'map',
+        'x',
+        'y',
+    )
+
+
 @admin.register(Place)
 class PlaceAdmin(ImportExportModelAdmin):
     resource_class = PlaceResource
@@ -118,6 +129,13 @@ class PlaceAdmin(ImportExportModelAdmin):
     search_fields = (
         'name',
     )
+
+    inlines = (
+        PlaceMarkersInline,
+    )
+
+    class Media:
+        css = { "all" : ("css/hide-admin-original.css",) }
 
 
 @admin.register(Continent)

@@ -11,7 +11,7 @@
 
 
 {% block lower_content %}
-    <div class="flex flex-col items-center justify-center -mt-24 mx-8 bg-white rounded-md z-10">
+    <div class="flex flex-col items-center justify-center -mt-24 mx-2 bg-white rounded-md z-10">
         <div class="flex flex-row my-4">
             {% for marker in markers %}
                 <label class="{% if markers|length == 1 %}hidden{% endif %}" for="map-selector-{{ forloop.counter }}">
@@ -40,7 +40,8 @@
                     >
                     <img
                         src="{% static "img/marker-1.png" %}"
-                        class="opacity-0 absolute w-8 h-8 object-contain"
+                        class="opacity-0 absolute w-5 h-5 object-contain
+                                sm:w-7 sm:h-7"
                         id="map-marker-{{ forloop.counter }}"
                         data-markerx={{ marker.x }}
                         data-markery={{ marker.y }}
