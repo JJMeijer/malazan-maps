@@ -581,6 +581,10 @@ input[type="radio"]:checked ~ .label-checked\:border-2 {
   border-width: 2px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .block {
   display: block;
 }
