@@ -104,6 +104,11 @@ class PlaceAdmin(ImportExportModelAdmin):
         'wiki_link',
         'continent',
         'type',
+        'description',
+    )
+
+    readonly_fields = (
+        'description',
     )
 
     list_display = (
