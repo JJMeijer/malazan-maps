@@ -18,7 +18,7 @@ class BookSitemap(Sitemap):
 
     def location(self, item):
         """Generate URL Paths of items"""
-        return f'/books/{item.short_name}'
+        return f'/books/{item.short_name}/'
 
 
 class MapSitemap(Sitemap):
@@ -36,7 +36,7 @@ class MapSitemap(Sitemap):
 
     def location(self, item):
         """Generate URL Paths of items"""
-        return f'/maps/{item.short_name}'
+        return f'/maps/{item.short_name}/'
 
 
 class PlaceSitemap(Sitemap):
@@ -54,7 +54,7 @@ class PlaceSitemap(Sitemap):
 
     def location(self, item):
         """Generate URL Paths of items"""
-        return f'/places/{item.short_name}'
+        return f'/places/{item.short_name}/'
 
 
 class StaticSitemap(Sitemap):
