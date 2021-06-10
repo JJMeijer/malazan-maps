@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load static %}
+{% load cdnstaticfiles %}
 
 {% block upper_content %}
     <p class="text-center text-gray-100 px-16
@@ -39,7 +39,7 @@
                         id="map-image-{{ forloop.counter }}"
                     >
                     <img
-                        src="{% static "img/marker-1.png" %}"
+                        src="{% cdnstatic "img/marker-1.png" %}"
                         class="opacity-0 absolute w-5 h-5 object-contain
                                 sm:w-7 sm:h-7"
                         id="map-marker-{{ forloop.counter }}"
@@ -50,5 +50,5 @@
             {% endfor %}
         </div>
     </div>
-    <script src="{% static "js/marker.js" %}"></script>
+    <script src="{% cdnstatic "js/marker.js" %}"></script>
 {% endblock %}

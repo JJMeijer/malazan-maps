@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'django_distill',
+    'django_cachekiller',
 ]
 
 MIDDLEWARE = [

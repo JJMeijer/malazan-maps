@@ -1,4 +1,4 @@
-{% load static %}
+{% load cdnstaticfiles %}
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ page_title }} | Malazan Maps</title>
         <meta name="description" content="{{ page_description }}">
-        <link rel="apple-touch-icon" sizes="180x180" href="{% static "img/apple-touch-icon.png" %}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{% static "img/favicon-32x32.png" %}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{% static "img/favicon-16x16.png" %}">
-        <link rel="manifest" href="{% static "manifest.json" %}"
+        <link rel="apple-touch-icon" sizes="180x180" href="{% cdnstatic "img/apple-touch-icon.png" %}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% cdnstatic "img/favicon-32x32.png" %}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{% cdnstatic "img/favicon-16x16.png" %}">
+        <link rel="manifest" href="{% cdnstatic "manifest.json" %}"
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" media="screen">
-        <link rel="stylesheet" type="text/css" href="{% static "css/tailwind-dist.css" %}" media="screen">
+        <link rel="stylesheet" type="text/css" href="{% cdnstatic "css/tailwind-dist.css" %}" media="screen">
     </head>
     <body class="font-serif">
         <div class="h-screen text-gray-800 flex flex-col items-center">
@@ -39,7 +39,7 @@
                         <a class="h-full" href="{% url "home" %}">
                             <img
                                 class="h-full p-2 opacity-40"
-                                src="{% static "img/search-2.svg" %}"
+                                src="{% cdnstatic "img/search-2.svg" %}"
                             >
                         </a>
                         <input
@@ -65,6 +65,6 @@
             window.malazan = window.malazan || {};
             window.malazan.entries = JSON.parse(document.getElementById('entries').textContent)
         </script>
-        <script src="{% static "js/base.js" %}"></script>
+        <script src="{% cdnstatic "js/base.js" %}"></script>
     </body>
 </html>

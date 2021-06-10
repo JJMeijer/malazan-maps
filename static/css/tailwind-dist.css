@@ -773,10 +773,6 @@ input[type="radio"]:checked ~ .label-checked\:border-2 {
   padding-bottom: 9rem;
 }
 
-.static {
-  position: static;
-}
-
 .absolute {
   position: absolute;
 }

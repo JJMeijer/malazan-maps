@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load static %}
+{% load cdnstaticfiles %}
 
 {% block upper_content %}
     <p class="text-center text-gray-100 text-lg px-16">
@@ -14,7 +14,7 @@
         <div class="relative flex p-2
                     lg:p-8"
             id="map-image-wrapper">
-            <img src="{% static "/img/header-1.jpg" %}" class="object-contain">
+            <img src="{% cdnstatic "/img/header-1.jpg" %}" class="object-contain">
         </div>
     </div>
 {% endblock %}
