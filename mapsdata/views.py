@@ -23,7 +23,7 @@ def map_view(request, map_short_name):
 
     context = {
         'page_title': instance.name,
-        'page_description': f'{instance.name} Map. One of the maps in the world of Malazan: Book of the Fallen',
+        'page_description': f'{instance.name} Map. Find places on the maps in the world of Malazan: Book of the Fallen',
         'map_short_name': instance.short_name,
         'map_image_src': instance.image.url
     }
@@ -61,7 +61,7 @@ def book_view(request, book_short_name):
 
     context = {
         'page_title': f'{instance.name}',
-        'page_description': f'Check out the maps that were included in the book {instance.name}',
+        'page_description': f'Check out the maps that were included in the book {instance.name} and find other places on the maps in the world of Malazan: Book of the Fallen',
         'book_name': instance.name,
         'book_short_name': instance.short_name,
         'description': instance.description,
