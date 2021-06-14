@@ -1,23 +1,40 @@
 import { createSearchResult, createNoResult } from './result-element';
 import { getCurrentFocusResult, setFocusResult, unSetFocusResult } from './result-focus';
 
+import { RESULT_MAX_ITEMS } from './constants';
+
 export const handleSearchInput = (event: Event, searchResultsBox: HTMLElement): void => {
     if (!(event.target instanceof HTMLInputElement)) {
         throw new Error('Unexpected target of search input event.');
     }
 
     const { value } = event.target;
-    const { focusName } = getCurrentFocusResult();
+    const { focusName, focusIndex } = getCurrentFocusResult();
     const { entries } = window.malazan;
 
     searchResultsBox.innerHTML = '';
 
     if (value.length > 0) {
-        const results = entries.filter(({ name }) => {
-            return name.match(new RegExp(value, 'i'));
-        });
+        const results = entries
+            .filter(({ name }) => {
+                return name.match(new RegExp(value, 'i'));
+            })
+            .sort(({ name: nameA }, { name: nameB }) => {
+                const indexA = nameA.toLowerCase().indexOf(value.toLowerCase());
+                const indexB = nameB.toLowerCase().indexOf(value.toLowerCase());
 
-        const resultElements = results.slice(0, 9).map((result, index) => {
+                if (indexA < indexB) {
+                    return -1;
+                }
+
+                if (indexA > indexB) {
+                    return 1;
+                }
+
+                return 0;
+            });
+
+        const resultElements = results.slice(0, RESULT_MAX_ITEMS - 1).map((result, index) => {
             return createSearchResult(result, value, index);
         });
 
@@ -30,11 +47,9 @@ export const handleSearchInput = (event: Event, searchResultsBox: HTMLElement): 
                 ({ short_name }) => short_name === focusName,
             );
 
-            if (recycledResultFocusIndex > -1) {
+            if (recycledResultFocusIndex > -1 && recycledResultFocusIndex <= focusIndex) {
                 setFocusResult(recycledResultFocusIndex);
-            }
-
-            if (recycledResultFocusIndex === -1) {
+            } else {
                 setFocusResult(0);
             }
         }

@@ -20,7 +20,7 @@
             "request": "launch",
             "type": "pwa-chrome",
             "url": "http://localhost:8000",
-            "webRoot": "${workspaceFolder}",
+            "webRoot": "${workspaceFolder}/mapsdata",
             "disableNetworkCache": true
         },
         {

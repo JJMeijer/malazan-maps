@@ -3,6 +3,7 @@
   var RESULT_INDEX_ATTRIBUTE = "index";
   var RESULT_NAME_ATTRIBUTE = "name";
   var RESULT_HREF_ATTRIBUTE = "href";
+  var RESULT_MAX_ITEMS = 10;
 
   // mapsdata/src/ts/search/result-element.ts
   var generateLink = (short_name, type) => {
@@ -94,24 +95,33 @@
       throw new Error("Unexpected target of search input event.");
     }
     const { value } = event.target;
-    const { focusName } = getCurrentFocusResult();
+    const { focusName, focusIndex } = getCurrentFocusResult();
     const { entries } = window.malazan;
     searchResultsBox.innerHTML = "";
     if (value.length > 0) {
       const results = entries.filter(({ name }) => {
         return name.match(new RegExp(value, "i"));
+      }).sort(({ name: nameA }, { name: nameB }) => {
+        const indexA = nameA.toLowerCase().indexOf(value.toLowerCase());
+        const indexB = nameB.toLowerCase().indexOf(value.toLowerCase());
+        if (indexA < indexB) {
+          return -1;
+        }
+        if (indexA > indexB) {
+          return 1;
+        }
+        return 0;
       });
-      const resultElements = results.slice(0, 9).map((result, index) => {
+      const resultElements = results.slice(0, RESULT_MAX_ITEMS - 1).map((result, index) => {
         return createSearchResult(result, value, index);
       });
       const HAS_RESULT = resultElements.length > 0;
       if (HAS_RESULT) {
         resultElements.forEach((element) => searchResultsBox.appendChild(element));
         const recycledResultFocusIndex = results.findIndex(({ short_name }) => short_name === focusName);
-        if (recycledResultFocusIndex > -1) {
+        if (recycledResultFocusIndex > -1 && recycledResultFocusIndex <= focusIndex) {
           setFocusResult(recycledResultFocusIndex);
-        }
-        if (recycledResultFocusIndex === -1) {
+        } else {
           setFocusResult(0);
         }
       }

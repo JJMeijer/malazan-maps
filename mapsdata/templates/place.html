@@ -11,7 +11,8 @@
 
 
 {% block lower_content %}
-    <div class="flex flex-col items-center justify-center -mt-24 mx-2 bg-white rounded-md z-10">
+    <div class="flex flex-col items-center justify-center -mt-24 mx-2 bg-white rounded-md z-10
+                lg:mx-8">
         <div class="flex flex-row flex-wrap justify-center my-4">
             {% for marker in markers %}
                 <label class="mx-2 my-3 {% if markers|length == 1 %}hidden{% endif %}" for="map-selector-{{ forloop.counter }}">
@@ -30,9 +31,13 @@
                 </label>
             {% endfor %}
         </div>
-        <div class="flex flex-col p-2 mb-8 items-center lg:items-start lg:flex-row lg:justify-center">
+        <div class="flex flex-col p-2 mb-8 items-center lg:items-start lg:flex-row lg:justify-center
+                    lg:p-8">
             {% for marker in markers %}
-                <div class="{% if forloop.counter > 1 %}hidden{% endif %} relative m-2 w-full lg:m-0 lg:w-2/3" id="map-imagewrapper-{{ forloop.counter }}">
+                <div
+                    class="{% if forloop.counter > 1 %}hidden{% endif %} relative m-2 w-full
+                            lg:m-0 lg:w-4/5"
+                    id="map-imagewrapper-{{ forloop.counter }}">
                     <img
                         src="{{ marker.map.image.url }}"
                         class="object-contain"
