@@ -6,9 +6,6 @@ module.exports = {
     purge: ['./mapsdata/templates/*.html', './mapsdata/static/js/*.js'],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        fontFamily: {
-            serif: ['Merriweather', 'ui-serif', 'Cambria'],
-        },
         extend: {
             colors: {
                 primary: '#082915',
