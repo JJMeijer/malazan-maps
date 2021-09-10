@@ -16,10 +16,18 @@
             "justMyCode": false
         },
         {
-            "name": "Launch Chrome",
+            "name": "Launch website",
             "request": "launch",
             "type": "pwa-chrome",
             "url": "http://localhost:8000",
+            "webRoot": "${workspaceFolder}/mapsdata",
+            "disableNetworkCache": true
+        },
+        {
+            "name": "Launch Admin",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8000/admin",
             "webRoot": "${workspaceFolder}/mapsdata",
             "disableNetworkCache": true
         },
