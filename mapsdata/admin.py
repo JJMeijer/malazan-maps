@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib import admin
 from django.utils.html import format_html
 from django.forms import CheckboxSelectMultiple
+from django.db.models.aggregates import Count
 
 from import_export.admin import ImportExportModelAdmin
 
@@ -53,7 +54,7 @@ class MapAdmin(admin.ModelAdmin):
         'name',
         'continent',
         'get_books',
-        'marker_counter',
+        'marker_count',
         'updated',
     )
 
@@ -68,15 +69,20 @@ class MapAdmin(admin.ModelAdmin):
 
     list_per_page = 20
 
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        qs = qs.annotate(marker_count=Count('markers'))
+        return qs
+
     @admin.display(description='books')
     def get_books(self, obj):
         """Get related books as newline-seperated string"""
         return ", ".join([book.name for book in obj.books.all()])
 
-    @admin.display(description='markers')
-    def marker_counter(self, obj):
+    @admin.display(ordering='marker_count', description='markers')
+    def marker_count(self, obj):
         """Counter of how much markers are defined for the Map"""
-        return len(obj.markers.all())
+        return obj.marker_count
 
     formfield_overrides = {
         models.ManyToManyField: {'widget': CheckboxSelectMultiple},
@@ -115,7 +121,7 @@ class PlaceAdmin(ImportExportModelAdmin):
         'name',
         'type',
         'continent',
-        'marker_counter',
+        'marker_count',
     )
 
     list_filter = (
@@ -124,8 +130,13 @@ class PlaceAdmin(ImportExportModelAdmin):
         PlaceZeroMarkerFilter,
     )
 
-    @admin.display(description='markers')
-    def marker_counter(self, obj):
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        qs = qs.annotate(marker_count=Count('markers'))
+        return qs
+
+    @admin.display(ordering='marker_count', description='markers')
+    def marker_count(self, obj):
         """Counter of how much markers are defined for the Place"""
         return len(obj.markers.all())
 
