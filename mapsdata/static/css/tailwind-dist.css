@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.12 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -11705,94 +11705,70 @@ video {
 }
 
 .divide-x-0 > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-x-reverse: 0;
   border-right-width: calc(0px * var(--tw-divide-x-reverse));
   border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-x-reverse: 0;
   border-right-width: calc(2px * var(--tw-divide-x-reverse));
   border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .divide-x-4 > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-x-reverse: 0;
   border-right-width: calc(4px * var(--tw-divide-x-reverse));
   border-left-width: calc(4px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .divide-x-8 > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-x-reverse: 0;
   border-right-width: calc(8px * var(--tw-divide-x-reverse));
   border-left-width: calc(8px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .divide-x > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-x-reverse: 0;
   border-right-width: calc(1px * var(--tw-divide-x-reverse));
   border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .divide-y-0 > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-y-reverse: 0;
   border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
 }
 
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
 }
 
 .divide-y-4 > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-y-reverse: 0;
   border-top-width: calc(4px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(4px * var(--tw-divide-y-reverse));
 }
 
 .divide-y-8 > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-y-reverse: 0;
   border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
 .divide-y-reverse > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-y-reverse: 1;
 }
 
 .divide-x-reverse > :not([hidden]) ~ :not([hidden]) {
-  @defaults border-width {
-  }
   --tw-divide-x-reverse: 1;
 }
 
@@ -12237,11 +12213,6 @@ video {
 .divide-primary > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
-}
-
-.divide-secondary > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgba(146, 191, 177, var(--tw-divide-opacity));
 }
 
 .divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
@@ -13505,11 +13476,6 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   border-color: rgba(8, 41, 21, var(--tw-border-opacity));
 }
 
-.border-secondary {
-  --tw-border-opacity: 1;
-  border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-}
-
 .group:hover .group-hover\:border-transparent {
   border-color: transparent;
 }
@@ -13931,11 +13897,6 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 .group:hover .group-hover\:border-primary {
   --tw-border-opacity: 1;
   border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-}
-
-.group:hover .group-hover\:border-secondary {
-  --tw-border-opacity: 1;
-  border-color: rgba(146, 191, 177, var(--tw-border-opacity));
 }
 
 .focus-within\:border-transparent:focus-within {
@@ -14361,11 +14322,6 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   border-color: rgba(8, 41, 21, var(--tw-border-opacity));
 }
 
-.focus-within\:border-secondary:focus-within {
-  --tw-border-opacity: 1;
-  border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-}
-
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -14789,11 +14745,6 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   border-color: rgba(8, 41, 21, var(--tw-border-opacity));
 }
 
-.hover\:border-secondary:hover {
-  --tw-border-opacity: 1;
-  border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-}
-
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -15215,11 +15166,6 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
 .focus\:border-primary:focus {
   --tw-border-opacity: 1;
   border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-}
-
-.focus\:border-secondary:focus {
-  --tw-border-opacity: 1;
-  border-color: rgba(146, 191, 177, var(--tw-border-opacity));
 }
 
 .border-opacity-0 {
@@ -15945,11 +15891,6 @@ input[type="radio"]:checked ~ .label-checked\:border-l {
   background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-}
-
 input[type="radio"]:checked ~ .label-checked\:bg-transparent {
   background-color: transparent;
 }
@@ -16371,11 +16312,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-pink-900 {
 input[type="radio"]:checked ~ .label-checked\:bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-}
-
-input[type="radio"]:checked ~ .label-checked\:bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-transparent {
@@ -16801,11 +16737,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
-.group:hover .group-hover\:bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-}
-
 .focus-within\:bg-transparent:focus-within {
   background-color: transparent;
 }
@@ -17227,11 +17158,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 .focus-within\:bg-primary:focus-within {
   --tw-bg-opacity: 1;
   background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-}
-
-.focus-within\:bg-secondary:focus-within {
-  --tw-bg-opacity: 1;
-  background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
 }
 
 .hover\:bg-transparent:hover {
@@ -17657,11 +17583,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
 }
 
-.hover\:bg-secondary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-}
-
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -18083,11 +18004,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 .focus\:bg-primary:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-}
-
-.focus\:bg-secondary:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
 }
 
 .bg-opacity-0 {
@@ -18851,11 +18767,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
-.from-secondary {
-  --tw-gradient-from: #92bfb1;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-}
-
 .hover\:from-transparent:hover {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -19279,11 +19190,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 .hover\:from-primary:hover {
   --tw-gradient-from: #082915;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
-}
-
-.hover\:from-secondary:hover {
-  --tw-gradient-from: #92bfb1;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
 }
 
 .focus\:from-transparent:focus {
@@ -19711,11 +19617,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
-.focus\:from-secondary:focus {
-  --tw-gradient-from: #92bfb1;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-}
-
 .via-transparent {
   --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
@@ -20054,10 +19955,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .via-primary {
   --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-}
-
-.via-secondary {
-  --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
 }
 
 .hover\:via-transparent:hover {
@@ -20400,10 +20297,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
 }
 
-.hover\:via-secondary:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
-}
-
 .focus\:via-transparent:focus {
   --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
 }
@@ -20742,10 +20635,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .focus\:via-primary:focus {
   --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-}
-
-.focus\:via-secondary:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
 }
 
 .to-transparent {
@@ -21088,10 +20977,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-gradient-to: #082915;
 }
 
-.to-secondary {
-  --tw-gradient-to: #92bfb1;
-}
-
 .hover\:to-transparent:hover {
   --tw-gradient-to: transparent;
 }
@@ -21432,10 +21317,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-gradient-to: #082915;
 }
 
-.hover\:to-secondary:hover {
-  --tw-gradient-to: #92bfb1;
-}
-
 .focus\:to-transparent:focus {
   --tw-gradient-to: transparent;
 }
@@ -21774,10 +21655,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .focus\:to-primary:focus {
   --tw-gradient-to: #082915;
-}
-
-.focus\:to-secondary:focus {
-  --tw-gradient-to: #92bfb1;
 }
 
 .decoration-slice {
@@ -23083,8 +22960,16 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   vertical-align: text-bottom;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .font-serif {
-  font-family: Merriweather, ui-serif, Cambria;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-xs {
@@ -23760,11 +23645,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   color: rgba(8, 41, 21, var(--tw-text-opacity));
 }
 
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-text-opacity));
-}
-
 .group:hover .group-hover\:text-transparent {
   color: transparent;
 }
@@ -24186,11 +24066,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgba(8, 41, 21, var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-secondary {
-  --tw-text-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-text-opacity));
 }
 
 .focus-within\:text-transparent:focus-within {
@@ -24616,11 +24491,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   color: rgba(8, 41, 21, var(--tw-text-opacity));
 }
 
-.focus-within\:text-secondary:focus-within {
-  --tw-text-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-text-opacity));
-}
-
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -25044,11 +24914,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   color: rgba(8, 41, 21, var(--tw-text-opacity));
 }
 
-.hover\:text-secondary:hover {
-  --tw-text-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-text-opacity));
-}
-
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -25470,11 +25335,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 .focus\:text-primary:focus {
   --tw-text-opacity: 1;
   color: rgba(8, 41, 21, var(--tw-text-opacity));
-}
-
-.focus\:text-secondary:focus {
-  --tw-text-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-text-opacity));
 }
 
 .text-opacity-0 {
@@ -27116,21 +26976,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
 }
 
-.placeholder-secondary::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-}
-
-.placeholder-secondary:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-}
-
-.placeholder-secondary::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-}
-
 .focus\:placeholder-transparent:focus::-moz-placeholder {
   color: transparent;
 }
@@ -28398,21 +28243,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 .focus\:placeholder-primary:focus::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-secondary:focus::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-secondary:focus:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-}
-
-.focus\:placeholder-secondary:focus::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
 }
 
 .placeholder-opacity-0::-moz-placeholder {
@@ -30004,11 +29834,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
 }
 
-.ring-secondary {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-}
-
 .focus-within\:ring-transparent:focus-within {
   --tw-ring-color: transparent;
 }
@@ -30432,11 +30257,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
 }
 
-.focus-within\:ring-secondary:focus-within {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-}
-
 .focus\:ring-transparent:focus {
   --tw-ring-color: transparent;
 }
@@ -30858,11 +30678,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 .focus\:ring-primary:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
-}
-
-.focus\:ring-secondary:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
 }
 
 .ring-opacity-0 {
@@ -31445,10 +31260,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-ring-offset-color: #082915;
 }
 
-.ring-offset-secondary {
-  --tw-ring-offset-color: #92bfb1;
-}
-
 .focus-within\:ring-offset-transparent:focus-within {
   --tw-ring-offset-color: transparent;
 }
@@ -31789,10 +31600,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   --tw-ring-offset-color: #082915;
 }
 
-.focus-within\:ring-offset-secondary:focus-within {
-  --tw-ring-offset-color: #92bfb1;
-}
-
 .focus\:ring-offset-transparent:focus {
   --tw-ring-offset-color: transparent;
 }
@@ -32131,10 +31938,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
 .focus\:ring-offset-primary:focus {
   --tw-ring-offset-color: #082915;
-}
-
-.focus\:ring-offset-secondary:focus {
-  --tw-ring-offset-color: #92bfb1;
 }
 
 .filter {
@@ -43840,94 +43643,70 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   }
 
   .sm\:divide-x-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(0px * var(--tw-divide-x-reverse));
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .sm\:divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(2px * var(--tw-divide-x-reverse));
     border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .sm\:divide-x-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(4px * var(--tw-divide-x-reverse));
     border-left-width: calc(4px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .sm\:divide-x-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(8px * var(--tw-divide-x-reverse));
     border-left-width: calc(8px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .sm\:divide-x > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(1px * var(--tw-divide-x-reverse));
     border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .sm\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
   }
 
   .sm\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
   }
 
   .sm\:divide-y-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(4px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(4px * var(--tw-divide-y-reverse));
   }
 
   .sm\:divide-y-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
   }
 
   .sm\:divide-y > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
   }
 
   .sm\:divide-y-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 1;
   }
 
   .sm\:divide-x-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 1;
   }
 
@@ -44372,11 +44151,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .sm\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
-  }
-
-  .sm\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-divide-opacity));
   }
 
   .sm\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
@@ -45640,11 +45414,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .sm\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .group:hover .sm\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -46066,11 +45835,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .sm\:group-hover\:border-primary {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .sm\:focus-within\:border-transparent:focus-within {
@@ -46496,11 +46260,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .sm\:focus-within\:border-secondary:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -46924,11 +46683,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .sm\:hover\:border-secondary:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -47350,11 +47104,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .sm\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .sm\:focus\:border-secondary:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .sm\:border-opacity-0 {
@@ -48080,11 +47829,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .sm\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   input[type="radio"]:checked ~ .sm\:label-checked\:bg-transparent {
     background-color: transparent;
   }
@@ -48506,11 +48250,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   input[type="radio"]:checked ~ .sm\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  input[type="radio"]:checked ~ .sm\:label-checked\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-transparent {
@@ -48936,11 +48675,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .group:hover .sm\:group-hover\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .sm\:focus-within\:bg-transparent:focus-within {
     background-color: transparent;
   }
@@ -49362,11 +49096,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .sm\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .sm\:focus-within\:bg-secondary:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-transparent:hover {
@@ -49792,11 +49521,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .sm\:hover\:bg-secondary:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -50218,11 +49942,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .sm\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .sm\:focus\:bg-secondary:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .sm\:bg-opacity-0 {
@@ -50986,11 +50705,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .sm\:from-secondary {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .sm\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -51414,11 +51128,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .sm\:hover\:from-primary:hover {
     --tw-gradient-from: #082915;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .sm\:hover\:from-secondary:hover {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .sm\:focus\:from-transparent:focus {
@@ -51846,11 +51555,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .sm\:focus\:from-secondary:focus {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .sm\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -52189,10 +51893,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .sm\:via-primary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .sm\:via-secondary {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .sm\:hover\:via-transparent:hover {
@@ -52535,10 +52235,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .sm\:hover\:via-secondary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .sm\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -52877,10 +52573,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .sm\:focus\:via-primary:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .sm\:focus\:via-secondary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .sm\:to-transparent {
@@ -53223,10 +52915,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .sm\:to-secondary {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .sm\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -53567,10 +53255,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .sm\:hover\:to-secondary:hover {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .sm\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -53909,10 +53593,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .sm\:focus\:to-primary:focus {
     --tw-gradient-to: #082915;
-  }
-
-  .sm\:focus\:to-secondary:focus {
-    --tw-gradient-to: #92bfb1;
   }
 
   .sm\:decoration-slice {
@@ -55218,8 +54898,16 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     vertical-align: text-bottom;
   }
 
+  .sm\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
   .sm\:font-serif {
-    font-family: Merriweather, ui-serif, Cambria;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .sm\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .sm\:text-xs {
@@ -55895,11 +55583,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .sm\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .group:hover .sm\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -56321,11 +56004,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .sm\:group-hover\:text-primary {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .group:hover .sm\:group-hover\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-transparent:focus-within {
@@ -56751,11 +56429,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .sm\:focus-within\:text-secondary:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -57179,11 +56852,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .sm\:hover\:text-secondary:hover {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -57605,11 +57273,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .sm\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .sm\:focus\:text-secondary:focus {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .sm\:text-opacity-0 {
@@ -59251,21 +58914,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
-  .sm\:placeholder-secondary::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-secondary:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:placeholder-secondary::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
   .sm\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -60533,21 +60181,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .sm\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-secondary:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .sm\:focus\:placeholder-secondary:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-opacity-0::-moz-placeholder {
@@ -62126,11 +61759,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .sm\:ring-secondary {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .sm\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -62554,11 +62182,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .sm\:focus-within\:ring-secondary:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .sm\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -62980,11 +62603,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .sm\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
-  }
-
-  .sm\:focus\:ring-secondary:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
   }
 
   .sm\:ring-opacity-0 {
@@ -63567,10 +63185,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .sm\:ring-offset-secondary {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .sm\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -63911,10 +63525,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .sm\:focus-within\:ring-offset-secondary:focus-within {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .sm\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -64253,10 +63863,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .sm\:focus\:ring-offset-primary:focus {
     --tw-ring-offset-color: #082915;
-  }
-
-  .sm\:focus\:ring-offset-secondary:focus {
-    --tw-ring-offset-color: #92bfb1;
   }
 
   .sm\:filter {
@@ -75963,94 +75569,70 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   }
 
   .md\:divide-x-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(0px * var(--tw-divide-x-reverse));
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .md\:divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(2px * var(--tw-divide-x-reverse));
     border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .md\:divide-x-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(4px * var(--tw-divide-x-reverse));
     border-left-width: calc(4px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .md\:divide-x-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(8px * var(--tw-divide-x-reverse));
     border-left-width: calc(8px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .md\:divide-x > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(1px * var(--tw-divide-x-reverse));
     border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .md\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
   }
 
   .md\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
   }
 
   .md\:divide-y-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(4px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(4px * var(--tw-divide-y-reverse));
   }
 
   .md\:divide-y-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
   }
 
   .md\:divide-y > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
   }
 
   .md\:divide-y-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 1;
   }
 
   .md\:divide-x-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 1;
   }
 
@@ -76495,11 +76077,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .md\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
-  }
-
-  .md\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-divide-opacity));
   }
 
   .md\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
@@ -77763,11 +77340,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .md\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .group:hover .md\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -78189,11 +77761,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .md\:group-hover\:border-primary {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .group:hover .md\:group-hover\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .md\:focus-within\:border-transparent:focus-within {
@@ -78619,11 +78186,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .md\:focus-within\:border-secondary:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -79047,11 +78609,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .md\:hover\:border-secondary:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -79473,11 +79030,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .md\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .md\:focus\:border-secondary:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .md\:border-opacity-0 {
@@ -80203,11 +79755,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .md\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   input[type="radio"]:checked ~ .md\:label-checked\:bg-transparent {
     background-color: transparent;
   }
@@ -80629,11 +80176,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   input[type="radio"]:checked ~ .md\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  input[type="radio"]:checked ~ .md\:label-checked\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-transparent {
@@ -81059,11 +80601,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .group:hover .md\:group-hover\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .md\:focus-within\:bg-transparent:focus-within {
     background-color: transparent;
   }
@@ -81485,11 +81022,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .md\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .md\:focus-within\:bg-secondary:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-transparent:hover {
@@ -81915,11 +81447,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .md\:hover\:bg-secondary:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -82341,11 +81868,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .md\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .md\:focus\:bg-secondary:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .md\:bg-opacity-0 {
@@ -83109,11 +82631,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .md\:from-secondary {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .md\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -83537,11 +83054,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .md\:hover\:from-primary:hover {
     --tw-gradient-from: #082915;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .md\:hover\:from-secondary:hover {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .md\:focus\:from-transparent:focus {
@@ -83969,11 +83481,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .md\:focus\:from-secondary:focus {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .md\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -84312,10 +83819,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .md\:via-primary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .md\:via-secondary {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .md\:hover\:via-transparent:hover {
@@ -84658,10 +84161,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .md\:hover\:via-secondary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .md\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -85000,10 +84499,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .md\:focus\:via-primary:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .md\:focus\:via-secondary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .md\:to-transparent {
@@ -85346,10 +84841,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .md\:to-secondary {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .md\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -85690,10 +85181,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .md\:hover\:to-secondary:hover {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .md\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -86032,10 +85519,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .md\:focus\:to-primary:focus {
     --tw-gradient-to: #082915;
-  }
-
-  .md\:focus\:to-secondary:focus {
-    --tw-gradient-to: #92bfb1;
   }
 
   .md\:decoration-slice {
@@ -87341,8 +86824,16 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     vertical-align: text-bottom;
   }
 
+  .md\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
   .md\:font-serif {
-    font-family: Merriweather, ui-serif, Cambria;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .md\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .md\:text-xs {
@@ -88018,11 +87509,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .md\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .group:hover .md\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -88444,11 +87930,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .md\:group-hover\:text-primary {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .group:hover .md\:group-hover\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-transparent:focus-within {
@@ -88874,11 +88355,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .md\:focus-within\:text-secondary:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -89302,11 +88778,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .md\:hover\:text-secondary:hover {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -89728,11 +89199,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .md\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .md\:focus\:text-secondary:focus {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .md\:text-opacity-0 {
@@ -91374,21 +90840,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
-  .md\:placeholder-secondary::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-secondary:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .md\:placeholder-secondary::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
   .md\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -92656,21 +92107,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .md\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-secondary:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .md\:focus\:placeholder-secondary:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-opacity-0::-moz-placeholder {
@@ -94249,11 +93685,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .md\:ring-secondary {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .md\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -94677,11 +94108,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .md\:focus-within\:ring-secondary:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .md\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -95103,11 +94529,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .md\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
-  }
-
-  .md\:focus\:ring-secondary:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
   }
 
   .md\:ring-opacity-0 {
@@ -95690,10 +95111,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .md\:ring-offset-secondary {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .md\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -96034,10 +95451,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .md\:focus-within\:ring-offset-secondary:focus-within {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .md\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -96376,10 +95789,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .md\:focus\:ring-offset-primary:focus {
     --tw-ring-offset-color: #082915;
-  }
-
-  .md\:focus\:ring-offset-secondary:focus {
-    --tw-ring-offset-color: #92bfb1;
   }
 
   .md\:filter {
@@ -108086,94 +107495,70 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   }
 
   .lg\:divide-x-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(0px * var(--tw-divide-x-reverse));
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .lg\:divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(2px * var(--tw-divide-x-reverse));
     border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .lg\:divide-x-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(4px * var(--tw-divide-x-reverse));
     border-left-width: calc(4px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .lg\:divide-x-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(8px * var(--tw-divide-x-reverse));
     border-left-width: calc(8px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .lg\:divide-x > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(1px * var(--tw-divide-x-reverse));
     border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .lg\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
   }
 
   .lg\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
   }
 
   .lg\:divide-y-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(4px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(4px * var(--tw-divide-y-reverse));
   }
 
   .lg\:divide-y-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
   }
 
   .lg\:divide-y > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
   }
 
   .lg\:divide-y-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 1;
   }
 
   .lg\:divide-x-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 1;
   }
 
@@ -108618,11 +108003,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .lg\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
-  }
-
-  .lg\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-divide-opacity));
   }
 
   .lg\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
@@ -109886,11 +109266,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .lg\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .group:hover .lg\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -110312,11 +109687,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .lg\:group-hover\:border-primary {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .lg\:focus-within\:border-transparent:focus-within {
@@ -110742,11 +110112,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .lg\:focus-within\:border-secondary:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -111170,11 +110535,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .lg\:hover\:border-secondary:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -111596,11 +110956,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .lg\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .lg\:focus\:border-secondary:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .lg\:border-opacity-0 {
@@ -112326,11 +111681,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .lg\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   input[type="radio"]:checked ~ .lg\:label-checked\:bg-transparent {
     background-color: transparent;
   }
@@ -112752,11 +112102,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   input[type="radio"]:checked ~ .lg\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  input[type="radio"]:checked ~ .lg\:label-checked\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-transparent {
@@ -113182,11 +112527,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .group:hover .lg\:group-hover\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .lg\:focus-within\:bg-transparent:focus-within {
     background-color: transparent;
   }
@@ -113608,11 +112948,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .lg\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .lg\:focus-within\:bg-secondary:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -114038,11 +113373,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .lg\:hover\:bg-secondary:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -114464,11 +113794,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .lg\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .lg\:focus\:bg-secondary:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .lg\:bg-opacity-0 {
@@ -115232,11 +114557,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .lg\:from-secondary {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .lg\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -115660,11 +114980,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .lg\:hover\:from-primary:hover {
     --tw-gradient-from: #082915;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .lg\:hover\:from-secondary:hover {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .lg\:focus\:from-transparent:focus {
@@ -116092,11 +115407,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .lg\:focus\:from-secondary:focus {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .lg\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -116435,10 +115745,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .lg\:via-primary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .lg\:via-secondary {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .lg\:hover\:via-transparent:hover {
@@ -116781,10 +116087,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .lg\:hover\:via-secondary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .lg\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -117123,10 +116425,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .lg\:focus\:via-primary:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .lg\:focus\:via-secondary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .lg\:to-transparent {
@@ -117469,10 +116767,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .lg\:to-secondary {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .lg\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -117813,10 +117107,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .lg\:hover\:to-secondary:hover {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .lg\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -118155,10 +117445,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .lg\:focus\:to-primary:focus {
     --tw-gradient-to: #082915;
-  }
-
-  .lg\:focus\:to-secondary:focus {
-    --tw-gradient-to: #92bfb1;
   }
 
   .lg\:decoration-slice {
@@ -119464,8 +118750,16 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     vertical-align: text-bottom;
   }
 
+  .lg\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
   .lg\:font-serif {
-    font-family: Merriweather, ui-serif, Cambria;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .lg\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .lg\:text-xs {
@@ -120141,11 +119435,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .lg\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .group:hover .lg\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -120567,11 +119856,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .lg\:group-hover\:text-primary {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .group:hover .lg\:group-hover\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-transparent:focus-within {
@@ -120997,11 +120281,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .lg\:focus-within\:text-secondary:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -121425,11 +120704,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .lg\:hover\:text-secondary:hover {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -121851,11 +121125,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .lg\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .lg\:focus\:text-secondary:focus {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .lg\:text-opacity-0 {
@@ -123497,21 +122766,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
-  .lg\:placeholder-secondary::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-secondary:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:placeholder-secondary::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
   .lg\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -124779,21 +124033,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .lg\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-secondary:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .lg\:focus\:placeholder-secondary:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-opacity-0::-moz-placeholder {
@@ -126372,11 +125611,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .lg\:ring-secondary {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .lg\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -126800,11 +126034,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .lg\:focus-within\:ring-secondary:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .lg\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -127226,11 +126455,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .lg\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
-  }
-
-  .lg\:focus\:ring-secondary:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
   }
 
   .lg\:ring-opacity-0 {
@@ -127813,10 +127037,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .lg\:ring-offset-secondary {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .lg\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -128157,10 +127377,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .lg\:focus-within\:ring-offset-secondary:focus-within {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .lg\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -128499,10 +127715,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .lg\:focus\:ring-offset-primary:focus {
     --tw-ring-offset-color: #082915;
-  }
-
-  .lg\:focus\:ring-offset-secondary:focus {
-    --tw-ring-offset-color: #92bfb1;
   }
 
   .lg\:filter {
@@ -140209,94 +139421,70 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   }
 
   .xl\:divide-x-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(0px * var(--tw-divide-x-reverse));
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .xl\:divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(2px * var(--tw-divide-x-reverse));
     border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .xl\:divide-x-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(4px * var(--tw-divide-x-reverse));
     border-left-width: calc(4px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .xl\:divide-x-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(8px * var(--tw-divide-x-reverse));
     border-left-width: calc(8px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .xl\:divide-x > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(1px * var(--tw-divide-x-reverse));
     border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .xl\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
   }
 
   .xl\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
   }
 
   .xl\:divide-y-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(4px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(4px * var(--tw-divide-y-reverse));
   }
 
   .xl\:divide-y-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
   }
 
   .xl\:divide-y > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
   }
 
   .xl\:divide-y-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 1;
   }
 
   .xl\:divide-x-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 1;
   }
 
@@ -140741,11 +139929,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .xl\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
-  }
-
-  .xl\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-divide-opacity));
   }
 
   .xl\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
@@ -142009,11 +141192,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .xl\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .group:hover .xl\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -142435,11 +141613,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .xl\:group-hover\:border-primary {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .xl\:focus-within\:border-transparent:focus-within {
@@ -142865,11 +142038,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .xl\:focus-within\:border-secondary:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -143293,11 +142461,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .xl\:hover\:border-secondary:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -143719,11 +142882,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .xl\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .xl\:focus\:border-secondary:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .xl\:border-opacity-0 {
@@ -144449,11 +143607,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .xl\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   input[type="radio"]:checked ~ .xl\:label-checked\:bg-transparent {
     background-color: transparent;
   }
@@ -144875,11 +144028,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   input[type="radio"]:checked ~ .xl\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  input[type="radio"]:checked ~ .xl\:label-checked\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-transparent {
@@ -145305,11 +144453,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .group:hover .xl\:group-hover\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .xl\:focus-within\:bg-transparent:focus-within {
     background-color: transparent;
   }
@@ -145731,11 +144874,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .xl\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .xl\:focus-within\:bg-secondary:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-transparent:hover {
@@ -146161,11 +145299,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .xl\:hover\:bg-secondary:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -146587,11 +145720,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .xl\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .xl\:focus\:bg-secondary:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .xl\:bg-opacity-0 {
@@ -147355,11 +146483,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .xl\:from-secondary {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .xl\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -147783,11 +146906,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .xl\:hover\:from-primary:hover {
     --tw-gradient-from: #082915;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .xl\:hover\:from-secondary:hover {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .xl\:focus\:from-transparent:focus {
@@ -148215,11 +147333,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .xl\:focus\:from-secondary:focus {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .xl\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -148558,10 +147671,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .xl\:via-primary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .xl\:via-secondary {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .xl\:hover\:via-transparent:hover {
@@ -148904,10 +148013,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .xl\:hover\:via-secondary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .xl\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -149246,10 +148351,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .xl\:focus\:via-primary:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .xl\:focus\:via-secondary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .xl\:to-transparent {
@@ -149592,10 +148693,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .xl\:to-secondary {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .xl\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -149936,10 +149033,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .xl\:hover\:to-secondary:hover {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .xl\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -150278,10 +149371,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .xl\:focus\:to-primary:focus {
     --tw-gradient-to: #082915;
-  }
-
-  .xl\:focus\:to-secondary:focus {
-    --tw-gradient-to: #92bfb1;
   }
 
   .xl\:decoration-slice {
@@ -151587,8 +150676,16 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     vertical-align: text-bottom;
   }
 
+  .xl\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
   .xl\:font-serif {
-    font-family: Merriweather, ui-serif, Cambria;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .xl\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .xl\:text-xs {
@@ -152264,11 +151361,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .xl\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .group:hover .xl\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -152690,11 +151782,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .xl\:group-hover\:text-primary {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .group:hover .xl\:group-hover\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-transparent:focus-within {
@@ -153120,11 +152207,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .xl\:focus-within\:text-secondary:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -153548,11 +152630,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .xl\:hover\:text-secondary:hover {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -153974,11 +153051,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .xl\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .xl\:focus\:text-secondary:focus {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .xl\:text-opacity-0 {
@@ -155620,21 +154692,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
-  .xl\:placeholder-secondary::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-secondary:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:placeholder-secondary::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
   .xl\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -156902,21 +155959,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .xl\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-secondary:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .xl\:focus\:placeholder-secondary:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-opacity-0::-moz-placeholder {
@@ -158495,11 +157537,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .xl\:ring-secondary {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .xl\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -158923,11 +157960,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .xl\:focus-within\:ring-secondary:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .xl\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -159349,11 +158381,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .xl\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
-  }
-
-  .xl\:focus\:ring-secondary:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
   }
 
   .xl\:ring-opacity-0 {
@@ -159936,10 +158963,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .xl\:ring-offset-secondary {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .xl\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -160280,10 +159303,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .xl\:focus-within\:ring-offset-secondary:focus-within {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .xl\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -160622,10 +159641,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .xl\:focus\:ring-offset-primary:focus {
     --tw-ring-offset-color: #082915;
-  }
-
-  .xl\:focus\:ring-offset-secondary:focus {
-    --tw-ring-offset-color: #92bfb1;
   }
 
   .xl\:filter {
@@ -172332,94 +171347,70 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   }
 
   .\32xl\:divide-x-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(0px * var(--tw-divide-x-reverse));
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .\32xl\:divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(2px * var(--tw-divide-x-reverse));
     border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .\32xl\:divide-x-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(4px * var(--tw-divide-x-reverse));
     border-left-width: calc(4px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .\32xl\:divide-x-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(8px * var(--tw-divide-x-reverse));
     border-left-width: calc(8px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .\32xl\:divide-x > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 0;
     border-right-width: calc(1px * var(--tw-divide-x-reverse));
     border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .\32xl\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
   }
 
   .\32xl\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
   }
 
   .\32xl\:divide-y-4 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(4px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(4px * var(--tw-divide-y-reverse));
   }
 
   .\32xl\:divide-y-8 > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(8px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(8px * var(--tw-divide-y-reverse));
   }
 
   .\32xl\:divide-y > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
   }
 
   .\32xl\:divide-y-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-y-reverse: 1;
   }
 
   .\32xl\:divide-x-reverse > :not([hidden]) ~ :not([hidden]) {
-    @defaults border-width {
-    }
     --tw-divide-x-reverse: 1;
   }
 
@@ -172864,11 +171855,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .\32xl\:divide-primary > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-divide-opacity));
-  }
-
-  .\32xl\:divide-secondary > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-divide-opacity));
   }
 
   .\32xl\:divide-opacity-0 > :not([hidden]) ~ :not([hidden]) {
@@ -174132,11 +173118,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .\32xl\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .group:hover .\32xl\:group-hover\:border-transparent {
     border-color: transparent;
   }
@@ -174558,11 +173539,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .\32xl\:group-hover\:border-primary {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:border-secondary {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .\32xl\:focus-within\:border-transparent:focus-within {
@@ -174988,11 +173964,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .\32xl\:focus-within\:border-secondary:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .\32xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -175416,11 +174387,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
   }
 
-  .\32xl\:hover\:border-secondary:hover {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
-  }
-
   .\32xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -175842,11 +174808,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .\32xl\:focus\:border-primary:focus {
     --tw-border-opacity: 1;
     border-color: rgba(8, 41, 21, var(--tw-border-opacity));
-  }
-
-  .\32xl\:focus\:border-secondary:focus {
-    --tw-border-opacity: 1;
-    border-color: rgba(146, 191, 177, var(--tw-border-opacity));
   }
 
   .\32xl\:border-opacity-0 {
@@ -176572,11 +175533,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .\32xl\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   input[type="radio"]:checked ~ .\32xl\:label-checked\:bg-transparent {
     background-color: transparent;
   }
@@ -176998,11 +175954,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   input[type="radio"]:checked ~ .\32xl\:label-checked\:bg-primary {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  input[type="radio"]:checked ~ .\32xl\:label-checked\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-transparent {
@@ -177428,11 +176379,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .group:hover .\32xl\:group-hover\:bg-secondary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .\32xl\:focus-within\:bg-transparent:focus-within {
     background-color: transparent;
   }
@@ -177854,11 +176800,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .\32xl\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:focus-within\:bg-secondary:focus-within {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-transparent:hover {
@@ -178284,11 +177225,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
   }
 
-  .\32xl\:hover\:bg-secondary:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
-  }
-
   .\32xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -178710,11 +177646,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .\32xl\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(8, 41, 21, var(--tw-bg-opacity));
-  }
-
-  .\32xl\:focus\:bg-secondary:focus {
-    --tw-bg-opacity: 1;
-    background-color: rgba(146, 191, 177, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-opacity-0 {
@@ -179478,11 +178409,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .\32xl\:from-secondary {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .\32xl\:hover\:from-transparent:hover {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -179906,11 +178832,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .\32xl\:hover\:from-primary:hover {
     --tw-gradient-from: #082915;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .\32xl\:hover\:from-secondary:hover {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .\32xl\:focus\:from-transparent:focus {
@@ -180338,11 +179259,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .\32xl\:focus\:from-secondary:focus {
-    --tw-gradient-from: #92bfb1;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .\32xl\:via-transparent {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -180681,10 +179597,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .\32xl\:via-primary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .\32xl\:via-secondary {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .\32xl\:hover\:via-transparent:hover {
@@ -181027,10 +179939,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
   }
 
-  .\32xl\:hover\:via-secondary:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
-  }
-
   .\32xl\:focus\:via-transparent:focus {
     --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgba(0, 0, 0, 0));
   }
@@ -181369,10 +180277,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .\32xl\:focus\:via-primary:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #082915, var(--tw-gradient-to, rgba(8, 41, 21, 0));
-  }
-
-  .\32xl\:focus\:via-secondary:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #92bfb1, var(--tw-gradient-to, rgba(146, 191, 177, 0));
   }
 
   .\32xl\:to-transparent {
@@ -181715,10 +180619,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .\32xl\:to-secondary {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .\32xl\:hover\:to-transparent:hover {
     --tw-gradient-to: transparent;
   }
@@ -182059,10 +180959,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-gradient-to: #082915;
   }
 
-  .\32xl\:hover\:to-secondary:hover {
-    --tw-gradient-to: #92bfb1;
-  }
-
   .\32xl\:focus\:to-transparent:focus {
     --tw-gradient-to: transparent;
   }
@@ -182401,10 +181297,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .\32xl\:focus\:to-primary:focus {
     --tw-gradient-to: #082915;
-  }
-
-  .\32xl\:focus\:to-secondary:focus {
-    --tw-gradient-to: #92bfb1;
   }
 
   .\32xl\:decoration-slice {
@@ -183710,8 +182602,16 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     vertical-align: text-bottom;
   }
 
+  .\32xl\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
   .\32xl\:font-serif {
-    font-family: Merriweather, ui-serif, Cambria;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .\32xl\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .\32xl\:text-xs {
@@ -184387,11 +183287,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .\32xl\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .group:hover .\32xl\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -184813,11 +183708,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .group:hover .\32xl\:group-hover\:text-primary {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .group:hover .\32xl\:group-hover\:text-secondary {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-transparent:focus-within {
@@ -185243,11 +184133,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .\32xl\:focus-within\:text-secondary:focus-within {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .\32xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -185671,11 +184556,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-text-opacity));
   }
 
-  .\32xl\:hover\:text-secondary:hover {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
-  }
-
   .\32xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -186097,11 +184977,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .\32xl\:focus\:text-primary:focus {
     --tw-text-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-text-opacity));
-  }
-
-  .\32xl\:focus\:text-secondary:focus {
-    --tw-text-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-text-opacity));
   }
 
   .\32xl\:text-opacity-0 {
@@ -187743,21 +186618,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:placeholder-secondary::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-secondary:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:placeholder-secondary::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
   .\32xl\:focus\:placeholder-transparent:focus::-moz-placeholder {
     color: transparent;
   }
@@ -189025,21 +187885,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .\32xl\:focus\:placeholder-primary:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(8, 41, 21, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-secondary:focus::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
-  }
-
-  .\32xl\:focus\:placeholder-secondary:focus::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgba(146, 191, 177, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-opacity-0::-moz-placeholder {
@@ -190618,11 +189463,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .\32xl\:ring-secondary {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .\32xl\:focus-within\:ring-transparent:focus-within {
     --tw-ring-color: transparent;
   }
@@ -191046,11 +189886,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
   }
 
-  .\32xl\:focus-within\:ring-secondary:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
-  }
-
   .\32xl\:focus\:ring-transparent:focus {
     --tw-ring-color: transparent;
   }
@@ -191472,11 +190307,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
   .\32xl\:focus\:ring-primary:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(8, 41, 21, var(--tw-ring-opacity));
-  }
-
-  .\32xl\:focus\:ring-secondary:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(146, 191, 177, var(--tw-ring-opacity));
   }
 
   .\32xl\:ring-opacity-0 {
@@ -192059,10 +190889,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .\32xl\:ring-offset-secondary {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .\32xl\:focus-within\:ring-offset-transparent:focus-within {
     --tw-ring-offset-color: transparent;
   }
@@ -192403,10 +191229,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
     --tw-ring-offset-color: #082915;
   }
 
-  .\32xl\:focus-within\:ring-offset-secondary:focus-within {
-    --tw-ring-offset-color: #92bfb1;
-  }
-
   .\32xl\:focus\:ring-offset-transparent:focus {
     --tw-ring-offset-color: transparent;
   }
@@ -192745,10 +191567,6 @@ input[type="radio"]:checked ~ .label-checked\:bg-secondary {
 
   .\32xl\:focus\:ring-offset-primary:focus {
     --tw-ring-offset-color: #082915;
-  }
-
-  .\32xl\:focus\:ring-offset-secondary:focus {
-    --tw-ring-offset-color: #92bfb1;
   }
 
   .\32xl\:filter {

@@ -3,6 +3,24 @@
 {% load cdnstaticfiles %}
 
 {% block upper_content %}
+    <div class="{% if markers|length == 1 %}hidden{% endif %} flex flex-row flex-wrap justify-center mb-4">
+        {% for marker in markers %}
+            <label class="mx-2 my-3" for="map-selector-{{ forloop.counter }}">
+                <input
+                    class="hidden"
+                    type="radio"
+                    id="map-selector-{{ forloop.counter }}"
+                    name="map-selector"
+                    {% if forloop.counter == 1 %}checked{% endif %}
+                >
+                <span
+                    class="p-2 cursor-pointer shadow-sm rounded-2xl border label-checked:border-2"
+                >
+                    {{ marker.map.name }}
+                </span>
+            </label>
+        {% endfor %}
+    </div>
     <p class="text-center text-gray-100 px-16
                 lg:mx-24">
         {{ description }}
@@ -11,49 +29,25 @@
 
 
 {% block lower_content %}
-    <div class="flex flex-col items-center justify-center -mt-24 mx-2 bg-white rounded-md z-10
-                lg:mx-8">
-        <div class="flex flex-row flex-wrap justify-center my-4">
-            {% for marker in markers %}
-                <label class="mx-2 my-3 {% if markers|length == 1 %}hidden{% endif %}" for="map-selector-{{ forloop.counter }}">
-                    <input
-                        class="hidden"
-                        type="radio"
-                        id="map-selector-{{ forloop.counter }}"
-                        name="map-selector"
-                        {% if forloop.counter == 1 %}checked{% endif %}
-                    >
-                    <span
-                        class="p-2 cursor-pointer shadow-sm rounded-2xl border border-gray-600 label-checked:border-2"
-                    >
-                        {{ marker.map.name }}
-                    </span>
-                </label>
-            {% endfor %}
-        </div>
-        <div class="flex flex-col p-2 mb-8 items-center lg:items-start lg:flex-row lg:justify-center
-                    lg:p-8">
-            {% for marker in markers %}
-                <div
-                    class="{% if forloop.counter > 1 %}hidden{% endif %} relative m-2 w-full
-                            lg:m-0 lg:w-4/5"
-                    id="map-imagewrapper-{{ forloop.counter }}">
-                    <img
-                        src="{{ marker.map.image.url }}"
-                        class="object-contain"
-                        id="map-image-{{ forloop.counter }}"
-                    >
-                    <img
-                        src="{% cdnstatic "img/marker-1.png" %}"
-                        class="opacity-0 absolute w-5 h-5 object-contain
-                                sm:w-7 sm:h-7"
-                        id="map-marker-{{ forloop.counter }}"
-                        data-markerx={{ marker.x }}
-                        data-markery={{ marker.y }}
-                    >
-                </div>
-            {% endfor %}
-        </div>
+    <div class="flex flex-col -my-40 mx-2 bg-white rounded-md lg:mx-8 lg:w-3/4">
+        {% for marker in markers %}
+            <div
+                class="{% if forloop.counter > 1 %}hidden{% endif %} relative flex m-2"
+                id="map-imagewrapper-{{ forloop.counter }}">
+                <img
+                    src="{{ marker.map.image.url }}"
+                    class="object-contain"
+                    id="map-image-{{ forloop.counter }}"
+                >
+                <img
+                    src="{% cdnstatic "img/marker-1.png" %}"
+                    class="opacity-0 absolute w-5 h-5 object-contain sm:w-7 sm:h-7"
+                    id="map-marker-{{ forloop.counter }}"
+                    data-markerx={{ marker.x }}
+                    data-markery={{ marker.y }}
+                >
+            </div>
+        {% endfor %}
     </div>
     <script src="{% cdnstatic "js/marker.js" %}"></script>
 {% endblock %}
