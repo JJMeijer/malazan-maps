@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
+from django.utils.safestring import SafeData
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -120,9 +122,15 @@ TIME_ZONE = 'Europe/Amsterdam'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
+
+# Date Format
+# https://docs.djangoproject.com/en/3.2/ref/settings/#date-format
+
+DATE_FORMAT = 'Y-m-d'
+DATETIME_FORMAT = 'Y-m-d H:i:s'
 
 
 # Static files (CSS, JavaScript, Images)

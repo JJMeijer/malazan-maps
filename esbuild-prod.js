@@ -2,7 +2,11 @@
 
 require('esbuild')
     .build({
-        entryPoints: ['mapsdata/src/ts/marker.ts', 'mapsdata/src/ts/base.ts'],
+        entryPoints: [
+            'mapsdata/src/ts/marker.ts',
+            'mapsdata/src/ts/base.ts',
+            'mapsdata/src/ts/admin/marker.ts',
+        ],
         outdir: 'mapsdata/static/js',
         minify: true,
         sourcemap: false,

@@ -130,6 +130,8 @@ class PlaceAdmin(ImportExportModelAdmin):
         PlaceZeroMarkerFilter,
     )
 
+    save_as = True
+
     def get_queryset(self, request):
         qs = super().get_queryset(request)
         qs = qs.annotate(marker_count=Count('markers'))
@@ -175,6 +177,11 @@ class MarkerAdmin(ImportExportModelAdmin):
         'place',
         ('x', 'y'),
         'map',
+        'marker',
+    )
+
+    readonly_fields = (
+        'marker',
     )
 
     list_display = (
@@ -195,7 +202,46 @@ class MarkerAdmin(ImportExportModelAdmin):
         'place__name',
     )
 
+    class Media:
+        js = (
+            "js/admin/marker.js",
+        )
+
     @admin.display(description='type')
     def get_type(self, instance):
         """Get Type of the related place"""
         return instance.place.type
+
+    @admin.display(description='marker')
+    def marker(self, instance):
+        """Generates HTML that displays the Marker on the map"""
+        return format_html(
+            """
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <div style="width: 65%; position: relative;">
+                    <img
+                        id="map-image"
+                        href="{0}"
+                        src="{0}"
+                        style="width: 100%; object-fit: contain;"
+                    />
+                    <img
+                        src="/static/img/marker-1.png"
+                        id="map-marker"
+                        style="
+                            position: absolute;
+                            width: 1.25rem;
+                            height: 1.25rem;
+                            object-fit: contain;
+                            opacity: 0;
+                        "
+                        data-markerx={1}
+                        data-markery={2}
+                    />
+                </div>
+            </div>
+            """,
+            instance.map.image.url,
+            instance.x,
+            instance.y
+        )

@@ -17,7 +17,7 @@
     },
     "ignorePatterns": [
         "static/js/*.js",
-        "mapsdata/static/js/*.js"
+        "mapsdata/static/js/**/*.js"
     ],
     "overrides": [
         {
