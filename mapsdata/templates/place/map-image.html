@@ -1,0 +1,22 @@
+{% load cdnstaticfiles %}
+
+<div class="flex flex-col -my-40 mx-4 bg-white rounded-md lg:mx-8 lg:w-3/4">
+    {% for marker in markers %}
+        <div
+            class="{% if forloop.counter > 1 %}hidden{% endif %} relative flex m-2"
+            id="map-imagewrapper-{{ forloop.counter }}">
+            <img
+                src="{{ marker.map.image.url }}"
+                class="object-contain"
+                id="map-image-{{ forloop.counter }}"
+            >
+            <img
+                src="{% cdnstatic "img/marker-1.png" %}"
+                class="opacity-0 absolute w-5 h-5 object-contain sm:w-7 sm:h-7"
+                id="map-marker-{{ forloop.counter }}"
+                data-markerx={{ marker.x }}
+                data-markery={{ marker.y }}
+            >
+        </div>
+    {% endfor %}
+</div>
