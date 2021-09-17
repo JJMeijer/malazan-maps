@@ -8,7 +8,7 @@ class Continent(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
     wiki_link = models.URLField(max_length=200)
     description = models.CharField(max_length=2000, null=False, default='-')
@@ -21,7 +21,7 @@ class Book(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    name = models.CharField(max_length=100, verbose_name='title')
+    name = models.CharField(max_length=100, verbose_name='title', unique=True)
     short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
     cover = models.ImageField(upload_to='covers/', null=True)
 
@@ -36,7 +36,7 @@ class Map(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
     short_name = models.CharField(max_length=200, null=True, validators=[validate_shortname])
 
     height = models.IntegerField()
@@ -69,7 +69,7 @@ class Place(models.Model):
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(auto_now=True)
 
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     short_name = models.CharField(max_length=100, null=True, validators=[validate_shortname])
 
     wiki_link = models.URLField(max_length=200)
