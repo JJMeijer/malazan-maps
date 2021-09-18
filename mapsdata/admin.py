@@ -8,7 +8,7 @@ from import_export.admin import ImportExportModelAdmin
 
 from mapsdata.models import Book, Place, Marker, Continent, Map
 from mapsdata.resources import PlaceResource, MarkerResource
-from mapsdata.filters import PlaceZeroMarkerFilter
+from mapsdata.filters import PlaceHasDescriptionFilter, PlaceHasMarkerFilter
 
 admin.site.enable_nav_sidebar = False
 
@@ -127,7 +127,8 @@ class PlaceAdmin(ImportExportModelAdmin):
     list_filter = (
         'continent',
         'type',
-        PlaceZeroMarkerFilter,
+        PlaceHasMarkerFilter,
+        PlaceHasDescriptionFilter,
     )
 
     save_as = True
