@@ -1,28 +1,16 @@
 {% extends "base.html" %}
 
-{% block upper_content %}
-    <p class="text-center text-gray-100 px-16
-                lg:mx-24">
-        {{ description }}
-    </p>
-{% endblock %}
+{% block content %}
+    {% include "components/wide-header.html" %}
 
-{% block lower_content %}
-    <div class="flex flex-col items-start p-8 -my-24 mx-2 bg-white rounded-md
-                lg:flex-row">
-
-        <div class="flex flex-col  w-full justify-center items-start px-4
-                    lg:flex-row lg:flex-wrap">
+    <div class="flex flex-col items-start p-8 -my-40 mx-2 bg-white rounded-md lg:flex-row">
+        <div class="flex flex-col  w-full justify-center items-start px-4 lg:flex-row lg:flex-wrap">
             {% for map in maps %}
-                <div class="w-full flex items-end
-                            lg:w-2/5">
-                    <a
-                        href="{% url "map" map.short_name %}"
-                        class="group p-2">
+                <div class="w-full flex items-end lg:w-2/5">
+                    <a href="{% url "map" map.short_name %}" class="group p-2">
                         <img
                             src="{{ map.thumbnail.url }}"
-                            class="border border-gray-400 rounded-md shadow-md
-                                    group-hover:opacity-60"/>
+                            class="border border-gray-400 rounded-md shadow-md group-hover:opacity-60"/>
                         <p class="text-center group-hover:underline">
                             {{ map.name }}
                         </p>
@@ -31,4 +19,4 @@
             {% endfor %}
         </div>
     </div>
-{% endblock %}
+{% endblock content %}

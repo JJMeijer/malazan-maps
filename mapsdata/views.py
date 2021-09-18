@@ -8,7 +8,8 @@ def home_view(request):
     """Homepage View"""
     context = {
         'page_title': 'Home',
-        'page_description': 'Malazan Maps Search Engine. Find all places mentioned in the books of the Malazan: Book of the Fallen series.'
+        'page_description': 'Malazan Maps Search Engine. Find all places mentioned in the books of the Malazan: Book of the Fallen series.',
+        'description': 'Find places in the world of Malazan: Book of the Fallen.'
     }
 
     return render(request, 'home.html', context)

@@ -2,16 +2,12 @@
 
 {% load cdnstaticfiles %}
 
-{% block upper_content %}
-    <p class="text-center text-gray-100 text-lg px-16">
-        Find places in the world of Malazan: Book of the Fallen.
-    </p>
-{% endblock %}
+{% block content %}
+    {% include "components/wide-header.html" %}
 
-{% block lower_content %}
-    <div class="flex flex-col -my-40 mx-2 bg-white rounded-md lg:mx-8 lg:w-3/4">
-        <div class="relative flex p-2" id="map-image-wrapper">
+    <div class="flex flex-col -my-40 mx-4 bg-white rounded-md lg:mx-8 lg:w-3/4">
+        <div class="relative flex m-2" id="map-image-wrapper">
             <img src="{% cdnstatic "/img/header-1.jpg" %}" class="object-contain">
         </div>
     </div>
-{% endblock %}
+{% endblock content %}
