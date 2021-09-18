@@ -1,4 +1,4 @@
-<div class="{% if markers|length == 1 %}hidden{% endif %} flex flex-row flex-wrap justify-center mb-4">
+<div class="{% if markers|length == 1 %}hidden{% endif %} flex flex-row flex-wrap justify-center text-gray-100">
     {% for marker in markers %}
         <label class="mx-2 my-3" for="map-selector-{{ forloop.counter }}">
             <input

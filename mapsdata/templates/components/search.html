@@ -1,0 +1,25 @@
+{% load cdnstaticfiles %}
+
+<script src="{% cdnstatic "js/search.js" %}"></script>
+
+<div class="flex flex-row h-full z-30 bg-white rounded-md">
+    <a tabindex="5" class="h-full" href="javascript:;">
+        <img
+            class="h-full p-2 opacity-40"
+            src="{% cdnstatic "img/search-2.svg" %}"
+        >
+    </a>
+    <input
+        tabindex="4"
+        spellcheck="false"
+        id="search"
+        type="text"
+        class="w-5/6 focus:outline-none text-gray-600"
+        placeholder="Search..."
+    />
+</div>
+<div
+    id="search-results"
+    class="hidden absolute z-20 pt-11 pb-2 text-gray-800 left-0 top-0 shadow-md bg-white
+            w-full rounded-t-2xl rounded-b-md"
+></div>
