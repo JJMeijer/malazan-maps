@@ -27,7 +27,7 @@
             </div>
 
             <!--Place Title-->
-            <p class="mt-24 mb-8 text-3xl text-gray-100 font-bold">
+            <p class="mt-24 mb-8 text-3xl text-gray-100 font-bold hidden lg:block">
                 {{ page_title }}
             </p>
 
@@ -62,11 +62,12 @@
             </div>
         </div>
 
-        <div class="flex justify-center items-center w-full max-h-screen lg:w-3/4 p-4">
+        <!--Maps & Markers-->
+        <div class="flex justify-center items-center w-full lg:max-h-screen lg:w-3/4">
             {% for marker in markers|dictsortreversed:"map.priority" %}
-                <div class="h-screen">
+                <div class="lg:h-screen">
                     <div
-                        class="{% if forloop.counter > 1 %}hidden{% endif %} relative flex h-full"
+                        class="{% if forloop.counter > 1 %}hidden{% endif %} relative flex h-full p-4"
                         id="map-imagewrapper-{{ forloop.counter }}">
                         <img
                             src="{{ marker.map.image.url }}"

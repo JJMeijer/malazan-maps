@@ -14,6 +14,18 @@
       height
     };
   };
+  var getImageWrapperPaddings = (mapId) => {
+    const imageWrapper = document.getElementById(`map-imagewrapper-${mapId}`);
+    if (!(imageWrapper instanceof HTMLDivElement)) {
+      throw new Error(`Image wrapper missing for mapId: ${mapId}`);
+    }
+    const leftPadding = parseInt(window.getComputedStyle(imageWrapper).getPropertyValue("padding-left").replace("px", ""));
+    const topPadding = parseInt(window.getComputedStyle(imageWrapper).getPropertyValue("padding-top").replace("px", ""));
+    return {
+      leftPadding,
+      topPadding
+    };
+  };
   var placeImageMarker = (mapId) => {
     const mapElement = document.getElementById(`map-image-${mapId}`);
     const markerElement = document.getElementById(`map-marker-${mapId}`);
@@ -21,10 +33,11 @@
       const mapNaturalDimensions = getElementNaturalDimensions(mapElement);
       const mapRealDimensions = getElementRealDimensions(mapElement);
       const markerRealDimensions = getElementRealDimensions(markerElement);
+      const { leftPadding, topPadding } = getImageWrapperPaddings(mapId);
       const { markerx, markery } = markerElement.dataset;
       if (markerx && markery) {
-        const markerRelativeX = Math.round(parseInt(markerx) * mapRealDimensions.width / mapNaturalDimensions.naturalWidth - markerRealDimensions.width / 2);
-        const markerRelativeY = Math.round(parseInt(markery) * mapRealDimensions.height / mapNaturalDimensions.naturalHeight - markerRealDimensions.height);
+        const markerRelativeX = Math.round(parseInt(markerx) * mapRealDimensions.width / mapNaturalDimensions.naturalWidth - markerRealDimensions.width / 2) + leftPadding;
+        const markerRelativeY = Math.round(parseInt(markery) * mapRealDimensions.height / mapNaturalDimensions.naturalHeight - markerRealDimensions.height) + topPadding;
         markerElement.style.top = `${markerRelativeY}px`;
         markerElement.style.left = `${markerRelativeX}px`;
         markerElement.classList.remove("opacity-0");

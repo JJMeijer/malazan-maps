@@ -1,11 +1,16 @@
-export interface NaturalDimensions {
+interface NaturalDimensions {
     naturalWidth: number;
     naturalHeight: number;
 }
 
-export interface RealDimensions {
+interface RealDimensions {
     width: number;
     height: number;
+}
+
+interface ElementPaddings {
+    leftPadding: number;
+    topPadding: number;
 }
 
 const getElementNaturalDimensions = (element: HTMLImageElement): NaturalDimensions => {
@@ -26,6 +31,27 @@ const getElementRealDimensions = (element: HTMLElement): RealDimensions => {
     };
 };
 
+const getImageWrapperPaddings = (mapId: string): ElementPaddings => {
+    const imageWrapper = document.getElementById(`map-imagewrapper-${mapId}`);
+
+    if (!(imageWrapper instanceof HTMLDivElement)) {
+        throw new Error(`Image wrapper missing for mapId: ${mapId}`);
+    }
+
+    const leftPadding = parseInt(
+        window.getComputedStyle(imageWrapper).getPropertyValue('padding-left').replace('px', ''),
+    );
+
+    const topPadding = parseInt(
+        window.getComputedStyle(imageWrapper).getPropertyValue('padding-top').replace('px', ''),
+    );
+
+    return {
+        leftPadding,
+        topPadding,
+    };
+};
+
 const placeImageMarker = (mapId: string): void => {
     const mapElement = document.getElementById(`map-image-${mapId}`);
     const markerElement = document.getElementById(`map-marker-${mapId}`);
@@ -36,19 +62,24 @@ const placeImageMarker = (mapId: string): void => {
 
         const markerRealDimensions = getElementRealDimensions(markerElement);
 
+        const { leftPadding, topPadding } = getImageWrapperPaddings(mapId);
+
         const { markerx, markery } = markerElement.dataset;
 
         if (markerx && markery) {
-            const markerRelativeX = Math.round(
-                (parseInt(markerx) * mapRealDimensions.width) / mapNaturalDimensions.naturalWidth -
-                    markerRealDimensions.width / 2,
-            );
+            const markerRelativeX =
+                Math.round(
+                    (parseInt(markerx) * mapRealDimensions.width) /
+                        mapNaturalDimensions.naturalWidth -
+                        markerRealDimensions.width / 2,
+                ) + leftPadding;
 
-            const markerRelativeY = Math.round(
-                (parseInt(markery) * mapRealDimensions.height) /
-                    mapNaturalDimensions.naturalHeight -
-                    markerRealDimensions.height,
-            );
+            const markerRelativeY =
+                Math.round(
+                    (parseInt(markery) * mapRealDimensions.height) /
+                        mapNaturalDimensions.naturalHeight -
+                        markerRealDimensions.height,
+                ) + topPadding;
 
             markerElement.style.top = `${markerRelativeY}px`;
             markerElement.style.left = `${markerRelativeX}px`;

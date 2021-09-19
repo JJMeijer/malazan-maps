@@ -66,7 +66,7 @@ class MapAdmin(admin.ModelAdmin):
     )
 
     ordering = (
-        '-updated',
+        'name',
     )
 
     list_per_page = 20
