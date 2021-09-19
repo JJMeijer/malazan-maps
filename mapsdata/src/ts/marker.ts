@@ -98,9 +98,37 @@ const handleMapSelectorChange = (event: Event) => {
 
 const setImageSelectorListener = () => {
     const mapButtons = document.querySelectorAll('input[name="map-selector"]');
+    const mapButtonSpans = document.querySelectorAll('input[name="map-selector"]~span');
 
     mapButtons.forEach((element) => {
+        if (!(element instanceof HTMLInputElement)) {
+            throw new Error('Map Input has unexpected type');
+        }
+
         element.addEventListener('change', handleMapSelectorChange);
+    });
+
+    mapButtonSpans.forEach((element) => {
+        if (!(element instanceof HTMLSpanElement)) {
+            throw new Error('Map button has unexpected type');
+        }
+
+        element.addEventListener('keydown', (event) => {
+            const { key } = event;
+
+            if (key === 'Enter') {
+                const inputSibling = element.previousElementSibling;
+
+                if (!(inputSibling instanceof HTMLInputElement)) {
+                    throw new Error('Map Button input element missing');
+                }
+
+                inputSibling.checked = true;
+
+                const changeEvent = new Event('change');
+                inputSibling.dispatchEvent(changeEvent);
+            }
+        });
     });
 };
 

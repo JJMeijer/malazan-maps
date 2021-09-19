@@ -44,10 +44,7 @@ class Map(models.Model):
     image = models.ImageField(upload_to='maps/', height_field='height', width_field='width')
     thumbnail = models.ImageField(upload_to='maps/thumbnails/', null=True, blank=False)
 
-    @property
-    def orientation(self):
-        """Determine if map image has landscape or portrait orientation"""
-        return 'landscape' if self.width > self.height else 'portrait'
+    priority = models.PositiveIntegerField(help_text='Used to order maps when multiple maps are available for a place. Higher priority makes sure the maps is showed before other maps.')
 
     books = models.ManyToManyField(
         to=Book,

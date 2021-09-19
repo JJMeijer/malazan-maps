@@ -48,6 +48,7 @@ class MapAdmin(admin.ModelAdmin):
         'image',
         'thumbnail',
         'books',
+        'priority',
     )
 
     list_display = (
@@ -55,6 +56,7 @@ class MapAdmin(admin.ModelAdmin):
         'continent',
         'get_books',
         'marker_count',
+        'priority',
         'updated',
     )
 
