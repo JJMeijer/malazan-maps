@@ -215,6 +215,8 @@ const setZoomAndPanListeners = (): void => {
             throw new Error('element with `map-imagewrapper-` id is not a div element');
         }
 
+        // Set transform-origin to left/top of the image-wrapper
+
         let activeTransform = false;
         let panning = false;
         let scale = 1;
