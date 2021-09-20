@@ -63,12 +63,14 @@
         </div>
 
         <!--Maps & Markers-->
-        <div class="flex justify-center items-center w-full lg:max-h-screen lg:w-3/4">
+        <div class="flex justify-center items-center w-full lg:max-h-screen lg:w-3/4 relative">
             {% for marker in markers|dictsortreversed:"map.priority" %}
-                <div class="lg:h-screen">
+                <div class="lg:h-screen overflow-hidden">
                     <div
                         class="{% if forloop.counter > 1 %}hidden{% endif %} relative flex h-full p-4"
-                        id="map-imagewrapper-{{ forloop.counter }}">
+                        id="map-imagewrapper-{{ forloop.counter }}"
+                        style="transform: scale(1) translate(0px, 0px); transform-origin: 0px 0px; cursor: grab;"
+                    >
                         <img
                             src="{{ marker.map.image.url }}"
                             class="object-contain"
@@ -82,8 +84,16 @@
                             data-markery={{ marker.y }}
                         >
                     </div>
+
                 </div>
             {% endfor %}
+            <div
+                class="text-gray-100 bg-primary hidden opacity-50 absolute top-8 left-0 right-0 mx-auto w-32 p-1 cursor-pointer shadow-sm rounded-2xl border text-center hover:opacity-80"
+                id="reset-zoom-button">
+                <span>
+                    Reset Zoom
+                </span>
+            </div>
         </div>
     </div>
     <script src="{% cdnstatic "js/marker.js" %}"></script>

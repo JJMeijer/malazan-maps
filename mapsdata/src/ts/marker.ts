@@ -52,6 +52,8 @@ const getImageWrapperPaddings = (mapId: string): ElementPaddings => {
     };
 };
 
+const clamp = (num: number, min: number, max: number): number => Math.min(Math.max(num, min), max);
+
 const placeImageMarker = (mapId: string): void => {
     const mapElement = document.getElementById(`map-image-${mapId}`);
     const markerElement = document.getElementById(`map-marker-${mapId}`);
@@ -127,7 +129,7 @@ const handleMapSelectorChange = (event: Event) => {
     placeImageMarker(mapId);
 };
 
-const setImageSelectorListener = () => {
+const setMapSelectorListeners = () => {
     const mapButtons = document.querySelectorAll('input[name="map-selector"]');
     const mapButtonSpans = document.querySelectorAll('input[name="map-selector"]~span');
 
@@ -136,7 +138,9 @@ const setImageSelectorListener = () => {
             throw new Error('Map Input has unexpected type');
         }
 
-        element.addEventListener('change', handleMapSelectorChange);
+        element.addEventListener('change', (event) => {
+            handleMapSelectorChange(event);
+        });
     });
 
     mapButtonSpans.forEach((element) => {
@@ -183,10 +187,159 @@ const getVisibleImage = (): HTMLElement | null => {
     return null;
 };
 
+const showResetZoomButton = () => {
+    const resetButton = document.getElementById('reset-zoom-button');
+
+    if (!resetButton) {
+        throw new Error('Reset button is missing');
+    }
+
+    resetButton.classList.remove('hidden');
+};
+
+const hideResetZoomButton = () => {
+    const resetButton = document.getElementById('reset-zoom-button');
+
+    if (!resetButton) {
+        throw new Error('Reset button is missing');
+    }
+
+    resetButton.classList.add('hidden');
+};
+
+const setZoomAndPanListeners = (): void => {
+    const mapImages = document.querySelectorAll('[id^=map-imagewrapper-]');
+
+    mapImages.forEach((mapImageElement) => {
+        if (!(mapImageElement instanceof HTMLDivElement)) {
+            throw new Error('element with `map-imagewrapper-` id is not a div element');
+        }
+
+        let activeTransform = false;
+        let panning = false;
+        let scale = 1;
+        let pointX = 0;
+        let pointY = 0;
+        let startX = 0;
+        let startY = 0;
+
+        const setTransform = () => {
+            mapImageElement.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+        };
+
+        mapImageElement.onmousedown = (event) => {
+            event.preventDefault();
+            const { clientX, clientY } = event;
+
+            startX = clientX - pointX;
+            startY = clientY - pointY;
+
+            panning = true;
+        };
+
+        mapImageElement.onmouseup = () => {
+            panning = false;
+        };
+
+        mapImageElement.onmousemove = (event) => {
+            event.preventDefault();
+
+            if (!panning) {
+                return;
+            }
+
+            if (!activeTransform) {
+                showResetZoomButton();
+                activeTransform = true;
+            }
+
+            const { clientX, clientY } = event;
+
+            pointX = clientX - startX;
+            pointY = clientY - startY;
+            setTransform();
+        };
+
+        mapImageElement.onwheel = (event) => {
+            event.preventDefault();
+
+            if (!activeTransform) {
+                showResetZoomButton();
+                activeTransform = true;
+            }
+
+            const { clientX, clientY, deltaY } = event;
+
+            const xs = (clientX - pointX) / scale;
+            const ys = (clientY - pointY) / scale;
+            const delta = -deltaY;
+
+            const maxWheelDown = 6;
+            const maxWheelUp = 2;
+            const scaleFactor = 1.2;
+
+            if (delta > 0) {
+                scale = clamp(
+                    scale * scaleFactor,
+                    1 / scaleFactor ** maxWheelUp,
+                    scaleFactor ** maxWheelDown,
+                );
+            } else {
+                scale = clamp(
+                    scale / scaleFactor,
+                    1 / scaleFactor ** maxWheelUp,
+                    scaleFactor ** maxWheelDown,
+                );
+            }
+
+            pointX = clientX - xs * scale;
+            pointY = clientY - ys * scale;
+
+            setTransform();
+        };
+
+        const reset = () => {
+            panning = false;
+            scale = 1;
+            pointX = 0;
+            pointY = 0;
+            startX = 0;
+            startY = 0;
+
+            setTransform();
+
+            hideResetZoomButton();
+
+            activeTransform = false;
+        };
+
+        window.addEventListener('resize', reset);
+
+        const mapButtons = document.querySelectorAll('input[name="map-selector"]');
+        mapButtons.forEach((element) => {
+            element.addEventListener('change', reset);
+        });
+
+        const resetButton = document.getElementById('reset-zoom-button');
+
+        if (!resetButton) {
+            throw new Error('Reset button is missing');
+        }
+
+        resetButton.addEventListener('click', reset);
+    });
+};
+
 const initMarkerPage = (): void => {
     placeVisibleMarker();
-    window.addEventListener('resize', placeVisibleMarker);
-    setImageSelectorListener();
+
+    setZoomAndPanListeners();
+
+    window.addEventListener('resize', () => {
+        placeVisibleMarker();
+    });
+
+    setMapSelectorListeners();
 };
 
 document.addEventListener('DOMContentLoaded', () => {

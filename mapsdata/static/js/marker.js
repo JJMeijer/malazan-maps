@@ -1,4 +1,9 @@
 (() => {
+  var __pow = Math.pow;
+  var __require = typeof require !== "undefined" ? require : (x) => {
+    throw new Error('Dynamic require of "' + x + '" is not supported');
+  };
+
   // mapsdata/src/ts/marker.ts
   var getElementNaturalDimensions = (element) => {
     const { naturalHeight, naturalWidth } = element;
@@ -26,6 +31,7 @@
       topPadding
     };
   };
+  var clamp = (num, min, max) => Math.min(Math.max(num, min), max);
   var placeImageMarker = (mapId) => {
     const mapElement = document.getElementById(`map-image-${mapId}`);
     const markerElement = document.getElementById(`map-marker-${mapId}`);
@@ -71,14 +77,16 @@
     }
     placeImageMarker(mapId);
   };
-  var setImageSelectorListener = () => {
+  var setMapSelectorListeners = () => {
     const mapButtons = document.querySelectorAll('input[name="map-selector"]');
     const mapButtonSpans = document.querySelectorAll('input[name="map-selector"]~span');
     mapButtons.forEach((element) => {
       if (!(element instanceof HTMLInputElement)) {
         throw new Error("Map Input has unexpected type");
       }
-      element.addEventListener("change", handleMapSelectorChange);
+      element.addEventListener("change", (event) => {
+        handleMapSelectorChange(event);
+      });
     });
     mapButtonSpans.forEach((element) => {
       if (!(element instanceof HTMLSpanElement)) {
@@ -113,10 +121,112 @@
     }
     return null;
   };
+  var showResetZoomButton = () => {
+    const resetButton = document.getElementById("reset-zoom-button");
+    if (!resetButton) {
+      throw new Error("Reset button is missing");
+    }
+    resetButton.classList.remove("hidden");
+  };
+  var hideResetZoomButton = () => {
+    const resetButton = document.getElementById("reset-zoom-button");
+    if (!resetButton) {
+      throw new Error("Reset button is missing");
+    }
+    resetButton.classList.add("hidden");
+  };
+  var setZoomAndPanListeners = () => {
+    const mapImages = document.querySelectorAll("[id^=map-imagewrapper-]");
+    mapImages.forEach((mapImageElement) => {
+      if (!(mapImageElement instanceof HTMLDivElement)) {
+        throw new Error("element with `map-imagewrapper-` id is not a div element");
+      }
+      let activeTransform = false;
+      let panning = false;
+      let scale = 1;
+      let pointX = 0;
+      let pointY = 0;
+      let startX = 0;
+      let startY = 0;
+      const setTransform = () => {
+        mapImageElement.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+      };
+      mapImageElement.onmousedown = (event) => {
+        event.preventDefault();
+        const { clientX, clientY } = event;
+        startX = clientX - pointX;
+        startY = clientY - pointY;
+        panning = true;
+      };
+      mapImageElement.onmouseup = () => {
+        panning = false;
+      };
+      mapImageElement.onmousemove = (event) => {
+        event.preventDefault();
+        if (!panning) {
+          return;
+        }
+        if (!activeTransform) {
+          showResetZoomButton();
+          activeTransform = true;
+        }
+        const { clientX, clientY } = event;
+        pointX = clientX - startX;
+        pointY = clientY - startY;
+        setTransform();
+      };
+      mapImageElement.onwheel = (event) => {
+        event.preventDefault();
+        if (!activeTransform) {
+          showResetZoomButton();
+          activeTransform = true;
+        }
+        const { clientX, clientY, deltaY } = event;
+        const xs = (clientX - pointX) / scale;
+        const ys = (clientY - pointY) / scale;
+        const delta = -deltaY;
+        const maxWheelDown = 6;
+        const maxWheelUp = 2;
+        const scaleFactor = 1.2;
+        if (delta > 0) {
+          scale = clamp(scale * scaleFactor, 1 / __pow(scaleFactor, maxWheelUp), __pow(scaleFactor, maxWheelDown));
+        } else {
+          scale = clamp(scale / scaleFactor, 1 / __pow(scaleFactor, maxWheelUp), __pow(scaleFactor, maxWheelDown));
+        }
+        pointX = clientX - xs * scale;
+        pointY = clientY - ys * scale;
+        setTransform();
+      };
+      const reset = () => {
+        panning = false;
+        scale = 1;
+        pointX = 0;
+        pointY = 0;
+        startX = 0;
+        startY = 0;
+        setTransform();
+        hideResetZoomButton();
+        activeTransform = false;
+      };
+      window.addEventListener("resize", reset);
+      const mapButtons = document.querySelectorAll('input[name="map-selector"]');
+      mapButtons.forEach((element) => {
+        element.addEventListener("change", reset);
+      });
+      const resetButton = document.getElementById("reset-zoom-button");
+      if (!resetButton) {
+        throw new Error("Reset button is missing");
+      }
+      resetButton.addEventListener("click", reset);
+    });
+  };
   var initMarkerPage = () => {
     placeVisibleMarker();
-    window.addEventListener("resize", placeVisibleMarker);
-    setImageSelectorListener();
+    setZoomAndPanListeners();
+    window.addEventListener("resize", () => {
+      placeVisibleMarker();
+    });
+    setMapSelectorListeners();
   };
   document.addEventListener("DOMContentLoaded", () => {
     const visibleImage = getVisibleImage();
