@@ -24,3 +24,22 @@ interface RegionMarker {
 }
 
 export type Marker = CityMarker | RegionMarker;
+
+export interface NaturalDimensions {
+    naturalWidth: number;
+    naturalHeight: number;
+}
+
+export interface RealDimensions {
+    width: number;
+    height: number;
+    top: number;
+    left: number;
+}
+
+export interface ElementPaddings {
+    rightPadding: number;
+    bottomPadding: number;
+    leftPadding: number;
+    topPadding: number;
+}

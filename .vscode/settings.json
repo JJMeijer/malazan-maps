@@ -7,5 +7,6 @@
     "--django-settings-module=malazan_maps.settings",
     "--disable=C0114,C0115"
   ],
-  "editor.tabSize": 4
+  "editor.tabSize": 4,
+  "files.eol": "\n",
 }
