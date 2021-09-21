@@ -6,6 +6,8 @@ interface NaturalDimensions {
 interface RealDimensions {
     width: number;
     height: number;
+    top: number;
+    left: number;
 }
 
 interface ElementPaddings {
@@ -23,11 +25,13 @@ const getElementNaturalDimensions = (element: HTMLImageElement): NaturalDimensio
 };
 
 const getElementRealDimensions = (element: HTMLElement): RealDimensions => {
-    const { width, height } = element.getBoundingClientRect();
+    const { width, height, top, left } = element.getBoundingClientRect();
 
     return {
         width,
         height,
+        top,
+        left,
     };
 };
 
@@ -215,6 +219,13 @@ const setZoomAndPanListeners = (): void => {
             throw new Error('element with `map-imagewrapper-` id is not a div element');
         }
 
+        const setTransformOrigin = () => {
+            const { top, left } = getElementRealDimensions(mapImageElement);
+            mapImageElement.style.transformOrigin = `${-left}px ${-top}px`;
+        };
+
+        setTransformOrigin();
+
         // Set transform-origin to left/top of the image-wrapper
 
         let activeTransform = false;
@@ -276,8 +287,8 @@ const setZoomAndPanListeners = (): void => {
             const ys = (clientY - pointY) / scale;
             const delta = -deltaY;
 
-            const maxWheelDown = 6;
-            const maxWheelUp = 2;
+            const maxWheelDown = 5;
+            const maxWheelUp = 1;
             const scaleFactor = 1.2;
 
             if (delta > 0) {
@@ -309,6 +320,7 @@ const setZoomAndPanListeners = (): void => {
             startY = 0;
 
             setTransform();
+            setTransformOrigin();
 
             hideResetZoomButton();
 

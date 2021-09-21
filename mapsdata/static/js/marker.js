@@ -13,10 +13,12 @@
     };
   };
   var getElementRealDimensions = (element) => {
-    const { width, height } = element.getBoundingClientRect();
+    const { width, height, top, left } = element.getBoundingClientRect();
     return {
       width,
-      height
+      height,
+      top,
+      left
     };
   };
   var getImageWrapperPaddings = (mapId) => {
@@ -141,6 +143,11 @@
       if (!(mapImageElement instanceof HTMLDivElement)) {
         throw new Error("element with `map-imagewrapper-` id is not a div element");
       }
+      const setTransformOrigin = () => {
+        const { top, left } = getElementRealDimensions(mapImageElement);
+        mapImageElement.style.transformOrigin = `${-left}px ${-top}px`;
+      };
+      setTransformOrigin();
       let activeTransform = false;
       let panning = false;
       let scale = 1;
@@ -185,8 +192,8 @@
         const xs = (clientX - pointX) / scale;
         const ys = (clientY - pointY) / scale;
         const delta = -deltaY;
-        const maxWheelDown = 6;
-        const maxWheelUp = 2;
+        const maxWheelDown = 5;
+        const maxWheelUp = 1;
         const scaleFactor = 1.2;
         if (delta > 0) {
           scale = clamp(scale * scaleFactor, 1 / __pow(scaleFactor, maxWheelUp), __pow(scaleFactor, maxWheelDown));
@@ -205,6 +212,7 @@
         startX = 0;
         startY = 0;
         setTransform();
+        setTransformOrigin();
         hideResetZoomButton();
         activeTransform = false;
       };
