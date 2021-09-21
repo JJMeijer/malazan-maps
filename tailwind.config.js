@@ -3,7 +3,7 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-    purge: ['./mapsdata/templates/*.html', './mapsdata/static/js/*.js'],
+    purge: ['./mapsdata/templates/**/*.html', './mapsdata/static/js/*.js'],
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
