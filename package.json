@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build-css:prod": "postcss --env production --ext '-dist.css' mapsdata/src/css -d mapsdata/static/css",
-    "build-css:watch": "postcss -w mapsdata/src/css/main.css -o mapsdata/static/css/main-dist.css",
+    "build-css:prod": "postcss --env production mapsdata/src/css -d mapsdata/static/css",
+    "build-css:watch": "postcss -w mapsdata/src/css -d mapsdata/static/css",
     "build-js:prod": "node esbuild-prod.js",
     "build-js:dev": "node esbuild-dev.js",
     "build-js:watch": "node esbuild-watch.js"
