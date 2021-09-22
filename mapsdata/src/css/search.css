@@ -17,6 +17,7 @@
     width: 83.333333%;
     color: #4b5563;
 }
+
 .search-container-input:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
@@ -36,7 +37,7 @@
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 0.375rem;
     border-bottom-right-radius: 0.375rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
 .search-result-wrapper {

@@ -103,7 +103,6 @@ See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d4
     box-shadow: none;
 }
 
-
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
@@ -156,7 +155,6 @@ input::placeholder {
     outline: auto;
 }
 
-
 /**
  * Reset links to optimize for opt-in styling instead of
  * opt-out.
@@ -165,7 +163,6 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
-
 
 /**
  * 1. Make replaced elements `display: block` by default as that's
