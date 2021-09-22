@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build-css:prod": "postcss --env production mapsdata/src/css/main.css -o mapsdata/static/css/main-dist.css",
-    "build-css:watch": "postcss -w mapsdata/src/css -d mapsdata/static/css",
+    "build-css:watch": "postcss -w mapsdata/src/css/main.css -o mapsdata/static/css/main-dist.css",
     "build-js:prod": "node esbuild-prod.js",
     "build-js:dev": "node esbuild-dev.js",
     "build-js:watch": "node esbuild-watch.js"
@@ -24,6 +24,8 @@
     "postcss-import": "^14.0.2",
     "postcss-minify": "^1.1.0",
     "prettier": "^2.3.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
     "typescript": "^4.2.4"
   }
 }

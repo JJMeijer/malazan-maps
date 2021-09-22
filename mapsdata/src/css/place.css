@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #082915;
 }
 
 .place-left-menu {
@@ -28,6 +29,8 @@
     height: 2.5rem;
     width: 83.333333%;
     margin-top: 2rem;
+    position: relative;
+    margin-bottom: 2rem;
 }
 
 .place-map-selector-wrapper {
@@ -80,16 +83,21 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    background-color: white;
+    border-radius: 0.5rem;
 }
 
 .place-image-wrapper {
     position: relative;
     display: flex;
-    height: 100%;
     padding: 1rem;
     cursor: grab;
-    transform-origin: 0px 0px;
-    transform: scale(1) translate(0px, 0px);
+    transform-origin: 0 0;
+    transform: scale(1) translate(0, 0);
+}
+
+.place-image-wrapper img {
+    max-height: 100vh;
 }
 
 .place-image-marker {
@@ -105,8 +113,8 @@
     opacity: 0.5;
     position: absolute;
     top: 2rem;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
     width: 8rem;
@@ -135,18 +143,9 @@
         display: block;
     }
 
-    .place-search-wrapper {
-        position: relative;
-        margin-bottom: 2rem;
-    }
-
     .place-maps-wrapper {
         width: 75%;
         max-height: 100vh;
-    }
-
-    .place-map-wrapper {
-        height: 100vh;
     }
 }
 

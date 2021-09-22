@@ -44,7 +44,11 @@ export const setZoomAndPanListeners = (): void => {
 
         imageWrapper.onmousedown = (event) => {
             event.preventDefault();
-            const { clientX, clientY } = event;
+            const { clientX, clientY, buttons } = event;
+
+            if (buttons !== 1) {
+                return;
+            }
 
             startX = clientX - pointX;
             startY = clientY - pointY;
