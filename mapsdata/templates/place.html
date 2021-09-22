@@ -6,38 +6,38 @@
 {% endblock navbar %}
 
 {% block content %}
-    <div class="flex flex-col lg:flex-row w-full">
+    <div class="place-container">
         {% comment %} Left side Menu{% endcomment %}
-        <div class="w-full lg:w-1/4 flex flex-col items-center bg-primary lg:min-h-screen">
+        <div class="place-left-menu">
             {% comment %} Custom Smaller Navbar {% endcomment %}
-            <div class="bg-primary text-gray-100 p-1 flex flex-row items-center w-full border-b border-gray-600">
+            <div class="navbar">
                 <a href="{% url "home" %}">
-                    <p class="ml-4 p-2 text-2xl">
+                    <p class="navbar-site-title">
                         Malazan Maps
                     </p>
                 </a>
-                <p class="px-1">
+                <p class="navbar-seperator">
                     >
                 </p>
-                <p class="p-2 text-md">
+                <p class="navbar-page-title">
                     {{ page_title }}
                 </p>
             </div>
 
             <!--Place Title-->
-            <p class="mt-24 mb-8 text-3xl text-gray-100 font-bold hidden lg:block">
+            <p class="place-left-menu-title">
                 {{ page_title }}
             </p>
 
             <!--Searchbox-->
-            <div id="search-wrapper" class="relative flex flex-col h-10 w-5/6 mt-8 lg:my-8">
+            <div id="search-wrapper" class="place-search-wrapper">
                 {% include "components/search.html" %}
             </div>
 
             <!--Map Selectors (If multiple maps)-->
-            <div class="{% if markers|length == 1 %}hidden{% endif %} flex flex-row flex-wrap justify-center text-gray-100">
+            <div class="{% if markers|length == 1 %}hidden{% endif %} place-map-selector-wrapper">
                 {% for marker in markers|dictsortreversed:"map.priority" %}
-                    <label class="mx-2 my-3" for="map-selector-{{ forloop.counter }}">
+                    <label class="place-map-selector-label" for="map-selector-{{ forloop.counter }}">
                         <input
                             class="hidden"
                             type="radio"
@@ -45,7 +45,7 @@
                             name="map-selector"
                             {% if forloop.counter == 1 %}checked{% endif %}
                         >
-                        <span tabindex="4" class="p-2 cursor-pointer shadow-sm rounded-2xl border label-checked:border-2">
+                        <span tabindex="4" class="place-map-selector-span">
                             {{ marker.map.name }}
                         </span>
                     </label>
@@ -53,21 +53,20 @@
             </div>
 
             <!--Place Description-->
-            <div class="w-full py-4 my-4">
-                <p class="text-center text-gray-100 text-lg px-4">
+            <div class="place-description-wrapper">
+                <p class="place-description-text">
                     {{ description }}
                 </p>
             </div>
         </div>
 
         <!--Maps & Markers-->
-        <div class="flex justify-center items-center w-full lg:max-h-screen lg:w-3/4 relative overflow-hidden">
+        <div class="place-maps-wrapper">
             {% for marker in markers|dictsortreversed:"map.priority" %}
-                <div class="lg:h-screen">
+                <div class="place-map-wrapper">
                     <div
-                        class="{% if forloop.counter > 1 %}hidden{% endif %} relative flex h-full p-4"
+                        class="{% if forloop.counter > 1 %}hidden{% endif %} place-image-wrapper"
                         id="map-imagewrapper-{{ forloop.counter }}"
-                        style="transform: scale(1) translate(0px, 0px); transform-origin: 0px 0px; cursor: grab;"
                     >
                         <img
                             src="{{ marker.map.image.url }}"
@@ -76,7 +75,7 @@
                         >
                         <img
                             src="{% cdnstatic "img/marker-1.png" %}"
-                            class="opacity-0 absolute w-5 h-5 object-contain sm:w-7 sm:h-7"
+                            class="place-image-marker object-contain"
                             id="map-marker-{{ forloop.counter }}"
                             data-markerx={{ marker.x }}
                             data-markery={{ marker.y }}
@@ -86,7 +85,7 @@
                 </div>
             {% endfor %}
             <div
-                class="text-gray-100 bg-primary hidden opacity-50 absolute top-8 left-0 right-0 mx-auto w-32 p-1 cursor-pointer shadow-sm rounded-2xl border text-center hover:opacity-80"
+                class="place-reset-zoom-button hidden"
                 id="reset-zoom-button">
                 <span>
                     Reset Zoom

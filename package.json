@@ -3,25 +3,25 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build-css:dev": "set TAILWIND_MODE=build & postcss mapsdata/static/css/tailwind.css -o mapsdata/static/css/tailwind-dist.css --env development",
-    "build-css:prod": "set TAILWIND_MODE=build & postcss mapsdata/static/css/tailwind.css -o mapsdata/static/css/tailwind-dist.css --env production",
+    "build-css:prod": "postcss --env production --ext '-dist.css' mapsdata/src/css -d mapsdata/static/css",
+    "build-css:watch": "postcss -w mapsdata/src/css/main.css -o mapsdata/static/css/main-dist.css",
     "build-js:prod": "node esbuild-prod.js",
     "build-js:dev": "node esbuild-dev.js",
     "build-js:watch": "node esbuild-watch.js"
   },
-  "dependencies": {
-    "autoprefixer": "^10.2.5",
-    "esbuild": "^0.12.1",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.1.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "autoprefixer": "^10.3.5",
+    "esbuild": "^0.12.29",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-prettier": "^3.4.0",
+    "postcss": "^8.3.7",
+    "postcss-cli": "^8.3.1",
+    "postcss-minify": "^1.1.0",
     "prettier": "^2.3.0",
     "typescript": "^4.2.4"
   }

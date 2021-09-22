@@ -20,7 +20,7 @@ const generateLink = (short_name: string, type: string): string => {
 const partialBoldString = (fullText: string, boldText: string): string => {
     return fullText.replace(
         new RegExp(`(${boldText})`, 'gi'),
-        `<span class="font-extrabold text-gray-800">$1</span>`,
+        `<span style="font-weight: 800; color: #1f2937;">$1</span>`,
     );
 };
 
@@ -33,22 +33,22 @@ export const createSearchResult = (
     const resultHref = generateLink(short_name, type);
 
     const resultWrapper = document.createElement('div');
-    resultWrapper.classList.add('flex', 'flex-col', 'p-2', 'text-md', 'hover:bg-gray-200');
+    resultWrapper.classList.add('search-result-wrapper');
     resultWrapper.setAttribute(`data-${RESULT_INDEX_ATTRIBUTE}`, String(index));
     resultWrapper.setAttribute(`data-${RESULT_NAME_ATTRIBUTE}`, short_name);
     resultWrapper.setAttribute(`data-${RESULT_HREF_ATTRIBUTE}`, resultHref);
 
     const resultLink = document.createElement('a');
     resultLink.href = resultHref;
-    resultLink.classList.add('flex', 'flex-row');
+    resultLink.classList.add('search-result-link');
 
     const resultName = document.createElement('p');
     resultName.innerHTML = partialBoldString(name, query);
-    resultName.classList.add('w-3/4');
+    resultName.classList.add('search-result-name');
 
     const resultType = document.createElement('p');
     resultType.innerHTML = type;
-    resultType.classList.add('w-1/4', 'opacity-50', 'text-right');
+    resultType.classList.add('search-result-type');
 
     resultLink.appendChild(resultName);
     resultLink.appendChild(resultType);
@@ -59,7 +59,7 @@ export const createSearchResult = (
 
 export const createNoResult = (): HTMLElement => {
     const wrapper = document.createElement('div');
-    wrapper.classList.add(...['p-2', 'text-md', 'w-full']);
+    wrapper.classList.add('search-result-wrapper-noresult');
 
     const text = document.createElement('p');
     text.innerHTML = 'No Results';

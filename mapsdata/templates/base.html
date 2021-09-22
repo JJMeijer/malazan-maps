@@ -10,21 +10,21 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{% cdnstatic "img/favicon-32x32.png" %}">
         <link rel="icon" type="image/png" sizes="16x16" href="{% cdnstatic "img/favicon-16x16.png" %}">
         <link rel="manifest" href="{% cdnstatic "manifest.json" %}">
-        <link rel="stylesheet" type="text/css" href="{% cdnstatic "css/tailwind-dist.css" %}" media="screen">
+        <link rel="stylesheet" type="text/css" href="{% cdnstatic "css/main-dist.css" %}" media="screen">
     </head>
-    <body class="font-sans">
-        <div class="h-screen text-gray-800 flex flex-col items-center">
+    <body>
+        <div class="base-container">
             {% block navbar %}
-                <div class="bg-primary text-gray-100 p-1 flex flex-row items-center w-full border-b border-gray-600">
+                <div class="navbar">
                     <a href="{% url "home" %}">
-                        <p class="ml-4 p-2 text-2xl">
+                        <p class="navbar-site-title">
                             Malazan Maps
                         </p>
                     </a>
-                    <p class="px-1">
+                    <p class="navbar-seperator">
                         >
                     </p>
-                    <p class="p-2 text-md">
+                    <p class="navbar-page-title">
                         {{ page_title }}
                     </p>
                 </div>

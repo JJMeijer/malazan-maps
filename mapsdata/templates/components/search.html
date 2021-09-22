@@ -2,10 +2,10 @@
 
 <script src="{% cdnstatic "js/search.js" %}"></script>
 
-<div class="flex flex-row h-full z-30 bg-white rounded-md">
-    <a tabindex="-1" class="h-full" href="javascript:;">
+<div class="search-container">
+    <a tabindex="-1" style="height: 100%;" href="javascript:;">
         <img
-            class="h-full p-2 opacity-40"
+            class="search-container-image"
             src="{% cdnstatic "img/search-2.svg" %}"
         >
     </a>
@@ -14,12 +14,11 @@
         spellcheck="false"
         id="search"
         type="text"
-        class="w-5/6 focus:outline-none text-gray-600"
+        class="search-container-input"
         placeholder="Search..."
     />
 </div>
 <div
     id="search-results"
-    class="hidden absolute z-20 pt-11 pb-2 text-gray-800 left-0 top-0 shadow-md bg-white
-            w-full rounded-t-2xl rounded-b-md"
+    class="search-results hidden"
 ></div>

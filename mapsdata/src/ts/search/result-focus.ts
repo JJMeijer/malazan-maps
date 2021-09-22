@@ -3,7 +3,7 @@ import { FocusResultInformation } from './types';
 
 const FOCUS_RESULT_CLASS = 'focus-result';
 
-const FOCUS_CLASSES = [FOCUS_RESULT_CLASS, 'bg-gray-200', 'text-gray-800'];
+const FOCUS_CLASSES = [FOCUS_RESULT_CLASS, 'search-result-focussed'];
 
 export const getCurrentFocusResult = (): FocusResultInformation => {
     const element = document.querySelector(`.${FOCUS_RESULT_CLASS}`);

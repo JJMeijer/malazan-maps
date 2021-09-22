@@ -50,10 +50,13 @@ export const setZoomAndPanListeners = (): void => {
             startY = clientY - pointY;
 
             panning = true;
+
+            imageWrapper.style.cursor = 'grabbing';
         };
 
         imageWrapper.onmouseup = () => {
             panning = false;
+            imageWrapper.style.cursor = 'grab';
         };
 
         imageWrapper.onmousemove = (event) => {

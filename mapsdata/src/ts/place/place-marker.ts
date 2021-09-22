@@ -60,9 +60,10 @@ export const placeMarker = (mapId: string): void => {
                 markerRealDimensions.height,
         ) + topPadding;
 
+    // Padding issues :()
+
     mapMarkerElement.style.top = `${markerRelativeY}px`;
     mapMarkerElement.style.left = `${markerRelativeX}px`;
 
-    mapMarkerElement.classList.remove('opacity-0');
-    mapMarkerElement.classList.add('opacity-90');
+    mapMarkerElement.style.opacity = '0.85';
 };

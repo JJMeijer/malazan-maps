@@ -4,5 +4,7 @@ node_modules/
 
 dist/www/
 /static/
+mapsdata/static/js
+mapsdata/static/css
 
 *credentials.json

@@ -3,20 +3,18 @@
 {% block content %}
     {% include "components/wide-header.html" %}
 
-    <div class="flex flex-col items-start p-8 -my-40 mx-2 bg-white rounded-md md:flex-row">
-        <div class="flex flex-col  w-full justify-center items-start px-4 md:flex-row md:flex-wrap">
-            {% for map in maps %}
-                <div class="w-full flex items-end justify-center md:w-2/5">
-                    <a href="{% url "map" map.short_name %}" class="group p-2">
-                        <img
-                            src="{{ map.thumbnail.url }}"
-                            class="border border-gray-400 rounded-md shadow-md group-hover:opacity-60"/>
-                        <p class="text-center group-hover:underline">
-                            {{ map.name }}
-                        </p>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
+    <div class="book-container">
+        {% for map in maps %}
+            <div class="book-map-container">
+                <a href="{% url "map" map.short_name %}" class="book-map-link">
+                    <img
+                        src="{{ map.thumbnail.url }}"
+                        class="book-map-image"/>
+                    <p class="book-map-text">
+                        {{ map.name }}
+                    </p>
+                </a>
+            </div>
+        {% endfor %}
     </div>
 {% endblock content %}
