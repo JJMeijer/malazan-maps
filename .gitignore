@@ -8,3 +8,5 @@ mapsdata/static/js
 mapsdata/static/css/*-dist.css
 
 *credentials.json
+
+*.log
