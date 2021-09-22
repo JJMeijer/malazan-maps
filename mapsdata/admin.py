@@ -156,7 +156,7 @@ class PlaceAdmin(ImportExportModelAdmin):
     )
 
     class Media:
-        css = { "all" : ("css/hide-admin-original.css",) }
+        css = { "all" : ("css/admin/hide-admin-original.css",) }
 
 
 @admin.register(Continent)
