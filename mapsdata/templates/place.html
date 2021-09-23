@@ -5,11 +5,15 @@
 {% block navbar %}
 {% endblock navbar %}
 
+{% block footer %}
+    <div class="footer-wrapper-bottom">
+        {% include "components/footer.html" %}
+    </div>
+{% endblock footer %}
+
 {% block content %}
     <div class="place-container">
-        {% comment %} Left side Menu{% endcomment %}
         <div class="place-left-menu">
-            {% comment %} Custom Smaller Navbar {% endcomment %}
             <div class="navbar">
                 <a href="{% url "home" %}">
                     <p class="navbar-site-title">
@@ -24,17 +28,14 @@
                 </p>
             </div>
 
-            <!--Place Title-->
             <p class="place-left-menu-title">
                 {{ page_title }}
             </p>
 
-            <!--Searchbox-->
             <div id="search-wrapper" class="place-search-wrapper">
                 {% include "components/search.html" %}
             </div>
 
-            <!--Map Selectors (If multiple maps)-->
             <div class="{% if markers|length == 1 %}hidden{% endif %} place-map-selector-wrapper">
                 {% for marker in markers|dictsortreversed:"map.priority" %}
                     <label class="place-map-selector-label" for="map-selector-{{ forloop.counter }}">
@@ -52,15 +53,17 @@
                 {% endfor %}
             </div>
 
-            <!--Place Description-->
             <div class="place-description-wrapper">
                 <p class="place-description-text">
                     {{ description }}
                 </p>
             </div>
+
+            <div class="footer-wrapper-left">
+                {% include "components/footer.html" %}
+            </div>
         </div>
 
-        <!--Maps & Markers-->
         <div class="place-maps-wrapper">
             {% for marker in markers|dictsortreversed:"map.priority" %}
                 <div class="place-map-wrapper">

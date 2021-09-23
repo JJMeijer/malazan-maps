@@ -31,6 +31,9 @@
             {% endblock navbar %}
 
             {% block content %}{% endblock content %}
+            {% block footer %}
+                {% include "components/footer.html" %}
+            {% endblock footer %}
         </div>
         {{ entries|json_script:"entries"}}
         <script>

@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 2rem;
+    background-color: #082915; /* #1f2937; */
+    color: #f3f4f6;
+    padding: 0.25rem 5rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-wrapper-left {
+    display: none;
+    word-wrap: normal;
+    margin-top: auto;
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+    .footer-wrapper-bottom {
+        display: none;
+    }
+
+    .footer-wrapper-left {
+        display: block;
+    }
+}
