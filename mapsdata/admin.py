@@ -19,16 +19,19 @@ class BookAdmin(admin.ModelAdmin):
         'short_name',
         'cover',
         'wiki_link',
+        'description',
         'cover_image',
     )
 
     readonly_fields = (
+        'description',
         'cover_image',
     )
 
     list_display = (
         'name',
         'cover_image',
+        'description',
     )
 
     def cover_image(self, obj):
@@ -49,6 +52,11 @@ class MapAdmin(admin.ModelAdmin):
         'thumbnail',
         'books',
         'priority',
+        'map_image',
+    )
+
+    readonly_fields = (
+        'map_image',
     )
 
     list_display = (
@@ -89,6 +97,25 @@ class MapAdmin(admin.ModelAdmin):
     formfield_overrides = {
         models.ManyToManyField: {'widget': CheckboxSelectMultiple},
     }
+
+    @admin.display(description='map_image')
+    def map_image(self, instance):
+        """Generates HTML that displays the Marker on the map"""
+        return format_html(
+            """
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <div style="width: 65%; position: relative;">
+                    <img
+                        id="map-image"
+                        href="{0}"
+                        src="{0}"
+                        style="width: 100%; object-fit: contain;"
+                    />
+                </div>
+            </div>
+            """,
+            instance.image.url
+        )
 
 
 class PlaceMarkersInline(admin.TabularInline):
