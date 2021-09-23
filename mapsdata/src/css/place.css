@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     background-color: #082915;
+    caret-color: transparent;
 }
 
 .place-left-menu {

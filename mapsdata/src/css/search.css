@@ -16,6 +16,7 @@
 .search-container-input {
     width: 83.333333%;
     color: #4b5563;
+    caret-color: #4b5563;
 }
 
 .search-container-input:focus {
