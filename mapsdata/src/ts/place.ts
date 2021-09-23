@@ -1,17 +1,12 @@
-import { getVisibleImage } from './place/element-helpers';
+import { getVisibleImage } from './mapview/element-helpers';
 import { placeVisibleMarker } from './place/place-marker';
-import { setZoomAndPanListeners } from './place/zoom-and-pan-listener';
-import { setMapSelectorListeners } from './place/map-selector-listener';
 
 const initPlacePage = (): void => {
     placeVisibleMarker();
-    setZoomAndPanListeners();
 
     window.addEventListener('resize', () => {
         placeVisibleMarker();
     });
-
-    setMapSelectorListeners();
 };
 
 document.addEventListener('DOMContentLoaded', () => {

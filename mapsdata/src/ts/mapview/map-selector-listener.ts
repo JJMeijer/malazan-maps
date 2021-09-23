@@ -1,5 +1,5 @@
 import { extractMapId, setElementTransformOrigin } from './element-helpers';
-import { placeMarker } from './place-marker';
+import { placeMarker } from '../place/place-marker';
 
 const handleMapSelectorChange = (event: Event) => {
     const target = event.target as HTMLElement;

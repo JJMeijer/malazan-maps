@@ -39,15 +39,13 @@ def place_view(request, place_short_name):
     except Place.DoesNotExist as err:
         raise Http404("Place is not known") from err
 
-    markers = instance.markers.all()
+    maps = [{ 'map': marker.map, 'marker': { 'x': marker.x, 'y': marker.y}} for marker in instance.markers.all()]
 
     context = {
         'page_title': f'{instance.name}',
         'page_description': instance.description,
-        'marker_name': instance.name,
-        'markers': markers,
+        'maps': maps,
         'description': instance.description,
-        'wiki_link': instance.wiki_link
     }
 
     return render(request, 'place.html', context)

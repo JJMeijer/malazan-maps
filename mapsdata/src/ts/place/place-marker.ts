@@ -4,7 +4,7 @@ import {
     getElementPaddings,
     extractMapId,
     setElementTransformOrigin,
-} from './element-helpers';
+} from '../mapview/element-helpers';
 
 export const placeVisibleMarker = (): void => {
     const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');

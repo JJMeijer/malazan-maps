@@ -4,6 +4,7 @@ require('esbuild')
     .build({
         entryPoints: [
             'mapsdata/src/ts/place.ts',
+            'mapsdata/src/ts/mapview.ts',
             'mapsdata/src/ts/search.ts',
             'mapsdata/src/ts/admin/marker.ts',
         ],
