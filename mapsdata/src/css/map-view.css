@@ -41,16 +41,6 @@
     }
 }
 
-.left-header-search-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 2.5rem;
-    width: 83.333333%;
-    margin-top: 2rem;
-    position: relative;
-    margin-bottom: 2rem;
-}
-
 .map-selector-wrapper {
     display: flex;
     flex-direction: row;
@@ -79,10 +69,13 @@
 
 .description-wrapper {
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+}
+
+@media (min-width: 1024px) {
+    .description-wrapper {
+        margin: 2rem 0;
+    }
 }
 
 .description-text {

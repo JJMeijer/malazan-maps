@@ -1,11 +1,16 @@
 {% extends "base.html" %}
 
-{% block content %}
-    {% include "components/wide-header.html" %}
+{% load cdnstaticfiles %}
 
-    <div class="map-container">
-        <div class="map-image-wrapper" id="map-image-wrapper">
-            <img src="{{ map_image_src }}" class="object-contain">
-        </div>
+{% block navbar %}
+{% endblock navbar %}
+
+{% block footer %}
+    <div class="footer-wrapper-bottom">
+        {% include "components/footer.html" %}
     </div>
+{% endblock footer %}
+
+{% block content %}
+    {% include "components/map-view.html" %}
 {% endblock content %}

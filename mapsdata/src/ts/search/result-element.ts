@@ -10,6 +10,10 @@ const generateLink = (short_name: string, type: string): string => {
         return `/maps/${short_name}/`;
     }
 
+    if (type === 'continent') {
+        return `/continents/${short_name}/`;
+    }
+
     if (type !== 'region' && type !== 'city') {
         throw new Error('Unexpected search result type');
     }

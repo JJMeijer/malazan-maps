@@ -1,24 +1,22 @@
 {% load cdnstaticfiles %}
 
 <script src="{% cdnstatic "js/search.js" %}"></script>
-
-<div class="search-container">
-    <a tabindex="-1" style="height: 100%;" href="javascript:;">
-        <img
-            class="search-container-image"
-            src="{% cdnstatic "img/search-2.svg" %}"
-        >
-    </a>
-    <input
-        tabindex="4"
-        spellcheck="false"
-        id="search"
-        type="text"
-        class="search-container-input"
-        placeholder="Search..."
-    />
+<div id="search-wrapper" class="search-wrapper">
+    <div class="search-container">
+        <a tabindex="-1" style="height: 100%;" href="javascript:;">
+            <img
+                class="search-container-image"
+                src="{% cdnstatic "img/search-2.svg" %}"
+            >
+        </a>
+        <input
+            tabindex="4"
+            spellcheck="false"
+            id="search"
+            type="text"
+            class="search-container-input"
+            placeholder="Search..."
+        />
+    </div>
+    <div id="search-results" class="search-results hidden"></div>
 </div>
-<div
-    id="search-results"
-    class="search-results hidden"
-></div>

@@ -2,9 +2,9 @@ from django_distill import distill_path
 
 from django.contrib.sitemaps.views import sitemap
 
-from mapsdata.models import Map, Book, Place
+from mapsdata.models import Continent, Map, Book, Place
 
-from mapsdata.views import home_view, place_view, map_view, book_view
+from mapsdata.views import continent_view, home_view, place_view, map_view, book_view
 
 from mapsdata.sitemaps import sitemaps
 
@@ -25,6 +25,12 @@ def distill_books():
     site generation"""
     for book in Book.objects.all():
         yield {'book_short_name': book.short_name}
+
+def distill_continents():
+    """Function that generates all possible continent parameters during static
+    site generation"""
+    for continent in Continent.objects.all():
+        yield {'continent_short_name': continent.short_name}
 
 def distill_places():
     """Function that generates all possible places parameters during static
@@ -49,6 +55,12 @@ urlpatterns = [
         book_view,
         name='book',
         distill_func=distill_books
+    ),
+    distill_path(
+        'continents/<str:continent_short_name>/',
+        continent_view,
+        name='continent',
+        distill_func=distill_continents
     ),
     distill_path(
         'places/<str:place_short_name>/',

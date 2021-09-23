@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from mapsdata.models import Book, Place, Map
+from mapsdata.models import Book, Place, Map, Continent
 
 
 class PlaceSerializer(serializers.ModelSerializer):
@@ -23,6 +23,23 @@ class BookSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Book
+        fields = (
+            'name',
+            'short_name',
+            'type',
+        )
+
+
+class ContinentSerializer(serializers.ModelSerializer):
+    type = serializers.SerializerMethodField()
+
+    @staticmethod
+    def get_type(_obj):
+        """Static method to add type to serialized objects"""
+        return 'continent'
+
+    class Meta:
+        model = Continent
         fields = (
             'name',
             'short_name',
@@ -54,6 +71,11 @@ def serialize_all():
         many=True
     ).data
 
+    continents = ContinentSerializer(
+        instance=Continent.objects.all(),
+        many=True
+    ).data
+
     places = PlaceSerializer(
         instance=Place.objects.all(),
         many=True
@@ -64,4 +86,4 @@ def serialize_all():
         many=True
     ).data
 
-    return books + places + maps
+    return books + continents + places + maps

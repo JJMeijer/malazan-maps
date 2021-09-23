@@ -1,4 +1,4 @@
-import { setElementTransformOrigin } from './element-helpers';
+import { setVisibleMapTransformOrigin } from './element-helpers';
 
 const clamp = (num: number, min: number, max: number): number => Math.min(Math.max(num, min), max);
 
@@ -136,7 +136,7 @@ export const setZoomAndPanListeners = (): void => {
 
         window.addEventListener('resize', () => {
             reset();
-            setElementTransformOrigin(imageWrapper);
+            setVisibleMapTransformOrigin();
         });
 
         const mapButtons = document.querySelectorAll('input[name="map-selector"]');

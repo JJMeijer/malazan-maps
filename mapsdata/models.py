@@ -42,9 +42,11 @@ class Map(models.Model):
     height = models.IntegerField()
     width = models.IntegerField()
     image = models.ImageField(upload_to='maps/', height_field='height', width_field='width')
-    thumbnail = models.ImageField(upload_to='maps/thumbnails/', null=True, blank=False)
 
-    priority = models.PositiveIntegerField(default=1, help_text='Used to order maps when multiple maps are available for a place. Higher priority makes sure the maps is showed before other maps.')
+    priority = models.PositiveIntegerField(
+        default=1,
+        help_text='Used to order maps when multiple maps are available for a place. Higher priority makes sure the maps is showed before other maps.'
+    )
 
     books = models.ManyToManyField(
         to=Book,

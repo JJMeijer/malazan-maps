@@ -3,10 +3,18 @@ import {
     getElementRealDimensions,
     getElementPaddings,
     extractMapId,
-    setElementTransformOrigin,
-} from '../mapview/element-helpers';
+} from './element-helpers';
 
 export const placeVisibleMarker = (): void => {
+    /**
+     * Weird thing to do. The goal is to only run this code on the /place/ pages but still
+     * keep the content of the book/map/place/continent pages 99% the same. there is probably
+     * a better way to do this.
+     */
+    if (document.location.pathname.match('^/place/') === null) {
+        return;
+    }
+
     const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
 
     if (!(visibleImageWrapper instanceof HTMLDivElement)) {
@@ -15,10 +23,9 @@ export const placeVisibleMarker = (): void => {
 
     const mapId = extractMapId(visibleImageWrapper.id);
     placeMarker(mapId);
-    setElementTransformOrigin(visibleImageWrapper);
 };
 
-export const placeMarker = (mapId: string): void => {
+const placeMarker = (mapId: string): void => {
     const mapImageWrapperElement = document.getElementById(`map-imagewrapper-${mapId}`);
     const mapImageElement = document.getElementById(`map-image-${mapId}`);
     const mapMarkerElement = document.getElementById(`map-marker-${mapId}`);

@@ -5,9 +5,9 @@
   "scripts": {
     "build-css:prod": "postcss --env production mapsdata/src/css/main.css -o mapsdata/static/css/main-dist.css",
     "build-css:watch": "postcss -w mapsdata/src/css/main.css -o mapsdata/static/css/main-dist.css",
-    "build-js:prod": "node esbuild-prod.js",
-    "build-js:dev": "node esbuild-dev.js",
-    "build-js:watch": "node esbuild-watch.js"
+    "build-js:prod": "node esbuild prod",
+    "build-js:dev": "node esbuild dev",
+    "build-js:watch": "node esbuild watch"
   },
   "dependencies": {},
   "devDependencies": {

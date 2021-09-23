@@ -1,5 +1,5 @@
-import { extractMapId, setElementTransformOrigin } from './element-helpers';
-import { placeMarker } from '../place/place-marker';
+import { extractMapId, setVisibleMapTransformOrigin } from './element-helpers';
+import { placeVisibleMarker } from './place-marker';
 
 const handleMapSelectorChange = (event: Event) => {
     const target = event.target as HTMLElement;
@@ -14,7 +14,6 @@ const handleMapSelectorChange = (event: Event) => {
         }
     });
 
-    // Remove hidden from selected Map
     const selectedImageWrapper = document.getElementById(`map-imagewrapper-${mapId}`);
 
     if (!(selectedImageWrapper instanceof HTMLElement)) {
@@ -23,14 +22,9 @@ const handleMapSelectorChange = (event: Event) => {
 
     selectedImageWrapper.classList.remove('hidden');
 
-    /**
-     * Update the transferOrigin of the element to facilitate the correct transform for the
-     * zoom & pan listener.
-     */
-    setElementTransformOrigin(selectedImageWrapper);
+    setVisibleMapTransformOrigin();
 
-    // Place Marker in Selected Map
-    placeMarker(mapId);
+    placeVisibleMarker();
 };
 
 export const setMapSelectorListeners = (): void => {

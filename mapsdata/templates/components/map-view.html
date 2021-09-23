@@ -20,9 +20,7 @@
             {{ page_title }}
         </p>
 
-        <div id="search-wrapper" class="left-header-search-wrapper">
-            {% include "components/search.html" %}
-        </div>
+        {% include "components/search.html" %}
 
         <div class="{% if maps|length == 1 %}hidden{% endif %} map-selector-wrapper">
             {% for map_info in maps|dictsortreversed:"map.priority" %}

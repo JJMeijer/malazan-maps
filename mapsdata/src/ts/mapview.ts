@@ -1,7 +1,18 @@
-import { getVisibleImage } from './mapview/element-helpers';
-
+import { getVisibleImage, setVisibleMapTransformOrigin } from './mapview/element-helpers';
 import { setZoomAndPanListeners } from './mapview/zoom-and-pan-listeners';
 import { setMapSelectorListeners } from './mapview/map-selector-listener';
+import { placeVisibleMarker } from './mapview/place-marker';
+
+const init = () => {
+    setVisibleMapTransformOrigin();
+    setZoomAndPanListeners();
+    setMapSelectorListeners();
+    placeVisibleMarker();
+
+    window.addEventListener('resize', () => {
+        placeVisibleMarker();
+    });
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     const visibleImage = getVisibleImage();
@@ -11,12 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (visibleImage.complete) {
-        setZoomAndPanListeners();
-        setMapSelectorListeners();
+        init();
     } else {
         visibleImage.addEventListener('load', () => {
-            setZoomAndPanListeners();
-            setMapSelectorListeners();
+            init();
         });
     }
 });

@@ -1,7 +1,7 @@
 from django.http import Http404
 from django.shortcuts import render
 
-from mapsdata.models import Book, Map, Place
+from mapsdata.models import Book, Continent, Map, Place
 
 
 def home_view(request):
@@ -22,14 +22,15 @@ def map_view(request, map_short_name):
     except Map.DoesNotExist as err:
         raise Http404("Map is not known") from err
 
+    maps = [instance]
+
     context = {
         'page_title': instance.name,
         'page_description': f'{instance.name} Map. Find places on the maps in the world of Malazan: Book of the Fallen',
-        'map_short_name': instance.short_name,
-        'map_image_src': instance.image.url
+        'maps': maps
     }
 
-    return render(request, 'map.html', context)
+    return render(request, 'continent-book-map.html', context)
 
 
 def place_view(request, place_short_name):
@@ -39,7 +40,14 @@ def place_view(request, place_short_name):
     except Place.DoesNotExist as err:
         raise Http404("Place is not known") from err
 
-    maps = [{ 'map': marker.map, 'marker': { 'x': marker.x, 'y': marker.y}} for marker in instance.markers.all()]
+    maps = [
+        {
+            'map': marker.map,
+            'marker': {
+                'x': marker.x,
+                'y': marker.y
+            }
+        } for marker in instance.markers.all()]
 
     context = {
         'page_title': f'{instance.name}',
@@ -48,7 +56,7 @@ def place_view(request, place_short_name):
         'description': instance.description,
     }
 
-    return render(request, 'place.html', context)
+    return render(request, 'map.html', context)
 
 
 def book_view(request, book_short_name):
@@ -58,15 +66,32 @@ def book_view(request, book_short_name):
     except Book.DoesNotExist as err:
         raise Http404("Book is not known") from err
 
+    maps = [{ 'map': map } for map in instance.maps.all()]
+
     context = {
         'page_title': f'{instance.name}',
         'page_description': f'Check out the maps that were included in the book {instance.name} and find other places on the maps in the world of Malazan: Book of the Fallen',
-        'book_name': instance.name,
-        'book_short_name': instance.short_name,
         'description': instance.description,
-        'wiki_link': instance.wiki_link,
-        'cover_url': instance.cover.url,
-        'maps': instance.maps.all()
+        'maps': maps
     }
 
-    return render(request, 'book.html', context)
+    return render(request, 'map.html', context)
+
+
+def continent_view(request, continent_short_name):
+    """Continent View"""
+    try:
+        instance = Continent.objects.get(short_name=continent_short_name)
+    except Continent.DoesNotExist as err:
+        raise Http404("Continent is not known") from err
+
+    maps = [{ 'map': map } for map in instance.maps.all()]
+
+    context = {
+        'page_title': f'{instance.name}',
+        'page_description': instance.description,
+        'description': instance.description,
+        'maps': maps
+    }
+
+    return render(request, 'map.html', context)

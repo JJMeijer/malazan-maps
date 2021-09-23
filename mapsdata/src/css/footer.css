@@ -7,9 +7,10 @@
     min-height: 2rem;
     background-color: #082915; /* #1f2937; */
     color: #f3f4f6;
-    padding: 0.25rem 5rem;
+    padding: 0.25rem 2rem;
     text-align: center;
     margin-top: auto;
+    font-size: small;
 }
 
 .footer a {
