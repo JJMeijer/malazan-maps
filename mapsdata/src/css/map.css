@@ -47,6 +47,7 @@
     flex-wrap: wrap;
     justify-content: center;
     color: #f3f4f6;
+    padding: 0 1rem;
 }
 
 .map-selector-label {
@@ -90,8 +91,7 @@
     text-align: center;
     color: #f3f4f6;
     font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem;
 }
 
 .description-text a {
@@ -100,6 +100,10 @@
 }
 
 .description-text a:hover {
+    color: #36b;
+}
+
+.description-text a:visited {
     color: #36b;
 }
 
@@ -134,8 +138,10 @@
     transform: scale(1) translate(0, 0);
 }
 
-.map-image-wrapper img {
-    max-height: 100vh;
+@media (min-width: 1024px) {
+    .map-image-wrapper img {
+        max-height: 100vh;
+    }
 }
 
 .map-image-marker {

@@ -64,30 +64,28 @@
 
         <div class="maps-wrapper">
             {% for map_info in maps|dictsortreversed:"map.priority" %}
-                <div class="map-wrapper">
-                    <div
-                        class="{% if forloop.counter > 1 %}hidden{% endif %} map-image-wrapper"
-                        id="map-imagewrapper-{{ forloop.counter }}"
+                <div
+                    class="{% if forloop.counter > 1 %}hidden{% endif %} map-image-wrapper"
+                    id="map-imagewrapper-{{ forloop.counter }}"
+                >
+                    <img
+                        src="{{ map_info.map.image.url }}"
+                        class="object-contain"
+                        id="map-image-{{ forloop.counter }}"
+                        alt="Map of {{map_info.map.name}}"
+                        title="Map of {{map_info.map.name}}"
                     >
+                    {% if 'marker' in map_info %}
                         <img
-                            src="{{ map_info.map.image.url }}"
-                            class="object-contain"
-                            id="map-image-{{ forloop.counter }}"
-                            alt="Map of {{map_info.map.name}}"
-                            title="Map of {{map_info.map.name}}"
+                            src="{% cdnstatic "img/marker-1.png" %}"
+                            class="map-image-marker object-contain"
+                            id="map-marker-{{ forloop.counter }}"
+                            data-markerx={{ map_info.marker.x }}
+                            data-markery={{ map_info.marker.y }}
+                            alt="Marker icon for {{ page_title }} on the {{ map_info.map.name }} map."
+                            title="Marker icon for {{ page_title }} on the {{ map_info.map.name }} map."
                         >
-                        {% if 'marker' in map_info %}
-                            <img
-                                src="{% cdnstatic "img/marker-1.png" %}"
-                                class="map-image-marker object-contain"
-                                id="map-marker-{{ forloop.counter }}"
-                                data-markerx={{ map_info.marker.x }}
-                                data-markery={{ map_info.marker.y }}
-                                alt="Marker icon for {{ page_title }} on the {{ map_info.map.name }} map."
-                                title="Marker icon for {{ page_title }} on the {{ map_info.map.name }} map."
-                            >
-                        {% endif %}
-                    </div>
+                    {% endif %}
                 </div>
             {% endfor %}
             <div

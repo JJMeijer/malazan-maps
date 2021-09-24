@@ -53,7 +53,7 @@ body {
 .navbar-site-title {
     margin-left: 0.5rem;
     padding: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25em;
     line-height: 2rem;
 }
 
@@ -64,4 +64,6 @@ body {
 
 .navbar-page-title {
     padding: 0.5rem;
+    font-size: 1em;
+    line-height: normal;
 }
