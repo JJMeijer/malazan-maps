@@ -19,3 +19,9 @@
 .home-image-wrapper {
     margin: 0.5rem;
 }
+
+@media (min-width: 768px) {
+    .home-image-wrapper {
+        margin: 1rem 3rem;
+    }
+}

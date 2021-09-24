@@ -11,7 +11,7 @@ export const placeVisibleMarker = (): void => {
      * keep the content of the book/map/place/continent pages 99% the same. there is probably
      * a better way to do this.
      */
-    if (document.location.pathname.match('^/place/') === null) {
+    if (document.location.pathname.match('^/places/') === null) {
         return;
     }
 

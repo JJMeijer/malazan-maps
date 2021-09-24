@@ -47,23 +47,6 @@ class ContinentSerializer(serializers.ModelSerializer):
         )
 
 
-class MapSerializer(serializers.ModelSerializer):
-    type = serializers.SerializerMethodField()
-
-    @staticmethod
-    def get_type(_obj):
-        """Static method to add type to serialized objects"""
-        return 'map'
-
-    class Meta:
-        model = Map
-        fields = (
-            'name',
-            'short_name',
-            'type',
-        )
-
-
 def serialize_all():
     """Serialize all Cities, Regions, Continens & Books in the Database as JSON"""
     books = BookSerializer(
@@ -81,9 +64,4 @@ def serialize_all():
         many=True
     ).data
 
-    maps = MapSerializer(
-        instance=Map.objects.all(),
-        many=True
-    ).data
-
-    return books + continents + places + maps
+    return books + continents + places

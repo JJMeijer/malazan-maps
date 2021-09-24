@@ -45,7 +45,7 @@ class Map(models.Model):
 
     priority = models.PositiveIntegerField(
         default=1,
-        help_text='Used to order maps when multiple maps are available for a place. Higher priority makes sure the maps is showed before other maps.'
+        help_text='Higher priority makes sure the maps is showed before other maps.'
     )
 
     books = models.ManyToManyField(

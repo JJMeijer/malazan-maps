@@ -2,8 +2,6 @@
 @import 'base.css';
 @import 'header.css';
 @import 'search.css';
-@import 'map-view.css';
-@import 'home.css';
 @import 'map.css';
-@import 'book.css';
+@import 'home.css';
 @import 'footer.css';

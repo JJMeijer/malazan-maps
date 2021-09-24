@@ -22,7 +22,7 @@ def map_view(request, map_short_name):
     except Map.DoesNotExist as err:
         raise Http404("Map is not known") from err
 
-    maps = [instance]
+    maps = [{ 'map': instance}]
 
     context = {
         'page_title': instance.name,
@@ -30,7 +30,7 @@ def map_view(request, map_short_name):
         'maps': maps
     }
 
-    return render(request, 'continent-book-map.html', context)
+    return render(request, 'map.html', context)
 
 
 def place_view(request, place_short_name):
