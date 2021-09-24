@@ -60,7 +60,7 @@
     padding: 0.5rem;
     cursor: pointer;
     border-radius: 1rem;
-    background-color: #4b5563;
+    background-color: #4b5563; /* #4b5563; */
     color: #f3f4f6; /* #1f2937; */
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
@@ -71,7 +71,7 @@
 
 .map-selector-label input:checked ~ .map-selector-span {
     border-width: 1px;
-    background-color: #1f2937;
+    background-color: #082915;
 }
 
 .description-wrapper {
