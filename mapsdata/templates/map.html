@@ -28,9 +28,9 @@
                 </p>
             </div>
 
-            <p class="left-header-title">
+            <h1 class="left-header-title">
                 {{ page_title }}
-            </p>
+            </h1>
 
             {% include "components/search.html" %}
 
@@ -53,7 +53,7 @@
 
             <div class="description-wrapper">
                 <p class="description-text">
-                    {{ description }}
+                    {{ description }} (<a target="_blank" rel="nofollow" href={{wiki_link}}>wiki</a>)
                 </p>
             </div>
 
@@ -70,9 +70,13 @@
                         id="map-imagewrapper-{{ forloop.counter }}"
                     >
                         <img
+                            width: {{ map_info.map.width }}
+                            height: {{ map_info.map.height }}
                             src="{{ map_info.map.image.url }}"
                             class="object-contain"
                             id="map-image-{{ forloop.counter }}"
+                            alt="Map of {{map_info.map.name}}"
+                            title="Map of {{map_info.map.name}}"
                         >
                         {% if 'marker' in map_info %}
                             <img
@@ -81,6 +85,8 @@
                                 id="map-marker-{{ forloop.counter }}"
                                 data-markerx={{ map_info.marker.x }}
                                 data-markery={{ map_info.marker.y }}
+                                alt="Marker icon for {{ page_title }} on the {{ map_info.map.name }} map."
+                                title="Marker icon for {{ page_title }} on the {{ map_info.map.name }} map."
                             >
                         {% endif %}
                     </div>
@@ -89,7 +95,12 @@
             <div
                 class="reset-zoom-button hidden"
                 id="reset-zoom-button">
-                <img src="{% cdnstatic "img/reset-zoom-w.png" %}" class="object-contain">
+                <img
+                    src="{% cdnstatic "img/reset-zoom-w.png" %}"
+                    class="object-contain"
+                    alt="Reset Zoom Button"
+                    title="Reset Zoom Button"
+                >
             </div>
         </div>
         <script src="{% cdnstatic "js/mapview.js" %}"></script>

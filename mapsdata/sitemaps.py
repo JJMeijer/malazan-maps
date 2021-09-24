@@ -1,7 +1,9 @@
+from datetime import datetime
+
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 
-from mapsdata.models import Book, Place, Map
+from mapsdata.models import Book, Place, Continent
 
 class BookSitemap(Sitemap):
     changefreq = 'weekly'
@@ -21,14 +23,14 @@ class BookSitemap(Sitemap):
         return f'/books/{item.short_name}/'
 
 
-class MapSitemap(Sitemap):
+class ContinentSitemap(Sitemap):
     changefreq = 'weekly'
     priority = 0.5
     protocol = 'https'
 
     def items(self):
         """Get Items to include in the sitemap"""
-        return Map.objects.all()
+        return Continent.objects.all()
 
     def lastmod(self, obj):
         """Set Field which functions as the lastmod date field"""
@@ -36,7 +38,7 @@ class MapSitemap(Sitemap):
 
     def location(self, item):
         """Generate URL Paths of items"""
-        return f'/maps/{item.short_name}/'
+        return f'/continents/{item.short_name}/'
 
 
 class PlaceSitemap(Sitemap):
@@ -68,6 +70,10 @@ class StaticSitemap(Sitemap):
             'home',
         )
 
+    def lastmod(self, _obj):
+        """Set last updated date to the time that the sitemap was generated"""
+        return datetime.now()
+
     def location(self, item):
         """Generate URL Paths of items"""
         return reverse(item)
@@ -77,5 +83,5 @@ sitemaps = {
     'static': StaticSitemap,
     'books': BookSitemap,
     'places': PlaceSitemap,
-    'maps': MapSitemap
+    'continents': ContinentSitemap
 }

@@ -2,10 +2,8 @@ from django_distill import distill_path
 
 from django.contrib.sitemaps.views import sitemap
 
-from mapsdata.models import Continent, Map, Book, Place
-
-from mapsdata.views import continent_view, home_view, place_view, map_view, book_view
-
+from mapsdata.models import Continent, Book, Place
+from mapsdata.views import continent_view, home_view, place_view, book_view
 from mapsdata.sitemaps import sitemaps
 
 
@@ -13,12 +11,6 @@ def distill_no_params():
     """Function for Route that needs no parameters during static
     site generation"""
     return None
-
-def distill_maps():
-    """Function that generates all possible maps parameters during static
-    site generation"""
-    for instance in Map.objects.all():
-        yield {'map_short_name': instance.short_name}
 
 def distill_books():
     """Function that generates all possible books parameters during static
@@ -44,12 +36,6 @@ def distill_sitemap():
     yield {'sitemaps': sitemaps}
 
 urlpatterns = [
-    distill_path(
-        'maps/<str:map_short_name>/',
-        map_view,
-        name='map',
-        distill_func=distill_maps
-    ),
     distill_path(
         'books/<str:book_short_name>/',
         book_view,

@@ -25,6 +25,10 @@
     margin-bottom: 0.75rem;
 }
 
+.footer-wrapper-bottom {
+    width: 100%;
+}
+
 @media (min-width: 1024px) {
     .footer-wrapper-bottom {
         display: none;

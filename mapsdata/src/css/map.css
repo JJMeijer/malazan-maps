@@ -1,9 +1,9 @@
 .map-view-container {
     display: flex;
     flex-direction: column;
+    flex: 1;
     width: 100%;
     background-color: #082915;
-    caret-color: transparent;
 }
 
 @media (min-width: 1024px) {
@@ -61,9 +61,9 @@
     cursor: pointer;
     border-radius: 1rem;
     border-width: 1px;
+    font-size: 0.9rem;
     background-color: #082915; /* #4b5563; */
     color: #f3f4f6; /* #1f2937; */
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px; */
 }
 
 .map-selector-span:hover {
@@ -89,20 +89,29 @@
 .description-text {
     text-align: center;
     color: #f3f4f6;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.description-text a {
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.description-text a:hover {
+    color: #36b;
 }
 
 .maps-wrapper {
     display: flex;
     justify-content: center;
+    flex: 1;
     align-items: center;
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-color: white;
+    background-color: #082915;
     border-radius: 0.5rem;
 }
 
@@ -110,12 +119,15 @@
     .maps-wrapper {
         width: 75%;
         max-height: 100vh;
+        background-color: white;
     }
 }
 
 .map-image-wrapper {
     position: relative;
     display: flex;
+    border-radius: 0.375rem;
+    background-color: white;
     padding: 1rem;
     cursor: grab;
     transform-origin: 0 0;

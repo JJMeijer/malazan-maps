@@ -26,12 +26,14 @@ handlers:
   secure: always
   redirect_http_response_code: 301
   static_dir: www/static
+  expiration: "365d"
 
 # Content Files
 - url: /content
   secure: always
   redirect_http_response_code: 301
   static_dir: www/content
+  expiration: "365d"
 
 # Home Page
 - url: /

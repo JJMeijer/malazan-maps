@@ -112,6 +112,7 @@ See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d4
 /**
  * Removes the default spacing and border for appropriate elements.
  */
+h1,
 p {
     margin: 0;
 }
@@ -198,4 +199,17 @@ img,
 video {
     max-width: 100%;
     height: auto;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
 }

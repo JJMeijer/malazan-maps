@@ -3,11 +3,23 @@
 {% load cdnstaticfiles %}
 
 {% block content %}
-    {% include "components/wide-header.html" %}
+    <div class="home-header-container">
+        {% include "components/search.html" %}
+        <h1 class="home-header-description">
+            {{ description }}
+        </h1>
+    </div>
 
     <div class="home-container">
         <div class="home-image-wrapper" id="map-image-wrapper">
-            <img src="{% cdnstatic "/img/header-1.jpg" %}" class="object-contain">
+            <img
+                width: {{ header_map.width }}
+                height: {{ header_map.height }}
+                src="{{ header_map.image.url }}"
+                class="object-contain"
+                alt="North Genabackis Map"
+                title="North Genabackis Map"
+            >
         </div>
     </div>
 {% endblock content %}
