@@ -150,6 +150,7 @@ class PlaceAdmin(ImportExportModelAdmin):
         'type',
         'continent',
         'marker_count',
+        'description',
     )
 
     list_filter = (
