@@ -46,7 +46,7 @@ export const setZoomAndPanListeners = (): void => {
             event.preventDefault();
             const { clientX, clientY, buttons } = event;
 
-            if (buttons !== 1) {
+            if (buttons !== 1 && buttons !== 4) {
                 return;
             }
 

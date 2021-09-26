@@ -77,13 +77,13 @@
                     >
                     {% if 'marker' in map_info %}
                         <img
-                            src="{% cdnstatic "img/marker-1.png" %}"
+                            src="{% cdnstatic "img/marker.webp" %}"
                             class="map-image-marker object-contain"
                             id="map-marker-{{ forloop.counter }}"
                             data-markerx={{ map_info.marker.x }}
                             data-markery={{ map_info.marker.y }}
                             alt="Marker icon for {{ page_title }} on the {{ map_info.map.name }} map."
-                            title="Marker icon for {{ page_title }} on the {{ map_info.map.name }} map."
+                            title="{{ page_title }} marker."
                         >
                     {% endif %}
                 </div>
@@ -92,7 +92,7 @@
                 class="reset-zoom-button hidden"
                 id="reset-zoom-button">
                 <img
-                    src="{% cdnstatic "img/reset-zoom-w.png" %}"
+                    src="{% cdnstatic "img/reset-zoom.webp" %}"
                     class="object-contain"
                     alt="Reset Zoom Button"
                     title="Reset Zoom Button"
