@@ -12,6 +12,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{% cdnstatic "img/favicon-16x16.png" %}">
         <link rel="manifest" href="{% cdnstatic "manifest.json" %}">
         <link rel="stylesheet" type="text/css" href="{% cdnstatic "css/main-dist.css" %}" media="screen">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' cloudflareinsights.com *.cloudflareinsights.com">
     </head>
     <body>
         <div class="base-container">
@@ -37,10 +38,6 @@
             {% endblock footer %}
         </div>
         {{ entries|json_script:"entries"}}
-        <script>
-            window.malazan = window.malazan || {};
-            window.malazan.entries = JSON.parse(document.getElementById('entries').textContent)
-        </script>
         <!-- Cloudflare Web Analytics -->
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "14bbcec148534153af8df9fc3d0ed635"}'>
         </script>

@@ -1,5 +1,5 @@
 import { RESULT_INDEX_ATTRIBUTE, RESULT_NAME_ATTRIBUTE, RESULT_HREF_ATTRIBUTE } from './constants';
-import { FocusResultInformation } from './types';
+import { FocusResultInformation } from '../types';
 
 const FOCUS_RESULT_CLASS = 'focus-result';
 

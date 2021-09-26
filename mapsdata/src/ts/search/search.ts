@@ -2,6 +2,21 @@ import { createSearchResult, createNoResult } from './result-element';
 import { getCurrentFocusResult, setFocusResult, unSetFocusResult } from './result-focus';
 
 import { RESULT_MAX_ITEMS } from './constants';
+import { Entry } from '../types';
+
+const getSearchEntries = (): Entry[] => {
+    const entriesElement = document.getElementById('entries');
+
+    if (!(entriesElement instanceof HTMLScriptElement)) {
+        throw new Error('Search Entries element missing');
+    }
+
+    if (!entriesElement.textContent) {
+        throw new Error('Search Entries element has no content');
+    }
+
+    return JSON.parse(entriesElement.textContent);
+};
 
 export const handleSearchInput = (event: Event, searchResultsBox: HTMLElement): void => {
     if (!(event.target instanceof HTMLInputElement)) {
@@ -10,7 +25,7 @@ export const handleSearchInput = (event: Event, searchResultsBox: HTMLElement): 
 
     const { value } = event.target;
     const { focusName, focusIndex } = getCurrentFocusResult();
-    const { entries } = window.malazan;
+    const entries = getSearchEntries();
 
     searchResultsBox.innerHTML = '';
 

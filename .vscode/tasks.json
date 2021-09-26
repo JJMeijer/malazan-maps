@@ -15,7 +15,7 @@
         "focus": false,
         "panel": "shared",
         "showReuseMessage": true,
-        "clear": true
+        "clear": false
       }
     },
     {
@@ -134,7 +134,7 @@
         "focus": false,
         "panel": "shared",
         "showReuseMessage": false,
-        "clear": false
+        "clear": true
       },
       "problemMatcher": []
     },
@@ -162,7 +162,7 @@
         "Linting: Eslint",
       ],
       "problemMatcher": [],
-      "dependsOrder": "parallel"
+      "dependsOrder": "sequence"
     },
     {
       "label": "Build",

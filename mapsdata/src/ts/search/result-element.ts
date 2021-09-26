@@ -1,5 +1,5 @@
 import { RESULT_HREF_ATTRIBUTE, RESULT_INDEX_ATTRIBUTE, RESULT_NAME_ATTRIBUTE } from './constants';
-import { ResultData } from './types';
+import { ResultData } from '../types';
 
 const generateLink = (short_name: string, type: string): string => {
     if (type === 'book') {
@@ -24,7 +24,7 @@ const generateLink = (short_name: string, type: string): string => {
 const partialBoldString = (fullText: string, boldText: string): string => {
     return fullText.replace(
         new RegExp(`(${boldText})`, 'gi'),
-        `<span style="font-weight: 800; color: #1f2937;">$1</span>`,
+        `<span class="search-result-higlight">$1</span>`,
     );
 };
 

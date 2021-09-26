@@ -77,7 +77,7 @@ class StaticSitemap(Sitemap):
         )
 
     @staticmethod
-    def lastmod():
+    def lastmod(_obj):
         """Set last updated date to the time that the sitemap was generated"""
         return datetime.now()
 

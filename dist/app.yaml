@@ -70,7 +70,6 @@ handlers:
     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
     X-Frame-Options: DENY
     X-XSS-Protection: 1; mode=block
-    Content-Security-Policy: default-src 'self' cloudflareinsights.com *.cloudflareinsights.com
     X-Content-Type-Options: nosniff
 
 # All Other Pages
@@ -83,7 +82,6 @@ handlers:
     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
     X-Frame-Options: DENY
     X-XSS-Protection: 1; mode=block
-    Content-Security-Policy: default-src 'self' cloudflareinsights.com *.cloudflareinsights.com
     X-Content-Type-Options: nosniff
 
 - url: /(.*)$
@@ -95,5 +93,4 @@ handlers:
     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
     X-Frame-Options: DENY
     X-XSS-Protection: 1; mode=block
-    Content-Security-Policy: default-src 'self' cloudflareinsights.com *.cloudflareinsights.com
     X-Content-Type-Options: nosniff
