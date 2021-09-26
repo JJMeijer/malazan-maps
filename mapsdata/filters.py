@@ -19,6 +19,8 @@ class PlaceHasMarkerFilter(admin.SimpleListFilter):
         if self.value() == 'false':
             return queryset.filter(markers__isnull=True)
 
+        return None
+
 
 class PlaceHasDescriptionFilter(admin.SimpleListFilter):
     title = 'has description'
@@ -37,3 +39,5 @@ class PlaceHasDescriptionFilter(admin.SimpleListFilter):
 
         if self.value() == 'false':
             return queryset.annotate(desc_len=Length('description')).filter(desc_len__lt=2)
+
+        return None

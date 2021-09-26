@@ -14,11 +14,13 @@ class BookSitemap(Sitemap):
         """Get Items to include in the sitemap"""
         return Book.objects.all()
 
-    def lastmod(self, obj):
+    @staticmethod
+    def lastmod(obj):
         """Set Field which functions as the lastmod date field"""
         return obj.updated
 
-    def location(self, item):
+    @staticmethod
+    def location(item):
         """Generate URL Paths of items"""
         return f'/books/{item.short_name}/'
 
@@ -32,11 +34,13 @@ class ContinentSitemap(Sitemap):
         """Get Items to include in the sitemap"""
         return Continent.objects.all()
 
-    def lastmod(self, obj):
+    @staticmethod
+    def lastmod(obj):
         """Set Field which functions as the lastmod date field"""
         return obj.updated
 
-    def location(self, item):
+    @staticmethod
+    def location(item):
         """Generate URL Paths of items"""
         return f'/continents/{item.short_name}/'
 
@@ -50,11 +54,13 @@ class PlaceSitemap(Sitemap):
         """Get Items to include in the sitemap"""
         return Place.objects.all()
 
-    def lastmod(self, obj):
+    @staticmethod
+    def lastmod(obj):
         """Set Field which functions as the lastmod date field"""
         return obj.updated
 
-    def location(self, item):
+    @staticmethod
+    def location(item):
         """Generate URL Paths of items"""
         return f'/places/{item.short_name}/'
 
@@ -70,11 +76,13 @@ class StaticSitemap(Sitemap):
             'home',
         )
 
-    def lastmod(self, _obj):
+    @staticmethod
+    def lastmod():
         """Set last updated date to the time that the sitemap was generated"""
         return datetime.now()
 
-    def location(self, item):
+    @staticmethod
+    def location(item):
         """Generate URL Paths of items"""
         return reverse(item)
 

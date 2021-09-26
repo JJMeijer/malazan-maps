@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from mapsdata.models import Book, Place, Map, Continent
+from mapsdata.models import Book, Place, Continent
 
 
 class PlaceSerializer(serializers.ModelSerializer):

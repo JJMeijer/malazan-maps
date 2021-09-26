@@ -34,7 +34,8 @@ class BookAdmin(admin.ModelAdmin):
         'description',
     )
 
-    def cover_image(self, obj):
+    @staticmethod
+    def cover_image(obj):
         """Generates HTML that displays the cover image of the Book"""
         return format_html(
             '<img href="{0}" src="{0}" width="150" height="150" style="object-fit: contain;" />',
@@ -83,13 +84,15 @@ class MapAdmin(admin.ModelAdmin):
         qs = qs.annotate(marker_count=Count('markers'))
         return qs
 
+    @staticmethod
     @admin.display(description='books')
-    def get_books(self, obj):
+    def get_books(obj):
         """Get related books as newline-seperated string"""
         return ", ".join([book.name for book in obj.books.all()])
 
+    @staticmethod
     @admin.display(ordering='marker_count', description='markers')
-    def marker_count(self, obj):
+    def marker_count(obj):
         """Counter of how much markers are defined for the Map"""
         return obj.marker_count
 
@@ -97,8 +100,9 @@ class MapAdmin(admin.ModelAdmin):
         models.ManyToManyField: {'widget': CheckboxSelectMultiple},
     }
 
+    @staticmethod
     @admin.display(description='map_image')
-    def map_image(self, instance):
+    def map_image(instance):
         """Generates HTML that displays the Marker on the map"""
         return format_html(
             """
@@ -167,8 +171,9 @@ class PlaceAdmin(ImportExportModelAdmin):
         qs = qs.annotate(marker_count=Count('markers'))
         return qs
 
+    @staticmethod
     @admin.display(ordering='marker_count', description='markers')
-    def marker_count(self, obj):
+    def marker_count(obj):
         """Counter of how much markers are defined for the Place"""
         return len(obj.markers.all())
 
@@ -237,13 +242,15 @@ class MarkerAdmin(ImportExportModelAdmin):
             "js/admin/marker.js",
         )
 
+    @staticmethod
     @admin.display(description='type')
-    def get_type(self, instance):
+    def get_type(instance):
         """Get Type of the related place"""
         return instance.place.type
 
+    @staticmethod
     @admin.display(description='marker')
-    def marker(self, instance):
+    def marker(instance):
         """Generates HTML that displays the Marker on the map"""
         return format_html(
             """
