@@ -44,7 +44,7 @@
                             name="map-selector"
                             {% if forloop.counter == 1 %}checked{% endif %}
                         >
-                        <span tabindex="4" class="map-selector-span">
+                        <span class="map-selector-span">
                             {{ map_info.map.name }}
                         </span>
                     </label>
@@ -53,7 +53,7 @@
 
             <div class="description-wrapper">
                 <p class="description-text">
-                    {{ description }} (<a target="_blank" rel="nofollow" href={{wiki_link}}>wiki</a>)
+                    {{ description }} (<a target="_blank" rel="nofollow noopener" href={{wiki_link}}>wiki</a>)
                 </p>
             </div>
 
