@@ -9,3 +9,8 @@ td.original p {
 .column-description {
     width: 50%;
 }
+
+.field-updated,
+.column-updated {
+    float: right;
+}

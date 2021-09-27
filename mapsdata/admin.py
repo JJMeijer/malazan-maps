@@ -1,14 +1,15 @@
 from django.db import models
-from django.contrib import admin
+from django.contrib import admin, messages
 from django.utils.html import format_html
 from django.forms import CheckboxSelectMultiple
 from django.db.models.aggregates import Count
+from django.utils.translation import ngettext
 
-from import_export.admin import ImportExportModelAdmin
+from mediawiki.exceptions import PageError
 
 from mapsdata.models import Book, Place, Marker, Continent, Map
-from mapsdata.resources import PlaceResource, MarkerResource
 from mapsdata.filters import PlaceHasDescriptionFilter, PlaceHasMarkerFilter
+from mapsdata.wikia import get_first_paragraph
 
 admin.site.enable_nav_sidebar = False
 
@@ -41,6 +42,39 @@ class BookAdmin(admin.ModelAdmin):
             '<img href="{0}" src="{0}" width="150" height="150" style="object-fit: contain;" />',
             obj.cover.url
         )
+
+    @admin.action(description="Fetch wiki description")
+    def fetch_description_action(self, request, queryset):
+        """Django admin action to retrieve wiki description for an item"""
+        number_of_items = queryset.count()
+
+        for item in queryset:
+            try:
+                item.description = get_first_paragraph(item.name)
+                item.save()
+            except PageError:
+                self.message_user(
+                    request,
+                    f'Error occurred while retrieving description for {item.name}',
+                    messages.ERROR
+                )
+
+        self.message_user(
+            request,
+            ngettext(
+                f'{number_of_items} description was updated',
+                f'{number_of_items} descriptions were updated',
+                number_of_items,
+            ),
+            messages.SUCCESS
+        )
+
+    actions = (
+        fetch_description_action,
+    )
+
+    class Media:
+        css = { "all" : ("css/admin/hide-admin-original.css",) }
 
 
 @admin.register(Map)
@@ -133,9 +167,7 @@ class PlaceMarkersInline(admin.TabularInline):
 
 
 @admin.register(Place)
-class PlaceAdmin(ImportExportModelAdmin):
-    resource_class = PlaceResource
-
+class PlaceAdmin(admin.ModelAdmin):
     fields = (
         'name',
         'short_name',
@@ -166,6 +198,46 @@ class PlaceAdmin(ImportExportModelAdmin):
 
     save_as = True
 
+    list_per_page = 25
+
+    search_fields = (
+        'name',
+    )
+
+    inlines = (
+        PlaceMarkersInline,
+    )
+
+    @admin.action(description="Fetch wiki description")
+    def fetch_description_action(self, request, queryset):
+        """Django admin action to retrieve wiki description for an item"""
+        number_of_items = queryset.count()
+
+        for item in queryset:
+            try:
+                item.description = get_first_paragraph(item.name)
+                item.save()
+            except PageError:
+                self.message_user(
+                    request,
+                    f'Error occurred while retrieving description for {item.name}',
+                    messages.ERROR
+                )
+
+        self.message_user(
+            request,
+            ngettext(
+                f'{number_of_items} description was updated',
+                f'{number_of_items} descriptions were updated',
+                number_of_items,
+            ),
+            messages.SUCCESS
+        )
+
+    actions = (
+        fetch_description_action,
+    )
+
     def get_queryset(self, request):
         qs = super().get_queryset(request)
         qs = qs.annotate(marker_count=Count('markers'))
@@ -177,16 +249,6 @@ class PlaceAdmin(ImportExportModelAdmin):
         """Counter of how much markers are defined for the Place"""
         return len(obj.markers.all())
 
-    list_per_page = 25
-
-    search_fields = (
-        'name',
-    )
-
-    inlines = (
-        PlaceMarkersInline,
-    )
-
     class Media:
         css = { "all" : ("css/admin/hide-admin-original.css",) }
 
@@ -197,17 +259,55 @@ class ContinentAdmin(admin.ModelAdmin):
         'name',
         'short_name',
         'wiki_link',
+        'description',
+    )
+
+    readonly_fields = (
+        'description',
     )
 
     list_display = (
         'name',
+        'description',
+        'updated',
     )
+
+    @admin.action(description="Fetch wiki description")
+    def fetch_description_action(self, request, queryset):
+        """Django admin action to retrieve wiki description for an item"""
+        number_of_items = queryset.count()
+
+        for item in queryset:
+            try:
+                item.description = get_first_paragraph(item.name)
+                item.save()
+            except PageError:
+                self.message_user(
+                    request,
+                    f'Error occurred while retrieving description for {item.name}',
+                    messages.ERROR
+                )
+
+        self.message_user(
+            request,
+            ngettext(
+                f'{number_of_items} description was updated',
+                f'{number_of_items} descriptions were updated',
+                number_of_items,
+            ),
+            messages.SUCCESS
+        )
+
+    actions = (
+        fetch_description_action,
+    )
+
+    class Media:
+        css = { "all" : ("css/admin/hide-admin-original.css",) }
 
 
 @admin.register(Marker)
-class MarkerAdmin(ImportExportModelAdmin):
-    resource_class = MarkerResource
-
+class MarkerAdmin(admin.ModelAdmin):
     fields = (
         'place',
         ('x', 'y'),
