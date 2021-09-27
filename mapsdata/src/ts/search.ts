@@ -1,27 +1,24 @@
-import { handleSearchInput, handleSearchKeys } from './search/search';
+import {
+    getSearchEntries,
+    getSearchInputElement,
+    getSearchResultsElement,
+    getSearchWrapperElement,
+} from './search/element-helpers';
+import { handleSearchInput, handleSearchKeys } from './search/search-handlers';
+import { fuse } from './search/fuse-search';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchBoxWrapper = document.getElementById('search-wrapper');
-    const searchBox = document.getElementById('search');
-    const searchResultsBox = document.getElementById('search-results');
+    fuse.setCollection(getSearchEntries());
 
-    if (!(searchBoxWrapper instanceof HTMLElement)) {
-        throw new Error('SearchboxWrapper is unexpectedly missing');
-    }
+    const searchWrapper = getSearchWrapperElement();
+    const searchInput = getSearchInputElement();
+    const searchResultsBox = getSearchResultsElement();
 
-    if (!(searchBox instanceof HTMLInputElement)) {
-        throw new Error('Searchbox is unexpectedly missing');
-    }
+    searchInput.addEventListener('input', handleSearchInput);
+    searchInput.addEventListener('focus', handleSearchInput);
+    searchInput.addEventListener('keydown', handleSearchKeys);
 
-    if (!(searchResultsBox instanceof HTMLElement)) {
-        throw new Error('SearchResultsBox is unexpectedly missing');
-    }
-
-    searchBox.addEventListener('input', (event) => handleSearchInput(event, searchResultsBox));
-    searchBox.addEventListener('focus', (event) => handleSearchInput(event, searchResultsBox));
-    searchBox.addEventListener('keydown', (event) => handleSearchKeys(event, searchResultsBox));
-
-    searchBoxWrapper.addEventListener('focusout', (event) => {
+    searchWrapper.addEventListener('focusout', (event) => {
         const relatedTarget = event.relatedTarget;
         if (relatedTarget === null) {
             searchResultsBox.classList.add('hidden');
