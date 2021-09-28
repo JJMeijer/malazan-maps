@@ -26,6 +26,24 @@
     }
 }
 
+.home-image-landscape {
+    display: none;
+}
+
+.home-image-portrait {
+    max-height: 70vh;
+}
+
+@media (min-width: 768px) {
+    .home-image-landscape {
+        display: block;
+    }
+
+    .home-image-portrait {
+        display: none;
+    }
+}
+
 .home-header-container {
     display: flex;
     flex-direction: column;

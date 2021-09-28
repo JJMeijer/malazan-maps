@@ -8,12 +8,12 @@
             "type": "image/png"
         },
         {
-            "src": "img/pwa-icon.webp",
+            "src": "img/pwa-logo.png",
             "sizes": "512x512",
-            "type": "image/webp"
+            "type": "image/png"
         }
     ],
-    "start_url": "/",
+    "start_url": "https://www.malazanmaps.com",
     "background_color": "#082915",
     "display": "standalone",
     "scope": "/",
