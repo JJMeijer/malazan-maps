@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "https://www.malazanmaps.com",
+    "start_url": "/",
     "background_color": "#082915",
     "display": "standalone",
     "scope": "/",
