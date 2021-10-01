@@ -6,53 +6,26 @@ handlers:
 - url: /sitemap.xml
   secure: always
   redirect_http_response_code: 301
-  static_files: www/sitemap.xml
-  upload: www/sitemap.xml
-  http_headers:
-    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-    X-Frame-Options: DENY
-    X-XSS-Protection: 1; mode=block
-    X-Content-Type-Options: nosniff
+  static_files: sitemap.xml
+  upload: sitemap.xml
 
 - url: /robots.txt
   secure: always
   redirect_http_response_code: 301
-  static_files: www/static/robots.txt
-  upload: www/static/robots.txt
-  http_headers:
-    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-    X-Frame-Options: DENY
-    X-XSS-Protection: 1; mode=block
-    X-Content-Type-Options: nosniff
+  static_files: robots.txt
+  upload: robots.txt
 
 - url: /favicon.ico
   secure: always
   redirect_http_response_code: 301
-  static_files: www/static/img/favicon.ico
-  upload: www/static/img/favicon.ico
-  http_headers:
-    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-    X-Frame-Options: DENY
-    X-XSS-Protection: 1; mode=block
-    X-Content-Type-Options: nosniff
+  static_files: favicon.ico
+  upload: favicon.ico
 
 # Static Files
 - url: /static
   secure: always
   redirect_http_response_code: 301
-  static_dir: www/static
-  expiration: "365d"
-  http_headers:
-    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-    X-Frame-Options: DENY
-    X-XSS-Protection: 1; mode=block
-    X-Content-Type-Options: nosniff
-
-# Content Files
-- url: /content
-  secure: always
-  redirect_http_response_code: 301
-  static_dir: www/content
+  static_dir: static
   expiration: "365d"
   http_headers:
     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
@@ -64,8 +37,8 @@ handlers:
 - url: /
   secure: always
   redirect_http_response_code: 301
-  static_files: www/index.html
-  upload: www/index.html
+  static_files: index.html
+  upload: index.html
   http_headers:
     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
     X-Frame-Options: DENY
@@ -77,8 +50,8 @@ handlers:
 - url: /(.*)/
   secure: always
   redirect_http_response_code: 301
-  static_files: www/\1/index.html
-  upload: www/(.*)/index.html
+  static_files: \1/index.html
+  upload: (.*)/index.html
   http_headers:
     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
     X-Frame-Options: DENY
@@ -89,8 +62,8 @@ handlers:
 - url: /(.*)$
   secure: always
   redirect_http_response_code: 301
-  static_files: www/\1/index.html
-  upload: www/(.*)/index.html
+  static_files: \1/index.html
+  upload: (.*)/index.html
   http_headers:
     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
     X-Frame-Options: DENY
