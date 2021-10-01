@@ -18,6 +18,7 @@ module.exports = function (config) {
     config.addPassthroughCopy('views/manifest.json');
     config.addPassthroughCopy('views/robots.txt');
     config.addPassthroughCopy('views/app.yaml');
+    config.addPassthroughCopy('views/favicon.ico');
 
     config.addWatchTarget('src');
 
