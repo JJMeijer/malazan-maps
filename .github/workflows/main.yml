@@ -9,19 +9,30 @@ on:
     branches:
       - main
 jobs:
-  Build-And-Deploy:
+  Setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install packages
-        run: npm install
+      - name: Install Yarn
+        run: npm install yarn -g
 
+      - name: Install packages
+        run: yarn install
+
+  Build:
+    needs: Setup
+    runs-on: ubuntu-latest
+    steps:
       - name: Build Static Site
         run: npm run build
 
-      - name: Deploy to GAE
+  Deploy:
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Google App Engine Deploy
         uses: google-github-actions/deploy-appengine@main
         with:
           credentials: ${{ secrets.GCP_CREDENTIALS }}
