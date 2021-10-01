@@ -1,0 +1,28 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - ".github/**"
+  pull_request:
+    branches:
+      - main
+jobs:
+  Build-And-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install packages
+        run: npm install
+
+      - name: Build Static Site
+        run: npm run build
+
+      - name: Deploy to GAE
+        uses: google-github-actions/deploy-appengine@main
+        with:
+          credentials: ${{ secrets.GCP_CREDENTIALS }}
+          working_directory: www

@@ -5,7 +5,11 @@
   "license": "MIT",
   "scripts": {
     "serve": "eleventy --serve",
-    "build": "cross-env NODE_ENV=production eleventy",
+    "build": "cross-env NODE_ENV=production yarn build:css && yarn build:js && eleventy",
+    "build:css": "postcss src/css/main.css -o views/static/css/main-dist.css",
+    "watch:css": "postcss -w src/css/main.css -o views/static/css/main-dist.css",
+    "build:js": "node esbuild.js prod",
+    "watch:js": "node esbuild.js watch",
     "wiki": "node tools/wiki.js",
     "slugify": "node tools/slugify.js"
   },
