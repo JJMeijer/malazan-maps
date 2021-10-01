@@ -1,8 +1,7 @@
 {
-  "name": "malazan-maps-prototyping",
+  "name": "malazan-maps",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "JJMeijer <johan.meijer@digital-power.com>",
+  "author": "Johan <johan@malazanmaps.com>",
   "license": "MIT",
   "scripts": {
     "serve": "eleventy --serve",
