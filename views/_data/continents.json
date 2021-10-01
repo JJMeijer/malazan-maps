@@ -1,0 +1,158 @@
+[
+    {
+        "name": "Genabackis",
+        "slug": "genabackis",
+        "description": "Genabackis was a continent where much of the plot in the first books of the Malazan Book of the Fallen series took place. It was one of the larger continents on the planet.\n",
+        "wikiLink": "https://malazan.fandom.com/wiki/Genabackis",
+        "maps": [
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp"
+            },
+            {
+                "name": "Northwest Genabackis",
+                "image": "/static/img/maps/Northwest_Genabackis.webp"
+            },
+            {
+                "name": "Darujhistan",
+                "image": "/static/img/maps/Darujhistan.webp"
+            },
+            {
+                "name": "Capustan",
+                "image": "/static/img/maps/Capustan.webp"
+            },
+            {
+                "name": "Genabackis (MoI)",
+                "image": "/static/img/maps/Genabackis_MoI.webp"
+            },
+            {
+                "name": "Black Coral",
+                "image": "/static/img/maps/Black_Coral.webp"
+            },
+            {
+                "name": "South Genabackis",
+                "image": "/static/img/maps/South_Genabackis.webp"
+            }
+        ]
+    },
+    {
+        "name": "Quon Tali",
+        "slug": "quon-tali",
+        "description": "Quon Tali was the home continent of the Malazan Empire. It was bounded to the south and west by the Horn Ocean. To the southeast lay Reacher's Ocean and to the east, the Falari and Bloor Seas. In the north lay the Ice Fields and to the northeast, the Colonnus Sea.\n",
+        "wikiLink": "https://malazan.fandom.com/wiki/Quon_Tali",
+        "maps": [
+            {
+                "name": "Quon Tali",
+                "image": "/static/img/maps/Quon_Tali.webp"
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp"
+            },
+            {
+                "name": "Malaz City",
+                "image": "/static/img/maps/Malaz_City.webp"
+            },
+            {
+                "name": "Malaz Isle",
+                "image": "/static/img/maps/Malaz_Isle.webp"
+            }
+        ]
+    },
+    {
+        "name": "Lether",
+        "slug": "lether",
+        "description": "The continent of Lether (not to be confused with the Empire of Lether) was the setting for the novels Midnight Tides, Reaper's Gale, Dust of Dreams, and The Crippled God. It lay on the other side of the globe from the Malazan Empire. The mapped portion of the continent seen in Midnight Tides extended for over 600 leagues from north to south and for nearly 700 leagues from east to west. The map in Reaper's Gale was significantly larger in scope, but did not have a scale.\n",
+        "wikiLink": "https://malazan.fandom.com/wiki/Lether",
+        "maps": [
+            {
+                "name": "Empire of Lether",
+                "image": "/static/img/maps/Lether.webp"
+            },
+            {
+                "name": "Letheras",
+                "image": "/static/img/maps/Letheras.webp"
+            },
+            {
+                "name": "Edur Lands",
+                "image": "/static/img/maps/Edur_Lands.webp"
+            },
+            {
+                "name": "Kolanse",
+                "image": "/static/img/maps/Kolanse.webp"
+            }
+        ]
+    },
+    {
+        "name": "Seven Cities",
+        "slug": "seven-cities",
+        "description": "Seven Cities was a sub-continent north of Quon Tali and west of Genabackis that had been conquered by the Malazan Empire. It was an ancient land, built upon the ruins of countless cities dating back to the First Empire.  Hot, dry, and largely desert, its sands obscured forgotten pathways, hoarded power, and soaked up sorcery.  Every foot of the land had been walked by Ascendants.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Seven_Cities",
+        "maps": [
+            {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp"
+            },
+            {
+                "name": "Chain of Dogs - First Half",
+                "image": "/static/img/maps/Chain_of_Dogs_1.webp"
+            },
+            {
+                "name": "Chain of Dogs - Second Half",
+                "image": "/static/img/maps/Chain_of_Dogs_2.webp"
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp"
+            },
+            {
+                "name": "Raraku",
+                "image": "/static/img/maps/Raraku.webp"
+            }
+        ]
+    },
+    {
+        "name": "Jacuruku",
+        "slug": "jacuruku",
+        "description": "The continent of Jacuruku was a small island-continent located south-west of Stratem and Korel, south of Quon Tali and Seven Cities and east of Lether. It was divided in two by the Gangrek Range, with deserts lying to the west and thick jungles to the east.\n",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jacuruku",
+        "maps": [
+            {
+                "name": "Isle of Jacuruku",
+                "image": "/static/img/maps/Jacuruku.webp"
+            }
+        ]
+    },
+    {
+        "name": "Korel",
+        "slug": "korel",
+        "description": "Korel was the Malazan name for the continent to the south and east of Quon Tali. The continent was made up to two subcontinents: the Lands of Fist and Stratem.\n",
+        "wikiLink": "https://malazan.fandom.com/wiki/Korel",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp"
+            },
+            {
+                "name": "Stormwall",
+                "image": "/static/img/maps/Stormwall.webp"
+            }
+        ]
+    },
+    {
+        "name": "Assail",
+        "slug": "assail",
+        "description": "The continent of Assail was situated between Genabackis and the Letherii continent. It was held to be the most dangerous and hostile part of the Malazan world. The Crimson Guard mercenaries and some T'lan Imass were known to have engagements there. The Malazans knew of the existence of Assail and the Wreckers' Coast along its shores, but the Empire had chosen to make no incursions there due to the extreme danger of the land. It was known that the continent was dominated by a human leader (or possibly several human leaders) whose armies were powerful enough to destroy T'lan Imass forces, the Ifayle and the Kerluhm. Little else was known of it.\n",
+        "wikiLink": "https://malazan.fandom.com/wiki/Assail",
+        "maps": [
+            {
+                "name": "The Blood Range",
+                "image": "/static/img/maps/The_Blood_Range.webp"
+            },
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp"
+            }
+        ]
+    }
+]

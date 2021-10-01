@@ -1,0 +1,97 @@
+---
+layout: base.njk
+---
+
+<div class="map-view-container">
+    <div class="left-header-container">
+        <div class="navbar">
+            <a href="/">
+                <p class="navbar-site-title">
+                    Malazan Maps
+                </p>
+            </a>
+            <p class="navbar-seperator">
+                >
+            </p>
+            <p class="navbar-page-title">
+                {{ title }}
+            </p>
+        </div>
+
+        <h1 class="left-header-title">
+            {{ title }}
+        </h1>
+
+        {% include 'components/search.njk' %}
+
+        <div class="{% if item.maps|length == 1 %}hidden{% endif %} map-selector-wrapper">
+            {% for map in item.maps %}
+                <label class="map-selector-label" for="map-selector-{{ loop.index }}">
+                    <input
+                        class="hidden"
+                        type="radio"
+                        id="map-selector-{{ loop.index }}"
+                        name="map-selector"
+                        {% if loop.index == 1 %}checked{% endif %}
+                    >
+                    <span class="map-selector-span">
+                        {{ map.name }}
+                    </span>
+                </label>
+            {% endfor %}
+        </div>
+
+        <div class="description-wrapper">
+            <p class="description-text">
+                {{ item.description }} (<a target="_blank" rel="nofollow noopener" href="{{ item.wikiLink }}">wiki</a>)
+            </p>
+        </div>
+
+        <div class="footer-wrapper-left">
+            {% include 'components/footer.njk' %}
+        </div>
+    </div>
+
+    <div class="maps-wrapper">
+        {% for map in item.maps %}
+            <div
+                class="{% if loop.index > 1 %}hidden{% endif %} map-image-wrapper"
+                id="map-imagewrapper-{{ loop.index }}"
+            >
+                <img
+                    src="{{ map.image }}"
+                    class="object-contain"
+                    id="map-image-{{ loop.index }}"
+                    alt="Map of {{ map.name }}"
+                    title="Map of {{ map.name }}"
+                >
+                {% if 'marker' in map %}
+                    <img
+                        src="/static/img/marker.webp"
+                        class="map-image-marker object-contain"
+                        id="map-marker-{{ loop.index }}"
+                        data-markerx={{ map.marker.x }}
+                        data-markery={{ map.marker.y }}
+                        alt="{{ item.title }} marker"
+                        title="{{ item.title }} marker"
+                    >
+                {% endif %}
+            </div>
+        {% endfor %}
+        <div
+            class="reset-zoom-button hidden"
+            id="reset-zoom-button">
+            <img
+                src="/static/img/reset-zoom.webp"
+                class="object-contain"
+                alt="Reset Zoom Button"
+                title="Reset Zoom Button"
+            >
+        </div>
+    </div>
+</div>
+
+<div class="footer-wrapper-bottom">
+    {% include 'components/footer.njk' %}
+</div>
+<script src="/static/js/map.js"></script>

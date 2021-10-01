@@ -1,12 +1,7 @@
-.venv/
 node_modules/
-**/__pycache__/
+.log
 
-dist/www/
-/static/
-mapsdata/static/js
-mapsdata/static/css/*-dist.css
+www/
 
-*credentials.json
-
-*.log
+views/static/css
+views/static/js

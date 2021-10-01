@@ -5,43 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Django: Runserver",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}\\manage.py",
-            "args": [
-                "runserver"
-            ],
-            "django": true,
-            "justMyCode": false
-        },
-        {
-            "name": "Launch website",
-            "request": "launch",
             "type": "pwa-chrome",
-            "url": "http://localhost:8000",
-            "webRoot": "${workspaceFolder}/mapsdata",
-            "disableNetworkCache": true
-        },
-        {
-            "name": "Launch Admin",
             "request": "launch",
-            "type": "pwa-chrome",
-            "url": "http://localhost:8000/admin",
-            "webRoot": "${workspaceFolder}/mapsdata",
-            "disableNetworkCache": true
-        },
-        {
-            "name": "Distill: Build Local",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}\\manage.py",
-            "args": [
-                "distill-local"
-            ],
-            "django": true,
-            "justMyCode": false
-
+            "name": "Launch Website",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/wwws"
         }
     ]
 }

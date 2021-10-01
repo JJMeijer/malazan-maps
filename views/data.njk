@@ -1,0 +1,26 @@
+---
+permalink: /data.json
+---
+[
+    {%- for book in books %}
+    {
+        "name": "{{ book.name | safe }}",
+        "shortName": "{{ book.slug }}",
+        "type": "book"
+    },
+    {%- endfor %}
+    {%- for continent in continents %}
+    {
+        "name": "{{ continent.name | safe }}",
+        "shortName": "{{ continent.slug }}",
+        "type": "continent"
+    },
+    {%- endfor %}
+    {%- for place in places %}
+    {
+        "name": "{{ place.name | safe }}",
+        "shortName": "{{ place.slug }}",
+        "type": "{{ place.type }}"
+    }{{ '' if loop.last else ',' }}
+    {%- endfor %}
+]

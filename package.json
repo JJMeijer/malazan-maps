@@ -1,33 +1,40 @@
 {
-  "name": "malazan-maps",
+  "name": "malazan-maps-prototyping",
   "version": "1.0.0",
+  "main": "index.js",
+  "author": "JJMeijer <johan.meijer@digital-power.com>",
   "license": "MIT",
   "scripts": {
-    "build-css:prod": "postcss --env production mapsdata/src/css/main.css -o mapsdata/static/css/main-dist.css",
-    "build-css:watch": "postcss -w mapsdata/src/css/main.css -o mapsdata/static/css/main-dist.css",
-    "build-js:prod": "node esbuild prod",
-    "build-js:dev": "node esbuild dev",
-    "build-js:watch": "node esbuild watch"
-  },
-  "dependencies": {
-    "fuse.js": "^6.4.6"
+    "serve": "eleventy --serve",
+    "build": "cross-env NODE_ENV=production eleventy",
+    "wiki": "node tools/wiki.js",
+    "slugify": "node tools/slugify.js"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.24.0",
-    "@typescript-eslint/parser": "^4.24.0",
-    "autoprefixer": "^10.3.5",
-    "esbuild": "^0.12.29",
-    "eslint": "^7.26.0",
+    "@11ty/eleventy": "^0.12.1",
+    "@sindresorhus/slugify": "^1.1.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "axios": "^0.22.0",
+    "colors": "^1.4.0",
+    "cross-env": "^7.0.3",
+    "date-fns": "^2.24.0",
+    "esbuild": "^0.13.3",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.2",
-    "eslint-plugin-prettier": "^3.4.0",
-    "postcss": "^8.3.7",
-    "postcss-cli": "^8.3.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "fuse.js": "^6.4.6",
+    "html-minifier": "^4.0.0",
+    "node-html-parser": "^4.1.5",
+    "postcss": "^8.3.8",
+    "postcss-cli": "^9.0.1",
     "postcss-import": "^14.0.2",
     "postcss-minify": "^1.1.0",
-    "prettier": "^2.3.0",
+    "prettier": "^2.4.1",
+    "prompts": "^2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.4.3"
   }
 }

@@ -1,0 +1,31 @@
+---
+layout: base.njk
+---
+
+{% include 'components/navbar.njk' %}
+
+<div class="home-header-container">
+    {% include 'components/search.njk' %}
+    <h1 class="home-header-description">
+        {{ description }}
+    </h1>
+</div>
+
+ <div class="home-container">
+    <div class="home-image-wrapper" id="map-image-wrapper">
+        <img
+            src="{{ banner_landscape }}"
+            class="home-image-landscape"
+            alt="{{ banner_landscape_name }}"
+            title="{{ banner_landscape_name }}"
+        >
+        <img
+            src="{{ banner_portrait }}"
+            class="home-image-portrait"
+            alt="{{ banner_portrait_name }}"
+            title="{{ banner_portrait_name }}"
+        >
+    </div>
+</div>
+
+{% include 'components/footer.njk' %}
