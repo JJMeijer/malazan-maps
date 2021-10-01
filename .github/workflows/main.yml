@@ -9,7 +9,7 @@ on:
     branches:
       - main
 jobs:
-  Setup:
+  Build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -21,17 +21,24 @@ jobs:
       - name: Install packages
         run: yarn install
 
-  Build:
-    needs: Setup
-    runs-on: ubuntu-latest
-    steps:
       - name: Build Static Site
         run: npm run build
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: www
+          path: www
 
   Deploy:
     needs: Build
     runs-on: ubuntu-latest
     steps:
+      - name: Download Build
+        uses: actions/download-artifact@v2
+        with:
+          name: www
+
       - name: Google App Engine Deploy
         uses: google-github-actions/deploy-appengine@main
         with:
