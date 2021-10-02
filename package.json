@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "eleventy --serve",
-    "build": "cross-env NODE_ENV=production yarn build:css && yarn build:js && eleventy",
+    "build": "yarn build:css && yarn build:js && eleventy",
     "build:css": "postcss src/css/main.css -o views/static/css/main-dist.css",
     "watch:css": "postcss -w src/css/main.css -o views/static/css/main-dist.css",
     "build:js": "node esbuild.js prod",
@@ -18,9 +18,10 @@
     "@sindresorhus/slugify": "^1.1.2",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
+    "ajv": "^8.6.3",
+    "ajv-formats": "^2.1.1",
     "axios": "^0.22.0",
     "colors": "^1.4.0",
-    "cross-env": "^7.0.3",
     "date-fns": "^2.24.0",
     "esbuild": "^0.13.3",
     "eslint": "^7.32.0",
@@ -39,5 +40,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "typescript": "^4.4.3"
-  }
+  },
+  "dependencies": {}
 }

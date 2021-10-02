@@ -5,21 +5,21 @@ permalink: /data.json
     {%- for book in books %}
     {
         "name": "{{ book.name | safe }}",
-        "shortName": "{{ book.slug }}",
-        "type": "book"
+        "shortName": "{{ book.name | slugify }}",
+        "type": {{ book.type }}
     },
     {%- endfor %}
     {%- for continent in continents %}
     {
         "name": "{{ continent.name | safe }}",
-        "shortName": "{{ continent.slug }}",
-        "type": "continent"
+        "shortName": "{{ continent.name | slugify }}",
+        "type": {{ continent.type }}
     },
     {%- endfor %}
     {%- for place in places %}
     {
         "name": "{{ place.name | safe }}",
-        "shortName": "{{ place.slug }}",
+        "shortName": "{{ place.name | slugify }}",
         "type": "{{ place.type }}"
     }{{ '' if loop.last else ',' }}
     {%- endfor %}

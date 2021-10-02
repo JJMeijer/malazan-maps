@@ -1,9 +1,9 @@
 [
     {
         "name": "Gardens of the Moon",
-        "slug": "gardens-of-the-moon",
         "description": "Gardens of the Moon is the first novel in the Malazan Book of the Fallen epic fantasy series. It was written by Steven Erikson in 1991 and extensively revised over several years before first being published by Bantam Books on April 1, 1999 in Great Britain and Canada. In 2000, it was nominated for a World Fantasy Award as one of the year's best fantasy novels.  On December 28, 2004, Tor Books released it in the United States, and it has since been re-released in multiple editions and in many countries.   \n",
         "wikiLink": "https://malazan.fandom.com/wiki/Gardens_of_the_Moon",
+        "type": "book",
         "maps": [
             {
                 "name": "Genabackis (GotM)",
@@ -17,9 +17,9 @@
     },
     {
         "name": "Deadhouse Gates",
-        "slug": "deadhouse-gates",
         "description": "Deadhouse Gates is a novel by Steven Erikson. First released in 2000 in Great Britain and Canada, it was published by Tor in 2005 for the United States. It is the second book of ten in the Malazan Book of the Fallen series.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Deadhouse_Gates",
+        "type": "book",
         "maps": [
             {
                 "name": "Seven Cities (DG)",
@@ -37,9 +37,9 @@
     },
     {
         "name": "Memories of Ice",
-        "slug": "memories-of-ice",
         "description": "Memories of Ice is the third book in Steven Erikson's series The Malazan Book of the Fallen. It was released in the UK and Canada in January 2001 and in the US in November 2005.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Memories_of_Ice",
+        "type": "book",
         "maps": [
             {
                 "name": "Genabackis (MoI)",
@@ -53,9 +53,9 @@
     },
     {
         "name": "House of Chains",
-        "slug": "house-of-chains",
         "description": "House of Chains is the fourth book in the Malazan Book of the Fallen. It was released in the UK and Canada in January 2002 and in the US August 2006 by Tor.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/House_of_Chains",
+        "type": "book",
         "maps": [
             {
                 "name": "Raraku",
@@ -73,9 +73,9 @@
     },
     {
         "name": "Midnight Tides",
-        "slug": "midnight-tides",
         "description": "Midnight Tides is the fifth book in the Malazan Book of the Fallen. It was first published in the UK and Canada in March 2004 and in the US in April 2007.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Midnight_Tides",
+        "type": "book",
         "maps": [
             {
                 "name": "Letheras",
@@ -89,9 +89,9 @@
     },
     {
         "name": "The Bonehunters",
-        "slug": "the-bonehunters",
         "description": "The Bonehunters is the sixth novel the Malazan Book of the Fallen epic fantasy series. It was first published in the UK and Canada on March 1, 2006 and in the US in September 2007.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/The_Bonehunters",
+        "type": "book",
         "maps": [
             {
                 "name": "Seven Cities (BH)",
@@ -109,9 +109,9 @@
     },
     {
         "name": "Reaper's Gale",
-        "slug": "reapers-gale",
         "description": "Reaper's Gale is the seventh novel the Malazan Book of the Fallen epic fantasy series. It was published in the UK May 7, 2007, in Canada June 5, 2007, and in the US on March 4, 2008.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Reaper%27s_Gale",
+        "type": "book",
         "maps": [
             {
                 "name": "Empire of Lether",
@@ -121,9 +121,9 @@
     },
     {
         "name": "Toll the Hounds",
-        "slug": "toll-the-hounds",
         "description": "Toll the Hounds is the eighth novel in the Malazan Book of the Fallen epic fantasy series by Steven Erikson. It was first published in the UK and Canada on June 30, 2008, and in the US on September 16, 2008.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Toll_the_Hounds",
+        "type": "book",
         "maps": [
             {
                 "name": "Darujhistan",
@@ -137,9 +137,9 @@
     },
     {
         "name": "Dust of Dreams",
-        "slug": "dust-of-dreams",
         "description": "Dust of Dreams is the ninth novel in the Malazan Book of the Fallen epic fantasy series. It was first published in Canada and the UK in 2009.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Dust_of_Dreams",
+        "type": "book",
         "maps": [
             {
                 "name": "Empire of Lether",
@@ -149,9 +149,9 @@
     },
     {
         "name": "The Crippled God",
-        "slug": "the-crippled-god",
         "description": "The Crippled God is the tenth and final volume of Canadian author Steven Erikson's epic fantasy series, the Malazan Book of the Fallen. In an interview, Erikson had mentioned that this book would be the second half of the series finale, with Dust of Dreams ending on a cliffhanger.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/The_Crippled_God",
+        "type": "book",
         "maps": [
             {
                 "name": "Kolanse",
@@ -161,9 +161,9 @@
     },
     {
         "name": "Night of Knives",
-        "slug": "night-of-knives",
         "description": "Night of Knives is the first novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Night_of_Knives",
+        "type": "book",
         "maps": [
             {
                 "name": "Malaz City",
@@ -177,9 +177,9 @@
     },
     {
         "name": "Return of the Crimson Guard",
-        "slug": "return-of-the-crimson-guard",
         "description": "Return of the Crimson Guard is the second high fantasy novel by Canadian author Ian C. Esslemont set in the world of the Malazan Book of the Fallen, co-created with Esslemont's friend and colleague Steven Erikson. Chronologically, Return of the Crimson Guard takes place after the events in Erikson's sixth Malazan novel, The Bonehunters. Return of the Crimson Guard is the second novel by Esslemont to take place in the Malazan world, starting with Night of Knives and followed by Stonewielder.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Return_of_the_Crimson_Guard",
+        "type": "book",
         "maps": [
             {
                 "name": "Quon Tali",
@@ -189,9 +189,9 @@
     },
     {
         "name": "Stonewielder",
-        "slug": "stonewielder",
         "description": "Stonewielder is the third novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Stonewielder",
+        "type": "book",
         "maps": [
             {
                 "name": "Lands of Fist",
@@ -205,9 +205,9 @@
     },
     {
         "name": "Orb Sceptre Throne",
-        "slug": "orb-sceptre-throne",
         "description": "Orb Sceptre Throne is the fourth novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Orb_Sceptre_Throne",
+        "type": "book",
         "maps": [
             {
                 "name": "Darujhistan",
@@ -221,9 +221,9 @@
     },
     {
         "name": "Blood and Bone",
-        "slug": "blood-and-bone",
         "description": "Blood and Bone is the fifth novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Blood_and_Bone",
+        "type": "book",
         "maps": [
             {
                 "name": "Isle of Jacuruku",
@@ -233,9 +233,9 @@
     },
     {
         "name": "Assail (novel)",
-        "slug": "assail-novel",
         "description": "Assail is the sixth novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.\n",
         "wikiLink": "https://malazan.fandom.com/wiki/Assail_(novel)",
+        "type": "book",
         "maps": [
             {
                 "name": "The Blood Range",

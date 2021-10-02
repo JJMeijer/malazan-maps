@@ -1,12 +1,7 @@
 /* eslint-env node */
-const esbuild = require('esbuild');
-
-const postcss = require('postcss');
-const fs = require('fs');
-const htmlmin = require("html-minifier");
+const slugify = require('@sindresorhus/slugify');
+const htmlmin = require('html-minifier');
 const format = require('date-fns/format');
-
-const { NODE_ENV } = process.env;
 
 module.exports = function (config) {
     config.setQuietMode(true);
@@ -19,18 +14,26 @@ module.exports = function (config) {
 
     // add `date` filter
     config.addFilter('date', function (date, dateFormat) {
-        return format(date, dateFormat)
-    })
+        return format(date, dateFormat);
+    });
+
+    // add 'slugify' filter as is used in eleventy 1.0.0+
+    config.addFilter('slugify', function (str) {
+        return slugify('' + str, {
+            decamelize: false,
+            customReplacements: [["'", '']],
+        });
+    });
 
     // Minify Html on prod
-    config.addTransform("htmlmin", function(content, outputPath) {
-        if(NODE_ENV === 'production' && outputPath && outputPath.endsWith(".html") ) {
-          let minified = htmlmin.minify(content, {
-            useShortDoctype: true,
-            removeComments: true,
-            collapseWhitespace: true
-          });
-          return minified;
+    config.addTransform('htmlmin', function (content, outputPath) {
+        if (outputPath && outputPath.endsWith('.html')) {
+            let minified = htmlmin.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true,
+            });
+            return minified;
         }
 
         return content;

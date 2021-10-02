@@ -7,7 +7,8 @@
         "prettier"
     ],
     "env": {
-        "browser": true
+        "browser": true,
+        "node": true
     },
     "extends": [
         "eslint:recommended",
@@ -17,7 +18,8 @@
         "prettier/prettier": "error"
     },
     "ignorePatterns": [
-        "static/js/*.js"
+        "static/js/*.js",
+        "!.eleventy.js"
     ],
     "overrides": [
         {

@@ -8,7 +8,7 @@ pagination:
     alias: item
     addAllPagesToCollections: true
 
-permalink: "continents/{{ item.slug }}/"
+permalink: "continents/{{ item.name | slugify }}/"
 
 eleventyComputed:
     title: "{{ item.name }}"
