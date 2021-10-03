@@ -44,7 +44,7 @@ export const handleSearchInput = (event: Event): void => {
             resultElements.forEach((element) => searchResultsElement.appendChild(element));
 
             const recycledResultFocusIndex = results.findIndex(
-                ({ item: { shortName } }) => shortName === focusName,
+                ({ item: { slug } }) => slug === focusName,
             );
 
             if (recycledResultFocusIndex > -1 && recycledResultFocusIndex <= focusIndex) {

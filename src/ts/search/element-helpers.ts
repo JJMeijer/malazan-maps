@@ -35,26 +35,6 @@ export const getSearchInputElement = (): HTMLInputElement => {
     return searchInputElement;
 };
 
-const generateLink = (shortName: string, type: string): string => {
-    if (type === 'book') {
-        return `/books/${shortName}/`;
-    }
-
-    if (type === 'map') {
-        return `/maps/${shortName}/`;
-    }
-
-    if (type === 'continent') {
-        return `/continents/${shortName}/`;
-    }
-
-    if (type !== 'region' && type !== 'city') {
-        throw new Error('Unexpected search result type');
-    }
-
-    return `/places/${shortName}/`;
-};
-
 const boldMatchingIndices = (name: string, indices: readonly Fuse.RangeTuple[]): string => {
     let result = '';
     let position = 0;
@@ -80,13 +60,13 @@ export const createSearchResult = (
     indices: readonly Fuse.RangeTuple[],
     index: number,
 ): HTMLElement => {
-    const { name, shortName, type } = item;
-    const resultHref = generateLink(shortName, type);
+    const { name, slug, type } = item;
+    const resultHref = `/${type}/${slug}/`;
 
     const resultWrapper = document.createElement('div');
     resultWrapper.classList.add('search-result-wrapper');
     resultWrapper.setAttribute(`data-${RESULT_INDEX_ATTRIBUTE}`, String(index));
-    resultWrapper.setAttribute(`data-${RESULT_NAME_ATTRIBUTE}`, shortName);
+    resultWrapper.setAttribute(`data-${RESULT_NAME_ATTRIBUTE}`, slug);
     resultWrapper.setAttribute(`data-${RESULT_HREF_ATTRIBUTE}`, resultHref);
 
     const resultLink = document.createElement('a');

@@ -1,19 +1,25 @@
-export interface ResultData {
-    name: string;
-    shortName: string;
-    type: string;
-}
-
 export interface FocusResultInformation {
     focusName: string;
     focusIndex: number;
     focusHref: string;
 }
 
+interface MapData {
+    name: string;
+    image: string;
+    marker?: {
+        x: number;
+        y: number;
+    };
+}
+
 export interface Entry {
     name: string;
-    shortName: string;
+    slug: string;
     type: 'city' | 'region' | 'continent' | 'book';
+    description: string;
+    wikiLink: string;
+    maps: MapData[];
 }
 
 export interface NaturalDimensions {

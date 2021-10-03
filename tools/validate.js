@@ -4,9 +4,7 @@ const addFormats = require('ajv-formats');
 const ajv = new Ajv({ verbose: true });
 addFormats(ajv);
 
-const books = require('../views/_data/books.json');
-const continents = require('../views/_data/continents.json');
-const places = require('../views/_data/places.json');
+const content = require('../views/_data/content.json');
 
 const MapSchema = {
     type: 'object',
@@ -21,6 +19,7 @@ const ItemSchema = {
     type: 'object',
     properties: {
         name: { type: 'string' },
+        slug: { type: 'string', pattern: '^[a-z-]+$' },
         description: { type: 'string' },
         wikiLink: { type: 'string', format: 'uri', pattern: '^https://malazan.fandom.com/wiki/.+' },
         type: { type: 'string', pattern: 'book|continent|city|region' },
@@ -29,7 +28,7 @@ const ItemSchema = {
             items: MapSchema,
         },
     },
-    required: ['name', 'description', 'wikiLink', 'type', 'maps'],
+    required: ['name', 'slug', 'description', 'wikiLink', 'type', 'maps'],
 };
 
 const schema = {
@@ -39,17 +38,7 @@ const schema = {
 
 const validate = ajv.compile(schema);
 
-const validBooks = validate(books);
-if (!validBooks) {
-    console.log(validate.errors);
-}
-
-const validContinents = validate(continents);
-if (!validContinents) {
-    console.log(validate.errors);
-}
-
-const validPlaces = validate(places);
-if (!validPlaces) {
+const valid = validate(content);
+if (!valid) {
     console.log(validate.errors);
 }

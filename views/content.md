@@ -1,14 +1,14 @@
 ---
-layout: map.njk
+layout: content.njk
 date: Last Modified
 
 pagination:
-    data: places
+    data: content
     size: 1
     alias: item
     addAllPagesToCollections: true
 
-permalink: "places/{{ item.name | slugify }}/"
+permalink: "{{ item.type }}/{{ item.slug }}/"
 
 eleventyComputed:
     title: "{{ item.name }}"

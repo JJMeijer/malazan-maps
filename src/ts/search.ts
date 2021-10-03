@@ -6,6 +6,13 @@ import {
 import { handleSearchInput, handleSearchKeys } from './search/search-handlers';
 import { fuse, setSearchEntries } from './search/fuse-search';
 
+// Register serviceworker
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+    });
+}
+
 setSearchEntries(fuse);
 
 const searchInit = () => {

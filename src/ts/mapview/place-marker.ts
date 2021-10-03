@@ -7,11 +7,10 @@ import {
 
 export const placeVisibleMarker = (): void => {
     /**
-     * Weird thing to do. The goal is to only run this code on the /place/ pages but still
-     * keep the content of the book/map/place/continent pages 99% the same. there is probably
-     * a better way to do this.
+     * Check if a marker element is on the page because they are only
+     * there on city & region pages
      */
-    if (document.location.pathname.match('^/places/') === null) {
+    if (document.getElementsByClassName('map-image-marker').length === 0) {
         return;
     }
 
