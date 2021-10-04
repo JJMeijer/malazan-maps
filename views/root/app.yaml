@@ -3,40 +3,15 @@ runtime: python39
 instance_class: F1
 
 handlers:
-- url: /sitemap.xml
+# Root level files (sitemap, robots, favicon, manifest & data file)
+- url: /(.*\.(xml|txt|ico|json))
+  static_files: \1
+  upload: (.*)
   secure: always
-  redirect_http_response_code: 301
-  static_files: sitemap.xml
-  upload: sitemap.xml
-
-- url: /robots.txt
-  secure: always
-  redirect_http_response_code: 301
-  static_files: robots.txt
-  upload: robots.txt
-
-- url: /favicon.ico
-  secure: always
-  redirect_http_response_code: 301
-  static_files: favicon.ico
-  upload: favicon.ico
-
-- url: /data.json
-  secure: always
-  redirect_http_response_code: 301
-  static_files: data.json
-  upload: data.json
-
-- url: /manifest.json
-  secure: always
-  redirect_http_response_code: 301
-  static_files: manifest.json
-  upload: manifest.json
 
 # Static Files
 - url: /static
   secure: always
-  redirect_http_response_code: 301
   static_dir: static
   expiration: "365d"
   http_headers:
@@ -48,7 +23,6 @@ handlers:
 # Home Page
 - url: /
   secure: always
-  redirect_http_response_code: 301
   static_files: index.html
   upload: index.html
   http_headers:
@@ -61,19 +35,6 @@ handlers:
 # All Other Pages
 - url: /(.*)/
   secure: always
-  redirect_http_response_code: 301
-  static_files: \1/index.html
-  upload: (.*)/index.html
-  http_headers:
-    Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-    X-Frame-Options: DENY
-    X-XSS-Protection: 1; mode=block
-    Content-Security-Policy: default-src 'self' cloudflareinsights.com *.cloudflareinsights.com
-    X-Content-Type-Options: nosniff
-
-- url: /(.*)$
-  secure: always
-  redirect_http_response_code: 301
   static_files: \1/index.html
   upload: (.*)/index.html
   http_headers:

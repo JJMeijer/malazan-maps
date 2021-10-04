@@ -18,7 +18,7 @@
             {{ content | safe }}
         </div>
     </body>
-    {% if env == 'production' %}
+    {% if 'NODE_ENV' | env == 'production' %}
         <!-- Cloudflare Web Analytics -->
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "14bbcec148534153af8df9fc3d0ed635"}'>
         </script>

@@ -16,7 +16,7 @@
     "orientation": "any",
     "start_url": "/",
     "background_color": "#082915",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "/",
     "theme_color": "#082915",
     "description": "Malazan Maps: Find Places in the world of Malazen: Book of the fallen"

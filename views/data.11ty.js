@@ -6,7 +6,15 @@ class Data {
     }
 
     render({ content }) {
-        return JSON.stringify(content);
+        const searchData = content.map(({ name, slug, type }) => {
+            return {
+                name,
+                slug,
+                type,
+            };
+        });
+
+        return JSON.stringify(searchData);
     }
 }
 

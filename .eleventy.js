@@ -6,12 +6,15 @@ module.exports = function (config) {
     config.setQuietMode(true);
 
     config.addPassthroughCopy('views/static');
-    config.addPassthroughCopy({ 'views/misc': '/' });
+    config.addPassthroughCopy({ 'views/root': '/' });
 
     // add `date` filter for sitemap
     config.addFilter('date', function (date, dateFormat) {
         return format(date, dateFormat);
     });
+
+    // Add `env` filter to use Environment variables
+    config.addFilter('env', (key) => process.env[key]);
 
     // Minify Html on prod
     config.addTransform('htmlmin', function (content, outputPath) {

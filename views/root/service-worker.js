@@ -1,4 +1,4 @@
-const CACHE_NAME = 'malazan-cache-v6';
+const CACHE_NAME = 'malazan-cache-v8';
 const CACHE_URLS = [
     '/static/css/main-dist.css',
     '/static/js/search.js',

@@ -22,7 +22,7 @@ jobs:
         run: yarn install
 
       - name: Build Static Site
-        run: npm run build
+        run: npm run build:prod
 
       - name: Google App Engine Deploy
         uses: google-github-actions/deploy-appengine@main
