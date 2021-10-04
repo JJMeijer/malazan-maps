@@ -7,12 +7,14 @@ handlers:
 - url: /(.*\.(xml|txt|ico|json))
   static_files: \1
   upload: (.*)
+  expiration: "0"
   secure: always
 
 # Service worker file
 - url: /service-worker.js
   static_files: service-worker.js
   upload: service-worker.js
+  expiration: "0"
   secure: always
 
 # Static Files
