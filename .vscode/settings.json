@@ -1,7 +1,0 @@
-{
-    "emmet.includeLanguages": {
-        "nunjucks": "html",
-        "njk": "html"
-    },
-    "files.eol": "\n"
-}
