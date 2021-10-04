@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "eleventy --serve",
     "build:prod": "cross-env NODE_ENV=production yarn build:all",
-    "build:all": "yarn build:css && yarn build:js && eleventy",
+    "build:all": "yarn version --patch && yarn build:css && yarn build:js && eleventy",
     "build:css": "postcss src/css/main.css -o views/static/css/main-dist.css",
     "watch:css": "postcss -w src/css/main.css -o views/static/css/main-dist.css",
     "build:js": "node esbuild.js prod",
