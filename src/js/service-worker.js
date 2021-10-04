@@ -1,5 +1,6 @@
-// Ideally cache name automatically changes when changes have been made
-const CACHE_NAME = 'malazan-cache-v16';
+import { version } from '../../package.json';
+
+const CACHE_NAME = `malazan-cache-${version}`;
 const CACHE_URLS = [
     `/static/css/main-dist.css?v=${new Date().getTime()}`,
     `/static/js/search.js?v=${new Date().getTime()}`,

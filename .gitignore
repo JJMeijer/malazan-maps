@@ -6,3 +6,4 @@ node_modules/
 www/
 views/static/js/
 views/static/css/
+views/service-worker.js

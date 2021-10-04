@@ -12,6 +12,8 @@ module.exports = function (config) {
     config.addPassthroughCopy('views/robots.txt');
     config.addPassthroughCopy('views/service-worker.js');
 
+    config.setUseGitIgnore(false);
+
     // add `date` filter for sitemap
     config.addFilter('date', function (date, dateFormat) {
         return format(date, dateFormat);
