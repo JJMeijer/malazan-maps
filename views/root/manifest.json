@@ -3,21 +3,28 @@
     "short_name": "Malazan Maps",
     "icons": [
         {
-            "src": "/static/img/android-chrome-192x192.png",
+            "src": "/static/img/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/static/img/mask-192x192.png",
+            "src": "/static/img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/static/img/icon-maskable-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/static/img/pwa-logo.png",
+            "src": "/static/img/icon-maskable-512x512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ],
     "orientation": "any",

@@ -6,7 +6,11 @@ module.exports = function (config) {
     config.setQuietMode(true);
 
     config.addPassthroughCopy('views/static');
-    config.addPassthroughCopy({ 'views/root': '/' });
+    config.addPassthroughCopy('views/app.yaml');
+    config.addPassthroughCopy('views/favicon.ico');
+    config.addPassthroughCopy('views/manifest.json');
+    config.addPassthroughCopy('views/robots.txt');
+    config.addPassthroughCopy('views/service-worker.js');
 
     // add `date` filter for sitemap
     config.addFilter('date', function (date, dateFormat) {
