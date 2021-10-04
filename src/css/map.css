@@ -28,6 +28,7 @@
     line-height: 2.25rem;
     color: #f3f4f6;
     font-weight: 700;
+    text-align: center;
 }
 
 @media (min-width: 1024px) {

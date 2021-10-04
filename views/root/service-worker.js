@@ -1,4 +1,5 @@
-const CACHE_NAME = 'malazan-cache-v14';
+// Ideally cache name automatically changes when changes have been made
+const CACHE_NAME = 'malazan-cache-v15';
 const CACHE_URLS = [
     `/static/css/main-dist.css?v=${new Date().getTime()}`,
     `/static/js/search.js?v=${new Date().getTime()}`,
