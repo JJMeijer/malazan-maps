@@ -13,9 +13,11 @@
     "watch:js": "node esbuild.js watch",
     "wiki": "node tools/wiki.js",
     "validate": "node tools/validate.js",
-    "bump": "yarn version --patch"
+    "bump": "yarn version --patch",
+    "hi": "echo hi"
   },
   "pre-push": [
+    "hi",
     "bump"
   ],
   "devDependencies": {
