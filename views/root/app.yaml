@@ -9,6 +9,12 @@ handlers:
   upload: (.*)
   secure: always
 
+# Service worker file
+- url: /service-worker.js
+  static_files: service-worker.js
+  upload: service-worker.js
+  secure: always
+
 # Static Files
 - url: /static
   secure: always
