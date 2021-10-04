@@ -12,14 +12,8 @@
     "build:js": "node esbuild.js prod",
     "watch:js": "node esbuild.js watch",
     "wiki": "node tools/wiki.js",
-    "validate": "node tools/validate.js",
-    "bump": "yarn version --patch",
-    "hi": "echo hi"
+    "validate": "node tools/validate.js"
   },
-  "pre-push": [
-    "hi",
-    "bump"
-  ],
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
@@ -42,7 +36,6 @@
     "postcss-cli": "^9.0.1",
     "postcss-import": "^14.0.2",
     "postcss-minify": "^1.1.0",
-    "pre-push": "^0.1.1",
     "prettier": "^2.4.1",
     "prompts": "^2.4.1",
     "stylelint": "^13.13.1",
