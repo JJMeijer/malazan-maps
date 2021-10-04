@@ -41,19 +41,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 831,
-                    "y": 659
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 930,
                     "y": 708
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 831,
+                    "y": 659
                 }
             }
         ]
@@ -185,19 +185,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 990,
-                    "y": 864
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1112,
                     "y": 930
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 990,
+                    "y": 864
                 }
             }
         ]
@@ -210,19 +210,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1115,
-                    "y": 587
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1257,
                     "y": 638
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1115,
+                    "y": 587
                 }
             }
         ]
@@ -252,6 +252,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1258,
+                    "y": 1094
+                }
+            },
+            {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
                 "marker": {
@@ -266,14 +274,6 @@
                     "x": 1196,
                     "y": 1252
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1258,
-                    "y": 1094
-                }
             }
         ]
     },
@@ -285,19 +285,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 878,
-                    "y": 552
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 972,
                     "y": 492
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 878,
+                    "y": 552
                 }
             }
         ]
@@ -327,19 +327,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Chain of Dogs - First Half",
-                "image": "/static/img/maps/Chain_of_Dogs_1.webp",
-                "marker": {
-                    "x": 472,
-                    "y": 1174
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1422,
                     "y": 815
+                }
+            },
+            {
+                "name": "Chain of Dogs - First Half",
+                "image": "/static/img/maps/Chain_of_Dogs_1.webp",
+                "marker": {
+                    "x": 472,
+                    "y": 1174
                 }
             }
         ]
@@ -369,12 +369,12 @@
         "type": "continent",
         "maps": [
             {
-                "name": "The Blood Range",
-                "image": "/static/img/maps/The_Blood_Range.webp"
-            },
-            {
                 "name": "Assail",
                 "image": "/static/img/maps/Assail.webp"
+            },
+            {
+                "name": "The Blood Range",
+                "image": "/static/img/maps/The_Blood_Range.webp"
             }
         ]
     },
@@ -386,12 +386,12 @@
         "type": "book",
         "maps": [
             {
-                "name": "The Blood Range",
-                "image": "/static/img/maps/The_Blood_Range.webp"
-            },
-            {
                 "name": "Assail",
                 "image": "/static/img/maps/Assail.webp"
+            },
+            {
+                "name": "The Blood Range",
+                "image": "/static/img/maps/The_Blood_Range.webp"
             }
         ]
     },
@@ -479,19 +479,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 406,
-                    "y": 656
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 440,
                     "y": 699
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 406,
+                    "y": 656
                 }
             }
         ]
@@ -572,19 +572,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1602,
-                    "y": 986
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1609,
                     "y": 856
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1602,
+                    "y": 986
                 }
             }
         ]
@@ -648,19 +648,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1496,
-                    "y": 226
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1524,
                     "y": 193
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1496,
+                    "y": 226
                 }
             }
         ]
@@ -673,19 +673,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1892,
-                    "y": 138
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1830,
                     "y": 63
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1892,
+                    "y": 138
                 }
             }
         ]
@@ -715,19 +715,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 869,
-                    "y": 1104
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 966,
                     "y": 1179
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 869,
+                    "y": 1104
                 }
             }
         ]
@@ -791,19 +791,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 677,
-                    "y": 1578
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 747,
                     "y": 1688
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 677,
+                    "y": 1578
                 }
             }
         ]
@@ -850,19 +850,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 687,
-                    "y": 793
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 764,
                     "y": 851
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 687,
+                    "y": 793
                 }
             }
         ]
@@ -892,19 +892,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1050,
-                    "y": 338
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1120,
                     "y": 303
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1050,
+                    "y": 338
                 }
             }
         ]
@@ -968,14 +968,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 615,
-                    "y": 547
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -990,6 +982,14 @@
                     "x": 948,
                     "y": 873
                 }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 615,
+                    "y": 547
+                }
             }
         ]
     },
@@ -1001,19 +1001,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 723,
-                    "y": 1047
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 786,
                     "y": 1121
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 723,
+                    "y": 1047
                 }
             }
         ]
@@ -1043,14 +1043,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 895,
-                    "y": 1456
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -1065,6 +1057,14 @@
                     "x": 1553,
                     "y": 946
                 }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 895,
+                    "y": 1456
+                }
             }
         ]
     },
@@ -1076,19 +1076,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 540,
-                    "y": 683
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 574,
                     "y": 724
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 540,
+                    "y": 683
                 }
             }
         ]
@@ -1131,19 +1131,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "The Blood Range",
-                "image": "/static/img/maps/The_Blood_Range.webp",
-                "marker": {
-                    "x": 326,
-                    "y": 178
-                }
-            },
-            {
                 "name": "Assail",
                 "image": "/static/img/maps/Assail.webp",
                 "marker": {
                     "x": 674,
                     "y": 691
+                }
+            },
+            {
+                "name": "The Blood Range",
+                "image": "/static/img/maps/The_Blood_Range.webp",
+                "marker": {
+                    "x": 326,
+                    "y": 178
                 }
             }
         ]
@@ -1207,14 +1207,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 683,
-                    "y": 559
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -1228,6 +1220,14 @@
                 "marker": {
                     "x": 1502,
                     "y": 1086
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 683,
+                    "y": 559
                 }
             }
         ]
@@ -1325,19 +1325,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 716,
-                    "y": 656
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 798,
                     "y": 707
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 716,
+                    "y": 656
                 }
             }
         ]
@@ -1520,19 +1520,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Edur Lands",
-                "image": "/static/img/maps/Edur_Lands.webp",
-                "marker": {
-                    "x": 742,
-                    "y": 1239
-                }
-            },
-            {
                 "name": "Empire of Lether",
                 "image": "/static/img/maps/Lether.webp",
                 "marker": {
                     "x": 335,
                     "y": 426
+                }
+            },
+            {
+                "name": "Edur Lands",
+                "image": "/static/img/maps/Edur_Lands.webp",
+                "marker": {
+                    "x": 742,
+                    "y": 1239
                 }
             }
         ]
@@ -1647,19 +1647,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Chain of Dogs - Second Half",
-                "image": "/static/img/maps/Chain_of_Dogs_2.webp",
-                "marker": {
-                    "x": 1799,
-                    "y": 686
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1284,
                     "y": 880
+                }
+            },
+            {
+                "name": "Chain of Dogs - Second Half",
+                "image": "/static/img/maps/Chain_of_Dogs_2.webp",
+                "marker": {
+                    "x": 1799,
+                    "y": 686
                 }
             }
         ]
@@ -1740,19 +1740,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 871,
-                    "y": 552
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 974,
                     "y": 600
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 871,
+                    "y": 552
                 }
             }
         ]
@@ -1790,14 +1790,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 420,
-                    "y": 1802
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -1812,6 +1804,14 @@
                     "x": 126,
                     "y": 317
                 }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 420,
+                    "y": 1802
+                }
             }
         ]
     },
@@ -1823,19 +1823,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1018,
-                    "y": 308
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1092,
                     "y": 281
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1018,
+                    "y": 308
                 }
             }
         ]
@@ -1916,11 +1916,11 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "name": "Genabackis (MoI)",
+                "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
-                    "x": 917,
-                    "y": 1316
+                    "x": 1023,
+                    "y": 1415
                 }
             },
             {
@@ -1932,11 +1932,11 @@
                 }
             },
             {
-                "name": "Genabackis (MoI)",
-                "image": "/static/img/maps/Genabackis_MoI.webp",
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
                 "marker": {
-                    "x": 1023,
-                    "y": 1415
+                    "x": 917,
+                    "y": 1316
                 }
             }
         ]
@@ -1983,6 +1983,14 @@
         "type": "region",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1586,
+                    "y": 795
+                }
+            },
+            {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
                 "marker": {
@@ -1997,14 +2005,6 @@
                     "x": 1568,
                     "y": 908
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1586,
-                    "y": 795
-                }
             }
         ]
     },
@@ -2016,19 +2016,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Chain of Dogs - First Half",
-                "image": "/static/img/maps/Chain_of_Dogs_1.webp",
-                "marker": {
-                    "x": 1224,
-                    "y": 695
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1568,
                     "y": 719
+                }
+            },
+            {
+                "name": "Chain of Dogs - First Half",
+                "image": "/static/img/maps/Chain_of_Dogs_1.webp",
+                "marker": {
+                    "x": 1224,
+                    "y": 695
                 }
             }
         ]
@@ -2041,19 +2041,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 761,
-                    "y": 811
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 843,
                     "y": 869
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 761,
+                    "y": 811
                 }
             }
         ]
@@ -2083,19 +2083,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 750,
-                    "y": 1761
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 965,
                     "y": 551
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 750,
+                    "y": 1761
                 }
             }
         ]
@@ -2159,19 +2159,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 731,
-                    "y": 1415
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 777,
                     "y": 1526
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 731,
+                    "y": 1415
                 }
             }
         ]
@@ -2183,6 +2183,14 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Clatar_Sea",
         "type": "region",
         "maps": [
+            {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 926,
+                    "y": 986
+                }
+            },
             {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
@@ -2198,14 +2206,6 @@
                     "x": 804,
                     "y": 1126
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 926,
-                    "y": 986
-                }
             }
         ]
     },
@@ -2217,19 +2217,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 390,
-                    "y": 1112
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 408,
                     "y": 1185
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 390,
+                    "y": 1112
                 }
             }
         ]
@@ -2276,14 +2276,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 895,
-                    "y": 1456
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -2297,6 +2289,14 @@
                 "marker": {
                     "x": 1553,
                     "y": 946
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 895,
+                    "y": 1456
                 }
             }
         ]
@@ -2377,19 +2377,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1139,
-                    "y": 706
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1281,
                     "y": 770
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1139,
+                    "y": 706
                 }
             }
         ]
@@ -2402,19 +2402,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 879,
-                    "y": 810
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 984,
                     "y": 872
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 879,
+                    "y": 810
                 }
             }
         ]
@@ -2597,19 +2597,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 334,
-                    "y": 2016
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 646,
                     "y": 676
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 334,
+                    "y": 2016
                 }
             }
         ]
@@ -2664,6 +2664,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Genabackis (MoI)",
+                "image": "/static/img/maps/Genabackis_MoI.webp",
+                "marker": {
+                    "x": 645,
+                    "y": 1398
+                }
+            },
+            {
                 "name": "Darujhistan",
                 "image": "/static/img/maps/Darujhistan.webp",
                 "marker": {
@@ -2677,14 +2685,6 @@
                 "marker": {
                     "x": 590,
                     "y": 1307
-                }
-            },
-            {
-                "name": "Genabackis (MoI)",
-                "image": "/static/img/maps/Genabackis_MoI.webp",
-                "marker": {
-                    "x": 645,
-                    "y": 1398
                 }
             }
         ]
@@ -2922,19 +2922,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 447,
-                    "y": 1229
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 482,
                     "y": 1316
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 447,
+                    "y": 1229
                 }
             }
         ]
@@ -2947,19 +2947,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1644,
-                    "y": 1164
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1644,
                     "y": 1011
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1644,
+                    "y": 1164
                 }
             }
         ]
@@ -2989,6 +2989,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1038,
+                    "y": 924
+                }
+            },
+            {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
                 "marker": {
@@ -3003,14 +3011,6 @@
                     "x": 944,
                     "y": 1052
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1038,
-                    "y": 924
-                }
             }
         ]
     },
@@ -3021,6 +3021,14 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Dojal_Hading_Sea",
         "type": "region",
         "maps": [
+            {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1452,
+                    "y": 947
+                }
+            },
             {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
@@ -3035,14 +3043,6 @@
                 "marker": {
                     "x": 1364,
                     "y": 1018
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1452,
-                    "y": 947
                 }
             }
         ]
@@ -3106,19 +3106,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1756,
-                    "y": 750
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1742,
                     "y": 649
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1756,
+                    "y": 750
                 }
             }
         ]
@@ -3241,19 +3241,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 415,
-                    "y": 320
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 397,
                     "y": 338
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 415,
+                    "y": 320
                 }
             }
         ]
@@ -3279,19 +3279,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 540,
-                    "y": 1412
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 572,
                     "y": 1518
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 540,
+                    "y": 1412
                 }
             }
         ]
@@ -3406,19 +3406,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1444,
-                    "y": 622
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1471,
                     "y": 537
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1444,
+                    "y": 622
                 }
             }
         ]
@@ -3431,19 +3431,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1384,
-                    "y": 624
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1420,
                     "y": 552
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1384,
+                    "y": 624
                 }
             }
         ]
@@ -3541,19 +3541,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1064,
-                    "y": 630
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1137,
                     "y": 553
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1064,
+                    "y": 630
                 }
             }
         ]
@@ -3617,19 +3617,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 845,
-                    "y": 1412
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 930,
                     "y": 1521
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 845,
+                    "y": 1412
                 }
             }
         ]
@@ -3676,19 +3676,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1094,
-                    "y": 397
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1232,
                     "y": 435
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1094,
+                    "y": 397
                 }
             }
         ]
@@ -3777,19 +3777,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 1359,
-                    "y": 545
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 1536,
                     "y": 266
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 1359,
+                    "y": 545
                 }
             }
         ]
@@ -3802,19 +3802,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1122,
-                    "y": 959
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1259,
                     "y": 1037
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1122,
+                    "y": 959
                 }
             }
         ]
@@ -3878,19 +3878,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 503,
-                    "y": 1300
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 870,
                     "y": 229
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 503,
+                    "y": 1300
                 }
             }
         ]
@@ -4140,19 +4140,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1026,
-                    "y": 461
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1149,
                     "y": 495
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1026,
+                    "y": 461
                 }
             }
         ]
@@ -4182,19 +4182,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 659,
-                    "y": 1275
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 716,
                     "y": 1371
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 659,
+                    "y": 1275
                 }
             }
         ]
@@ -4241,19 +4241,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1960,
-                    "y": 308
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1917,
                     "y": 272
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1960,
+                    "y": 308
                 }
             }
         ]
@@ -4300,19 +4300,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 932,
-                    "y": 405
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1050,
                     "y": 441
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 932,
+                    "y": 405
                 }
             }
         ]
@@ -4342,12 +4342,12 @@
         "type": "book",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp"
-            },
-            {
                 "name": "Darujhistan",
                 "image": "/static/img/maps/Darujhistan.webp"
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp"
             }
         ]
     },
@@ -4410,6 +4410,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1134,
+                    "y": 944
+                }
+            },
+            {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
                 "marker": {
@@ -4423,14 +4431,6 @@
                 "marker": {
                     "x": 1056,
                     "y": 1074
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1134,
-                    "y": 944
                 }
             }
         ]
@@ -4477,8 +4477,8 @@
         "type": "continent",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp"
+                "name": "Genabackis (MoI)",
+                "image": "/static/img/maps/Genabackis_MoI.webp"
             },
             {
                 "name": "Northwest Genabackis",
@@ -4493,16 +4493,16 @@
                 "image": "/static/img/maps/Capustan.webp"
             },
             {
-                "name": "Genabackis (MoI)",
-                "image": "/static/img/maps/Genabackis_MoI.webp"
-            },
-            {
                 "name": "Black Coral",
                 "image": "/static/img/maps/Black_Coral.webp"
             },
             {
                 "name": "South Genabackis",
                 "image": "/static/img/maps/South_Genabackis.webp"
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp"
             }
         ]
     },
@@ -4513,14 +4513,6 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Genabaris",
         "type": "city",
         "maps": [
-            {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 499,
-                    "y": 495
-                }
-            },
             {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
@@ -4535,6 +4527,14 @@
                 "marker": {
                     "x": 381,
                     "y": 672
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 499,
+                    "y": 495
                 }
             }
         ]
@@ -4564,19 +4564,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 942,
-                    "y": 526
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1059,
                     "y": 570
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 942,
+                    "y": 526
                 }
             }
         ]
@@ -4657,19 +4657,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 678,
-                    "y": 1500
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 770,
                     "y": 1613
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 678,
+                    "y": 1500
                 }
             }
         ]
@@ -4750,19 +4750,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 503,
-                    "y": 1300
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 870,
                     "y": 229
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 503,
+                    "y": 1300
                 }
             }
         ]
@@ -4792,19 +4792,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 500,
-                    "y": 1281
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 540,
                     "y": 1371
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 500,
+                    "y": 1281
                 }
             }
         ]
@@ -4817,19 +4817,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 432,
-                    "y": 1008
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 458,
                     "y": 1073
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 432,
+                    "y": 1008
                 }
             }
         ]
@@ -4893,14 +4893,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 609,
-                    "y": 601
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -4914,6 +4906,14 @@
                 "marker": {
                     "x": 860,
                     "y": 1212
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 609,
+                    "y": 601
                 }
             }
         ]
@@ -4977,14 +4977,6 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 544,
-                    "y": 541
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -4998,6 +4990,14 @@
                 "marker": {
                     "x": 551,
                     "y": 830
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 544,
+                    "y": 541
                 }
             }
         ]
@@ -5103,6 +5103,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1431,
+                    "y": 723
+                }
+            },
+            {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
                 "marker": {
@@ -5116,14 +5124,6 @@
                 "marker": {
                     "x": 1406,
                     "y": 824
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1431,
-                    "y": 723
                 }
             }
         ]
@@ -5221,19 +5221,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1139,
-                    "y": 768
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1278,
                     "y": 816
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1139,
+                    "y": 768
                 }
             }
         ]
@@ -5263,19 +5263,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 962,
-                    "y": 628
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1048,
                     "y": 557
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 962,
+                    "y": 628
                 }
             }
         ]
@@ -5288,19 +5288,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 856,
-                    "y": 1616
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 933,
                     "y": 1736
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 856,
+                    "y": 1616
                 }
             }
         ]
@@ -5312,14 +5312,6 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Heath_(river)",
         "type": "region",
         "maps": [
-            {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 827,
-                    "y": 1755
-                }
-            },
             {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
@@ -5334,6 +5326,14 @@
                 "marker": {
                     "x": 606,
                     "y": 421
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 827,
+                    "y": 1755
                 }
             }
         ]
@@ -5397,6 +5397,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1674,
+                    "y": 680
+                }
+            },
+            {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
                 "marker": {
@@ -5410,14 +5418,6 @@
                 "marker": {
                     "x": 1676,
                     "y": 784
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1674,
-                    "y": 680
                 }
             }
         ]
@@ -5447,19 +5447,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1044,
-                    "y": 384
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1181,
                     "y": 417
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1044,
+                    "y": 384
                 }
             }
         ]
@@ -5472,19 +5472,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1185,
-                    "y": 379
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1335,
                     "y": 413
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1185,
+                    "y": 379
                 }
             }
         ]
@@ -5531,12 +5531,12 @@
         "type": "book",
         "maps": [
             {
-                "name": "Raraku",
-                "image": "/static/img/maps/Raraku.webp"
-            },
-            {
                 "name": "Northwest Genabackis",
                 "image": "/static/img/maps/Northwest_Genabackis.webp"
+            },
+            {
+                "name": "Raraku",
+                "image": "/static/img/maps/Raraku.webp"
             },
             {
                 "name": "Malazan Empire",
@@ -5552,19 +5552,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 787,
-                    "y": 280
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 888,
                     "y": 301
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 787,
+                    "y": 280
                 }
             }
         ]
@@ -5947,19 +5947,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1606,
-                    "y": 1032
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1609,
                     "y": 900
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1606,
+                    "y": 1032
                 }
             }
         ]
@@ -6048,6 +6048,14 @@
         "type": "region",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1066,
+                    "y": 804
+                }
+            },
+            {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
                 "marker": {
@@ -6061,14 +6069,6 @@
                 "marker": {
                     "x": 1008,
                     "y": 904
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1066,
-                    "y": 804
                 }
             }
         ]
@@ -6149,19 +6149,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 964,
-                    "y": 362
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1043,
                     "y": 325
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 964,
+                    "y": 362
                 }
             }
         ]
@@ -6191,19 +6191,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1320,
-                    "y": 574
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1357,
                     "y": 511
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1320,
+                    "y": 574
                 }
             }
         ]
@@ -6216,19 +6216,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1752,
-                    "y": 252
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1737,
                     "y": 236
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1752,
+                    "y": 252
                 }
             }
         ]
@@ -6275,6 +6275,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1515,
+                    "y": 681
+                }
+            },
+            {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
                 "marker": {
@@ -6288,14 +6296,6 @@
                 "marker": {
                     "x": 1494,
                     "y": 778
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1515,
-                    "y": 681
                 }
             }
         ]
@@ -6359,19 +6359,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1170,
-                    "y": 412
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1231,
                     "y": 368
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1170,
+                    "y": 412
                 }
             }
         ]
@@ -6401,19 +6401,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 1422,
-                    "y": 1868
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 1524,
                     "y": 614
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 1422,
+                    "y": 1868
                 }
             }
         ]
@@ -6502,19 +6502,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 970,
-                    "y": 746
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1052,
                     "y": 655
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 970,
+                    "y": 746
                 }
             }
         ]
@@ -6544,19 +6544,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 797,
-                    "y": 1603
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 876,
                     "y": 1718
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 797,
+                    "y": 1603
                 }
             }
         ]
@@ -6620,19 +6620,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 724,
-                    "y": 574
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 834,
                     "y": 483
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 724,
+                    "y": 574
                 }
             }
         ]
@@ -6764,19 +6764,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 982,
-                    "y": 564
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1061,
                     "y": 510
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 982,
+                    "y": 564
                 }
             }
         ]
@@ -6840,19 +6840,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 440,
-                    "y": 1310
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 468,
                     "y": 1401
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 440,
+                    "y": 1310
                 }
             }
         ]
@@ -6933,11 +6933,11 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "name": "Genabackis (MoI)",
+                "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
-                    "x": 547,
-                    "y": 1234
+                    "x": 594,
+                    "y": 1331
                 }
             },
             {
@@ -6949,11 +6949,11 @@
                 }
             },
             {
-                "name": "Genabackis (MoI)",
-                "image": "/static/img/maps/Genabackis_MoI.webp",
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
                 "marker": {
-                    "x": 594,
-                    "y": 1331
+                    "x": 547,
+                    "y": 1234
                 }
             }
         ]
@@ -6966,19 +6966,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 719,
-                    "y": 562
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 800,
                     "y": 603
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 719,
+                    "y": 562
                 }
             }
         ]
@@ -7059,19 +7059,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1226,
-                    "y": 682
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1281,
                     "y": 606
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1226,
+                    "y": 682
                 }
             }
         ]
@@ -7101,19 +7101,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 778,
-                    "y": 847
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 866,
                     "y": 912
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 778,
+                    "y": 847
                 }
             }
         ]
@@ -7126,19 +7126,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 818,
-                    "y": 897
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 902,
                     "y": 963
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 818,
+                    "y": 897
                 }
             }
         ]
@@ -7151,19 +7151,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 761,
-                    "y": 950
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 837,
                     "y": 1013
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 761,
+                    "y": 950
                 }
             }
         ]
@@ -7244,19 +7244,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 916,
-                    "y": 1342
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1017,
                     "y": 1442
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 916,
+                    "y": 1342
                 }
             }
         ]
@@ -7273,12 +7273,12 @@
                 "image": "/static/img/maps/Lether.webp"
             },
             {
-                "name": "Letheras",
-                "image": "/static/img/maps/Letheras.webp"
-            },
-            {
                 "name": "Edur Lands",
                 "image": "/static/img/maps/Edur_Lands.webp"
+            },
+            {
+                "name": "Letheras",
+                "image": "/static/img/maps/Letheras.webp"
             },
             {
                 "name": "Kolanse",
@@ -7311,19 +7311,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Letheras",
-                "image": "/static/img/maps/Letheras.webp",
-                "marker": {
-                    "x": 876,
-                    "y": 640
-                }
-            },
-            {
                 "name": "Empire of Lether",
                 "image": "/static/img/maps/Lether.webp",
                 "marker": {
                     "x": 484,
                     "y": 425
+                }
+            },
+            {
+                "name": "Letheras",
+                "image": "/static/img/maps/Letheras.webp",
+                "marker": {
+                    "x": 876,
+                    "y": 640
                 }
             }
         ]
@@ -7336,19 +7336,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 580,
-                    "y": 1814
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 823,
                     "y": 611
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 580,
+                    "y": 1814
                 }
             }
         ]
@@ -7378,19 +7378,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1220,
-                    "y": 628
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1273,
                     "y": 553
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1220,
+                    "y": 628
                 }
             }
         ]
@@ -7437,19 +7437,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 854,
-                    "y": 674
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 952,
                     "y": 594
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 854,
+                    "y": 674
                 }
             }
         ]
@@ -7462,19 +7462,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 996,
-                    "y": 458
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1085,
                     "y": 385
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 996,
+                    "y": 458
                 }
             }
         ]
@@ -7504,22 +7504,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 1280,
-                    "y": 2166
-                }
-            },
-            {
-                "name": "Malaz City",
-                "image": "/static/img/maps/Malaz_City.webp",
-                "marker": {
-                    "x": 779,
-                    "y": 754
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
@@ -7534,6 +7518,22 @@
                     "x": 1627,
                     "y": 470
                 }
+            },
+            {
+                "name": "Malaz City",
+                "image": "/static/img/maps/Malaz_City.webp",
+                "marker": {
+                    "x": 779,
+                    "y": 754
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 1280,
+                    "y": 2166
+                }
             }
         ]
     },
@@ -7544,14 +7544,6 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Malaz_Island",
         "type": "region",
         "maps": [
-            {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 1286,
-                    "y": 2202
-                }
-            },
             {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
@@ -7566,6 +7558,14 @@
                 "marker": {
                     "x": 1218,
                     "y": 690
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 1286,
+                    "y": 2202
                 }
             }
         ]
@@ -7629,14 +7629,6 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 559,
-                    "y": 511
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -7651,6 +7643,14 @@
                     "x": 676,
                     "y": 678
                 }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 559,
+                    "y": 511
+                }
             }
         ]
     },
@@ -7661,14 +7661,6 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Malyntaeas",
         "type": "city",
         "maps": [
-            {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 547,
-                    "y": 494
-                }
-            },
             {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
@@ -7683,6 +7675,14 @@
                 "marker": {
                     "x": 533,
                     "y": 674
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 547,
+                    "y": 494
                 }
             }
         ]
@@ -7712,19 +7712,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "The Blood Range",
-                "image": "/static/img/maps/The_Blood_Range.webp",
-                "marker": {
-                    "x": 285,
-                    "y": 956
-                }
-            },
-            {
                 "name": "Assail",
                 "image": "/static/img/maps/Assail.webp",
                 "marker": {
                     "x": 822,
                     "y": 694
+                }
+            },
+            {
+                "name": "The Blood Range",
+                "image": "/static/img/maps/The_Blood_Range.webp",
+                "marker": {
+                    "x": 285,
+                    "y": 956
                 }
             }
         ]
@@ -7805,19 +7805,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 905,
-                    "y": 1405
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1007,
                     "y": 1511
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 905,
+                    "y": 1405
                 }
             }
         ]
@@ -7830,19 +7830,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 884,
-                    "y": 1388
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 972,
                     "y": 1494
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 884,
+                    "y": 1388
                 }
             }
         ]
@@ -7906,19 +7906,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 226,
-                    "y": 1157
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 279,
                     "y": 1233
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 226,
+                    "y": 1157
                 }
             }
         ]
@@ -7930,14 +7930,6 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Menningale_Ocean",
         "type": "region",
         "maps": [
-            {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 77,
-                    "y": 995
-                }
-            },
             {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
@@ -7952,6 +7944,14 @@
                 "marker": {
                     "x": 167,
                     "y": 617
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 77,
+                    "y": 995
                 }
             }
         ]
@@ -7998,19 +7998,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1152,
-                    "y": 802
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1210,
                     "y": 702
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1152,
+                    "y": 802
                 }
             }
         ]
@@ -8040,12 +8040,12 @@
         "type": "book",
         "maps": [
             {
-                "name": "Letheras",
-                "image": "/static/img/maps/Letheras.webp"
-            },
-            {
                 "name": "Edur Lands",
                 "image": "/static/img/maps/Edur_Lands.webp"
+            },
+            {
+                "name": "Letheras",
+                "image": "/static/img/maps/Letheras.webp"
             }
         ]
     },
@@ -8074,19 +8074,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 380,
-                    "y": 918
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 392,
                     "y": 981
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 380,
+                    "y": 918
                 }
             }
         ]
@@ -8158,19 +8158,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 332,
-                    "y": 1056
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 345,
                     "y": 1122
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 332,
+                    "y": 1056
                 }
             }
         ]
@@ -8183,19 +8183,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 413,
-                    "y": 1197
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 416,
                     "y": 1259
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 413,
+                    "y": 1197
                 }
             }
         ]
@@ -8259,14 +8259,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 537,
-                    "y": 605
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -8280,6 +8272,14 @@
                 "marker": {
                     "x": 570,
                     "y": 1269
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 537,
+                    "y": 605
                 }
             }
         ]
@@ -8411,6 +8411,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 954,
+                    "y": 842
+                }
+            },
+            {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
                 "marker": {
@@ -8424,14 +8432,6 @@
                 "marker": {
                     "x": 850,
                     "y": 958
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 954,
-                    "y": 842
                 }
             }
         ]
@@ -8461,19 +8461,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 941,
-                    "y": 2022
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 1117,
                     "y": 753
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 941,
+                    "y": 2022
                 }
             }
         ]
@@ -8503,19 +8503,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 941,
-                    "y": 2022
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 1117,
                     "y": 753
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 941,
+                    "y": 2022
                 }
             }
         ]
@@ -8562,19 +8562,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 429,
-                    "y": 605
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 468,
                     "y": 645
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 429,
+                    "y": 605
                 }
             }
         ]
@@ -8621,19 +8621,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1094,
-                    "y": 576
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1172,
                     "y": 509
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1094,
+                    "y": 576
                 }
             }
         ]
@@ -8714,12 +8714,12 @@
         "type": "book",
         "maps": [
             {
-                "name": "Malaz City",
-                "image": "/static/img/maps/Malaz_City.webp"
-            },
-            {
                 "name": "Malaz Isle",
                 "image": "/static/img/maps/Malaz_Isle.webp"
+            },
+            {
+                "name": "Malaz City",
+                "image": "/static/img/maps/Malaz_City.webp"
             }
         ]
     },
@@ -8799,19 +8799,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1154,
-                    "y": 536
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1214,
                     "y": 482
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1154,
+                    "y": 536
                 }
             }
         ]
@@ -8926,19 +8926,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 758,
-                    "y": 434
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 853,
                     "y": 467
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 758,
+                    "y": 434
                 }
             }
         ]
@@ -9002,19 +9002,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 335,
-                    "y": 872
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 357,
                     "y": 933
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 335,
+                    "y": 872
                 }
             }
         ]
@@ -9128,19 +9128,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 833,
-                    "y": 776
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 921,
                     "y": 836
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 833,
+                    "y": 776
                 }
             }
         ]
@@ -9170,19 +9170,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1484,
-                    "y": 368
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1506,
                     "y": 329
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1484,
+                    "y": 368
                 }
             }
         ]
@@ -9212,19 +9212,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1372,
-                    "y": 452
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1410,
                     "y": 396
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1372,
+                    "y": 452
                 }
             }
         ]
@@ -9237,19 +9237,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 550,
-                    "y": 792
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 642,
                     "y": 740
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 550,
+                    "y": 792
                 }
             }
         ]
@@ -9262,19 +9262,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 556,
-                    "y": 700
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 674,
                     "y": 642
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 556,
+                    "y": 700
                 }
             }
         ]
@@ -9287,19 +9287,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1128,
-                    "y": 884
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1192,
                     "y": 774
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1128,
+                    "y": 884
                 }
             }
         ]
@@ -9312,19 +9312,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 759,
-                    "y": 700
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 846,
                     "y": 752
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 759,
+                    "y": 700
                 }
             }
         ]
@@ -9337,19 +9337,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 995,
-                    "y": 660
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1115,
                     "y": 717
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 995,
+                    "y": 660
                 }
             }
         ]
@@ -9361,14 +9361,6 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Oraz",
         "type": "city",
         "maps": [
-            {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 508,
-                    "y": 609
-                }
-            },
             {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
@@ -9383,6 +9375,14 @@
                 "marker": {
                     "x": 477,
                     "y": 1292
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 508,
+                    "y": 609
                 }
             }
         ]
@@ -9446,19 +9446,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 816,
-                    "y": 591
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 906,
                     "y": 638
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 816,
+                    "y": 591
                 }
             }
         ]
@@ -9471,19 +9471,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1864,
-                    "y": 580
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1829,
                     "y": 489
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1864,
+                    "y": 580
                 }
             }
         ]
@@ -9496,19 +9496,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1642,
-                    "y": 522
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1582,
                     "y": 444
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1642,
+                    "y": 522
                 }
             }
         ]
@@ -9572,19 +9572,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 869,
-                    "y": 1609
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 959,
                     "y": 1728
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 869,
+                    "y": 1609
                 }
             }
         ]
@@ -9596,14 +9596,6 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Owndos",
         "type": "city",
         "maps": [
-            {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 752,
-                    "y": 568
-                }
-            },
             {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
@@ -9618,6 +9610,14 @@
                 "marker": {
                     "x": 1685,
                     "y": 1169
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 752,
+                    "y": 568
                 }
             }
         ]
@@ -9647,14 +9647,6 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 719,
-                    "y": 562
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -9668,6 +9660,14 @@
                 "marker": {
                     "x": 1473,
                     "y": 1182
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 719,
+                    "y": 562
                 }
             }
         ]
@@ -9714,19 +9714,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 918,
-                    "y": 1701
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1011,
                     "y": 1830
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 918,
+                    "y": 1701
                 }
             }
         ]
@@ -9739,19 +9739,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 527,
-                    "y": 1143
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 573,
                     "y": 1220
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 527,
+                    "y": 1143
                 }
             }
         ]
@@ -9764,19 +9764,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1418,
-                    "y": 692
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1447,
                     "y": 610
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1418,
+                    "y": 692
                 }
             }
         ]
@@ -9823,19 +9823,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 682,
-                    "y": 848
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 756,
                     "y": 909
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 682,
+                    "y": 848
                 }
             }
         ]
@@ -9967,19 +9967,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 833,
-                    "y": 1565
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 912,
                     "y": 1694
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 833,
+                    "y": 1565
                 }
             }
         ]
@@ -10026,14 +10026,6 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 524,
-                    "y": 1682
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -10047,6 +10039,14 @@
                 "marker": {
                     "x": 476,
                     "y": 597
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 524,
+                    "y": 1682
                 }
             }
         ]
@@ -10076,14 +10076,6 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 485,
-                    "y": 576
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -10097,6 +10089,14 @@
                 "marker": {
                     "x": 347,
                     "y": 1203
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 485,
+                    "y": 576
                 }
             }
         ]
@@ -10160,19 +10160,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1278,
-                    "y": 592
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1322,
                     "y": 528
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1278,
+                    "y": 592
                 }
             }
         ]
@@ -10185,19 +10185,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 220,
-                    "y": 1540
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 485,
                     "y": 382
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 220,
+                    "y": 1540
                 }
             }
         ]
@@ -10265,16 +10265,16 @@
                 "image": "/static/img/maps/Quon_Tali.webp"
             },
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp"
+                "name": "Malaz Isle",
+                "image": "/static/img/maps/Malaz_Isle.webp"
             },
             {
                 "name": "Malaz City",
                 "image": "/static/img/maps/Malaz_City.webp"
             },
             {
-                "name": "Malaz Isle",
-                "image": "/static/img/maps/Malaz_Isle.webp"
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp"
             }
         ]
     },
@@ -10286,19 +10286,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 206,
-                    "y": 1692
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 483,
                     "y": 461
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 206,
+                    "y": 1692
                 }
             }
         ]
@@ -10345,19 +10345,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 876,
-                    "y": 388
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 968,
                     "y": 352
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 876,
+                    "y": 388
                 }
             }
         ]
@@ -10369,6 +10369,14 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Raraku",
         "type": "region",
         "maps": [
+            {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1361,
+                    "y": 614
+                }
+            },
             {
                 "name": "Seven Cities (DG)",
                 "image": "/static/img/maps/Seven_Cities_DG.webp",
@@ -10383,14 +10391,6 @@
                 "marker": {
                     "x": 1036,
                     "y": 768
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1361,
-                    "y": 614
                 }
             }
         ]
@@ -10649,19 +10649,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 570,
-                    "y": 963
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 632,
                     "y": 1028
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 570,
+                    "y": 963
                 }
             }
         ]
@@ -10674,19 +10674,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 606,
-                    "y": 990
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 663,
                     "y": 1064
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 606,
+                    "y": 990
                 }
             }
         ]
@@ -10852,14 +10852,6 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1092,
-                    "y": 1466
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
@@ -10874,6 +10866,14 @@
                     "x": 1171,
                     "y": 306
                 }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1092,
+                    "y": 1466
+                }
             }
         ]
     },
@@ -10885,19 +10885,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1690,
-                    "y": 378
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1683,
                     "y": 337
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1690,
+                    "y": 378
                 }
             }
         ]
@@ -10944,6 +10944,14 @@
         "type": "region",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1792,
+                    "y": 784
+                }
+            },
+            {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
                 "marker": {
@@ -10958,14 +10966,6 @@
                     "x": 1764,
                     "y": 902
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1792,
-                    "y": 784
-                }
             }
         ]
     },
@@ -10977,19 +10977,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "The Blood Range",
-                "image": "/static/img/maps/The_Blood_Range.webp",
-                "marker": {
-                    "x": 326,
-                    "y": 178
-                }
-            },
-            {
                 "name": "Assail",
                 "image": "/static/img/maps/Assail.webp",
                 "marker": {
                     "x": 674,
                     "y": 691
+                }
+            },
+            {
+                "name": "The Blood Range",
+                "image": "/static/img/maps/The_Blood_Range.webp",
+                "marker": {
+                    "x": 326,
+                    "y": 178
                 }
             }
         ]
@@ -11002,19 +11002,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "The Blood Range",
-                "image": "/static/img/maps/The_Blood_Range.webp",
-                "marker": {
-                    "x": 326,
-                    "y": 178
-                }
-            },
-            {
                 "name": "Assail",
                 "image": "/static/img/maps/Assail.webp",
                 "marker": {
                     "x": 674,
                     "y": 691
+                }
+            },
+            {
+                "name": "The Blood Range",
+                "image": "/static/img/maps/The_Blood_Range.webp",
+                "marker": {
+                    "x": 326,
+                    "y": 178
                 }
             }
         ]
@@ -11027,19 +11027,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 791,
-                    "y": 1268
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 876,
                     "y": 1365
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 791,
+                    "y": 1268
                 }
             }
         ]
@@ -11162,19 +11162,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 737,
-                    "y": 1581
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 810,
                     "y": 1692
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 737,
+                    "y": 1581
                 }
             }
         ]
@@ -11186,6 +11186,14 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Sarpachiya",
         "type": "city",
         "maps": [
+            {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 950,
+                    "y": 772
+                }
+            },
             {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
@@ -11201,14 +11209,6 @@
                     "x": 852,
                     "y": 874
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 950,
-                    "y": 772
-                }
             }
         ]
     },
@@ -11219,6 +11219,14 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Sarsa",
         "type": "city",
         "maps": [
+            {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1138,
+                    "y": 1052
+                }
+            },
             {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
@@ -11233,14 +11241,6 @@
                 "marker": {
                     "x": 1060,
                     "y": 1204
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1138,
-                    "y": 1052
                 }
             }
         ]
@@ -11304,19 +11304,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1908,
-                    "y": 366
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1887,
                     "y": 344
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1908,
+                    "y": 366
                 }
             }
         ]
@@ -11354,19 +11354,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1268,
-                    "y": 176
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1277,
                     "y": 100
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1268,
+                    "y": 176
                 }
             }
         ]
@@ -11396,19 +11396,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1850,
-                    "y": 1080
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1831,
                     "y": 1044
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1850,
+                    "y": 1080
                 }
             }
         ]
@@ -11489,19 +11489,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 891,
-                    "y": 947
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1007,
                     "y": 1022
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 891,
+                    "y": 947
                 }
             }
         ]
@@ -11514,19 +11514,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 170,
-                    "y": 534
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 358,
                     "y": 480
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 170,
+                    "y": 534
                 }
             }
         ]
@@ -11607,19 +11607,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 882,
-                    "y": 1362
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 978,
                     "y": 1463
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 882,
+                    "y": 1362
                 }
             }
         ]
@@ -11661,19 +11661,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1156,
-                    "y": 813
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1302,
                     "y": 876
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1156,
+                    "y": 813
                 }
             }
         ]
@@ -11720,19 +11720,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Chain of Dogs - First Half",
-                "image": "/static/img/maps/Chain_of_Dogs_1.webp",
-                "marker": {
-                    "x": 1697,
-                    "y": 624
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1637,
                     "y": 707
+                }
+            },
+            {
+                "name": "Chain of Dogs - First Half",
+                "image": "/static/img/maps/Chain_of_Dogs_1.webp",
+                "marker": {
+                    "x": 1697,
+                    "y": 624
                 }
             }
         ]
@@ -11745,19 +11745,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1600,
-                    "y": 766
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1602,
                     "y": 671
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1600,
+                    "y": 766
                 }
             }
         ]
@@ -11821,19 +11821,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1548,
-                    "y": 412
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1557,
                     "y": 366
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1548,
+                    "y": 412
                 }
             }
         ]
@@ -11863,19 +11863,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 905,
-                    "y": 626
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1011,
                     "y": 677
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 905,
+                    "y": 626
                 }
             }
         ]
@@ -11939,19 +11939,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 786,
-                    "y": 746
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 896,
                     "y": 658
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 786,
+                    "y": 746
                 }
             }
         ]
@@ -12049,19 +12049,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 1014,
-                    "y": 707
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1158,
                     "y": 741
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 1014,
+                    "y": 707
                 }
             }
         ]
@@ -12074,19 +12074,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 854,
-                    "y": 1523
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 938,
                     "y": 1637
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 854,
+                    "y": 1523
                 }
             }
         ]
@@ -12388,19 +12388,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 614,
-                    "y": 1179
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 678,
                     "y": 1239
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 614,
+                    "y": 1179
                 }
             }
         ]
@@ -12413,19 +12413,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1642,
-                    "y": 274
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1636,
                     "y": 250
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1642,
+                    "y": 274
                 }
             }
         ]
@@ -12455,19 +12455,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 967,
-                    "y": 976
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 1082,
                     "y": 1052
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 967,
+                    "y": 976
                 }
             }
         ]
@@ -12497,19 +12497,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 882,
-                    "y": 465
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 977,
                     "y": 495
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 882,
+                    "y": 465
                 }
             }
         ]
@@ -12539,6 +12539,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1260,
+                    "y": 974
+                }
+            },
+            {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp",
                 "marker": {
@@ -12553,14 +12561,6 @@
                     "x": 1210,
                     "y": 1106
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1260,
-                    "y": 974
-                }
             }
         ]
     },
@@ -12572,19 +12572,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 860,
-                    "y": 456
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 954,
                     "y": 413
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 860,
+                    "y": 456
                 }
             }
         ]
@@ -12665,6 +12665,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1460,
+                    "y": 827
+                }
+            },
+            {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
                 "marker": {
@@ -12678,14 +12686,6 @@
                 "marker": {
                     "x": 1426,
                     "y": 934
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1460,
-                    "y": 827
                 }
             }
         ]
@@ -12749,19 +12749,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1008,
-                    "y": 680
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1042,
                     "y": 587
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1008,
+                    "y": 680
                 }
             }
         ]
@@ -12808,19 +12808,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 750,
-                    "y": 1182
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 806,
                     "y": 1269
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 750,
+                    "y": 1182
                 }
             }
         ]
@@ -12926,19 +12926,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 516,
-                    "y": 816
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 560,
                     "y": 878
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 516,
+                    "y": 816
                 }
             }
         ]
@@ -12951,19 +12951,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 332,
-                    "y": 1851
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 323,
                     "y": 1983
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 332,
+                    "y": 1851
                 }
             }
         ]
@@ -13112,19 +13112,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 560,
-                    "y": 321
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 623,
                     "y": 341
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 560,
+                    "y": 321
                 }
             }
         ]
@@ -13349,6 +13349,14 @@
         "type": "city",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1350,
+                    "y": 794
+                }
+            },
+            {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
                 "marker": {
@@ -13363,14 +13371,6 @@
                     "x": 1308,
                     "y": 906
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1350,
-                    "y": 794
-                }
             }
         ]
     },
@@ -13381,6 +13381,14 @@
         "wikiLink": "https://malazan.fandom.com/wiki/Ubaryd_Odhan",
         "type": "region",
         "maps": [
+            {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1338,
+                    "y": 730
+                }
+            },
             {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
@@ -13396,14 +13404,6 @@
                     "x": 1284,
                     "y": 840
                 }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1338,
-                    "y": 730
-                }
             }
         ]
     },
@@ -13415,19 +13415,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 894,
-                    "y": 808
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 990,
                     "y": 720
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 894,
+                    "y": 808
                 }
             }
         ]
@@ -13440,19 +13440,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 1000,
-                    "y": 828
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1091,
                     "y": 721
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 1000,
+                    "y": 828
                 }
             }
         ]
@@ -13482,19 +13482,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Malazan Empire",
-                "image": "/static/img/maps/Malazan_Empire.webp",
-                "marker": {
-                    "x": 1210,
-                    "y": 1685
-                }
-            },
-            {
                 "name": "Quon Tali",
                 "image": "/static/img/maps/Quon_Tali.webp",
                 "marker": {
                     "x": 1339,
                     "y": 443
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 1210,
+                    "y": 1685
                 }
             }
         ]
@@ -13626,6 +13626,14 @@
         "type": "region",
         "maps": [
             {
+                "name": "Seven Cities (BH)",
+                "image": "/static/img/maps/Seven_Cities_BH.webp",
+                "marker": {
+                    "x": 1240,
+                    "y": 798
+                }
+            },
+            {
                 "name": "Chain of Dogs - First Half",
                 "image": "/static/img/maps/Chain_of_Dogs_1.webp",
                 "marker": {
@@ -13639,14 +13647,6 @@
                 "marker": {
                     "x": 1178,
                     "y": 904
-                }
-            },
-            {
-                "name": "Seven Cities (BH)",
-                "image": "/static/img/maps/Seven_Cities_BH.webp",
-                "marker": {
-                    "x": 1240,
-                    "y": 798
                 }
             }
         ]
@@ -13693,19 +13693,19 @@
         "type": "region",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 858,
-                    "y": 1325
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 948,
                     "y": 1434
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 858,
+                    "y": 1325
                 }
             }
         ]
@@ -14074,19 +14074,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 908,
-                    "y": 708
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 1000,
                     "y": 624
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 908,
+                    "y": 708
                 }
             }
         ]
@@ -14099,19 +14099,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Seven Cities (DG)",
-                "image": "/static/img/maps/Seven_Cities_DG.webp",
-                "marker": {
-                    "x": 706,
-                    "y": 722
-                }
-            },
-            {
                 "name": "Seven Cities (BH)",
                 "image": "/static/img/maps/Seven_Cities_BH.webp",
                 "marker": {
                     "x": 834,
                     "y": 646
+                }
+            },
+            {
+                "name": "Seven Cities (DG)",
+                "image": "/static/img/maps/Seven_Cities_DG.webp",
+                "marker": {
+                    "x": 706,
+                    "y": 722
                 }
             }
         ]
@@ -14158,19 +14158,19 @@
         "type": "city",
         "maps": [
             {
-                "name": "Genabackis (GotM)",
-                "image": "/static/img/maps/Genabackis_GotM.webp",
-                "marker": {
-                    "x": 737,
-                    "y": 708
-                }
-            },
-            {
                 "name": "Genabackis (MoI)",
                 "image": "/static/img/maps/Genabackis_MoI.webp",
                 "marker": {
                     "x": 816,
                     "y": 759
+                }
+            },
+            {
+                "name": "Genabackis (GotM)",
+                "image": "/static/img/maps/Genabackis_GotM.webp",
+                "marker": {
+                    "x": 737,
+                    "y": 708
                 }
             }
         ]
