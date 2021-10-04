@@ -10,7 +10,7 @@ const fuseOptions = {
 export const fuse: Fuse<Entry> = new Fuse([], fuseOptions);
 
 export const setSearchEntries = async (fuse: Fuse<Entry>): Promise<void> => {
-    const resp = await fetch('/data.json');
+    const resp = await fetch(`/data.json?v=${new Date().getTime()}`);
     const data = await resp.json();
 
     fuse.setCollection(data);

@@ -1,1 +1,279 @@
-(()=>{var w=Math.pow;var E=e=>{let t=e.split("-").slice(-1);if(t[0])return t[0];throw new Error("Map ID not found")},x=()=>{let e=document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');if(e){let t=E(e.id);return document.querySelector(`#map-image-${t}`)}return null},T=e=>{let{naturalHeight:t,naturalWidth:n}=e;return{naturalHeight:t,naturalWidth:n}},y=e=>{let{width:t,height:n,top:o,left:r}=e.getBoundingClientRect();return{width:t,height:n,top:o,left:r}},D=e=>{let t=parseInt(window.getComputedStyle(e).getPropertyValue("padding-left").replace("px","")),n=parseInt(window.getComputedStyle(e).getPropertyValue("padding-top").replace("px","")),o=parseInt(window.getComputedStyle(e).getPropertyValue("padding-top").replace("px","")),r=parseInt(window.getComputedStyle(e).getPropertyValue("padding-top").replace("px",""));return{leftPadding:t,rightPadding:n,topPadding:o,bottomPadding:r}},u=()=>{let e=document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');if(!(e instanceof HTMLDivElement))throw new Error("Imagewrapper element is missing");let{top:t,left:n}=y(e);e.style.transformOrigin=`${-n}px ${-t}px`};var k=(e,t,n)=>Math.min(Math.max(e,t),n),S=()=>{let e=document.getElementById("reset-zoom-button");if(!e)throw new Error("Reset button is missing");e.classList.remove("hidden")},q=()=>{let e=document.getElementById("reset-zoom-button");if(!e)throw new Error("Reset button is missing");e.classList.add("hidden")},B=()=>{document.querySelectorAll("[id^=map-imagewrapper-]").forEach(t=>{if(!(t instanceof HTMLDivElement))throw new Error("element with `map-imagewrapper-` id is not a div element");let n=!1,o=!1,r=1,s=0,a=0,g=0,f=0,m=()=>{t.style.transform=`translate(${s}px, ${a}px) scale(${r})`};t.onmousedown=i=>{i.preventDefault();let{clientX:p,clientY:c,buttons:I}=i;I!==1&&I!==4||(g=p-s,f=c-a,o=!0,t.style.cursor="grabbing")},t.onmouseup=()=>{o=!1,t.style.cursor="grab"},t.onmousemove=i=>{if(i.preventDefault(),!o)return;n||(S(),n=!0);let{clientX:p,clientY:c}=i;s=p-g,a=c-f,m()},t.onwheel=i=>{i.preventDefault(),n||(S(),n=!0);let{clientX:p,clientY:c,deltaY:I}=i,$=(p-s)/r,R=(c-a)/r,V=-I,b=6,L=1,d=1.2;V>0?r=k(r*d,1/w(d,L),w(d,b)):r=k(r/d,1/w(d,L),w(d,b)),s=p-$*r,a=c-R*r,m()};let l=()=>{o=!1,r=1,s=0,a=0,g=0,f=0,m(),q(),n=!1};window.addEventListener("resize",()=>{l(),u()}),document.querySelectorAll('input[name="map-selector"]').forEach(i=>{i.addEventListener("change",l)});let M=document.getElementById("reset-zoom-button");if(!M)throw new Error("Reset button is missing");M.addEventListener("click",l)})};var h=()=>{if(document.getElementsByClassName("map-image-marker").length===0)return;let e=document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');if(!(e instanceof HTMLDivElement))throw new Error("Imagewrapper element is missing");let t=E(e.id);C(t)},C=e=>{let t=document.getElementById(`map-imagewrapper-${e}`),n=document.getElementById(`map-image-${e}`),o=document.getElementById(`map-marker-${e}`);if(!(t instanceof HTMLDivElement))throw new Error(`Imagewrapper for mapId ${e} is missing`);if(!(n instanceof HTMLImageElement))throw new Error(`Image for mapId ${e} is missing`);if(!(o instanceof HTMLImageElement))throw new Error(`Marker icon for mapId ${e} is missing`);let r=T(n),s=y(n),a=y(o),{leftPadding:g,topPadding:f}=D(t),{markerx:m,markery:l}=o.dataset;if(!m||!l)throw new Error("Marker coordinates not provided");let v=Math.round(parseInt(m)*s.width/r.naturalWidth-a.width/2)+g,M=Math.round(parseInt(l)*s.height/r.naturalHeight-a.height)+f;o.style.top=`${M}px`,o.style.left=`${v}px`,o.style.opacity="0.85"};var A=e=>{let t=e.target,n=E(t.id);document.querySelectorAll("[id^=map-imagewrapper-]").forEach(s=>{s.classList.contains("hidden")||s.classList.add("hidden")});let r=document.getElementById(`map-imagewrapper-${n}`);if(!(r instanceof HTMLElement))throw new Error("Imagewrapper for selected map is missing");r.classList.remove("hidden"),u(),h()},H=()=>{let e=document.querySelectorAll('input[name="map-selector"]'),t=document.querySelectorAll('input[name="map-selector"]~span');e.forEach(n=>{if(!(n instanceof HTMLInputElement))throw new Error("Map Input has unexpected type");n.addEventListener("change",o=>{A(o)})}),t.forEach(n=>{if(!(n instanceof HTMLSpanElement))throw new Error("Map button has unexpected type");n.addEventListener("keydown",o=>{let{key:r}=o;if(r==="Enter"){let s=n.previousElementSibling;if(!(s instanceof HTMLInputElement))throw new Error("Map Button input element missing");s.checked=!0;let a=new Event("change");s.dispatchEvent(a)}})})};var P=()=>{u(),B(),H(),h(),window.addEventListener("resize",()=>{h()})};document.addEventListener("DOMContentLoaded",()=>{let e=x();if(!(e instanceof HTMLImageElement))throw new Error("No Image Available map page");e.complete?P():e.addEventListener("load",()=>{P()})});})();
+(() => {
+  var __pow = Math.pow;
+
+  // src/ts/mapview/element-helpers.ts
+  var extractMapId = (elementIdString) => {
+    const lastKebabCaseItem = elementIdString.split("-").slice(-1);
+    if (lastKebabCaseItem[0]) {
+      return lastKebabCaseItem[0];
+    }
+    throw new Error("Map ID not found");
+  };
+  var getVisibleImage = () => {
+    const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
+    if (visibleImageWrapper) {
+      const mapId = extractMapId(visibleImageWrapper.id);
+      return document.querySelector(`#map-image-${mapId}`);
+    }
+    return null;
+  };
+  var getElementNaturalDimensions = (element) => {
+    const { naturalHeight, naturalWidth } = element;
+    return {
+      naturalHeight,
+      naturalWidth
+    };
+  };
+  var getElementRealDimensions = (element) => {
+    const { width, height, top, left } = element.getBoundingClientRect();
+    return {
+      width,
+      height,
+      top,
+      left
+    };
+  };
+  var getElementPaddings = (element) => {
+    const leftPadding = parseInt(window.getComputedStyle(element).getPropertyValue("padding-left").replace("px", ""));
+    const rightPadding = parseInt(window.getComputedStyle(element).getPropertyValue("padding-top").replace("px", ""));
+    const topPadding = parseInt(window.getComputedStyle(element).getPropertyValue("padding-top").replace("px", ""));
+    const bottomPadding = parseInt(window.getComputedStyle(element).getPropertyValue("padding-top").replace("px", ""));
+    return {
+      leftPadding,
+      rightPadding,
+      topPadding,
+      bottomPadding
+    };
+  };
+  var setVisibleMapTransformOrigin = () => {
+    const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
+    if (!(visibleImageWrapper instanceof HTMLDivElement)) {
+      throw new Error("Imagewrapper element is missing");
+    }
+    const { top, left } = getElementRealDimensions(visibleImageWrapper);
+    visibleImageWrapper.style.transformOrigin = `${-left}px ${-top}px`;
+  };
+
+  // src/ts/mapview/zoom-and-pan-listeners.ts
+  var clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+  var showResetZoomButton = () => {
+    const resetButton = document.getElementById("reset-zoom-button");
+    if (!resetButton) {
+      throw new Error("Reset button is missing");
+    }
+    resetButton.classList.remove("hidden");
+  };
+  var hideResetZoomButton = () => {
+    const resetButton = document.getElementById("reset-zoom-button");
+    if (!resetButton) {
+      throw new Error("Reset button is missing");
+    }
+    resetButton.classList.add("hidden");
+  };
+  var setZoomAndPanListeners = () => {
+    const imageWrappers = document.querySelectorAll("[id^=map-imagewrapper-]");
+    imageWrappers.forEach((imageWrapper) => {
+      if (!(imageWrapper instanceof HTMLDivElement)) {
+        throw new Error("element with `map-imagewrapper-` id is not a div element");
+      }
+      let activeTransform = false;
+      let panning = false;
+      let scale = 1;
+      let pointX = 0;
+      let pointY = 0;
+      let startX = 0;
+      let startY = 0;
+      const setTransform = () => {
+        imageWrapper.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+      };
+      imageWrapper.onmousedown = (event) => {
+        event.preventDefault();
+        const { clientX, clientY, buttons } = event;
+        if (buttons !== 1 && buttons !== 4) {
+          return;
+        }
+        startX = clientX - pointX;
+        startY = clientY - pointY;
+        panning = true;
+        imageWrapper.style.cursor = "grabbing";
+      };
+      imageWrapper.onmouseup = () => {
+        panning = false;
+        imageWrapper.style.cursor = "grab";
+      };
+      imageWrapper.onmousemove = (event) => {
+        event.preventDefault();
+        if (!panning) {
+          return;
+        }
+        if (!activeTransform) {
+          showResetZoomButton();
+          activeTransform = true;
+        }
+        const { clientX, clientY } = event;
+        pointX = clientX - startX;
+        pointY = clientY - startY;
+        setTransform();
+      };
+      imageWrapper.onwheel = (event) => {
+        event.preventDefault();
+        if (!activeTransform) {
+          showResetZoomButton();
+          activeTransform = true;
+        }
+        const { clientX, clientY, deltaY } = event;
+        const xs = (clientX - pointX) / scale;
+        const ys = (clientY - pointY) / scale;
+        const delta = -deltaY;
+        const maxWheelDown = 6;
+        const maxWheelUp = 1;
+        const scaleFactor = 1.2;
+        if (delta > 0) {
+          scale = clamp(scale * scaleFactor, 1 / __pow(scaleFactor, maxWheelUp), __pow(scaleFactor, maxWheelDown));
+        } else {
+          scale = clamp(scale / scaleFactor, 1 / __pow(scaleFactor, maxWheelUp), __pow(scaleFactor, maxWheelDown));
+        }
+        pointX = clientX - xs * scale;
+        pointY = clientY - ys * scale;
+        setTransform();
+      };
+      const reset = () => {
+        panning = false;
+        scale = 1;
+        pointX = 0;
+        pointY = 0;
+        startX = 0;
+        startY = 0;
+        setTransform();
+        hideResetZoomButton();
+        activeTransform = false;
+      };
+      window.addEventListener("resize", () => {
+        reset();
+        setVisibleMapTransformOrigin();
+      });
+      const mapButtons = document.querySelectorAll('input[name="map-selector"]');
+      mapButtons.forEach((element) => {
+        element.addEventListener("change", reset);
+      });
+      const resetButton = document.getElementById("reset-zoom-button");
+      if (!resetButton) {
+        throw new Error("Reset button is missing");
+      }
+      resetButton.addEventListener("click", reset);
+    });
+  };
+
+  // src/ts/mapview/place-marker.ts
+  var placeVisibleMarker = () => {
+    if (document.getElementsByClassName("map-image-marker").length === 0) {
+      return;
+    }
+    const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
+    if (!(visibleImageWrapper instanceof HTMLDivElement)) {
+      throw new Error("Imagewrapper element is missing");
+    }
+    const mapId = extractMapId(visibleImageWrapper.id);
+    placeMarker(mapId);
+  };
+  var placeMarker = (mapId) => {
+    const mapImageWrapperElement = document.getElementById(`map-imagewrapper-${mapId}`);
+    const mapImageElement = document.getElementById(`map-image-${mapId}`);
+    const mapMarkerElement = document.getElementById(`map-marker-${mapId}`);
+    if (!(mapImageWrapperElement instanceof HTMLDivElement)) {
+      throw new Error(`Imagewrapper for mapId ${mapId} is missing`);
+    }
+    if (!(mapImageElement instanceof HTMLImageElement)) {
+      throw new Error(`Image for mapId ${mapId} is missing`);
+    }
+    if (!(mapMarkerElement instanceof HTMLImageElement)) {
+      throw new Error(`Marker icon for mapId ${mapId} is missing`);
+    }
+    const mapNaturalDimensions = getElementNaturalDimensions(mapImageElement);
+    const mapRealDimensions = getElementRealDimensions(mapImageElement);
+    const markerRealDimensions = getElementRealDimensions(mapMarkerElement);
+    const { leftPadding, topPadding } = getElementPaddings(mapImageWrapperElement);
+    const { markerx, markery } = mapMarkerElement.dataset;
+    if (!markerx || !markery) {
+      throw new Error("Marker coordinates not provided");
+    }
+    const markerRelativeX = Math.round(parseInt(markerx) * mapRealDimensions.width / mapNaturalDimensions.naturalWidth - markerRealDimensions.width / 2) + leftPadding;
+    const markerRelativeY = Math.round(parseInt(markery) * mapRealDimensions.height / mapNaturalDimensions.naturalHeight - markerRealDimensions.height) + topPadding;
+    mapMarkerElement.style.top = `${markerRelativeY}px`;
+    mapMarkerElement.style.left = `${markerRelativeX}px`;
+    mapMarkerElement.style.opacity = "0.85";
+  };
+
+  // src/ts/mapview/map-selector-listener.ts
+  var handleMapSelectorChange = (event) => {
+    const target = event.target;
+    const mapId = extractMapId(target.id);
+    const mapWrappers = document.querySelectorAll("[id^=map-imagewrapper-]");
+    mapWrappers.forEach((mapWrapper) => {
+      if (!mapWrapper.classList.contains("hidden")) {
+        mapWrapper.classList.add("hidden");
+      }
+    });
+    const selectedImageWrapper = document.getElementById(`map-imagewrapper-${mapId}`);
+    if (!(selectedImageWrapper instanceof HTMLElement)) {
+      throw new Error("Imagewrapper for selected map is missing");
+    }
+    selectedImageWrapper.classList.remove("hidden");
+    setVisibleMapTransformOrigin();
+    placeVisibleMarker();
+  };
+  var setMapSelectorListeners = () => {
+    const mapButtons = document.querySelectorAll('input[name="map-selector"]');
+    const mapButtonSpans = document.querySelectorAll('input[name="map-selector"]~span');
+    mapButtons.forEach((element) => {
+      if (!(element instanceof HTMLInputElement)) {
+        throw new Error("Map Input has unexpected type");
+      }
+      element.addEventListener("change", (event) => {
+        handleMapSelectorChange(event);
+      });
+    });
+    mapButtonSpans.forEach((element) => {
+      if (!(element instanceof HTMLSpanElement)) {
+        throw new Error("Map button has unexpected type");
+      }
+      element.addEventListener("keydown", (event) => {
+        const { key } = event;
+        if (key === "Enter") {
+          const inputSibling = element.previousElementSibling;
+          if (!(inputSibling instanceof HTMLInputElement)) {
+            throw new Error("Map Button input element missing");
+          }
+          inputSibling.checked = true;
+          const changeEvent = new Event("change");
+          inputSibling.dispatchEvent(changeEvent);
+        }
+      });
+    });
+  };
+
+  // src/ts/map.ts
+  var init = () => {
+    setVisibleMapTransformOrigin();
+    setZoomAndPanListeners();
+    setMapSelectorListeners();
+    placeVisibleMarker();
+    window.addEventListener("resize", () => {
+      placeVisibleMarker();
+    });
+  };
+  document.addEventListener("DOMContentLoaded", () => {
+    const visibleImage = getVisibleImage();
+    if (!(visibleImage instanceof HTMLImageElement)) {
+      throw new Error("No Image Available map page");
+    }
+    if (visibleImage.complete) {
+      init();
+    } else {
+      visibleImage.addEventListener("load", () => {
+        init();
+      });
+    }
+  });
+})();
+//# sourceMappingURL=map.js.map

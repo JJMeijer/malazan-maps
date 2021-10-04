@@ -16,6 +16,13 @@ module.exports = function (config) {
     // Add `env` filter to use Environment variables
     config.addFilter('env', (key) => process.env[key]);
 
+    /**
+     * Add `bust` filter for cachebusting. Very simple setup as it assumes no query param is already present
+     */
+    config.addFilter('bust', (url) => {
+        return `${url}?v=${new Date().getTime()}`;
+    });
+
     // Minify Html on prod
     config.addTransform('htmlmin', function (content, outputPath) {
         if (outputPath && outputPath.endsWith('.html')) {

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'malazan-cache-v8';
+const CACHE_NAME = 'malazan-cache-v12';
 const CACHE_URLS = [
     '/static/css/main-dist.css',
     '/static/js/search.js',
@@ -36,7 +36,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.open(CACHE_NAME).then((cache) => {
-            return cache.match(event.request).then((cacheResponse) => {
+            return cache.match(event.request, { ignoreSearch: true }).then((cacheResponse) => {
                 return (
                     cacheResponse ||
                     fetch(event.request).then((fetchResponse) => {
