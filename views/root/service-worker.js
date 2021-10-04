@@ -1,10 +1,10 @@
-const CACHE_NAME = 'malazan-cache-v12';
+const CACHE_NAME = 'malazan-cache-v14';
 const CACHE_URLS = [
-    '/static/css/main-dist.css',
-    '/static/js/search.js',
-    '/static/js/map.js',
-    '/data.json',
-    '/manifest.json',
+    `/static/css/main-dist.css?v=${new Date().getTime()}`,
+    `/static/js/search.js?v=${new Date().getTime()}`,
+    `/static/js/map.js?v=${new Date().getTime()}`,
+    `/data.json?v=${new Date().getTime()}`,
+    `/manifest.json?v=${new Date().getTime()}`,
 ];
 
 self.addEventListener('install', (event) => {
