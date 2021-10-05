@@ -1,22 +1,13 @@
 ---
 layout: base.njk
+scripts:
+  - /static/js/search.js
+  - /static/js/map.js
 ---
 
-<div class="map-view-container">
+<div class="map-container">
     <div class="left-header-container">
-        <div class="navbar">
-            <a href="/">
-                <p class="navbar-site-title">
-                    Malazan Maps
-                </p>
-            </a>
-            <p class="navbar-seperator">
-                >
-            </p>
-            <p class="navbar-page-title">
-                {{ title }}
-            </p>
-        </div>
+        {% include 'components/navbar.njk' %}
 
         <h1 class="left-header-title">
             {{ title }}
@@ -94,4 +85,3 @@ layout: base.njk
 <div class="footer-wrapper-bottom">
     {% include 'components/footer.njk' %}
 </div>
-<script src="/static/js/map.js"></script>

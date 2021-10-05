@@ -1,4 +1,4 @@
-.map-view-container {
+.map-container {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -7,7 +7,7 @@
 }
 
 @media (min-width: 1024px) {
-    .map-view-container {
+    .map-container {
         flex-direction: row;
     }
 }
@@ -93,19 +93,6 @@
     color: #f3f4f6;
     font-size: 1rem;
     padding: 0 1rem;
-}
-
-.description-text a {
-    text-decoration: underline;
-    white-space: nowrap;
-}
-
-.description-text a:hover {
-    color: #36b;
-}
-
-.description-text a:visited {
-    color: #36b;
 }
 
 .maps-wrapper {

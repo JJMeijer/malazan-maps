@@ -1,7 +1,7 @@
-import { getVisibleImage, setVisibleMapTransformOrigin } from './mapview/element-helpers';
-import { setZoomAndPanListeners } from './mapview/zoom-and-pan-listeners';
-import { setMapSelectorListeners } from './mapview/map-selector-listener';
-import { placeVisibleMarker } from './mapview/place-marker';
+import { getVisibleImage, setVisibleMapTransformOrigin } from './map/element-helpers';
+import { setZoomAndPanListeners } from './map/zoom-and-pan-listeners';
+import { setMapSelectorListeners } from './map/map-selector-listener';
+import { placeVisibleMarker } from './map/place-marker';
 
 const init = () => {
     setVisibleMapTransformOrigin();
@@ -14,7 +14,7 @@ const init = () => {
     });
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+const waitForImage = () => {
     const visibleImage = getVisibleImage();
 
     if (!(visibleImage instanceof HTMLImageElement)) {
@@ -28,4 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
             init();
         });
     }
-});
+};
+
+if (document.readyState !== 'loading') {
+    waitForImage();
+} else {
+    document.addEventListener('DOMContentLoaded', () => {
+        waitForImage();
+    });
+}

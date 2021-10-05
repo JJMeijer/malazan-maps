@@ -17,7 +17,9 @@
         <meta name="description" content="{{ description }}">
         <link rel="stylesheet" type="text/css" href="{{ '/static/css/main-dist.css' | bust }}" media="screen">
         <link rel="manifest" href="{{ '/manifest.json' | bust }}">
-        <script async src="{{ '/static/js/search.js' | bust }}"></script>
+        {% for script in scripts %}
+            <script async src="{{ script | bust }}"></script>
+        {% endfor %}
     </head>
     <body>
         <div class="base-container">

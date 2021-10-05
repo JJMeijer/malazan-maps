@@ -21,6 +21,19 @@ body {
     height: 100%;
 }
 
+footer a,
+.description-wrapper a,
+.privacy-container a {
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+footer a:hover,
+.description-wrapper a:hover,
+.privacy-container a:hover {
+    color: #36b;
+}
+
 .hidden {
     display: none !important;
 }

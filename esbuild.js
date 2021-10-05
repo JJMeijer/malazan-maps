@@ -16,7 +16,7 @@ esbuild
 
 esbuild
     .build({
-        entryPoints: ['src/js/service-worker.js'],
+        entryPoints: ['src/ts/service-worker.ts'],
         outfile: 'views/service-worker.js',
         minify: env === 'prod',
         treeShaking: true,

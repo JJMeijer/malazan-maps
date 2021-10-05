@@ -29,6 +29,10 @@ module.exports = function (config) {
         return `${url}?v=${new Date().getTime()}`;
     });
 
+    config.addFilter('currentYear', () => {
+        return new Date().getFullYear();
+    });
+
     // Minify Html on prod
     config.addTransform('htmlmin', function (content, outputPath) {
         if (outputPath && outputPath.endsWith('.html')) {

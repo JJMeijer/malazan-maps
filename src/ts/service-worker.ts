@@ -1,3 +1,5 @@
+/// <reference lib="webworker" />
+
 import { version } from '../../package.json';
 
 const CACHE_NAME = `malazan-cache-${version}`;
@@ -9,14 +11,29 @@ const CACHE_URLS = [
     `/manifest.json?v=${new Date().getTime()}`,
 ];
 
+declare const self: ServiceWorkerGlobalScope;
+
 self.addEventListener('install', (event) => {
     self.skipWaiting();
 
-    event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(CACHE_URLS);
-        }),
-    );
+    const preCache = async () => {
+        const cache = await caches.open(CACHE_NAME);
+
+        return Promise.all(
+            CACHE_URLS.map(async (url) => {
+                const existingCache = cache.match(url, { ignoreSearch: true });
+
+                if (existingCache) {
+                    await cache.delete(url, { ignoreSearch: true });
+                    return await cache.add(url);
+                }
+
+                return await cache.add(url);
+            }),
+        );
+    };
+
+    event.waitUntil(preCache());
 });
 
 self.addEventListener('activate', (event) => {

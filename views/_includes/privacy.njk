@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+{% include 'components/navbar.njk' %}
+
+<div class="privacy-header-container">
+    <h1 class="privacy-header-description">
+        {{ header }}
+    </h1>
+</div>
+
+<div class="privacy-container">
+    {{ content | safe }}
+</div>
+
+{% include 'components/footer.njk' %}
