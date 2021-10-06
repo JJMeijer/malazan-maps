@@ -3,14 +3,24 @@ layout: base.njk
 ---
 {% include 'components/navbar.njk' %}
 
-<div class="privacy-header-container">
-    <h1 class="privacy-header-description">
+<div class="flex flex-col items-center bg-primary w-full pt-8 pb-40">
+    <h1 class="text-center text-2xl px-16">
         {{ header }}
     </h1>
 </div>
 
-<div class="privacy-container">
-    {{ content | safe }}
+<div class="flex flex-col text-gray-800 -mt-32 mx-4 bg-white rounded-md py-4 px-8 w-[90%] md:mx-8 md:w-[60%]">
+    <i>Last updated: October 05, 2021</i>
+    <p class="py-3">I don't like auto-generated privacy policies which are purposefully vague & hard to understand. As an alternative let's just tell you which tools are gathering data, and also tell you why I use them.</p>
+    <ul class="list-disc list-outside pl-4">
+        <li>
+            <strong>Google App Engine Logging</strong> - Malazan Maps is hosted on Google App Engine which provides request logs. These logs contain your IP address as well as your user-agent and are used in the case of 4xx/5xx errors to determine if something is wrong with the website. These logs are kept for 7 days before they are destroyed.
+        </li>
+        <li class="pt-1">
+            <strong>Cloudflare Web Analytics</strong> - To have some indication of the amount of users that use Malazan Maps I've chosen to use <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="nofollow noopener" class="underline hover:text-blue-500">Cloudflare Web analytics</a>.This is a privacy-first analytics solution that gathers its data through a web beacon image. This data is stored for 30 days before it's destroyed. The main reason why I chose this tool is that it's completely cookieless and because it has no affiliation with an ad provider.
+        </li>
+    </ul>
+    <p class="py-3">For questions about this privacy policy please mail me at: <a href="mailto:johan@malazanmaps.com" class="underline hover:text-blue-500">johan@malazanmaps.com</a></p>
 </div>
 
 {% include 'components/footer.njk' %}

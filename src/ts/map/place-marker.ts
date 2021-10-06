@@ -10,7 +10,7 @@ export const placeVisibleMarker = (): void => {
      * Check if a marker element is on the page because they are only
      * there on city & region pages
      */
-    if (document.getElementsByClassName('map-image-marker').length === 0) {
+    if (document.querySelectorAll('[id^="map-marker-"]').length === 0) {
         return;
     }
 
@@ -71,5 +71,5 @@ const placeMarker = (mapId: string): void => {
     mapMarkerElement.style.top = `${markerRelativeY}px`;
     mapMarkerElement.style.left = `${markerRelativeX}px`;
 
-    mapMarkerElement.style.opacity = '0.85';
+    mapMarkerElement.classList.replace('opacity-0', 'opacity-80');
 };

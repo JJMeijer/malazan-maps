@@ -5,53 +5,55 @@ scripts:
   - /static/js/map.js
 ---
 
-<div class="map-container">
-    <div class="left-header-container">
+<div class="flex flex-col flex-1 w-full bg-primary lg:flex-row">
+    <div class="flex flex-col w-full items-center bg-primary lg:w-1/4 lg:min-h-screen">
         {% include 'components/navbar.njk' %}
 
-        <h1 class="left-header-title">
+        <h1 class="hidden mt-16 mb-8 text-3xl font-bold text-center lg:block">
             {{ title }}
         </h1>
 
-        {% include 'components/search.njk' %}
+        <div class="w-[85%]">
+            {% include 'components/search.njk' %}
+        </div>
 
-        <div class="{% if item.maps|length == 1 %}hidden{% endif %} map-selector-wrapper">
+        <div class="{% if item.maps|length == 1 %}hidden{% endif %} flex flex-row flex-wrap justify-center px-4">
             {% for map in item.maps %}
-                <label class="map-selector-label" for="map-selector-{{ loop.index }}">
+                <label class="mx-2 my-4" for="map-selector-{{ loop.index }}">
                     <input
-                        class="hidden"
+                        class="peer hidden"
                         type="radio"
                         id="map-selector-{{ loop.index }}"
                         name="map-selector"
                         {% if loop.index == 1 %}checked{% endif %}
                     >
-                    <span class="map-selector-span">
+                    <span class="p-2 text-[0.9rem] cursor-pointer border border-gray-200 bg-primary rounded-2xl hover:bg-gray-600 peer-checked:border-2 peer-checked:bg-gray-600">
                         {{ map.name }}
                     </span>
                 </label>
             {% endfor %}
         </div>
 
-        <div class="description-wrapper">
-            <p class="description-text">
-                {{ item.description }} (<a target="_blank" rel="nofollow noopener" href="{{ item.wikiLink }}">wiki</a>)
+        <div class="w-full my-4 lg:my-8">
+            <p class="text-center px-4 text-base">
+                {{ item.description }} (<a class="underline whitespace-nowrap hover:text-blue-500" target="_blank" rel="nofollow noopener" href="{{ item.wikiLink }}">wiki</a>)
             </p>
         </div>
 
-        <div class="footer-wrapper-left">
+        <div class="hidden mt-auto mb-3 lg:block">
             {% include 'components/footer.njk' %}
         </div>
     </div>
 
-    <div class="maps-wrapper">
+    <div class="flex justify-center items-center flex-1 w-full relative overflow-hidden bg-primary rounded-lg lg:w-3/4 lg:max-h-screen lg:bg-white">
         {% for map in item.maps %}
             <div
-                class="{% if loop.index > 1 %}hidden{% endif %} map-image-wrapper"
+                class="{% if loop.index > 1 %}hidden{% endif %} relative flex rounded-md bg-white p-4 cursor-grab origin-center transform scale-1 translate-x-0 translate-y-0"
                 id="map-imagewrapper-{{ loop.index }}"
             >
                 <img
                     src="{{ map.image }}"
-                    class="object-contain"
+                    class="object-contain lg:max-h-screen"
                     id="map-image-{{ loop.index }}"
                     alt="Map of {{ map.name }}"
                     title="Map of {{ map.name }}"
@@ -59,7 +61,7 @@ scripts:
                 {% if 'marker' in map %}
                     <img
                         src="/static/img/marker.webp"
-                        class="map-image-marker object-contain"
+                        class="absolute opacity-0 w-5 h-5 sm:w-7 sm:h-7 object-contain"
                         id="map-marker-{{ loop.index }}"
                         data-markerx={{ map.marker.x }}
                         data-markery={{ map.marker.y }}
@@ -70,11 +72,11 @@ scripts:
             </div>
         {% endfor %}
         <div
-            class="reset-zoom-button hidden"
+            class="hidden flex justify-center items-center bg-gray-800 opacity-80 absolute top-[5%] left-[90%] w-10 h-10 lg:w-16 lg:h-16 p-1 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:opacity-100"
             id="reset-zoom-button">
             <img
                 src="/static/img/reset-zoom.webp"
-                class="object-contain"
+                class="object-contain w-3/4"
                 alt="Reset Zoom Button"
                 title="Reset Zoom Button"
             >
@@ -82,6 +84,6 @@ scripts:
     </div>
 </div>
 
-<div class="footer-wrapper-bottom">
+<div class="lg:hidden w-full">
     {% include 'components/footer.njk' %}
 </div>

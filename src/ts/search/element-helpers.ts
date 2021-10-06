@@ -43,7 +43,7 @@ const boldMatchingIndices = (name: string, indices: readonly Fuse.RangeTuple[]):
         position = to + 1;
 
         const replaceTarget = name.substring(from, to + 1);
-        const replacement = `<span class="search-result-higlight">${replaceTarget}</span>`;
+        const replacement = `<span class="text-gray-800 font-bold">${replaceTarget}</span>`;
 
         result += replacement;
 
@@ -64,22 +64,22 @@ export const createSearchResult = (
     const resultHref = `/${type}/${slug}/`;
 
     const resultWrapper = document.createElement('div');
-    resultWrapper.classList.add('search-result-wrapper');
+    resultWrapper.classList.add('flex', 'flex-col', 'p-2', 'hover:bg-gray-300');
     resultWrapper.setAttribute(`data-${RESULT_INDEX_ATTRIBUTE}`, String(index));
     resultWrapper.setAttribute(`data-${RESULT_NAME_ATTRIBUTE}`, slug);
     resultWrapper.setAttribute(`data-${RESULT_HREF_ATTRIBUTE}`, resultHref);
 
     const resultLink = document.createElement('a');
     resultLink.href = resultHref;
-    resultLink.classList.add('search-result-link');
+    resultLink.classList.add('flex', 'flex-row');
 
     const resultName = document.createElement('p');
     resultName.innerHTML = boldMatchingIndices(name, indices);
-    resultName.classList.add('search-result-name');
+    resultName.classList.add('w-3/4');
 
     const resultType = document.createElement('p');
     resultType.innerHTML = type;
-    resultType.classList.add('search-result-type');
+    resultType.classList.add('w-1/4', 'opacity-50', 'text-right');
 
     resultLink.appendChild(resultName);
     resultLink.appendChild(resultType);
@@ -90,7 +90,7 @@ export const createSearchResult = (
 
 export const createNoResult = (): HTMLElement => {
     const wrapper = document.createElement('div');
-    wrapper.classList.add('search-result-wrapper-noresult');
+    wrapper.classList.add('p-2', 'w-full');
 
     const text = document.createElement('p');
     text.innerHTML = 'No Results';
@@ -126,7 +126,7 @@ export const getCurrentFocusResult = (): FocusResultInformation => {
     };
 };
 
-const FOCUS_CLASSES = ['focus-result', 'search-result-focussed'];
+const FOCUS_CLASSES = ['focus-result', 'bg-gray-200', 'text-gray-800'];
 
 export const unSetFocusResult = (resultIndex: number): void => {
     const element = document.querySelector(`[data-index="${resultIndex}"]`);

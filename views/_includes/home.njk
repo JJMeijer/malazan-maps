@@ -5,24 +5,27 @@ scripts:
 ---
 {% include 'components/navbar.njk' %}
 
-<div class="home-header-container">
-    {% include 'components/search.njk' %}
-    <h1 class="home-header-description">
+<div class="flex flex-col items-center bg-primary w-full pb-48">
+
+    <div class="w-[85%] lg:w-1/4">
+        {% include 'components/search.njk' %}
+    </div>
+    <h1 class="text-center text-lg px-16">
         {{ header }}
     </h1>
 </div>
 
- <div class="home-container">
-    <div class="home-image-wrapper" id="map-image-wrapper">
+ <div class="flex flex-col -mt-40 mx-4 bg-white rounded-md md:mx-8 md:w-3/4">
+    <div class="m-2 md:my-4 md:mx-12" id="map-image-wrapper">
         <img
             src="{{ banner_landscape }}"
-            class="home-image-landscape"
+            class="hidden md:block"
             alt="{{ banner_landscape_name }}"
             title="{{ banner_landscape_name }}"
         >
         <img
             src="{{ banner_portrait }}"
-            class="home-image-portrait"
+            class="max-h-[70vh] md:hidden"
             alt="{{ banner_portrait_name }}"
             title="{{ banner_portrait_name }}"
         >

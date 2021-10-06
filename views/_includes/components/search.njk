@@ -1,9 +1,9 @@
-<div id="search-wrapper" class="search-wrapper">
-    <div class="search-container">
+<div id="search-wrapper" class="flex flex-col h-10 w-full relative my-4 lg:my-8">
+    <div class="flex flex-row h-full z-30 bg-white rounded-md">
         <img
             width="24"
             height="24"
-            class="search-container-image"
+            class="h-full w-auto p-2 opacity-40"
             src="/static/img/search-1.webp"
             alt="search icon"
             title="search icon"
@@ -12,9 +12,9 @@
             spellcheck="false"
             id="search"
             type="text"
-            class="search-container-input"
+            class="w-5/6 text-gray-600 caret-current focus:outline-none"
             placeholder="Search..."
         />
     </div>
-    <div id="search-results" class="search-results hidden"></div>
+    <div id="search-results" class="hidden absolute w-full z-20 pt-11 pb-2 text-gray-800 bg-white left-0 top-0 rounded-t-2xl rounded-b-md shadow-md"></div>
 </div>
