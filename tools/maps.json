@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Seven Cities (DG)",
+        "image": "/static/img/maps/Seven_Cities_DG.webp"
+    },
+    {
+        "name": "Chain of Dogs - First Half",
+        "image": "/static/img/maps/Chain_of_Dogs_1.webp"
+    },
+    {
+        "name": "Genabackis (MoI)",
+        "image": "/static/img/maps/Genabackis_MoI.webp"
+    },
+    {
+        "name": "Genabackis (GotM)",
+        "image": "/static/img/maps/Genabackis_GotM.webp"
+    },
+    {
+        "name": "Chain of Dogs - Second Half",
+        "image": "/static/img/maps/Chain_of_Dogs_2.webp"
+    },
+    {
+        "name": "Quon Tali",
+        "image": "/static/img/maps/Quon_Tali.webp"
+    },
+    {
+        "name": "Empire of Lether",
+        "image": "/static/img/maps/Lether.webp"
+    },
+    {
+        "name": "Edur Lands",
+        "image": "/static/img/maps/Edur_Lands.webp"
+    },
+    {
+        "name": "Isle of Jacuruku",
+        "image": "/static/img/maps/Jacuruku.webp"
+    },
+    {
+        "name": "Seven Cities (BH)",
+        "image": "/static/img/maps/Seven_Cities_BH.webp"
+    },
+    {
+        "name": "Assail",
+        "image": "/static/img/maps/Assail.webp"
+    },
+    {
+        "name": "The Blood Range",
+        "image": "/static/img/maps/The_Blood_Range.webp"
+    },
+    {
+        "name": "Kolanse",
+        "image": "/static/img/maps/Kolanse.webp"
+    },
+    {
+        "name": "South Genabackis",
+        "image": "/static/img/maps/South_Genabackis.webp"
+    },
+    {
+        "name": "Stormwall",
+        "image": "/static/img/maps/Stormwall.webp"
+    },
+    {
+        "name": "Black Coral",
+        "image": "/static/img/maps/Black_Coral.webp"
+    },
+    {
+        "name": "Malazan Empire",
+        "image": "/static/img/maps/Malazan_Empire.webp"
+    },
+    {
+        "name": "Northwest Genabackis",
+        "image": "/static/img/maps/Northwest_Genabackis.webp"
+    },
+    {
+        "name": "Malaz Isle",
+        "image": "/static/img/maps/Malaz_Isle.webp"
+    },
+    {
+        "name": "Capustan",
+        "image": "/static/img/maps/Capustan.webp"
+    },
+    {
+        "name": "Darujhistan",
+        "image": "/static/img/maps/Darujhistan.webp"
+    },
+    {
+        "name": "Raraku",
+        "image": "/static/img/maps/Raraku.webp"
+    },
+    {
+        "name": "Lands of Fist",
+        "image": "/static/img/maps/Lands_of_Fist.webp"
+    },
+    {
+        "name": "Letheras",
+        "image": "/static/img/maps/Letheras.webp"
+    },
+    {
+        "name": "Malaz City",
+        "image": "/static/img/maps/Malaz_City.webp"
+    }
+]
