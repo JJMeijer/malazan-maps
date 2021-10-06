@@ -1,12 +1,11 @@
-/* eslint-env node */
-const prompts = require('prompts');
 const { default: axios } = require('axios');
 const { parse } = require('node-html-parser');
 
 const BASE_URL = 'https://malazan.fandom.com/api.php';
 
 const wikiSearch = async (term) => {
-    const qs = `?action=query&list=search&srsearch=${encodeURIComponent(term)}&utf8=&format=json`;
+    const encodedTerm = encodeURIComponent(term);
+    const qs = `?action=query&list=search&srsearch=${encodedTerm}&utf8=&format=json`;
     const url = `${BASE_URL}${qs}`;
 
     const {
@@ -21,9 +20,27 @@ const wikiSearch = async (term) => {
     }));
 };
 
+const wikiUrl = async (title) => {
+    const encodedTitle = encodeURIComponent(title);
+    const qs = `?action=query&titles=${encodedTitle}&prop=info&inprop=url&formatversion=2&format=json`;
+    const url = `${BASE_URL}${qs}`;
+    const response = await axios.get(url);
+
+    const {
+        data: {
+            query: {
+                pages: [{ fullurl }],
+            },
+        },
+    } = response;
+
+    return fullurl;
+};
+
 const wikiParse = async (title) => {
-    const queryString = `?action=parse&page=${title}&prop=text&formatversion=2&format=json`;
-    const url = `${BASE_URL}${queryString}`;
+    const encodedTitle = encodeURIComponent(title);
+    const qs = `?action=parse&page=${encodedTitle}&prop=text&formatversion=2&format=json`;
+    const url = `${BASE_URL}${qs}`;
     const response = await axios.get(url);
 
     const {
@@ -73,28 +90,8 @@ const wikiSummary = async (title) => {
     return cleanedText;
 };
 
-(async () => {
-    console.clear();
-    try {
-        const answers = await prompts([
-            {
-                type: 'text',
-                name: 'search',
-                message: 'Please enter a search term',
-            },
-            {
-                type: 'select',
-                name: 'result',
-                message: 'Pick a result',
-                choices: async (prev) => await wikiSearch(prev),
-            },
-        ]);
-
-        const { result } = answers;
-        const summary = await wikiSummary(result);
-
-        console.log(`\n${summary}\n`);
-    } catch (err) {
-        console.log(err);
-    }
-})();
+module.exports = {
+    wikiSearch,
+    wikiSummary,
+    wikiUrl,
+};

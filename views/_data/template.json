@@ -1,0 +1,19 @@
+[
+    {
+        "name": "",
+        "slug": "",
+        "description": "",
+        "wikiLink": "",
+        "type": "",
+        "maps": [
+            {
+                "name": "",
+                "image": "",
+                "marker": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        ]
+    }
+]
