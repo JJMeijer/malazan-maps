@@ -4,7 +4,7 @@ date: Last Modified
 
 title: Home
 header: 'Find places in the world of the Malazan Book of the Fallen series.'
-description: 'Malazan Maps Search Engine. Find all cities, regions & continents mentioned in the books of the "Malazan Book of the Fallen" series as well as in the other novels from the Malazan world.'
+description: 'Search engine for locations in the "Malazan Book of the Fallen" Series by Steven Erikson. Intended as a reading companion to quickly find a location mentioned in the books.'
 
 banner_landscape: static/img/maps/Northwest_Genabackis.webp
 banner_landscape_name: 'Northwest Genabackis Map'
