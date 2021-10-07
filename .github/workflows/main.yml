@@ -17,6 +17,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Get Tag
+        id: tag
+        uses: dawidd6/action-get-tag@v1
+
+      - run: echo ${{steps.tag.outputs.tag}}
+
       - name: Install Yarn
         run: npm install yarn -g
 
