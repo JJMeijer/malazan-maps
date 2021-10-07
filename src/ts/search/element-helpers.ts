@@ -63,15 +63,24 @@ export const createSearchResult = (
     const { name, slug, type } = item;
     const resultHref = `/${type}/${slug}/`;
 
-    const resultWrapper = document.createElement('div');
-    resultWrapper.classList.add('flex', 'flex-col', 'p-2', 'hover:bg-gray-300');
-    resultWrapper.setAttribute(`data-${RESULT_INDEX_ATTRIBUTE}`, String(index));
-    resultWrapper.setAttribute(`data-${RESULT_NAME_ATTRIBUTE}`, slug);
-    resultWrapper.setAttribute(`data-${RESULT_HREF_ATTRIBUTE}`, resultHref);
-
     const resultLink = document.createElement('a');
     resultLink.href = resultHref;
-    resultLink.classList.add('flex', 'flex-row');
+    resultLink.classList.add(
+        'flex',
+        'flex-col',
+        'p-2',
+        'hover:bg-gray-300',
+        'cursor-pointer',
+        'focus-visible:bg-gray-200',
+        'focus-visible:text-gray-800',
+    );
+    resultLink.setAttribute(`data-${RESULT_INDEX_ATTRIBUTE}`, String(index));
+    resultLink.setAttribute(`data-${RESULT_NAME_ATTRIBUTE}`, slug);
+    resultLink.setAttribute(`data-${RESULT_HREF_ATTRIBUTE}`, resultHref);
+    resultLink.tabIndex = 0;
+
+    const resultContainer = document.createElement('div');
+    resultContainer.classList.add('flex', 'flex-row');
 
     const resultName = document.createElement('p');
     resultName.innerHTML = boldMatchingIndices(name, indices);
@@ -81,11 +90,11 @@ export const createSearchResult = (
     resultType.innerHTML = type;
     resultType.classList.add('w-1/4', 'opacity-50', 'text-right');
 
-    resultLink.appendChild(resultName);
-    resultLink.appendChild(resultType);
-    resultWrapper.appendChild(resultLink);
+    resultContainer.appendChild(resultName);
+    resultContainer.appendChild(resultType);
+    resultLink.appendChild(resultContainer);
 
-    return resultWrapper;
+    return resultLink;
 };
 
 export const createNoResult = (): HTMLElement => {
