@@ -1,5 +1,4 @@
 const content = require('../views/_data/content.json');
-const colorize = require('json-colorizer');
 
 const places = content.length;
 const markers = content.reduce((result, current) => {
@@ -19,28 +18,61 @@ const maps = [].concat
     .map((x) => x.name)
     .filter((item, index, arr) => arr.indexOf(item) === index);
 
-const mapsSummary = maps.map((mapName) => {
-    const places = content.filter((x) => x.maps.filter((y) => y.name === mapName).length > 0);
-    const cities = places.filter((x) => x.type === 'city').length;
-    const regions = places.filter((x) => x.type === 'region').length;
+const mapsSummary = maps
+    .map((mapName) => {
+        const places = content.filter((x) => x.maps.filter((y) => y.name === mapName).length > 0);
+        const cities = places.filter((x) => x.type === 'city').length;
+        const regions = places.filter((x) => x.type === 'region').length;
 
-    return {
-        name: mapName,
-        places: places.length,
-        cities,
-        regions,
-    };
-});
+        return {
+            name: mapName,
+            places: places.length,
+            cities,
+            regions,
+        };
+    })
+    .sort((a, b) => {
+        if (a.places > b.places) {
+            return -1;
+        }
 
-const stats = JSON.stringify({
-    places,
-    books,
-    continents,
-    cities,
-    regions,
-    markers,
-    maps: maps.length,
-    mapsSummary,
-});
+        if (a.places < b.places) {
+            return 1;
+        }
 
-console.log(colorize(stats, { pretty: true }));
+        return 0;
+    });
+
+const totals = [
+    {
+        name: 'markers',
+        '#': markers,
+    },
+    {
+        name: 'places',
+        '#': places,
+    },
+    {
+        name: 'cities',
+        '#': cities,
+    },
+    {
+        name: 'regions',
+        '#': regions,
+    },
+    {
+        name: 'maps',
+        '#': maps.length,
+    },
+    {
+        name: 'books',
+        '#': books,
+    },
+    {
+        name: 'continents',
+        '#': continents,
+    },
+];
+
+console.table(totals);
+console.table(mapsSummary);
