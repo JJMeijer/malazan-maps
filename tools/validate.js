@@ -4,13 +4,18 @@ const addFormats = require('ajv-formats');
 const ajv = new Ajv({ verbose: true });
 addFormats(ajv);
 
-const content = require('../views/_data/content.json');
+const currentFile = require('../views/_data/content.json');
+const maps = require('./maps.json');
+
+const mapsImagePattern = `^/static/img/maps/(${maps
+    .map((x) => x.image.replace('/static/img/maps/', ''))
+    .join('|')})$`;
 
 const MapSchema = {
     type: 'object',
     properties: {
         name: { type: 'string' },
-        image: { type: 'string', format: 'uri-reference' },
+        image: { type: 'string', format: 'uri-reference', pattern: mapsImagePattern },
     },
     required: ['name', 'image'],
 };
@@ -36,9 +41,17 @@ const schema = {
     items: ItemSchema,
 };
 
-const validate = ajv.compile(schema);
+const validateContent = (data) => {
+    const validate = ajv.compile(schema);
 
-const valid = validate(content);
-if (!valid) {
-    console.log(validate.errors);
-}
+    const valid = validate(data || currentFile);
+    if (!valid) {
+        console.log(`[${__filename}] Validation feedback:`, validate.errors);
+        throw new Error(`[${__filename}] Validation Error, see log above`);
+    }
+    return valid;
+};
+
+module.exports = {
+    validateContent,
+};
