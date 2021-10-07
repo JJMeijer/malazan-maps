@@ -3,6 +3,11 @@ const { parse } = require('node-html-parser');
 
 const BASE_URL = 'https://malazan.fandom.com/api.php';
 
+const headers = {
+    'User-Agent':
+        'MalazanMaps/1.0 (https://www.malazanmaps.com/; johan@malazanmaps.com) Axios/0.22',
+};
+
 const wikiSearch = async (term) => {
     const encodedTerm = encodeURIComponent(term);
     const qs = `?action=query&list=search&srsearch=${encodedTerm}&utf8=&format=json`;
@@ -12,7 +17,7 @@ const wikiSearch = async (term) => {
         data: {
             query: { search },
         },
-    } = await axios.get(url);
+    } = await axios.get(url, { headers: headers });
 
     return search.map((item) => ({
         title: item.title,
@@ -24,7 +29,7 @@ const wikiUrl = async (title) => {
     const encodedTitle = encodeURIComponent(title);
     const qs = `?action=query&titles=${encodedTitle}&prop=info&inprop=url&formatversion=2&format=json`;
     const url = `${BASE_URL}${qs}`;
-    const response = await axios.get(url);
+    const response = await axios.get(url, { headers: headers });
 
     const {
         data: {
@@ -41,7 +46,7 @@ const wikiParse = async (title) => {
     const encodedTitle = encodeURIComponent(title);
     const qs = `?action=parse&page=${encodedTitle}&prop=text&formatversion=2&format=json`;
     const url = `${BASE_URL}${qs}`;
-    const response = await axios.get(url);
+    const response = await axios.get(url, { headers: headers });
 
     const {
         data: {
