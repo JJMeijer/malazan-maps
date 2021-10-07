@@ -161,6 +161,23 @@
         ]
     },
     {
+        "name": "Anari Narrows",
+        "slug": "anari-narrows",
+        "description": "The Anari Narrows was where the River Thin emptied into the Sea of Hate in eastern Bael. South of Kurzan, the waters were calm and sheltered, and used to anchor ocean-going merchant ships.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Anari_Narrows",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 988,
+                    "y": 1898
+                }
+            }
+        ]
+    },
+    {
         "name": "Anditi Pura",
         "slug": "anditi-pura",
         "description": "Anditi Pura was the Thaumaturg capital city, in the north of the Kingdom of the Thaumaturgs. The city had no walls or defences of any kind, being deep within Thaumaturg territories, in a land with no other organised nations to threaten them. The centre of the city contained an extensive facility called the \"Inner City\" where the ruling Thaumaturg class worked and lived.\n",
@@ -173,6 +190,23 @@
                 "marker": {
                     "x": 301,
                     "y": 529
+                }
+            }
+        ]
+    },
+    {
+        "name": "Anguish Coast",
+        "slug": "anguish-coast",
+        "description": "The Anguish Coast was the western shore of the inland Dread Sea on Assail.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Anguish_Coast",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 584,
+                    "y": 1122
                 }
             }
         ]
@@ -548,6 +582,23 @@
         ]
     },
     {
+        "name": "Bael",
+        "slug": "bael",
+        "description": "Bael was a sub-continent (or possibly a region within Assail) situated south of Assail and southeast of Korelri. It was bordered on its eastern shores by the Domain Ocean. The tribes of Bael worshipped a god known as Father Wind.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bael",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 633,
+                    "y": 2026
+                }
+            }
+        ]
+    },
+    {
         "name": "Bakra",
         "slug": "bakra",
         "description": "Bakra was a town east of the Karas Sea on Seven Cities.  It was located on the road between Caron Tepasi and the Gilar Oasis.\n",
@@ -733,6 +784,23 @@
         ]
     },
     {
+        "name": "Barren Coast",
+        "slug": "barren-coast",
+        "description": "The Barren Coast was located in northwestern Assail along the shore of Reacher's Ocean. The name was synonymous to outsiders with the Plain of Ghosts.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Barren_Coast",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 229,
+                    "y": 512
+                }
+            }
+        ]
+    },
+    {
         "name": "Barrier Range",
         "slug": "barrier-range",
         "description": "The Barrier Range marked the border between Korelri and Katakan on the Korel Island.\n",
@@ -838,6 +906,23 @@
                 "marker": {
                     "x": 865,
                     "y": 581
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bay of Timber",
+        "slug": "bay-of-timber",
+        "description": "The Bay of Timber was found on the northeast coast of Assail extending westward from the Sea of Hate. It was ringed by the Plain of Chance to the north, the Bone Range to the west, and Wreckers' Coast to the south. The deadly Fear Narrows led from the bay's southern end to the inland Dread Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bay_of_Timber",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 985,
+                    "y": 1036
                 }
             }
         ]
@@ -1064,6 +1149,74 @@
                 "marker": {
                     "x": 895,
                     "y": 1456
+                }
+            }
+        ]
+    },
+    {
+        "name": "Black Fingers Forest",
+        "slug": "black-fingers-forest",
+        "description": "Black Fingers Forest occupied a peninsula on the northeastern coast of the Black Sea on Assail where that body of water emptied into the Sea of Hate. It was bounded to the north by the Green River and the mountains known as Grey Stone.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Black_Fingers_Forest",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1069,
+                    "y": 1560
+                }
+            }
+        ]
+    },
+    {
+        "name": "Black River",
+        "slug": "black-river",
+        "description": "The Black River ran from the Black Stone Mountains to the southwestern coast of the Black Sea on Assail.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Black_River",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 586,
+                    "y": 1728
+                }
+            }
+        ]
+    },
+    {
+        "name": "Black Sea",
+        "slug": "black-sea",
+        "description": "The Black Sea was a long and narrow body of water running east-west that partially separated Bael in the south from the rest of the Assail continent. At its eastern end, the Black Sea joined the Sea of Hate.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Black_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 728,
+                    "y": 1626
+                }
+            }
+        ]
+    },
+    {
+        "name": "Black Stone Mountains",
+        "slug": "black-stone-mountains",
+        "description": "The Black Stone Mountains ran east-west across southern Assail from Reacher's Ocean to the Black Sea. The Black River likely originated there.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Black_Stone_Mountains",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 402,
+                    "y": 1769
                 }
             }
         ]
@@ -1360,6 +1513,57 @@
         ]
     },
     {
+        "name": "Bone Peninsula",
+        "slug": "bone-peninsula",
+        "description": "The Bone Peninsula was located in the eastern portion of Assail. It projected southeastwards from the vicinity of the Sea of Gold dividing the Bay of Timber from the Dread Sea. Passage between those two bodies of water could only be accomplished through the deadly Fear Narrows. The Bone Range ran up the entire spine of the peninsula before continuing on into northern Assail.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bone_Peninsula",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 754,
+                    "y": 1048
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bone Range",
+        "slug": "bone-range",
+        "description": "The Bone Range crossed much of eastern Assail. Starting on the Bone Peninsula, it ran in a northerly direction before extending in a more easterly direction at the Sea of Gold. The range finally came to an end on the Plain of Longing near the coast of the Sea of Hate.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bone_Range",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 837,
+                    "y": 1148
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bones",
+        "slug": "bones",
+        "description": "Bones was a town on the southern shore of the Bay of Timber in Assail near the Wreckers' Coast. It was part of the Bone Peninsula, and backed onto the Bone Range in the southwest. It was southeast of Rough Landing and north of Deep Well.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bones",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 937,
+                    "y": 1129
+                }
+            }
+        ]
+    },
+    {
         "name": "Borid",
         "slug": "borid",
         "description": "Borid was a city on the western coast of the Nap Sea in Itko Kan.  It lay south of Aska.  To the northwest was the city of Feng and further south on the coast was Buld.\n",
@@ -1618,6 +1822,23 @@
                 "marker": {
                     "x": 1049,
                     "y": 699
+                }
+            }
+        ]
+    },
+    {
+        "name": "Burnt (town)",
+        "slug": "burnt-town",
+        "description": "Burnt was a town located on a bay in eastern Assail. The town of Pillar was to its north while Run and Deep Root were to its south.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Burnt_(town)",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1136,
+                    "y": 1182
                 }
             }
         ]
@@ -2177,6 +2398,23 @@
         ]
     },
     {
+        "name": "City of Many Saints",
+        "slug": "city-of-many-saints",
+        "description": "The City of Many Saints was located on the eastern coast of the Sea of Gold on Assail. To its east was the Bone Range.",
+        "wikiLink": "https://malazan.fandom.com/wiki/City_of_Many_Saints",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 848,
+                    "y": 815
+                }
+            }
+        ]
+    },
+    {
         "name": "Clatar Sea",
         "slug": "clatar-sea",
         "description": "The Clatar Sea was a large inland body of water located on the south central portion of the continent of Seven Cities. To its west and northwest were found the Jhag Odhan, and the Jhena Mountains were found to its northeast. Cities on its shores included Nahal, Dobre, Geleen, and Sarsa.\n",
@@ -2230,6 +2468,23 @@
                 "marker": {
                     "x": 390,
                     "y": 1112
+                }
+            }
+        ]
+    },
+    {
+        "name": "Coast of Dust",
+        "slug": "coast-of-dust",
+        "description": "The Coast of Dust was the southern shore of the inland Dread Sea on Assail.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Coast_of_Dust",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 848,
+                    "y": 1334
                 }
             }
         ]
@@ -2762,6 +3017,40 @@
         ]
     },
     {
+        "name": "Deep Root",
+        "slug": "deep-root",
+        "description": "Deep Root was a town in eastern Assail. The town of Burnt was to its north while Run was to its northwest.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Deep_Root",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1134,
+                    "y": 1226
+                }
+            }
+        ]
+    },
+    {
+        "name": "Deep Well",
+        "slug": "deep-well",
+        "description": "Deep Well was a town near the southern shore of the Bay of Timber in Assail. It was located on the Bone Peninsula. To the southwest was the Bone Range and to the east was Wreckers' Coast and the Fear Narrows. To the north was Bones.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Deep_Well",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 962,
+                    "y": 1176
+                }
+            }
+        ]
+    },
+    {
         "name": "Deepwaters",
         "slug": "deepwaters",
         "description": "Deepwaters was the northeastern region of the inland Dracons Sea on the continent of Lether.\n",
@@ -2876,6 +3165,23 @@
                 "marker": {
                     "x": 292,
                     "y": 885
+                }
+            }
+        ]
+    },
+    {
+        "name": "Destruction",
+        "slug": "destruction",
+        "description": "Destruction (or Destruction Bay) was a settlement on the southern shore of the Sea of Gold in Assail. It was located at the northern end of the Demon Narrows which led to the Dread Sea in the south.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Destruction",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 790,
+                    "y": 904
                 }
             }
         ]
@@ -3153,6 +3459,40 @@
                 "marker": {
                     "x": 503,
                     "y": 828
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dread Sea",
+        "slug": "dread-sea",
+        "description": "The Dread Sea, or Sea of Dread, was a large glacial lake in northern Assail. It was formed by the meltwater of a receding Jaghut ice-field that once covered the region.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dread_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 705,
+                    "y": 1204
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dreaming Range",
+        "slug": "dreaming-range",
+        "description": "The Dreaming Range was located in northeastern Assail. It ran east-west, separating the Plain of Sighs from the Plain of Longing, and reached the Sea of Hate. Rivers from the mountains fed the Sea of Gold.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dreaming_Range",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1072,
+                    "y": 556
                 }
             }
         ]
@@ -3711,6 +4051,23 @@
         ]
     },
     {
+        "name": "Exile Keep",
+        "slug": "exile-keep",
+        "description": "Exile Keep was the fortress home of the Sharrs and the Sheers, two feuding families of decadent and inbred mages. It was located on the southwestern shore of the Dread Sea on Assail.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Exile_Keep",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 647,
+                    "y": 1324
+                }
+            }
+        ]
+    },
+    {
         "name": "Explorer's Sea",
         "slug": "explorers-sea",
         "description": "The Explorer's Sea, (or the White Spires Ocean or the White Spires Sea), was the southernmost ocean in the world of the Malazan Book of the Fallen.  White Spires derived from the islands of floating ice that threatened mariners.\n",
@@ -3933,6 +4290,23 @@
                 "marker": {
                     "x": 221,
                     "y": 990
+                }
+            }
+        ]
+    },
+    {
+        "name": "First Landing",
+        "slug": "first-landing",
+        "description": "First Landing was a town on the northeastern coast of the Sea of Gold on Assail.",
+        "wikiLink": "https://malazan.fandom.com/wiki/First_Landing",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 904,
+                    "y": 712
                 }
             }
         ]
@@ -4810,6 +5184,23 @@
         ]
     },
     {
+        "name": "Green River",
+        "slug": "green-river",
+        "description": "Green River formed the northern boundary of the peninsula containing Black Fingers Forest on Assail. It originated in the Grey Stone mountains and fed into the Sea of Hate.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Green_River",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1098,
+                    "y": 1479
+                }
+            }
+        ]
+    },
+    {
         "name": "Greenwater Lake",
         "slug": "greenwater-lake",
         "description": "Greenwater Lake lay in north central Genabackis.  Its western shore abutted the mountains of Moranth Forest.  To its east was the Rhivi Plain.\n",
@@ -4881,6 +5272,23 @@
                 "marker": {
                     "x": 687,
                     "y": 713
+                }
+            }
+        ]
+    },
+    {
+        "name": "Grey Stone",
+        "slug": "grey-stone",
+        "description": "Grey Stone was a range of mountains on Assail on the northern edge of Black Fingers Forest. The Green River appeared to originate there. To its west were the Shifting Wastes.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Grey_Stone",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 974,
+                    "y": 1444
                 }
             }
         ]
@@ -5435,6 +5843,23 @@
                 "marker": {
                     "x": 629,
                     "y": 945
+                }
+            }
+        ]
+    },
+    {
+        "name": "Holly",
+        "slug": "holly",
+        "description": "Holly was a town on the northeastern coast of Assail along the Bay of Timber. It was ruled by Countess Iren.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Holly",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 879,
+                    "y": 940
                 }
             }
         ]
@@ -6858,6 +7283,23 @@
         ]
     },
     {
+        "name": "Kurzan",
+        "slug": "kurzan",
+        "description": "Kurzan was a city on the eastern coast of Bael north of the River Thin's delta. It was either a Nabrajan city or contained a significant Nabrajan population. A trade road ran inland from Kurzan past rolling farmlands to the steppes. Large numbers of ships passed through the city supporting Nabrajan mercantile operations.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Kurzan",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 965,
+                    "y": 1820
+                }
+            }
+        ]
+    },
+    {
         "name": "L'thol Basin",
         "slug": "lthol-basin",
         "description": "The L'thol Basin was located northwest of Aren on Seven Cities.  It was on the northern shore of the Menykh River.\n",
@@ -6959,6 +7401,23 @@
         ]
     },
     {
+        "name": "Lake Blessing",
+        "slug": "lake-blessing",
+        "description": "Lake Blessing was located in central Assail west of the Shifting Wastes. A river on the lake's northeast shore fed into the Dread Sea near Exile Keep. Lake Fort stood on its northwestern shore.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Lake_Blessing",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 564,
+                    "y": 1432
+                }
+            }
+        ]
+    },
+    {
         "name": "Lake Blued",
         "slug": "lake-blued",
         "description": "The Owndos Sea was an inland sea in northwestern Genabackis. There may have been several names in use for this body of water. It is marked as 'L Blued' on the map of Genabackis published in Memories of Ice, probably meaning 'Lake Blued'. It was bounded to the south by the Owndos Range and fed by the Tarthen, Maly and Fool's rivers. On its eastern shore was the city of Owndos, on the north shore, the city of Blued and at the western end, the town of Stopmouth.\n",
@@ -6979,6 +7438,23 @@
                 "marker": {
                     "x": 719,
                     "y": 562
+                }
+            }
+        ]
+    },
+    {
+        "name": "Lake Fort",
+        "slug": "lake-fort",
+        "description": "Lake Fort was one of the largest settlements on Assail according to the map of the continent. It stood on the northwestern shore of Lake Blessing.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Lake_Fort",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 540,
+                    "y": 1410
                 }
             }
         ]
@@ -7349,6 +7825,23 @@
                 "marker": {
                     "x": 580,
                     "y": 1814
+                }
+            }
+        ]
+    },
+    {
+        "name": "Listell",
+        "slug": "listell",
+        "description": "Listell was a town on the eastern coast of Assail facing the Sea of Hate. It was located on the southern edge of the Talon Forest.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Listell",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1161,
+                    "y": 1360
                 }
             }
         ]
@@ -8067,6 +8560,23 @@
         ]
     },
     {
+        "name": "Mist",
+        "slug": "mist",
+        "description": "Mist was a sorceress who lived in Mist Keep on the northern shore of the Dread Sea in Assail. Her powers drew on the Jaghut warren of Omtose Phellack to generate effects of fog and cold. Visitors to her keep were usually enslaved and forced to live in the huts built from wrecked ships that surrounded the keep. Mostly men and mostly foreign, her subjects raised crops to support the town on nearby fields.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Mist",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 705,
+                    "y": 952
+                }
+            }
+        ]
+    },
+    {
         "name": "Mistral Plateau",
         "slug": "mistral-plateau",
         "description": "The Mistral Plateau lay near the western coast of Genabackis south of Oach.  It was surrounded on three sides by the mountains of the Moranth Forest.\n",
@@ -8382,6 +8892,23 @@
                 "marker": {
                     "x": 1731,
                     "y": 575
+                }
+            }
+        ]
+    },
+    {
+        "name": "Nabrajans",
+        "slug": "nabrajans",
+        "description": "The Nabrajans were a people who lived on the plains of the eastern coast of Bael. Unlike the tribes of the neighboring steppes, the Nabrajans had an economy based in extensive agricultural and mercantile concerns. Trade was advanced enough to support mercantile houses, trade roads, and possibly at least one urban center at Kurzan on the coast. Whether by their own manufacture or through trade, they had access to weapons, armour, treated hides, gold ingots, and pack animals. The Nabrajans also engaged in slavery.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Nabrajans",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 820,
+                    "y": 1853
                 }
             }
         ]
@@ -8851,6 +9378,23 @@
         ]
     },
     {
+        "name": "North",
+        "slug": "north",
+        "description": "North was a town on the eastern coast of the Dread Sea on Assail. This placed it on the Bone Peninsula where it stood at the foot of the Bone Range.",
+        "wikiLink": "https://malazan.fandom.com/wiki/North",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 807,
+                    "y": 1158
+                }
+            }
+        ]
+    },
+    {
         "name": "North Citadel",
         "slug": "north-citadel",
         "description": "North Citadel was a stronghold in the north of Kolanse. It was also referred to as North Keep by the Forkrul Assail. It had a square tower with a rooftop platform, a main gate and battlements with eroded merlons, and was situated in/above a valley. There were caves in its vicinity. The Ses Mountains were to the north. \n",
@@ -9158,6 +9702,23 @@
                 "marker": {
                     "x": 1719,
                     "y": 464
+                }
+            }
+        ]
+    },
+    {
+        "name": "Old Ruse",
+        "slug": "old-ruse",
+        "description": "Old Ruse was a town on Assail, situated on the northern shore at the southern end of a narrow channel called the Fear Narrows which connected the Bay of Timber with the Dread Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Old_Ruse",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 914,
+                    "y": 1278
                 }
             }
         ]
@@ -9943,6 +10504,23 @@
         ]
     },
     {
+        "name": "People of the Wind",
+        "slug": "people-of-the-wind",
+        "description": "The People of the Wind, also known as the Yaguran or Sons of the Wind, were tribal humans who lived on the steppes of Bael where they competed for land with their neighbors, the Nabrajans.",
+        "wikiLink": "https://malazan.fandom.com/wiki/People_of_the_Wind",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 526,
+                    "y": 1889
+                }
+            }
+        ]
+    },
+    {
         "name": "Pilgrim Camp",
         "slug": "pilgrim-camp",
         "description": "The Pilgrim camp was located outside of Black Coral next to the Great Barrow.\n",
@@ -9985,6 +10563,23 @@
         ]
     },
     {
+        "name": "Pillar",
+        "slug": "pillar",
+        "description": "Pillar was a town on the Wreckers' Coast of eastern Assail. The town of Widden was to its east and the town of Burnt was to its south.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Pillar",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1175,
+                    "y": 1117
+                }
+            }
+        ]
+    },
+    {
         "name": "Pilott",
         "slug": "pilott",
         "description": "Pilott was a protectorate of the Letherii Empire situated on the southern coast of the Dracons Sea, east of Korshenn.\n",
@@ -10014,6 +10609,40 @@
                 "marker": {
                     "x": 1250,
                     "y": 942
+                }
+            }
+        ]
+    },
+    {
+        "name": "Plain of Chance",
+        "slug": "plain-of-chance",
+        "description": "The Plain of Chance was located in northeastern Assail. It extended into the Bay of Timber and the Sea of Hate. The town of Press was located on its southwestern border.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Plain_of_Chance",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1034,
+                    "y": 909
+                }
+            }
+        ]
+    },
+    {
+        "name": "Plain of Ghosts",
+        "slug": "plain-of-ghosts",
+        "description": "The Plain of Ghosts was located in northwestern Assail along the coast of Reacher's Ocean. The name was synonymous to outsiders with the Barren Coast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Plain_of_Ghosts",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 265,
+                    "y": 580
                 }
             }
         ]
@@ -10052,6 +10681,57 @@
         ]
     },
     {
+        "name": "Plain of Longing",
+        "slug": "plain-of-longing",
+        "description": "The Plain of Longing was located in northeastern Assail between the Dreaming Range and the northern reaches of the Bone Range. To the east it was bounded by the Sea of Hate.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Plain_of_Longing",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1089,
+                    "y": 663
+                }
+            }
+        ]
+    },
+    {
+        "name": "Plain of Sighs",
+        "slug": "plain-of-sighs",
+        "description": "The Plain of Sighs was located in northeastern Assail where it ran along the Wrack Coast of the Sea of Hate. It was bounded to the southeast by the Dreaming Range and to the west by the Plain of Visions and the Blood Range.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Plain_of_Sighs",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 858,
+                    "y": 481
+                }
+            }
+        ]
+    },
+    {
+        "name": "Plain of Visions",
+        "slug": "plain-of-visions",
+        "description": "The Plain of Visions was located on the northern coast of Assail. It was bounded by the Plain of Sighs to the east and by the Blood Range to the south. The town of Fallen was located on its western edge.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Plain_of_Visions",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 646,
+                    "y": 539
+                }
+            }
+        ]
+    },
+    {
         "name": "Por Seti",
         "slug": "por-seti",
         "description": "Por Seti was the name given a section of land in the northern part of the continent of Quon Tali. To its north was Forest Fenn, to its west was Nom Purge, to its south lay the Dal Hon Plains, and to its east was Ero Lake. Lake Seti was on its western edge. Por Seti was home to the Seti people.\n",
@@ -10064,6 +10744,23 @@
                 "marker": {
                     "x": 734,
                     "y": 378
+                }
+            }
+        ]
+    },
+    {
+        "name": "Press",
+        "slug": "press",
+        "description": "The town of Press was located in northeastern Assail on the southwestern edge of the Plain of Chance. Downriver to its south was the town of Holly and the Bay of Timber.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Press",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 931,
+                    "y": 921
                 }
             }
         ]
@@ -10363,6 +11060,23 @@
         ]
     },
     {
+        "name": "Range of the Saints",
+        "slug": "range-of-the-saints",
+        "description": "The Range of the Saints was a chain of mountains in western Assail. They ran in a north-south direction. To their northeast were the Vanishing Wastes. Tribes of nomads lived between the western side of the mountains and Reacher's Ocean.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Range_of_the_Saints",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 336,
+                    "y": 1152
+                }
+            }
+        ]
+    },
+    {
         "name": "Raraku",
         "slug": "raraku",
         "description": "Raraku [Rare-uh-koo], also known as the Holy Desert, was a region west of the Pan'potsun Odhan on Seven Cities. It lay in the northwest of the subcontinent between the cities of Ehrlitan and Karashimesh.\n",
@@ -10447,6 +11161,23 @@
         ]
     },
     {
+        "name": "Reach",
+        "slug": "reach",
+        "description": "Reach was a town on the western coast of the Sea of Gold on Assail near the Blood Range. It was located south of Mantle.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Reach",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 764,
+                    "y": 752
+                }
+            }
+        ]
+    },
+    {
         "name": "Reach Inlet",
         "slug": "reach-inlet",
         "description": "Reach Inlet was an extension of the Calash Sea into northwestern Lether near the Reach penninsula.  The black, depthless water smelled of ice and was bordered by jagged mountains and snow-clad peaks.\n",
@@ -10484,6 +11215,14 @@
                 "marker": {
                     "x": 577,
                     "y": 383
+                }
+            },
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 87,
+                    "y": 894
                 }
             }
         ]
@@ -10777,6 +11516,23 @@
         ]
     },
     {
+        "name": "River Thin",
+        "slug": "river-thin",
+        "description": "The River Thin, or Thin River, ran eastward on Bael from the vicinity of the Spur to the Anari Narrows on the Sea of Hate. Along the way they passed Kurzan.",
+        "wikiLink": "https://malazan.fandom.com/wiki/River_Thin",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 888,
+                    "y": 1832
+                }
+            }
+        ]
+    },
+    {
         "name": "Rock Bay",
         "slug": "rock-bay",
         "description": "Rock Bay was located on the southern coast of the Malyn Sea in northwestern Genabackis. \n",
@@ -10823,6 +11579,40 @@
                 "marker": {
                     "x": 313,
                     "y": 606
+                }
+            }
+        ]
+    },
+    {
+        "name": "Rough Landing",
+        "slug": "rough-landing",
+        "description": "Rough Landing was a town on the western shore of the Bay of Timber in Assail. It was part of the Bone Peninsula, and backed onto the Bone Range in the west. It was south of Holly and northwest of Bones.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Rough_Landing",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 848,
+                    "y": 1037
+                }
+            }
+        ]
+    },
+    {
+        "name": "Run",
+        "slug": "run",
+        "description": "Run was a town in eastern Assail. The town of Burnt was to its northeast while Deep Root was to its southeast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Run",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1097,
+                    "y": 1212
                 }
             }
         ]
@@ -11347,6 +12137,23 @@
         ]
     },
     {
+        "name": "Sea of Hate",
+        "slug": "sea-of-hate",
+        "description": "The Sea of Hate was located off the eastern coast of Assail. It was joined to the Bay of Timber which extended inland to the west.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Sea_of_Hate",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1229,
+                    "y": 867
+                }
+            }
+        ]
+    },
+    {
         "name": "Sea of Kaltepe Kadesh",
         "slug": "sea-of-kaltepe-kadesh",
         "description": "The Sea of Kaltepe Kadesh was located to the north of Seven Cities. To its west was the Dryjhna Ocean, to its south lay Maadil Sea, on its southeast corner was the Otataral Sea, and to the east was the Bandiko Desert.\n",
@@ -11367,6 +12174,23 @@
                 "marker": {
                     "x": 1268,
                     "y": 176
+                }
+            }
+        ]
+    },
+    {
+        "name": "Second Landing",
+        "slug": "second-landing",
+        "description": "Second Landing was a town on the eastern coast of the Dread Sea on Assail. This placed it on the Bone Peninsula where it stood at the foot of the Bone Range.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Second_Landing",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 831,
+                    "y": 1214
                 }
             }
         ]
@@ -11713,6 +12537,57 @@
         ]
     },
     {
+        "name": "Shifting Wastes",
+        "slug": "shifting-wastes",
+        "description": "The Shifting Wastes were located in central Assail between the Dread Sea and the Black Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Shifting_Wastes",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 704,
+                    "y": 1459
+                }
+            }
+        ]
+    },
+    {
+        "name": "Shore of Sand",
+        "slug": "shore-of-sand",
+        "description": "The Shore of Sand was the name for the northwestern coast of the Black Sea on Assail. It ran to Black Fingers Forest in the east. To its north were the Shifting Wastes.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Shore_of_Sand",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 734,
+                    "y": 1583
+                }
+            }
+        ]
+    },
+    {
+        "name": "Shore of Stone",
+        "slug": "shore-of-stone",
+        "description": "The Shore of Stone was the name for the southern coast of the Black Sea on Assail. At its easternmost extent was Towerpoint. At its west, the Black River emptied into the sea. Midway down the length of its shore were the ruins of some unknown structure or settlement.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Shore_of_Stone",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 790,
+                    "y": 1676
+                }
+            }
+        ]
+    },
+    {
         "name": "Sialk",
         "slug": "sialk",
         "description": "Sialk was a port city on the Sahul Sea on the east coast of Seven Cities. It was located twenty leagues south of Hissar.\n",
@@ -11792,6 +12667,23 @@
                 "marker": {
                     "x": 614,
                     "y": 1088
+                }
+            }
+        ]
+    },
+    {
+        "name": "Silent People",
+        "slug": "silent-people",
+        "description": "The Silent People, also known as the Yag'Quarall, were a nomadic race of mixed human-Jaghut blood on the western plains of Assail. They lived in clans and were fiercely territorial and protective of their resource poor lands. They killed male trespassers and captured children and women of childbearing years.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Silent_People",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 365,
+                    "y": 1613
                 }
             }
         ]
@@ -12426,6 +13318,23 @@
                 "marker": {
                     "x": 1642,
                     "y": 274
+                }
+            }
+        ]
+    },
+    {
+        "name": "Talon Forest",
+        "slug": "talon-forest",
+        "description": "Talon Forest was located on the eastern coast of Assail. It abutted an unnamed range of mountains in the northwest. The town of Listell was located on its southern border.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Talon_Forest",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1212,
+                    "y": 1296
                 }
             }
         ]
@@ -13181,6 +14090,23 @@
         ]
     },
     {
+        "name": "Towerpoint",
+        "slug": "towerpoint",
+        "description": "Towerpoint was a settlement on the southeastern coast of the Black Sea on Assail. It was located a spur of land overlooking where the Black Sea emptied into the Sea of Hate.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Towerpoint",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1148,
+                    "y": 1652
+                }
+            }
+        ]
+    },
+    {
         "name": "Trails",
         "slug": "trails",
         "description": "Trails was a city in the Letherii Empire.  It was located along the northern coast of the Dracons Sea between Deselen and Gress.\n",
@@ -13602,6 +14528,23 @@
         ]
     },
     {
+        "name": "Vanishing Wastes",
+        "slug": "vanishing-wastes",
+        "description": "The Vanishing Wastes on Assail were bounded by the Dread Sea to the east, the Blood Range to the northeast, and the Range of the Saints to the west. The plain was also known as the Vanishing Lands and the Lands of Dust, and it was said that any who ventured onto the plains were never seen again.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Vanishing_Wastes",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 512,
+                    "y": 915
+                }
+            }
+        ]
+    },
+    {
         "name": "Vathar",
         "slug": "vathar",
         "description": "The river Vathar marked the northern edge of the Vathar Forest and emptied into the Dojal Hading Sea on the Seven Cities continent.\n",
@@ -13847,6 +14790,23 @@
         ]
     },
     {
+        "name": "Weeping Plains",
+        "slug": "weeping-plains",
+        "description": "The Weeping Plains were located on the Bael subcontinent. They were the location of the Spur, the fortress home of the warlock, Shen.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Weeping_Plains",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 682,
+                    "y": 1957
+                }
+            }
+        ]
+    },
+    {
         "name": "Wend",
         "slug": "wend",
         "description": "Wend was a city on the southern coast of the Bluerose Sea on Lether.  To the west was Stall and to the east was Olived.\n",
@@ -13927,6 +14887,23 @@
                 "marker": {
                     "x": 1790,
                     "y": 600
+                }
+            }
+        ]
+    },
+    {
+        "name": "White Cliffs",
+        "slug": "white-cliffs",
+        "description": "The White Cliffs ran along Bael's eastern coast from the Anari Narrows to the vicinity of Towerpoint.",
+        "wikiLink": "https://malazan.fandom.com/wiki/White_Cliffs",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1080,
+                    "y": 1831
                 }
             }
         ]
@@ -14033,6 +15010,23 @@
         ]
     },
     {
+        "name": "Widden",
+        "slug": "widden",
+        "description": "Widden was a town on the eastern coast of Assail and the Sea of Hate. It was located to the north of Talon Forest and to the east of Pillar.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Widden",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1285,
+                    "y": 1158
+                }
+            }
+        ]
+    },
+    {
         "name": "Worrytown",
         "slug": "worrytown",
         "description": "Worrytown was a slum, consisting of a handful of sagging buildings, outside the eastern side of the city walls of Darujhistan. It sprawled on either side of the East Gate and along Jatem's Worry (Jammit's Worry).\n",
@@ -14050,6 +15044,23 @@
         ]
     },
     {
+        "name": "Wrack Coast",
+        "slug": "wrack-coast",
+        "description": "The Wrack Coast was Assail's northeastern shore with the Sea of Hate. It marked the northernmost extent of the Plain of Sighs.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Wrack_Coast",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 991,
+                    "y": 416
+                }
+            }
+        ]
+    },
+    {
         "name": "Wreck Isle",
         "slug": "wreck-isle",
         "description": "Wreck Isle was one of the larger Night Ship Islands located at the tip of southern Genabackis' tail.  Nearby was Corpse Isle.\n",
@@ -14062,6 +15073,23 @@
                 "marker": {
                     "x": 1850,
                     "y": 278
+                }
+            }
+        ]
+    },
+    {
+        "name": "Wreckers' Coast",
+        "slug": "wreckers-coast",
+        "description": "The Wreckers' Coast (also spelled Wrecker's Coast occasionally) was located on the eastern coast of Assail. It was essentially the southeastern shore of the Bay of Timber, which was a body of water extending westward from the Sea of Hate. The deadly Fear Narrows opened out from Wreckers' Coast, leading into the Dread Sea. Bones, Pillar and Widden were coastal towns which were situated along Wreckers' Coast and were, presumably, full of wreckers as this stretch of coastline was one of the best known and most notoriously dangerous of the world's so-called \"wreckers' coasts\" - being, for example, avoided for this reason by Malazan shipping.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Wreckers%27_Coast",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Assail",
+                "image": "/static/img/maps/Assail.webp",
+                "marker": {
+                    "x": 1172,
+                    "y": 1082
                 }
             }
         ]

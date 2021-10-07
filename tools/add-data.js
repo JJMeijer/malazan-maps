@@ -11,6 +11,8 @@ const content = require('../views/_data/content.json');
 
 
 (async () => {
+
+    console.clear();
     const response = await prompts([
         {
             type: 'text',
@@ -24,7 +26,7 @@ const content = require('../views/_data/content.json');
             choices: async (prev) => await wikiSearch(prev),
         },
         {
-            type: 'select',
+            type: 'autocomplete',
             name: 'type',
             message: 'Select a type',
             choices: [
@@ -33,7 +35,7 @@ const content = require('../views/_data/content.json');
             ],
         },
         {
-            type: 'select',
+            type: 'autocomplete',
             name: 'map',
             message: 'Select a Map',
             choices: maps.map((x) => ({
@@ -54,6 +56,11 @@ const content = require('../views/_data/content.json');
     ]);
 
     const { name, type, map, markerX, markerY } = response;
+
+    if (!name) {
+        console.log('Cancelled');
+        return;
+    }
 
     const slug = slugify(name, {
         lower: true,
@@ -87,7 +94,7 @@ const content = require('../views/_data/content.json');
         validateContent(content);
 
         fs.writeFileSync(__dirname + '/../views/_data/content.json', JSON.stringify(content, null, 4));
-        console.log(`[${__filename}] Added new item: ${newItem.name}`);
+        console.log(`Added new item: ${newItem.name}`);
         return;
     }
 
@@ -95,13 +102,13 @@ const content = require('../views/_data/content.json');
         (map) => map.name === newItem.maps[0].name,
     );
 
-    if (existingMap) {
-        console.log(`[${__filename}] Item With provided map already exists`);
+    if (existingMap > -1) {
+        console.log(`Item With provided map already exists`);
         return;
     }
 
-    content[existingItemIndex].maps.concat(newItem.maps);
+    content[existingItemIndex].maps.push(newItem.maps[0]);
     validateContent();
     fs.writeFileSync(__dirname + '/../views/_data/content.json', JSON.stringify(content, null, 4));
-    console.log(`[${__filename}] Added map "${newItem.maps[0].name}" to existing Content Item "${newItem.name}".`);
+    console.log(`Added map "${newItem.maps[0].name}" to existing Content Item "${newItem.name}".`);
 })();
