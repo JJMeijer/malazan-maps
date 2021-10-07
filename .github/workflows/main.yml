@@ -17,6 +17,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Get latest tag
+        id: tag
+        run: echo "::set-output name=commit-tag::$(git describe)"
+
       - name: Install Yarn
         run: npm install yarn -g
 
@@ -31,3 +35,4 @@ jobs:
         with:
           credentials: ${{ secrets.GCP_CREDENTIALS }}
           working_directory: www
+          version: ${{ steps.tag.outputs.commit-tag }}

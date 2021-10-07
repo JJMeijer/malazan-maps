@@ -34,6 +34,23 @@
         ]
     },
     {
+        "name": "Aamil",
+        "slug": "aamil",
+        "description": "Aamil was a port city in Skolati. It had the look of a fortress stronghold built specifically to resist any assault from the sea. Twin curving moles met at a narrow harbour entrance flanked by stout guard towers. The main fortress rose straight from the water in a tall featureless curtain wall of salt-stained grey limestone blocks. Access from the harbour was limited to the narrow inlet between the fortified towers.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Aamil",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2117,
+                    "y": 534
+                }
+            }
+        ]
+    },
+    {
         "name": "Abor",
         "slug": "abor",
         "description": "Abor was a city in central Jourilan and the site of the Jourilan Imperial Games.\n",
@@ -54,6 +71,23 @@
                 "marker": {
                     "x": 831,
                     "y": 659
+                }
+            }
+        ]
+    },
+    {
+        "name": "Abor (Jourilan)",
+        "slug": "abor-jourilan",
+        "description": "Abor was a city in central Jourilan and the site of the Jourilan Imperial Games.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Abor_(Jourilan)",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 456,
+                    "y": 1614
                 }
             }
         ]
@@ -232,6 +266,23 @@
                 "marker": {
                     "x": 990,
                     "y": 864
+                }
+            }
+        ]
+    },
+    {
+        "name": "Antr",
+        "slug": "antr",
+        "description": "Antr was the southernmost city in the Empire of Jourilan along the western coast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Antr",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 297,
+                    "y": 1776
                 }
             }
         ]
@@ -675,6 +726,23 @@
         ]
     },
     {
+        "name": "Bali",
+        "slug": "bali",
+        "description": "Bali was a city in Katakan north of the Barrier Range on Korel Island.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bali",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 916,
+                    "y": 781
+                }
+            }
+        ]
+    },
+    {
         "name": "Balstro",
         "slug": "balstro",
         "description": "Balstro was a city in northeastern Quon Tali. It was located on the River Nye, which passed from the edge of the Wickan Plains to the Bloor Sea near Gris. To its north was Habal and to its south was Nita.\n",
@@ -737,6 +805,23 @@
                 "marker": {
                     "x": 1892,
                     "y": 138
+                }
+            }
+        ]
+    },
+    {
+        "name": "Banith",
+        "slug": "banith",
+        "description": "Banith was a seaside city in the Kingdom of Rool, on the Island of Fist. Its front street ran roughly east–west along the docks. When Ipshank first arrived there, he noted that \"the town climbed shallow coastal hills, its roofs dominated by the tall jutting spires of the Holy Cloister and the many gables of the Hospice nearby. Beyond these, rich cultivated rolling plains, land once forested, stretched into the mist-shrouded distance.\"",
+        "wikiLink": "https://malazan.fandom.com/wiki/Banith",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1724,
+                    "y": 672
                 }
             }
         ]
@@ -1121,6 +1206,23 @@
         ]
     },
     {
+        "name": "Black City",
+        "slug": "black-city",
+        "description": "Black City was a port city on the Black Water Strait in the kingdom of Mare on the Island of Fist.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Black_City",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1903,
+                    "y": 809
+                }
+            }
+        ]
+    },
+    {
         "name": "Black Coral",
         "slug": "black-coral",
         "description": "The Terondai was a room in the New Palace of Coral where Anomander Rake had commissioned the symbol of Mother Dark to be inset to both the floor and roof. It was a large domed room, as was the original in Kharkanas, which was the \"heart\" of Kurald Galain's manifestation in the mortal realm and could be considered the Temple of Darkness, however it held no power until the Gate of Darkness was freed from its prison in Dragnipur.\n",
@@ -1222,6 +1324,23 @@
         ]
     },
     {
+        "name": "Black Water Strait",
+        "slug": "black-water-strait",
+        "description": "The Black Water Strait connected Bloodmare Ocean with the inland Sender's Sea, separating Fist Island from Stygg and southern Korel.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Black_Water_Strait",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1836,
+                    "y": 821
+                }
+            }
+        ]
+    },
+    {
         "name": "Blackdog Forest",
         "slug": "blackdog-forest",
         "description": "Blackdog Forest, or Swamp, was a large boreal forest surrounded by swamp located on the shield bedrock of the continent of Genabackis. It was the site of major battles between the Malaz 5th Army and the allied armies of Caladan Brood and the Crimson Guard during the First Campaigns.\n",
@@ -1242,6 +1361,57 @@
                 "marker": {
                     "x": 540,
                     "y": 683
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bleeder's Cut",
+        "slug": "bleeders-cut",
+        "description": "Bleeder's Cut was a narrow channel which separated Dourkan from Remnant Isle in the Lands of Fist. It connected the Crack Strait and Flow Strait.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bleeder%27s_Cut",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 706,
+                    "y": 1248
+                }
+            }
+        ]
+    },
+    {
+        "name": "Blight",
+        "slug": "blight",
+        "description": "Blight was the easternmost city in the Empire of Jourilan, on the western shore of the Blight Sea. The city on the Bay of Blight was surrounded by a stone wall.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Blight",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 685,
+                    "y": 1654
+                }
+            }
+        ]
+    },
+    {
+        "name": "Blight Sea",
+        "slug": "blight-sea",
+        "description": "The Blight Sea separated the Empire of Jourilan from Jasston and the Plains of Blight.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Blight_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 818,
+                    "y": 1706
                 }
             }
         ]
@@ -1273,6 +1443,23 @@
             {
                 "name": "Isle of Jacuruku",
                 "image": "/static/img/maps/Jacuruku.webp"
+            }
+        ]
+    },
+    {
+        "name": "Blood Isthmus",
+        "slug": "blood-isthmus",
+        "description": "The Blood Isthmus was a narrow strip of land between the cities of Xixr and Poon in Katakan.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Blood_Isthmus",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 963,
+                    "y": 700
+                }
             }
         ]
     },
@@ -1314,6 +1501,23 @@
                 "marker": {
                     "x": 1076,
                     "y": 1003
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bloodmare Ocean",
+        "slug": "bloodmare-ocean",
+        "description": "The Bloodmare Ocean was located east of the Lands of Fist.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bloodmare_Ocean",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2372,
+                    "y": 718
                 }
             }
         ]
@@ -2255,6 +2459,23 @@
         ]
     },
     {
+        "name": "Cast (city)",
+        "slug": "cast-city",
+        "description": "Cast was a city in Stygg. It was located on the west coast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Cast_(city)",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1667,
+                    "y": 957
+                }
+            }
+        ]
+    },
+    {
         "name": "Cat",
         "slug": "cat",
         "description": "Cat (not to be confused with One Eye Cat) was a city in northern Genabackis, located north-west of Lead and south of the One Eye Mountains on the Old King Plateau. \n",
@@ -2351,6 +2572,23 @@
                 "marker": {
                     "x": 909,
                     "y": 435
+                }
+            }
+        ]
+    },
+    {
+        "name": "Children Ridge Mountains",
+        "slug": "children-ridge-mountains",
+        "description": "The Children Ridge Mountains in the Lands of Fist surrounded the Tower Sea on Remnant Isle.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Children_Ridge_Mountains",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 970,
+                    "y": 983
                 }
             }
         ]
@@ -2507,6 +2745,23 @@
         ]
     },
     {
+        "name": "Companion Sea",
+        "slug": "companion-sea",
+        "description": "The Companion Sea was a tiny inland sea just to the north of the Tower Sea on Remnant Isle. It was more the size of a lake.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Companion_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1096,
+                    "y": 907
+                }
+            }
+        ]
+    },
+    {
         "name": "Confederacy of Free Cities",
         "slug": "confederacy-of-free-cities",
         "description": "The Confederacy of Free Cities, also known as the Southern Confederacy of Free Cities, was a loosely organized grouping of pirate city-states on Genabackis's southeastern peninsula.\n",
@@ -2603,6 +2858,23 @@
                 "marker": {
                     "x": 1913,
                     "y": 245
+                }
+            }
+        ]
+    },
+    {
+        "name": "Crack Strait",
+        "slug": "crack-strait",
+        "description": "The Crack Strait separated Korel Island from Remnant Isle and Dourkan to the east.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Crack_Strait",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 735,
+                    "y": 1013
                 }
             }
         ]
@@ -2895,6 +3167,57 @@
         ]
     },
     {
+        "name": "Dami",
+        "slug": "dami",
+        "description": "Dami was a city in western Jasston in the Lands of Fist. It was located on a bay facing westwards towards Ring Wall.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dami",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 800,
+                    "y": 1447
+                }
+            }
+        ]
+    },
+    {
+        "name": "Damos",
+        "slug": "damos",
+        "description": "Damos was the westernmost city in the Empire of Jourilan which was in the south east of the Korel sub-continent. To the north was Damos Bay.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Damos",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 288,
+                    "y": 1497
+                }
+            }
+        ]
+    },
+    {
+        "name": "Damos Bay",
+        "slug": "damos-bay",
+        "description": "Damos Bay was located at the southern tip of Korel Island, separating it from the Empire of Jourilan.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Damos_Bay",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 289,
+                    "y": 1372
+                }
+            }
+        ]
+    },
+    {
         "name": "Danan",
         "slug": "danan",
         "description": "Danan was a city in Estobanse Province, Kolanse.  The Ses Mountains were to the north.\n",
@@ -2907,6 +3230,23 @@
                 "marker": {
                     "x": 878,
                     "y": 693
+                }
+            }
+        ]
+    },
+    {
+        "name": "Danig",
+        "slug": "danig",
+        "description": "Danig was a city on the southeastern coast of Theft on the Korel continent. It faced the Pirate's Sea. Across the Katakan border to the west was the city of Molz.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Danig",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1142,
+                    "y": 656
                 }
             }
         ]
@@ -2957,6 +3297,23 @@
                 "marker": {
                     "x": 487,
                     "y": 410
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dead Shore",
+        "slug": "dead-shore",
+        "description": "The Dead Shore was the name of the coastline directly north of the Stormwall on Korel Island.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dead_Shore",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 579,
+                    "y": 907
                 }
             }
         ]
@@ -3046,6 +3403,23 @@
                 "marker": {
                     "x": 962,
                     "y": 1176
+                }
+            }
+        ]
+    },
+    {
+        "name": "Deep Wilderness",
+        "slug": "deep-wilderness",
+        "description": "The Deep Wilderness spanned the area south of the Ebon Mountains between the Elder Continent and the Bloodmare Ocean.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Deep_Wilderness",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1715,
+                    "y": 1271
                 }
             }
         ]
@@ -3288,6 +3662,23 @@
         ]
     },
     {
+        "name": "Dim (city)",
+        "slug": "dim-city",
+        "description": "Dim was a city on the west coast of Stygg.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dim_(city)",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1742,
+                    "y": 917
+                }
+            }
+        ]
+    },
+    {
         "name": "Dobre",
         "slug": "dobre",
         "description": "Dobre was a city located about halfway between the cities of Nahal and Geleen along the northeastern shore of the Clatar Sea in Seven Cities.\n",
@@ -3405,6 +3796,23 @@
         ]
     },
     {
+        "name": "Dorik",
+        "slug": "dorik",
+        "description": "Dorik was a city in western Skolati on the Korel continent. It was located where a channel left the Fist Sea on the way to the Pirate's Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dorik",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1750,
+                    "y": 433
+                }
+            }
+        ]
+    },
+    {
         "name": "Dosin Pali",
         "slug": "dosin-pali",
         "description": "Dosin Pali was a city at the southern tip of Otataral Island across the strait from Hissar on the Seven Cities subcontinent. The island was known to hold one of the world's most prominent sources of otataral, and the city was the gateway to the mines that extracted the magic-deadening ore. It was no more than four days journey from the Skullcup mining camp.\n",
@@ -3425,6 +3833,57 @@
                 "marker": {
                     "x": 1756,
                     "y": 750
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dour",
+        "slug": "dour",
+        "description": "Dour was the northernmost city in Dourkan. It was located where the Crack Strait met Bleeder's Cut.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dour",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 662,
+                    "y": 1144
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dourkan",
+        "slug": "dourkan",
+        "description": "Dourkan was situated between Korel Island and Remnant Isle, north of the Empire of Jourilan. It was separated from Korel Island by the Crack Strait and from Remnant Isle by Bleeder's Cut.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dourkan",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 608,
+                    "y": 1197
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dourkol",
+        "slug": "dourkol",
+        "description": "Dourkol was the capital of Dourkan, one of the Lands of Fist. It was centrally located.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dourkol",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 593,
+                    "y": 1255
                 }
             }
         ]
@@ -3459,6 +3918,23 @@
                 "marker": {
                     "x": 503,
                     "y": 828
+                }
+            }
+        ]
+    },
+    {
+        "name": "Drak",
+        "slug": "drak",
+        "description": "Drak was one of the larger cities in Stygg. It was located on the east coast, along the Black Water Strait.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Drak",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1803,
+                    "y": 948
                 }
             }
         ]
@@ -3688,6 +4164,23 @@
         ]
     },
     {
+        "name": "East Watch",
+        "slug": "east-watch",
+        "description": "East Watch, or the Isle of East Watch, was an island in the Bloodmare Ocean off the eastern coast of the Lands of Fist. It was near the eastern entrance to the Blackwater Strait, the southern coast of Mare, and the eastern coast of the Deep Wilderness.",
+        "wikiLink": "https://malazan.fandom.com/wiki/East_Watch",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2155,
+                    "y": 1181
+                }
+            }
+        ]
+    },
+    {
         "name": "Eb",
         "slug": "eb",
         "description": "Eb was one of several cities located near the N'Trmon tel in eastern Seven Cities. It lay on the road between Narthi and Nitral. To the north were the Kundesh Hills and Uthor.\n",
@@ -3700,6 +4193,40 @@
                 "marker": {
                     "x": 1731,
                     "y": 513
+                }
+            }
+        ]
+    },
+    {
+        "name": "Ebon",
+        "slug": "ebon",
+        "description": "Ebon was the northernmost city in Stygg. It was located on a peninsula which jutted between the Sender's Sea and the Black Water Strait. The city was an urban sprawl surrounding a great fortress. It was purported to possess some of the world's most legendary brothels, and the city's ruler maintained a pleasure palace.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Ebon",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1759,
+                    "y": 796
+                }
+            }
+        ]
+    },
+    {
+        "name": "Ebon Mountains",
+        "slug": "ebon-mountains",
+        "description": "The Ebon Mountains formed a natural southern border for the region of Stygg. Farther south lay the Deep Wilderness.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Ebon_Mountains",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1660,
+                    "y": 1176
                 }
             }
         ]
@@ -3789,6 +4316,23 @@
         ]
     },
     {
+        "name": "Elder Continent",
+        "slug": "elder-continent",
+        "description": "The Elder Continent was a region in the southern part of the subcontinent of Korel, between the Plains of Blight and the Deep Wilderness, north of the Iceback Range.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Elder_Continent",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1429,
+                    "y": 1395
+                }
+            }
+        ]
+    },
+    {
         "name": "Elingarth",
         "slug": "elingarth",
         "description": "Elingarth was a city on the southeastern coast of the continent of Genabackis. It was located at the southern entrance of an inlet and connected by a road/track to North March. To the east it was bordered by the Lamatath Plain.\n",
@@ -3818,6 +4362,14 @@
                 "marker": {
                     "x": 925,
                     "y": 799
+                }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 688,
+                    "y": 955
                 }
             }
         ]
@@ -4177,6 +4729,40 @@
         ]
     },
     {
+        "name": "Fall Strait",
+        "slug": "fall-strait",
+        "description": "Fall Strait was north of Remnant Isle on the Lands of Fist. It connected the Sender's Sea to the Narrows and Crack Strait near Theft.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Fall_Strait",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1267,
+                    "y": 770
+                }
+            }
+        ]
+    },
+    {
+        "name": "Falt",
+        "slug": "falt",
+        "description": "Falt was a city in northeastern Skolati on the Korel continent. It was located between the coast of the Bloodmare Ocean and the mountains circling the Fist Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Falt",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2182,
+                    "y": 352
+                }
+            }
+        ]
+    },
+    {
         "name": "Fedal",
         "slug": "fedal",
         "description": "Fedal was a city in Itko Kan near the coast of the Horn Ocean. It lay just east of Forest Horn and north of Horan. To the northeast was Nex and to the southeast was Ryns.\n",
@@ -4278,6 +4864,23 @@
         ]
     },
     {
+        "name": "Filk",
+        "slug": "filk",
+        "description": "Filk was a city on the eastern coast of Theft on the Korel continent. It faced the Pirate's Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Filk",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1210,
+                    "y": 592
+                }
+            }
+        ]
+    },
+    {
         "name": "Fire",
         "slug": "fire",
         "description": "Fire was a large city in the south of Dracons.\n",
@@ -4371,6 +4974,40 @@
         ]
     },
     {
+        "name": "Fist Island",
+        "slug": "fist-island",
+        "description": "Fist Island was an island northeast of Korel Island, and part of the continent of Lands of Fist.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Fist_Island",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1888,
+                    "y": 651
+                }
+            }
+        ]
+    },
+    {
+        "name": "Fist Sea",
+        "slug": "fist-sea",
+        "description": "The Fist Sea, or Sea of Fist, was an inland sea on Fist Island which lay between Skolati to the north and east, and Rool to the south and west. Along its southern shore was the Trembling Range which hid the caves of the mountain ascetics at Thol. It was connected to the Pirate's Sea to the west by a channel.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Fist_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1935,
+                    "y": 417
+                }
+            }
+        ]
+    },
+    {
         "name": "Five Points",
         "slug": "five-points",
         "description": "Five Points was a Letherii town in northwestern Lether.  It was located between Brans Keep and White Point on the western side of the East Shake River.\n",
@@ -4400,6 +5037,23 @@
                 "marker": {
                     "x": 1529,
                     "y": 291
+                }
+            }
+        ]
+    },
+    {
+        "name": "Flow Strait",
+        "slug": "flow-strait",
+        "description": "The Flow Strait was located to the northwest of Jasston and southeast of Remnant Isle, providing access to The Curl.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Flow_Strait",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 815,
+                    "y": 1338
                 }
             }
         ]
@@ -4485,6 +5139,23 @@
                 "marker": {
                     "x": 1721,
                     "y": 915
+                }
+            }
+        ]
+    },
+    {
+        "name": "Fort Drii",
+        "slug": "fort-drii",
+        "description": "Fort Drii was situated on the eastern shore of the Fist Sea in Skolati.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Fort_Drii",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2076,
+                    "y": 452
                 }
             }
         ]
@@ -4990,6 +5661,23 @@
         ]
     },
     {
+        "name": "Ghost City",
+        "slug": "ghost-city",
+        "description": "Ghost City was located on the southern tip of Remnant Isle, on the Bleeder's Cut, just north of the Ring Wall.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Ghost_City",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 731,
+                    "y": 1290
+                }
+            }
+        ]
+    },
+    {
         "name": "Gilar Oasis",
         "slug": "gilar-oasis",
         "description": "The Gilar Oasis was located approxmiately halfway between Sialk and Caron Tepasi. Due west was the ancient tel of Ca'mon and southwest, the tel Kalrmon. To the north Gryvar Pass crossed an unnamed set of hills.\n",
@@ -5066,6 +5754,23 @@
         ]
     },
     {
+        "name": "Golk",
+        "slug": "golk",
+        "description": "Golk was a town located in the southwestern part of the Empire of Jourilan, west of Pon-Ruo and northeast of Antr.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Golk",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 328,
+                    "y": 1705
+                }
+            }
+        ]
+    },
+    {
         "name": "Goss",
         "slug": "goss",
         "description": "Goss was sergeant of the 17th Squad, 4th Company, 2nd Division of the Malazan Fourth Army and veteran of Seven Cities. His nickname was Hunter, which for the old veterans was code for a Claw. Because he had served all his life, was nearing his fiftieth year, and was new to the regulars the rumour was he had been a Claw before his current assignment.  Even the squad's killer, the scout Faro, deferred to Goss' judgement.\n",
@@ -5078,6 +5783,23 @@
                 "marker": {
                     "x": 646,
                     "y": 1048
+                }
+            }
+        ]
+    },
+    {
+        "name": "Gost",
+        "slug": "gost",
+        "description": "Gost was a city in southeastern Skolati on the Korel continent. It was located near the coast of the Bloodmare Ocean.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Gost",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2102,
+                    "y": 592
                 }
             }
         ]
@@ -5272,6 +5994,23 @@
                 "marker": {
                     "x": 687,
                     "y": 713
+                }
+            }
+        ]
+    },
+    {
+        "name": "Grest",
+        "slug": "grest",
+        "description": "Grest was a city on the northeastern coast of Theft on the Korel continent. It faced the Pirate's Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Grest",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1405,
+                    "y": 363
                 }
             }
         ]
@@ -5499,6 +6238,23 @@
                 "marker": {
                     "x": 1354,
                     "y": 299
+                }
+            }
+        ]
+    },
+    {
+        "name": "Haft",
+        "slug": "haft",
+        "description": "Haft was a city in southern Skolati on the Korel continent. It was located on a river leading into the Fist Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Haft",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1997,
+                    "y": 607
                 }
             }
         ]
@@ -5865,6 +6621,23 @@
         ]
     },
     {
+        "name": "Homdo",
+        "slug": "homdo",
+        "description": "Homdo was a city near the northwest border of the Kingdom of Rool.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Homdo",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1583,
+                    "y": 501
+                }
+            }
+        ]
+    },
+    {
         "name": "Hoop",
         "slug": "hoop",
         "description": "Hoop was a former Free City north of the Free City Plain in northeastern Genabackis.\n",
@@ -6092,6 +6865,40 @@
                 "marker": {
                     "x": 1535,
                     "y": 1283
+                }
+            }
+        ]
+    },
+    {
+        "name": "Ice Island Sea",
+        "slug": "ice-island-sea",
+        "description": "The Ice Island Sea was the southwestern portion of the Bloodmare Ocean off the eastern coast of Korel. It bordered the frozen tundra separating Korel from Stratem.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Ice_Island_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2232,
+                    "y": 1606
+                }
+            }
+        ]
+    },
+    {
+        "name": "Iceback Range",
+        "slug": "iceback-range",
+        "description": "The Iceback Range formed the southern border of the Lands of Fist. Farther south lay tundra and the icefields of Stratem.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Iceback_Range",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1343,
+                    "y": 1607
                 }
             }
         ]
@@ -6344,6 +7151,55 @@
                     "x": 635,
                     "y": 932
                 }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 225,
+                    "y": 197
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jakatakan",
+        "slug": "jakatakan",
+        "description": "Malaz Island, also known as Jakatakan or Malaz Isle, was an island to the southeast of Quon Tali and the northwest of Korel.  There were two cities on the Island, Malaz City and Jakata, as well as several smaller towns and settlements.\n",
+        "wikiLink": "https://malazan.fandom.com/wiki/Malaz_Island",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Quon Tali",
+                "image": "/static/img/maps/Quon_Tali.webp",
+                "marker": {
+                    "x": 1404,
+                    "y": 882
+                }
+            },
+            {
+                "name": "Malaz Isle",
+                "image": "/static/img/maps/Malaz_Isle.webp",
+                "marker": {
+                    "x": 1218,
+                    "y": 690
+                }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 356,
+                    "y": 171
+                }
+            },
+            {
+                "name": "Malazan Empire",
+                "image": "/static/img/maps/Malazan_Empire.webp",
+                "marker": {
+                    "x": 1286,
+                    "y": 2202
+                }
             }
         ]
     },
@@ -6402,6 +7258,40 @@
                 "marker": {
                     "x": 973,
                     "y": 336
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jassr",
+        "slug": "jassr",
+        "description": "Jassr was a city in northern Jasston in the Lands of Fist. It was located on the point of land where the Flow Strait met The Curl.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jassr",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 907,
+                    "y": 1301
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jasston",
+        "slug": "jasston",
+        "description": "Jasston was a peninsula between the Empire of Jourilan and the Plains of Blight, bounded to the north by the Flow Strait.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jasston",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 859,
+                    "y": 1407
                 }
             }
         ]
@@ -6494,6 +7384,40 @@
                 "marker": {
                     "x": 1008,
                     "y": 904
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jour",
+        "slug": "jour",
+        "description": "Jour was the capital city of the Empire of Jourilan. It was located at the base of Damos Bay on the Empire's northwestern border.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jour",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 450,
+                    "y": 1374
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jourilan",
+        "slug": "jourilan",
+        "description": "The Empire of Jourilan was located in the southwest of the Korel sub-continent, just south of Dourkan and west of Jasston. It bordered on Damos Bay to the northwest and was bounded to the east by Blight Sea. Its capital was Jour.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jourilan",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 501,
+                    "y": 1577
                 }
             }
         ]
@@ -6861,6 +7785,23 @@
         ]
     },
     {
+        "name": "Katakan",
+        "slug": "katakan",
+        "description": "Katakan was a region on Korel Island sandwiched between the Barrier Range and Korelri to the south and Theft to the north.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Katakan",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1050,
+                    "y": 646
+                }
+            }
+        ]
+    },
+    {
         "name": "Katter",
         "slug": "katter",
         "description": "The Katter River was located in northwestern Lether.  It ran from the mountains near High Fort westward to empty into the Katter Bight at Old Katter. \n",
@@ -6982,6 +7923,23 @@
                 "marker": {
                     "x": 797,
                     "y": 1603
+                }
+            }
+        ]
+    },
+    {
+        "name": "Kevil",
+        "slug": "kevil",
+        "description": "Kevil was a port city on the Black Water Strait at the southern tip of the kingdom of Mare on the Island of Fist.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Kevil",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2018,
+                    "y": 1030
                 }
             }
         ]
@@ -7110,6 +8068,14 @@
                     "x": 1505,
                     "y": 861
                 }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 789,
+                    "y": 845
+                }
             }
         ]
     },
@@ -7144,6 +8110,23 @@
             {
                 "name": "Stormwall",
                 "image": "/static/img/maps/Stormwall.webp"
+            }
+        ]
+    },
+    {
+        "name": "Korelri",
+        "slug": "korelri",
+        "description": "Korelri was a region on Korel Island, the westernmost island in the archipelago known as \"Korel\" or the Lands of Fist in the Malazan Book of the Fallen. The Stormwall was built along the Dead Shore to keep the Stormriders from overrunning the land.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Korelri",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 639,
+                    "y": 956
+                }
             }
         ]
     },
@@ -7219,6 +8202,23 @@
                 "marker": {
                     "x": 901,
                     "y": 1064
+                }
+            }
+        ]
+    },
+    {
+        "name": "Kren",
+        "slug": "kren",
+        "description": "Kren was a town in the foothills in the interior of Mare, near the borders with Kingdom of Rool and Skolati.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Kren",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1980,
+                    "y": 773
                 }
             }
         ]
@@ -7472,6 +8472,23 @@
                 "marker": {
                     "x": 606,
                     "y": 397
+                }
+            }
+        ]
+    },
+    {
+        "name": "Lallit",
+        "slug": "lallit",
+        "description": "Lallit was a port city on the western coast of Rool. It was a modest town with a narrow harbour opening onto the Sender's Sea. The tower of the Sea-Gate overlooked the harbour.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Lallit",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1572,
+                    "y": 596
                 }
             }
         ]
@@ -7906,6 +8923,40 @@
         ]
     },
     {
+        "name": "Lorest",
+        "slug": "lorest",
+        "description": "Lorest was a city in northern Skolati on the Korel continent. It was located to the north of the mountains circling the Fist Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Lorest",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2032,
+                    "y": 333
+                }
+            }
+        ]
+    },
+    {
+        "name": "Lorti",
+        "slug": "lorti",
+        "description": "Lorti was a city in southern Jasston in the Lands of Fist. It was located on the coast of the Blight Sea near the border of the Plains of Blight.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Lorti",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 810,
+                    "y": 1524
+                }
+            }
+        ]
+    },
+    {
         "name": "Losten",
         "slug": "losten",
         "description": "Losten was a town in central Malaz Island located on the northern edge of the Jallid Plain and south of the Broland Hills.  It lay along the road leading between Broland Meet and Pyre. \n",
@@ -8027,6 +9078,14 @@
                     "x": 1280,
                     "y": 2166
                 }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 484,
+                    "y": 91
+                }
             }
         ]
     },
@@ -8054,6 +9113,14 @@
                 }
             },
             {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 356,
+                    "y": 171
+                }
+            },
+            {
                 "name": "Malazan Empire",
                 "image": "/static/img/maps/Malazan_Empire.webp",
                 "marker": {
@@ -8076,6 +9143,23 @@
                 "marker": {
                     "x": 1449,
                     "y": 439
+                }
+            }
+        ]
+    },
+    {
+        "name": "Mald",
+        "slug": "mald",
+        "description": "Mald was a city on the northeastern coast of Mare, near the Skolati border.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Mald",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2091,
+                    "y": 762
                 }
             }
         ]
@@ -8252,6 +9336,23 @@
                 "marker": {
                     "x": 773,
                     "y": 830
+                }
+            }
+        ]
+    },
+    {
+        "name": "Mare",
+        "slug": "mare",
+        "description": "Mare was a nation on the eastern coast of the Island of Fist, sandwiched between the Black Water Strait and the Bloodmare Ocean. It shared borders with the kingdoms of Rool and Skolati.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Mare",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1961,
+                    "y": 872
                 }
             }
         ]
@@ -8597,6 +9698,23 @@
                 "marker": {
                     "x": 380,
                     "y": 918
+                }
+            }
+        ]
+    },
+    {
+        "name": "Molz",
+        "slug": "molz",
+        "description": "Molz was a city on the northeastern coast of Katakan on the Korel continent. Across the border with Theft to the east was the city of Danig.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Molz",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1095,
+                    "y": 666
                 }
             }
         ]
@@ -9065,6 +10183,23 @@
         ]
     },
     {
+        "name": "Narrows",
+        "slug": "narrows",
+        "description": "The Narrows, as its name implied, was a relatively thin waterway between Korel Island and Remnant Isle on the Lands of Fist. It connected Crack Strait in the south with the open Sender's Sea to the north.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Narrows",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 940,
+                    "y": 830
+                }
+            }
+        ]
+    },
+    {
         "name": "Narthi",
         "slug": "narthi",
         "description": "Narthi was one of several cities located near the N'Trmon tel in eastern Seven Cities. It lay on the coast of the Sahul Sea between the cities of Hissar and Sialk.  To the northwest was Eb and to the southwest was Nitral.\n",
@@ -9161,6 +10296,23 @@
                 "marker": {
                     "x": 1094,
                     "y": 576
+                }
+            }
+        ]
+    },
+    {
+        "name": "New Fort",
+        "slug": "new-fort",
+        "description": "New Fort was located in southeast Dourkan, on the border with the Empire of Jourilan just off Bleeder's Cut.",
+        "wikiLink": "https://malazan.fandom.com/wiki/New_Fort",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 676,
+                    "y": 1270
                 }
             }
         ]
@@ -9601,6 +10753,14 @@
                 "marker": {
                     "x": 899,
                     "y": 148
+                }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 389,
+                    "y": 635
                 }
             }
         ]
@@ -10318,6 +11478,23 @@
         ]
     },
     {
+        "name": "Paliss",
+        "slug": "paliss",
+        "description": "Paliss was a large inland city and the capital of the Kingdom of Rool. It was there at the city's fortress that \"Overlord\" Yeull 'ul Taith installed himself.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Paliss",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1694,
+                    "y": 605
+                }
+            }
+        ]
+    },
+    {
         "name": "Pan'potsun",
         "slug": "panpotsun",
         "description": "Pan'potsun was one of the Holy Cities of Seven Cities. It was situated on the northeastern coast of the subcontinent.\n",
@@ -10597,6 +11774,23 @@
         ]
     },
     {
+        "name": "Pirate's Sea",
+        "slug": "pirates-sea",
+        "description": "The Pirate's Sea was an inland sea between Theft and Fist Island in the Lands of Fist. It was part of a larger body of water which included the Sender's Sea and The Curl.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Pirate%27s_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1474,
+                    "y": 430
+                }
+            }
+        ]
+    },
+    {
         "name": "Pit",
         "slug": "pit",
         "description": "Pit was a city along several caravan trails north of the Caron Mountains in eastern Seven Cities. One caravan track led east to Lod while others led north to Manot and northwest to the River Sekala.\n",
@@ -10732,6 +11926,57 @@
         ]
     },
     {
+        "name": "Plains of Blight",
+        "slug": "plains-of-blight",
+        "description": "The Plains of Blight were situated between the Blight Sea to the southwest, and The Curl to the north. To the west was Jasston and south of the plains lay the Iceback Range.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Plains_of_Blight",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1002,
+                    "y": 1565
+                }
+            }
+        ]
+    },
+    {
+        "name": "Pon-Ruo",
+        "slug": "pon-ruo",
+        "description": "Pon-Ruo was a town located in the southwestern part of the Empire of Jourilan, east of Golk and northeast of Antr.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Pon-Ruo",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 402,
+                    "y": 1716
+                }
+            }
+        ]
+    },
+    {
+        "name": "Poon",
+        "slug": "poon",
+        "description": "Poon was a city located east of the Blood Isthmus in Katakan.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Poon",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1005,
+                    "y": 711
+                }
+            }
+        ]
+    },
+    {
         "name": "Por Seti",
         "slug": "por-seti",
         "description": "Por Seti was the name given a section of land in the northern part of the continent of Quon Tali. To its north was Forest Fenn, to its west was Nom Purge, to its south lay the Dal Hon Plains, and to its east was Ero Lake. Lake Seti was on its western edge. Por Seti was home to the Seti people.\n",
@@ -10811,6 +12056,23 @@
                 "marker": {
                     "x": 255,
                     "y": 1175
+                }
+            }
+        ]
+    },
+    {
+        "name": "Protector Isle",
+        "slug": "protector-isle",
+        "description": "Protector Isle was a small island mostly covered by mountains between the Tower Sea and the Curl.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Protector_Isle",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1096,
+                    "y": 1279
                 }
             }
         ]
@@ -11224,6 +12486,14 @@
                     "x": 87,
                     "y": 894
                 }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 924,
+                    "y": 151
+                }
             }
         ]
     },
@@ -11304,6 +12574,23 @@
                 "marker": {
                     "x": 1484,
                     "y": 454
+                }
+            }
+        ]
+    },
+    {
+        "name": "Remnant Isle",
+        "slug": "remnant-isle",
+        "description": "Remnant Isle was a large island south of the Crack Strait from Korel Island. It was separated from Dourkan by Bleeder's Cut and from Jasston by the Flow Strait. To the east, across the Tower Sea, was Protector Isle and to the northeast was Fall Strait.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Remnant_Isle",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 798,
+                    "y": 1120
                 }
             }
         ]
@@ -11482,6 +12769,57 @@
         ]
     },
     {
+        "name": "Ring",
+        "slug": "ring",
+        "description": "Ring was a large walled city located along the eastern border of the Empire of Jourilan where the Lesser White River flowed into the Flow Strait and the Blight Sea. Its name was probably derived from the Ring Wall which lay almost directly north of the city.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Ring",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 582,
+                    "y": 1512
+                }
+            }
+        ]
+    },
+    {
+        "name": "Ring Wall",
+        "slug": "ring-wall",
+        "description": "The Ring Wall was a ring-shaped island between the Flow Strait and the Blight Sea. The inner lake, The Hole, was surrounded by cliffs ten fathoms high and accessible only through a narrow strait. The strait was protected against Stormriders by a deep metal mesh net which was anchored by a massive chain across the top of the cliffs. The chain's links were as a thick as a person's thigh and it was held in place by cyclopean stones.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Ring_Wall",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 662,
+                    "y": 1398
+                }
+            }
+        ]
+    },
+    {
+        "name": "Rip",
+        "slug": "rip",
+        "description": "Rip was a city on the eastern coast of Theft on the Korel continent. It faced the Pirate's Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Rip",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1238,
+                    "y": 543
+                }
+            }
+        ]
+    },
+    {
         "name": "Rivan Sea",
         "slug": "rivan-sea",
         "description": "The Rivan Sea lay off the southern coast of Genabackis, stretching from the Isle of the Seguleh in the west to the Confederacy of Free Cities to the east.\n",
@@ -11494,6 +12832,23 @@
                 "marker": {
                     "x": 905,
                     "y": 1060
+                }
+            }
+        ]
+    },
+    {
+        "name": "Rivdo",
+        "slug": "rivdo",
+        "description": "Rivdo was a port city on the Black Water Strait in the kingdom of Mare on the Island of Fist.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Rivdo",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1961,
+                    "y": 916
                 }
             }
         ]
@@ -11545,6 +12900,23 @@
                 "marker": {
                     "x": 615,
                     "y": 773
+                }
+            }
+        ]
+    },
+    {
+        "name": "Rool",
+        "slug": "rool",
+        "description": "The Kingdom of Rool was a region on the western coast of the Island of Fist, south of the Sea of Fist. The Trembling Range ran along its northern border. It was the most powerful state on Fist and a rival to Korelri.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Rool",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1631,
+                    "y": 607
                 }
             }
         ]
@@ -12066,6 +13438,14 @@
                     "x": 190,
                     "y": 674
                 }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 334,
+                    "y": 1206
+                }
             }
         ]
     },
@@ -12289,6 +13669,23 @@
         ]
     },
     {
+        "name": "Sender's Sea",
+        "slug": "senders-sea",
+        "description": "The Sender's Sea was an inland sea which was situated between the Kingdoms of Rool and Stygg in the Lands of Fist. It was part of a larger body of water which included the Pirate's Sea and The Curl.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Sender%27s_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1516,
+                    "y": 925
+                }
+            }
+        ]
+    },
+    {
         "name": "Sentry",
         "slug": "sentry",
         "description": "Sentry was a city on the eastern coast of Quon Tali facing the Bloor Sea. To its northeast was Unta, the capital of the Malazan Empire. To its west was Larent.\n",
@@ -12478,6 +13875,40 @@
         ]
     },
     {
+        "name": "Shade",
+        "slug": "shade",
+        "description": "Shade was one of the larger cities in Stygg. It was located inland.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Shade",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1708,
+                    "y": 989
+                }
+            }
+        ]
+    },
+    {
+        "name": "Shale",
+        "slug": "shale",
+        "description": "Shale was one of the larger cities in Stygg. It was located on the west coast, west of the Ebon Mountains.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Shale",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1534,
+                    "y": 1125
+                }
+            }
+        ]
+    },
+    {
         "name": "Shand",
         "slug": "shand",
         "description": "Shand was a half-blooded Tarthenal and one of three 'handsome', brawny, and intimidating women employed by Tehol Beddict of Letheras. Shand was described as sporting a shaved head, and having gleaming pale skin, wide-set light grey eyes, and possessing 'fine' legs (in Tehol's opinion). She was attired in almost white, skin-tight, tanned rawhide. Her comrades and associates were Rissarh and Hejun.\n",
@@ -12515,6 +13946,23 @@
                 "marker": {
                     "x": 1030,
                     "y": 525
+                }
+            }
+        ]
+    },
+    {
+        "name": "Shelter",
+        "slug": "shelter",
+        "description": "Shelter was a fortress in southeastern Korelri, part of Korel Island. Its walls were flat grey and its stone military pier extended into the Crack Strait.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Shelter",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 587,
+                    "y": 1042
                 }
             }
         ]
@@ -12583,6 +14031,23 @@
                 "marker": {
                     "x": 790,
                     "y": 1676
+                }
+            }
+        ]
+    },
+    {
+        "name": "Shroud",
+        "slug": "shroud",
+        "description": "Shroud was one of the larger cities in Stygg. It was located on the west coast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Shroud",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1644,
+                    "y": 1031
                 }
             }
         ]
@@ -12726,6 +14191,40 @@
                 "marker": {
                     "x": 1548,
                     "y": 412
+                }
+            }
+        ]
+    },
+    {
+        "name": "Skolati",
+        "slug": "skolati",
+        "description": "Skolati was an autonomous region in the northern part of the Island of Fist, north of the Fist Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Skolati",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 2109,
+                    "y": 268
+                }
+            }
+        ]
+    },
+    {
+        "name": "Sky Tower",
+        "slug": "sky-tower",
+        "description": "The Sky Tower, sometimes known as Skytower or the Isle of Skytower, was located on a small island in the center of the Tower Sea on Remnant Isle. The most isolated and secure of the Stormguard fortresses, it was garrisoned by four hundred men to protect the order's holiest relic. It was considered the most demanding and important posting achievable within the Chosen.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Sky_Tower",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1014,
+                    "y": 1121
                 }
             }
         ]
@@ -12959,6 +14458,23 @@
         ]
     },
     {
+        "name": "Steel",
+        "slug": "steel",
+        "description": "Steel was a city on the northeastern coast of Theft on the Korel continent. It faced the Pirate's Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Steel",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1349,
+                    "y": 454
+                }
+            }
+        ]
+    },
+    {
         "name": "Stem",
         "slug": "stem",
         "description": "The River Stem exited the northern coast of Pilgrim Lake on Genabackis. After traveling through the territory of the Pannion Domin, it and emptied into Coral Bay.\n",
@@ -13052,6 +14568,40 @@
         ]
     },
     {
+        "name": "Storin Cut",
+        "slug": "storin-cut",
+        "description": "Storin Cut was a channel on the northern side of Korel Island in the Lands of Fist. Located near the border of Theft and Katakan, it connected Reacher's Ocean to the waters between Korel Island and the smaller islands that lay off its shore. Storin Reef began near the cut before heading off to the northeast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Storin_Cut",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1013,
+                    "y": 541
+                }
+            }
+        ]
+    },
+    {
+        "name": "Storin Reef",
+        "slug": "storin-reef",
+        "description": "Storin Reef ran for an enormous distance off northern Korel into Reacher's Ocean. Its southernmost extent neared Storin Cut.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Storin_Reef",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1089,
+                    "y": 307
+                }
+            }
+        ]
+    },
+    {
         "name": "Storm",
         "slug": "storm",
         "description": "Storm was the most southwesterly city in Korelri, part of Korel Island.\n",
@@ -13064,6 +14614,14 @@
                 "marker": {
                     "x": 293,
                     "y": 850
+                }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 482,
+                    "y": 1042
                 }
             }
         ]
@@ -13081,6 +14639,14 @@
                 "marker": {
                     "x": 915,
                     "y": 675
+                }
+            },
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 601,
+                    "y": 927
                 }
             }
         ]
@@ -13166,6 +14732,40 @@
                 "marker": {
                     "x": 772,
                     "y": 984
+                }
+            }
+        ]
+    },
+    {
+        "name": "Sty",
+        "slug": "sty",
+        "description": "Sty was a High Marshal in the Mott Irregulars. He was described as a tall, awkward looking man with a lopsided toothy smile and large bony fists.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Sty",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1738,
+                    "y": 1065
+                }
+            }
+        ]
+    },
+    {
+        "name": "Stygg",
+        "slug": "stygg",
+        "description": "Stygg was the area north of the Ebon Mountains on the southeastern shore of the Sender's Sea. To the northeast was the Black Water Strait. Beyond the Ebon Mountains lay the Deep Wilderness.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Stygg",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1708,
+                    "y": 1056
                 }
             }
         ]
@@ -13710,6 +15310,23 @@
         ]
     },
     {
+        "name": "The Curl",
+        "slug": "the-curl",
+        "description": "The Curl was an inland body of water which separated Protector Isle from the Plains of Blight in the Lands of Fist. It was at the south end of a larger body of water which included the Sender's Sea and the Pirate's Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/The_Curl",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1046,
+                    "y": 1416
+                }
+            }
+        ]
+    },
+    {
         "name": "The Divide",
         "slug": "the-divide",
         "description": "The Divide was a range of mountains across central Genabackis that ran into the Barghast Range in the east and the Tahlyn Mountains in the west. A trader track passed through a pass in the Divide connecting Pale to Darujhistan, Saltoan, and Capustan. At the time of the war with the Pannion Domin, the Malazan Empire maintained a post in the pass which led smugglers to create an extensive series of trails through the mountains.\n",
@@ -13747,6 +15364,23 @@
                 "marker": {
                     "x": 1590,
                     "y": 450
+                }
+            }
+        ]
+    },
+    {
+        "name": "The Hole",
+        "slug": "the-hole",
+        "description": "The Hole was a lake surrounded by the Ring Wall, and connected to the Flow Strait and the Blight Sea through a narrow strait. The Hole was said to be bottomless and the water was clear enough to see hundreds of feet down.",
+        "wikiLink": "https://malazan.fandom.com/wiki/The_Hole",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 667,
+                    "y": 1425
                 }
             }
         ]
@@ -13878,6 +15512,23 @@
         ]
     },
     {
+        "name": "Theft",
+        "slug": "theft",
+        "description": "Theft was a region on the northern tip of Korel Island, referred to as both a peninsula and an island though maps indicate it was not an island. The city of Lamentable Moll was located there.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Theft",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1156,
+                    "y": 555
+                }
+            }
+        ]
+    },
+    {
         "name": "Then",
         "slug": "then",
         "description": "Then was a city on the western coast of the Nap Sea in Itko Kan.  It lay north of the city of Itko Kan.  Further north on the coast was Buld.\n",
@@ -13929,6 +15580,23 @@
         ]
     },
     {
+        "name": "Thol",
+        "slug": "thol",
+        "description": "Thol was a city on the southern shore of the Fist Sea amidst the Trembling Range, in the Kingdom of Rool.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Thol",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1804,
+                    "y": 562
+                }
+            }
+        ]
+    },
+    {
         "name": "Tholemon",
         "slug": "tholemon",
         "description": "Tholemon was an ancient tel in Bhilard territory, northwest of the coastal city of Nhelth.\n",
@@ -13975,6 +15643,23 @@
                 "marker": {
                     "x": 1612,
                     "y": 661
+                }
+            }
+        ]
+    },
+    {
+        "name": "Three Sisters",
+        "slug": "three-sisters",
+        "description": "Three Sisters was an inland fortress and town on Fist, near the border between the Kingdom of Rool and Skolati. It lay in a valley on the western side of the broad Ancy River along a trading road that passed over a timber and stone bridge built by the Malazan 6th Army.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Three_Sisters",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1972,
+                    "y": 673
                 }
             }
         ]
@@ -14085,6 +15770,23 @@
                 "marker": {
                     "x": 735,
                     "y": 396
+                }
+            }
+        ]
+    },
+    {
+        "name": "Tower Sea",
+        "slug": "tower-sea",
+        "description": "The Tower Sea was an almost perfectly circular sea surrounded by the Children Ridge Mountains on the east side of Remnant Isle. In the center was a small island on which stood the Sky Tower. It connected with the Flow Strait to the south and the Sender's Sea to the east. Its southeastern shore was bounded by Protector Isle.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Tower_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 951,
+                    "y": 1117
                 }
             }
         ]
@@ -14824,6 +16526,23 @@
         ]
     },
     {
+        "name": "West Fort",
+        "slug": "west-fort",
+        "description": "West Fort was located in southwest Dourkan, on the border with the Empire of Jourilan.",
+        "wikiLink": "https://malazan.fandom.com/wiki/West_Fort",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 499,
+                    "y": 1303
+                }
+            }
+        ]
+    },
+    {
         "name": "West Malyn Range",
         "slug": "west-malyn-range",
         "description": "The West Malyn Range was part of a chain of mountains running east-west in northwestern  Genabackis.  Beginning on the coast of the Menningale Ocean, they ran east to join the Central Malyn Range.  To the north was Redstick Forest and the Toblai Tundra.  To the south was Genabaris and the Malyn Sea.\n",
@@ -15027,6 +16746,23 @@
         ]
     },
     {
+        "name": "Wolt",
+        "slug": "wolt",
+        "description": "Wolt was a town on the western coast of Dourkan, on the Crack Strait.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Wolt",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 566,
+                    "y": 1161
+                }
+            }
+        ]
+    },
+    {
         "name": "Worrytown",
         "slug": "worrytown",
         "description": "Worrytown was a slum, consisting of a handful of sagging buildings, outside the eastern side of the city walls of Darujhistan. It sprawled on either side of the East Gate and along Jatem's Worry (Jammit's Worry).\n",
@@ -15090,6 +16826,23 @@
                 "marker": {
                     "x": 1172,
                     "y": 1082
+                }
+            }
+        ]
+    },
+    {
+        "name": "Xixr",
+        "slug": "xixr",
+        "description": "Xixr was a city located west of the Blood Isthmus in Katakan. To the south was the city of Bali.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Xixr",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 891,
+                    "y": 702
                 }
             }
         ]
@@ -15199,6 +16952,40 @@
                 "marker": {
                     "x": 737,
                     "y": 708
+                }
+            }
+        ]
+    },
+    {
+        "name": "Zelt",
+        "slug": "zelt",
+        "description": "Zelt was a city in eastern Jasston in the Lands of Fist. It was located on the coast of The Curl near the border of the Plains of Blight.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Zelt",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 901,
+                    "y": 1428
+                }
+            }
+        ]
+    },
+    {
+        "name": "Zestr",
+        "slug": "zestr",
+        "description": "Zestr was an eastern city on the southern coast of the Kingdom of Rool, on the Black Water Strait.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Zestr",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Lands of Fist",
+                "image": "/static/img/maps/Lands_of_Fist.webp",
+                "marker": {
+                    "x": 1852,
+                    "y": 729
                 }
             }
         ]

@@ -57,7 +57,7 @@ const content = require('../views/_data/content.json');
 
     const { name, type, map, markerX, markerY } = response;
 
-    if (!name) {
+    if (!name || !type || !map || !markerX || !markerY) {
         console.log('Cancelled');
         return;
     }
