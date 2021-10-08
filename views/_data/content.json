@@ -3235,6 +3235,23 @@
         ]
     },
     {
+        "name": "Dancer's Lament",
+        "slug": "dancers-lament",
+        "description": "Dancer's Lament is the first book in the early-empire trilogy, Path to Ascendancy, written by Ian C. Esslemont. It was released in the UK on the 25th of February 2016 and in the US on the 31st of May 2016.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dancer%27s_Lament",
+        "type": "book",
+        "maps": [
+            {
+                "name": "Quon Tali",
+                "image": "/static/img/maps/Quon_Tali.webp"
+            },
+            {
+                "name": "Li Heng",
+                "image": "/static/img/maps/Li_Heng.webp"
+            }
+        ]
+    },
+    {
         "name": "Danig",
         "slug": "danig",
         "description": "Danig was a city on the southeastern coast of Theft on the Korel continent. It faced the Pirate's Sea. Across the Katakan border to the west was the city of Molz.",
@@ -3336,6 +3353,23 @@
             {
                 "name": "Chain of Dogs - Second Half",
                 "image": "/static/img/maps/Chain_of_Dogs_2.webp"
+            }
+        ]
+    },
+    {
+        "name": "Deadhouse Landing",
+        "slug": "deadhouse-landing",
+        "description": "Deadhouse Landing is the second book in the Path to Ascendancy series by Ian C. Esslemont. It was released in the UK on the 16th of November 2017 and in the US on the 14th of November 2017.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Deadhouse_Landing",
+        "type": "book",
+        "maps": [
+            {
+                "name": "Quon Tali",
+                "image": "/static/img/maps/Quon_Tali.webp"
+            },
+            {
+                "name": "Malaz City",
+                "image": "/static/img/maps/Malaz_City.webp"
             }
         ]
     },
@@ -7928,6 +7962,19 @@
         ]
     },
     {
+        "name": "Kellanved's Reach",
+        "slug": "kellanveds-reach",
+        "description": "Kellanved's Reach is the title for the third book in Ian C. Esslemont's Path to Ascendancy series. It is the sequel to Deadhouse Landing and takes place about one month after the events of that novel.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Kellanved%27s_Reach",
+        "type": "book",
+        "maps": [
+            {
+                "name": "Quon Tali",
+                "image": "/static/img/maps/Quon_Tali.webp"
+            }
+        ]
+    },
+    {
         "name": "Kevil",
         "slug": "kevil",
         "description": "Kevil was a port city on the Black Water Strait at the southern tip of the kingdom of Mare on the Island of Fist.",
@@ -8834,6 +8881,14 @@
                 "marker": {
                     "x": 823,
                     "y": 611
+                }
+            },
+            {
+                "name": "Li Heng",
+                "image": "/static/img/maps/Li_Heng.webp",
+                "marker": {
+                    "x": 994,
+                    "y": 650
                 }
             },
             {
@@ -12230,6 +12285,10 @@
             {
                 "name": "Malaz City",
                 "image": "/static/img/maps/Malaz_City.webp"
+            },
+            {
+                "name": "Li Heng",
+                "image": "/static/img/maps/Li_Heng.webp"
             },
             {
                 "name": "Malazan Empire",

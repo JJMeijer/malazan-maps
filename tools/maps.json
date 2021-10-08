@@ -98,5 +98,9 @@
     {
         "name": "Malaz City",
         "image": "/static/img/maps/Malaz_City.webp"
+    },
+    {
+        "name": "Li Heng",
+        "image": "/static/img/maps/Li_Heng.webp"
     }
 ]
