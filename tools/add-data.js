@@ -32,6 +32,8 @@ const content = require('../views/_data/content.json');
             choices: [
                 { title: 'City', value: 'city' },
                 { title: 'Region', value: 'region' },
+                { title: 'Book', value: 'book' },
+                { title: 'Continent', value: 'continent' }
             ],
         },
         {
