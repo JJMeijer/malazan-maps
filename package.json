@@ -1,6 +1,6 @@
 {
     "name": "malazan-maps",
-    "version": "1.0.11",
+    "version": "1.1.0",
     "author": "Johan <johan@malazanmaps.com>",
     "license": "MIT",
     "scripts": {
@@ -12,10 +12,8 @@
         "build:js": "node esbuild.js prod",
         "watch:js": "node esbuild.js watch",
         "add-data": "node tools/add-data",
-        "stats": "node tools/stats",
-        "lint": "eslint -c .eslintrc"
+        "stats": "node tools/stats"
     },
-    "pre-commit": ["lint"],
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
         "@typescript-eslint/eslint-plugin": "^4.32.0",
@@ -34,7 +32,6 @@
         "fuse.js": "^6.4.6",
         "html-minifier": "^4.0.0",
         "node-html-parser": "^4.1.5",
-        "pre-commit": "^1.2.2",
         "prettier": "^2.4.1",
         "prompts": "^2.4.1",
         "slugify": "^1.6.1",

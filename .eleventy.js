@@ -16,7 +16,7 @@ module.exports = function (config) {
 
     // add `date` filter for sitemap
     config.addFilter('date', function (date, dateFormat) {
-        return format(date, dateFormat)
+        return format(date, dateFormat);
     });
 
     // Add `env` filter to use Environment variables
