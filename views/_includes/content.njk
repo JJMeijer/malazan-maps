@@ -24,7 +24,10 @@ layout: base.njk
                         name="map-selector"
                         {% if loop.index == 1 %}checked{% endif %}
                     >
-                    <span class="p-2 text-[0.9rem] cursor-pointer border border-gray-200 bg-primary rounded-2xl hover:bg-gray-600 peer-checked:border-2 peer-checked:bg-gray-600">
+                    <span
+                        tabindex="0"
+                        class="p-2 text-[0.9rem] cursor-pointer border border-gray-200 bg-primary rounded-2xl hover:bg-gray-600 peer-checked:border-2 peer-checked:bg-gray-600"
+                    >
                         {{ map.name }}
                     </span>
                 </label>
