@@ -5729,6 +5729,23 @@
         ]
     },
     {
+        "name": "Glass Desert",
+        "slug": "glass-desert",
+        "description": "The Glass Desert was located to the east of the continent Lether in the western part of Kolanse. It was said to be impassable due to the almost complete absence of water and life.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Glass_Desert",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Kolanse",
+                "image": "/static/img/maps/Kolanse.webp",
+                "marker": {
+                    "x": 105,
+                    "y": 1135
+                }
+            }
+        ]
+    },
+    {
         "name": "Gnet Monastery",
         "slug": "gnet-monastery",
         "description": "The ancient Gnet Monastery was situated on a pinnacle overlooking the southeastern edge of a dry lakebed through which the River P'atha flowed near Gelor Ridge. It was described as a fortress which was likely dedicated to one of the Seven Holies, the patron Ascendants of Seven Cities.\n",
@@ -16910,7 +16927,7 @@
         "name": "Y'Ghatan",
         "slug": "yghatan",
         "description": "Y'Ghatan [yeah-gah-tan]was a city in the north of the Seven Cities sub-continent, and was the birthplace of both the First Empire and the Apocalypse. Also known as the City of the Olive Groves and the city of the sweet oils, it was known for its production and vast stores of olive oil. Its people were known as Y'Ghanii.\n",
-        "wikiLink": "https://malazan.fandom.com/wiki/Y'Ghatan",
+        "wikiLink": "https://malazan.fandom.com/wiki/Y'Ghatan_(city)",
         "type": "city",
         "maps": [
             {
