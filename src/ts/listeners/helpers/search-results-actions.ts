@@ -21,11 +21,7 @@ export const createNoResultElement = (): void => {
     const searchResultsElement = safeGetElementById('search-results');
     searchResultsElement.insertAdjacentHTML(
         'beforeend',
-        `
-        <div class="p-2 w-full">
-            <p>No Results</p>
-        </div>
-    `,
+        `<div class="p-2 w-full"><p>No Results</p></div>`,
     );
 };
 
@@ -52,31 +48,14 @@ const boldIndices = (name: string, indices: readonly Fuse.RangeTuple[]): string 
 export const createSearchResult = (item: Entry, indices: readonly Fuse.RangeTuple[]): string => {
     const { name, slug, type } = item;
     const resultHref = `/${type}/${slug}/`;
+    const resultLinkClasses =
+        'flex flex-col p-2 hover:bg-gray-300 cursor-pointer focus-visible:bg-gray-200 focus-visible:text-gray-800';
 
-    return `
-        <a
-            href="${resultHref}"
-            tabindex="0"
-            class="
-                flex
-                flex-col
-                p-2
-                hover:bg-gray-300
-                cursor-pointer
-                focus-visible:bg-gray-200
-                focus-visible:text-gray-800
-            "
-        >
-            <div class="flex flex-row">
-                <p class="w-3/4">
-                    ${boldIndices(name, indices)}
-                </p>
-                <p class="w-1/4 opacity-50 text-right">
-                    ${type}
-                </p>
-            </div>
-        </a>
-    `;
+    const nameElement = `<p class="w-3/4">${boldIndices(name, indices)}</p>`;
+    const typeElement = `<p class="w-1/4 opacity-50 text-right">${type}</p>`;
+    const resultWrapper = `<div class="flex flex-row">${nameElement}${typeElement}</div>`;
+
+    return `<a href="${resultHref}" tabindex="0" class="${resultLinkClasses}">${resultWrapper}</a>`;
 };
 
 export const insertSearchResults = (searchResultsHtml: string): void => {
