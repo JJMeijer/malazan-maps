@@ -9,6 +9,7 @@ on:
       - ".eleventy.js"
       - "esbuild.js"
       - "postcss.config.js"
+      - "package.json"
 
 jobs:
   Build-And-Deploy:
