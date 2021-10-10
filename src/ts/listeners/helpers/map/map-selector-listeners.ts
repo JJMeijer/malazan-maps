@@ -1,4 +1,5 @@
-import { extractMapId, setVisibleMapTransformOrigin } from './element-helpers';
+import { setVisibleMapTransformOrigin } from './set-transform-origins';
+import { extractMapId } from './extract-map-id';
 import { placeVisibleMarker } from './place-marker';
 
 const handleMapSelectorChange = (event: Event) => {
@@ -23,7 +24,6 @@ const handleMapSelectorChange = (event: Event) => {
     selectedImageWrapper.classList.remove('hidden');
 
     setVisibleMapTransformOrigin();
-
     placeVisibleMarker();
 };
 

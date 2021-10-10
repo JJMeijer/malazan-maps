@@ -4,7 +4,7 @@ const [env] = process.argv.slice(2);
 
 esbuild
     .build({
-        entryPoints: ['src/ts/search.ts', 'src/ts/map.ts'],
+        entryPoints: ['src/ts/error.ts', 'src/ts/main.ts'],
         outdir: 'views/static/js',
         minify: env === 'prod',
         sourcemap: env !== 'prod',

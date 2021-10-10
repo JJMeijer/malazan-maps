@@ -14,14 +14,12 @@ const CACHE_URLS = [
 declare const self: ServiceWorkerGlobalScope;
 
 self.addEventListener('install', (event) => {
-    self.skipWaiting();
-
     const preCache = async () => {
         const cache = await caches.open(CACHE_NAME);
 
         return Promise.all(
             CACHE_URLS.map(async (url) => {
-                const existingCache = cache.match(url, { ignoreSearch: true });
+                const existingCache = await cache.match(url, { ignoreSearch: true });
 
                 if (existingCache) {
                     await cache.delete(url, { ignoreSearch: true });
@@ -37,8 +35,6 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-    self.clients.claim();
-
     event.waitUntil(
         caches.keys().then((cacheNames) => {
             return Promise.all(
@@ -46,6 +42,7 @@ self.addEventListener('activate', (event) => {
                     if (cacheName !== CACHE_NAME) {
                         return caches.delete(cacheName);
                     }
+                    return;
                 }),
             );
         }),

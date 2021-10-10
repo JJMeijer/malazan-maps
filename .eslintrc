@@ -19,7 +19,7 @@
         "prettier/prettier": "error"
     },
     "ignorePatterns": [
-        "static/js/*.js",
+        "views/static/js/*.js",
         "!.eleventy.js"
     ],
     "overrides": [
