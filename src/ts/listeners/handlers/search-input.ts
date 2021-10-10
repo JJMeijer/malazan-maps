@@ -57,7 +57,7 @@ export const searchInputHandler = (event: Event): void => {
             const indices = matches[0].indices;
             return createSearchResult(item, indices);
         })
-        .join();
+        .join('');
 
     insertSearchResults(resultElementsHtml);
     showSearchResults();

@@ -1,4 +1,4 @@
-import { NaturalDimensions, RealDimensions, ElementPaddings } from '../../../types';
+import { NaturalDimensions, RealDimensions, ElementPaddings } from '../../types';
 
 export const getElementNaturalDimensions = (element: HTMLImageElement): NaturalDimensions => {
     const { naturalHeight, naturalWidth } = element;
