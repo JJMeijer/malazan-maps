@@ -2,8 +2,8 @@ import {
     getElementNaturalDimensions,
     getElementRealDimensions,
     getElementPaddings,
-    extractMapId,
-} from './element-helpers';
+} from './element-dimensions';
+import { extractMapId } from './extract-map-id';
 
 export const placeVisibleMarker = (): void => {
     /**

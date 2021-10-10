@@ -1,4 +1,4 @@
-import { setVisibleMapTransformOrigin } from './element-helpers';
+import { setVisibleMapTransformOrigin } from './set-transform-origins';
 
 const clamp = (num: number, min: number, max: number): number => Math.min(Math.max(num, min), max);
 

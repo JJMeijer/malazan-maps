@@ -12,7 +12,8 @@
         "build:js": "node esbuild.js prod",
         "watch:js": "node esbuild.js watch",
         "add-data": "node tools/add-data",
-        "stats": "node tools/stats"
+        "stats": "node tools/stats",
+        "lint": "eslint -c .eslintrc"
     },
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
