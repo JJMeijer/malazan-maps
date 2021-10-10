@@ -1,6 +1,6 @@
-import { setVisibleMapTransformOrigin } from './set-transform-origins';
-import { extractMapId } from './extract-map-id';
-import { placeVisibleMarker } from './place-marker';
+import { setVisibleMapTransformOrigin } from '../helpers';
+import { extractMapId } from '../helpers';
+import { placeVisibleMarker } from '../helpers';
 
 const handleMapSelectorChange = (event: Event) => {
     const target = event.target as HTMLElement;

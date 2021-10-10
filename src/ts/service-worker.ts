@@ -5,8 +5,7 @@ import { version } from '../../package.json';
 const CACHE_NAME = `malazan-cache-${version}`;
 const CACHE_URLS = [
     `/static/css/main-dist.css?v=${new Date().getTime()}`,
-    `/static/js/search.js?v=${new Date().getTime()}`,
-    `/static/js/map.js?v=${new Date().getTime()}`,
+    `/static/js/main.js?v=${new Date().getTime()}`,
     `/data.json?v=${new Date().getTime()}`,
     `/manifest.json?v=${new Date().getTime()}`,
 ];
@@ -31,10 +30,12 @@ self.addEventListener('install', (event) => {
         );
     };
 
+    self.skipWaiting();
     event.waitUntil(preCache());
 });
 
 self.addEventListener('activate', (event) => {
+    self.clients.claim();
     event.waitUntil(
         caches.keys().then((cacheNames) => {
             return Promise.all(

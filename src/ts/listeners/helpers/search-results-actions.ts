@@ -1,5 +1,5 @@
-import { Entry } from '../../../types';
-import { safeGetElementById } from '../safe-get-element-by-id';
+import { Entry } from '../../types';
+import { safeGetElementById } from './safe-get-element-by-id';
 import Fuse from 'fuse.js';
 
 export const showSearchResults = (): void => {
@@ -14,7 +14,7 @@ export const hideSearchResults = (): void => {
 
 export const clearSearchResults = (): void => {
     const searchResultsElement = safeGetElementById('search-results');
-    searchResultsElement.innerHTML == '';
+    searchResultsElement.innerHTML = '';
 };
 
 export const createNoResultElement = (): void => {

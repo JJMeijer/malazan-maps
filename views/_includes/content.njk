@@ -1,8 +1,5 @@
 ---
 layout: base.njk
-scripts:
-  - /static/js/search.js
-  - /static/js/map.js
 ---
 
 <div class="flex flex-col flex-1 w-full bg-primary lg:flex-row">
@@ -72,7 +69,7 @@ scripts:
             </div>
         {% endfor %}
         <div
-            class="hidden flex justify-center items-center bg-gray-800 opacity-80 absolute top-[5%] left-[90%] w-10 h-10 lg:w-16 lg:h-16 p-1 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:opacity-100"
+            class="hidden justify-center items-center bg-gray-800 opacity-80 absolute top-[5%] left-[90%] w-10 h-10 lg:w-16 lg:h-16 p-1 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:opacity-100"
             id="reset-zoom-button">
             <img
                 src="/static/img/reset-zoom.webp"

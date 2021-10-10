@@ -10,11 +10,7 @@ export {
     getFocussedResultHref,
     setFocussedResult,
     unSetFocussedResult,
-} from './search/search-results-actions';
-export { getElementRealDimensions, getElementNaturalDimensions } from './map/element-dimensions';
-export {
-    setVisibleMapTransformOrigin,
-    setZoomAndPanListeners,
-    setMapSelectorListeners,
-    placeVisibleMarker,
-} from './map';
+} from './search-results-actions';
+export { placeVisibleMarker } from './place-marker';
+export { extractMapId } from './extract-map-id';
+export { setVisibleMapTransformOrigin } from './set-transform-origin';

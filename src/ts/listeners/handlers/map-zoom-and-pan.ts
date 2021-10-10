@@ -1,4 +1,4 @@
-import { setVisibleMapTransformOrigin } from './set-transform-origins';
+import { setVisibleMapTransformOrigin } from '../helpers';
 
 const clamp = (num: number, min: number, max: number): number => Math.min(Math.max(num, min), max);
 
@@ -9,6 +9,7 @@ const showResetZoomButton = () => {
         throw new Error('Reset button is missing');
     }
 
+    resetButton.classList.add('flex');
     resetButton.classList.remove('hidden');
 };
 
@@ -20,6 +21,7 @@ const hideResetZoomButton = () => {
     }
 
     resetButton.classList.add('hidden');
+    resetButton.classList.remove('flex');
 };
 
 export const setZoomAndPanListeners = (): void => {

@@ -1,9 +1,5 @@
-import {
-    setVisibleMapTransformOrigin,
-    setZoomAndPanListeners,
-    setMapSelectorListeners,
-    placeVisibleMarker,
-} from './helpers';
+import { setVisibleMapTransformOrigin, placeVisibleMarker } from './helpers';
+import { setMapSelectorListeners, setZoomAndPanListeners } from './handlers';
 
 const setListeners = (): void => {
     setVisibleMapTransformOrigin();
