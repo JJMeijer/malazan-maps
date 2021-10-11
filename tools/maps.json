@@ -102,5 +102,17 @@
     {
         "name": "Li Heng",
         "image": "/static/img/maps/Li_Heng.webp"
+    },
+    {
+        "name": "Kharkanas",
+        "image": "/static/img/maps/Kharkanas.webp"
+    },
+    {
+        "name": "Kurald Galain",
+        "image": "/static/img/maps/Kurald_Galain.webp"
+    },
+    {
+        "name": "Thel Akai, Jaghut, Tiste Realms",
+        "image": "/static/img/maps/Thel_Akai.webp"
     }
 ]

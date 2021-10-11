@@ -51,6 +51,23 @@
         ]
     },
     {
+        "name": "Abara Delack",
+        "slug": "abara-delack",
+        "description": "Abara Delack was a town on the western frontier of Kurald Galain. It was the home of the Tiste lesser noble house Drukorlas and was the site of a Yedan Shake monastery.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Abara_Delack",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 508,
+                    "y": 481
+                }
+            }
+        ]
+    },
+    {
         "name": "Abor",
         "slug": "abor",
         "description": "Abor was a city in central Jourilan and the site of the Jourilan Imperial Games.\n",
@@ -839,6 +856,23 @@
                 "marker": {
                     "x": 1358,
                     "y": 255
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bareth Solitude",
+        "slug": "bareth-solitude",
+        "description": "Bareth Solitude was a vast plain on the western frontier of Kurald Galain. It was crossed by ancient beach ridges of water-worn limestone cobbles that ran for leagues, but were relatively shallow. The Tiste tutor, Sagander, declared that these features were evidence of an inland sea that had taken thousands of years to die.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bareth_Solitude",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 7,
+                    "y": 566
                 }
             }
         ]
@@ -3847,6 +3881,31 @@
         ]
     },
     {
+        "name": "Dorssan Ryl",
+        "slug": "dorssan-ryl",
+        "description": "Dorssan Ryl was the primary river in Kurald Galain.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dorssan_Ryl",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 896,
+                    "y": 233
+                }
+            },
+            {
+                "name": "Kharkanas",
+                "image": "/static/img/maps/Kharkanas.webp",
+                "marker": {
+                    "x": 760,
+                    "y": 730
+                }
+            }
+        ]
+    },
+    {
         "name": "Dosin Pali",
         "slug": "dosin-pali",
         "description": "Dosin Pali was a city at the southern tip of Otataral Island across the strait from Hissar on the Seven Cities subcontinent. The island was known to hold one of the world's most prominent sources of otataral, and the city was the gateway to the mines that extracted the magic-deadening ore. It was no more than four days journey from the Skullcup mining camp.\n",
@@ -3935,6 +3994,23 @@
                 "marker": {
                     "x": 234,
                     "y": 856
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dracons Hold",
+        "slug": "dracons-hold",
+        "description": "Dracons Hold was the fortified home of the Tiste noble family Dracons in Kurald Galain. The Great House was at least five hundred years old with the words \"There will be peace\" carved into the lintel by Azathanai masons in their own secretive language. A round table cut from the bole of a three-thousand-year-old blackwood tree dominated the lord's Chamber of Campaigns. In the northwest corner of the house rose a three story tower that was largely left to dust and spiders. A complement of Houseblades protected the home.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dracons_Hold",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 976,
+                    "y": 356
                 }
             }
         ]
@@ -4045,6 +4121,23 @@
                 "marker": {
                     "x": 545,
                     "y": 1015
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dreth Hold",
+        "slug": "dreth-hold",
+        "description": "Dreth Hold was the home of the Tiste noble Dreth (or Drethdenan) family in Kurald Galain. It was located on the western edge of the Youth Forest near the Dorssan Ryl. Purake Hold was to the north and Hust Hold was downriver to the southeast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dreth_Hold",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1150,
+                    "y": 649
                 }
             }
         ]
@@ -4763,6 +4856,27 @@
         ]
     },
     {
+        "name": "Fall of Light",
+        "slug": "fall-of-light",
+        "description": "Fall of Light is the title of the second book in Steven Erikson's Kharkanas Trilogy. It was released on the 21st of April 2016 in the UK and on the 26th of April 2016 in the US.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Fall_of_Light",
+        "type": "book",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp"
+            },
+            {
+                "name": "Kharkanas",
+                "image": "/static/img/maps/Kharkanas.webp"
+            },
+            {
+                "name": "Thel Akai, Jaghut & Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp"
+            }
+        ]
+    },
+    {
         "name": "Fall Strait",
         "slug": "fall-strait",
         "description": "Fall Strait was north of Remnant Isle on the Lands of Fist. It connected the Sender's Sea to the Narrows and Crack Strait near Theft.",
@@ -5174,6 +5288,27 @@
                     "x": 1721,
                     "y": 915
                 }
+            }
+        ]
+    },
+    {
+        "name": "Forge of Darkness",
+        "slug": "forge-of-darkness",
+        "description": "Forge of Darkness is the first novel of Steven Erikson's Kharkanas Trilogy, a prequel series that takes place hundreds of thousands of years before his Malazan Book of the Fallen series. It was first published in the UK and US in 2012.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Forge_of_Darkness",
+        "type": "book",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp"
+            },
+            {
+                "name": "Kharkanas",
+                "image": "/static/img/maps/Kharkanas.webp"
+            },
+            {
+                "name": "Thel Akai, Jaghut & Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp"
             }
         ]
     },
@@ -5741,6 +5876,23 @@
                 "marker": {
                     "x": 105,
                     "y": 1135
+                }
+            }
+        ]
+    },
+    {
+        "name": "Glimmer Fate",
+        "slug": "glimmer-fate",
+        "description": "The Glimmer Fate was a far northern region of Kurald Galain that bordered the Vitr sea. It was a hot rainless land of rolling plains covered by thick shoulder high black grass. The grass collected heat turning the plain into a furnace, and the grass's sharp serrated edges meant that it could not be passed through with bare skin. Native animals like the tusked heghest possessed a skin of protective reptilian scale.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Glimmer_Fate",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1740,
+                    "y": 179
                 }
             }
         ]
@@ -6773,6 +6925,108 @@
         ]
     },
     {
+        "name": "House Durav",
+        "slug": "house-durav",
+        "description": "House Durav was one of the Tiste Greater Houses of Kurald Galain. Their holdings were north of Kharkanas on the east side of the Dorssan Ryl. The holdings of House Enes lay to the north and the home of Andarist lay to the south.",
+        "wikiLink": "https://malazan.fandom.com/wiki/House_Durav",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1009,
+                    "y": 488
+                }
+            }
+        ]
+    },
+    {
+        "name": "House Enes",
+        "slug": "house-enes",
+        "description": "House Enes was one of the Tiste Greater Houses of Kurald Galain. Their holdings were north of Kharkanas on the east side of the Dorssan Ryl and contained part of the Youth Forest. Their estate was protected by a complement of Houseblades. Lord Enes tolerated the Deniers who lived in the forests of his holdings.",
+        "wikiLink": "https://malazan.fandom.com/wiki/House_Enes",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1011,
+                    "y": 418
+                }
+            }
+        ]
+    },
+    {
+        "name": "House Haran",
+        "slug": "house-haran",
+        "description": "House Haran, or Haran Hold, was an outlying estate of the Tiste noble Haran family in Kurald Galain. It was located along the Dorssan Ryl to the south of Kharkanas near Misharn Hold, and was inclined to isolation.",
+        "wikiLink": "https://malazan.fandom.com/wiki/House_Haran",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1506,
+                    "y": 932
+                }
+            }
+        ]
+    },
+    {
+        "name": "House Lorat",
+        "slug": "house-lorat",
+        "description": "House Lorat was a lesser Tiste noble family in Kurald Galain. The family hold was located along the Dorssan Ryl just to the southeast of Kharkanas near Haran Hold.",
+        "wikiLink": "https://malazan.fandom.com/wiki/House_Lorat",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1428,
+                    "y": 907
+                }
+            }
+        ]
+    },
+    {
+        "name": "House Manaleth",
+        "slug": "house-manaleth",
+        "description": "House Manaleth was one of the Tiste Greater Houses of Kurald Galain. Their holdings were north of Kharkanas on the eastern side of the Youth Forest near the Yedan and Yannis Shake Monasteries.",
+        "wikiLink": "https://malazan.fandom.com/wiki/House_Manaleth",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1346,
+                    "y": 645
+                }
+            }
+        ]
+    },
+    {
+        "name": "House Menand",
+        "slug": "house-menand",
+        "description": "House Menand was a lesser house among the Tiste of Kurald Galain. House member Infayen Menand described the family line as one in decline.",
+        "wikiLink": "https://malazan.fandom.com/wiki/House_Menand",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1362,
+                    "y": 960
+                }
+            }
+        ]
+    },
+    {
         "name": "House of Chains",
         "slug": "house-of-chains",
         "description": "House of Chains is the fourth book in the Malazan Book of the Fallen. It was released in the UK and Canada in January 2002 and in the US August 2006 by Tor.\n",
@@ -6848,6 +7102,23 @@
                 "marker": {
                     "x": 873,
                     "y": 819
+                }
+            }
+        ]
+    },
+    {
+        "name": "Hust Hold",
+        "slug": "hust-hold",
+        "description": "Hust Hold was the home of the Tiste noble Hust, or House of Hustain, family in Kurald Galain. It was located on the western shore of the Dorssan Ryl northwest of Kharkanas. Directly to the south were the Old Forest and The Forgings. Dreth Hold was upriver to the northwest and Vanut Hold was downriver to the southeast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Hust_Hold",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1179,
+                    "y": 736
                 }
             }
         ]
@@ -8009,6 +8280,31 @@
         ]
     },
     {
+        "name": "Kharkanas",
+        "slug": "kharkanas",
+        "description": "Kharkanas [kar-kan-as], the First City of Dark, was the Tiste Andii capital of the Hold of Darkness, also given the honourific 'Wise Kharkanas'. It was bisected by the Dorssan Ryl river.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Kharkanas",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1345,
+                    "y": 849
+                }
+            },
+            {
+                "name": "Kharkanas",
+                "image": "/static/img/maps/Kharkanas.webp",
+                "marker": {
+                    "x": 753,
+                    "y": 631
+                }
+            }
+        ]
+    },
+    {
         "name": "Khundryl Odhan",
         "slug": "khundryl-odhan",
         "description": "The Khundryl Odhan was situated just south of Vathar Forest and northwest of the Nenoth Odhan. It was the home of the Khundryl people.\n",
@@ -8317,6 +8613,23 @@
                 "marker": {
                     "x": 1428,
                     "y": 478
+                }
+            }
+        ]
+    },
+    {
+        "name": "Kurald Galain",
+        "slug": "kurald-galain",
+        "description": "Kurald Galain was the Warren of Darkness and Elder Night. The Elder Warren was referred to by Tattersail as the 'Breath of Chaos'. Said to be the Warren and ancient realm of Mother Dark, it was the Warren used by the Tiste Andii such as Anomander Rake and other agents of Darkness and Night such as Draconus.[citation needed]",
+        "wikiLink": "https://malazan.fandom.com/wiki/Kurald_Galain",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 876,
+                    "y": 561
                 }
             }
         ]
@@ -9733,6 +10046,23 @@
         ]
     },
     {
+        "name": "Misharn Hold",
+        "slug": "misharn-hold",
+        "description": "Misharn Hold, or House Misharn, was the home of the Tiste noble Misharn family in Kurald Galain. It was located along the Dorssan Ryl to the south of Kharkanas near Haran Hold and House Lorat.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Misharn_Hold",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1511,
+                    "y": 981
+                }
+            }
+        ]
+    },
+    {
         "name": "Mist",
         "slug": "mist",
         "description": "Mist was a sorceress who lived in Mist Keep on the northern shore of the Dread Sea in Assail. Her powers drew on the Jaghut warren of Omtose Phellack to generate effects of fog and cold. Visitors to her keep were usually enslaved and forced to live in the huts built from wrecked ships that surrounded the keep. Mostly men and mostly foreign, her subjects raised crops to support the town on nearby fields.",
@@ -10331,6 +10661,23 @@
         ]
     },
     {
+        "name": "Neret Sorr",
+        "slug": "neret-sorr",
+        "description": "Neret Sorr was a town in Kurald Galain several days northeast of Kharkanas. It was the site of the New Keep, headquarters of Urusander's Legion and home of Vatha Urusander.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Neret_Sorr",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1683,
+                    "y": 588
+                }
+            }
+        ]
+    },
+    {
         "name": "Netor",
         "slug": "netor",
         "description": "Netor was a minor city on the Bloorian plains of southern Quon Tali.  It was southeast of Bloor, to the east of Layes, and to the northwest of Satar.\n",
@@ -10850,6 +11197,23 @@
                 "marker": {
                     "x": 1060,
                     "y": 814
+                }
+            }
+        ]
+    },
+    {
+        "name": "Old Forest",
+        "slug": "old-forest",
+        "description": "Old Forest was located in Kurald Galain northwest of Kharkanas. It bordered the western shore of the Dorssan Ryl between Hust Hold and Vanut Hold.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Old_Forest",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1191,
+                    "y": 786
                 }
             }
         ]
@@ -12234,6 +12598,23 @@
         ]
     },
     {
+        "name": "Purake Hold",
+        "slug": "purake-hold",
+        "description": "Purake Hold was the home of the Tiste noble Purake family in Kurald Galain. It was located on the western edge of the Youth Forest east of the Dorssan Ryl. Dreth Hold was to the south and the holdings of House Durav were to the north. The Purake son, Andarist, had a home built nearby to the north as well.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Purake_Hold",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1070,
+                    "y": 601
+                }
+            }
+        ]
+    },
+    {
         "name": "Pushback",
         "slug": "pushback",
         "description": "Pushback was a town located in northwestern Genabackis between Stick-in-Hole and Mantos. It was north of Genabaris.\n",
@@ -12925,6 +13306,40 @@
                 "marker": {
                     "x": 1961,
                     "y": 916
+                }
+            }
+        ]
+    },
+    {
+        "name": "Riven",
+        "slug": "riven",
+        "description": "Riven was a town on the northwestern frontier of Kurald Galain surrounding the blockish fortress of Riven Keep. It was home to the Borderswords. The town lay on a river originating in the mountains to the north beyond the Riven West Marches. After passing the town it continued south to Abara Delack. A road led to the northeast to Sedis Hold. The Keep itself was left undefended and virtually unoccupied.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Riven",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 433,
+                    "y": 263
+                }
+            }
+        ]
+    },
+    {
+        "name": "Riven West Marches",
+        "slug": "riven-west-marches",
+        "description": "The Riven West Marches were a region on Kurald Galain's northwestern frontier. Ranges of mountains marked their northern and southwestern boundaries. Just to their south was Riven Keep, home of the Borderswords. To the east was Sedis Hold. A river originating in the mountains passed southward through the Marches to Riven and Abara Delack.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Riven_West_Marches",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 340,
+                    "y": 164
                 }
             }
         ]
@@ -13664,6 +14079,23 @@
                 "marker": {
                     "x": 424,
                     "y": 870
+                }
+            }
+        ]
+    },
+    {
+        "name": "Sedis Hold",
+        "slug": "sedis-hold",
+        "description": "Sedis Hold was a Tiste stronghold in northwestern Kurald Galain. It was built shortly before the end of the Jheleck War and remained garrisoned to discourage Jheleck raids.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Sedis_Hold",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 661,
+                    "y": 61
                 }
             }
         ]
@@ -14842,6 +15274,23 @@
                 "marker": {
                     "x": 1708,
                     "y": 1056
+                }
+            }
+        ]
+    },
+    {
+        "name": "Suruth Common Forest",
+        "slug": "suruth-common-forest",
+        "description": "Suruth Common Forest was located in Kurald Galain surrounding the portion of Kharkanas built on the western shore of the Dorssan Ryl. At the northern end of the forest was a statue sculpted by the Azathanai whose entire body was made up of faces with stubborn, fierce expressions. The poet Gallan claimed the statue was named Denial.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Suruth_Common_Forest",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1293,
+                    "y": 868
                 }
             }
         ]
@@ -16029,6 +16478,23 @@
         ]
     },
     {
+        "name": "Tulla Hold",
+        "slug": "tulla-hold",
+        "description": "Tulla Hold [Too-lah] was the home of the noble Tulla family. It was a fortress carved into a cliffside above the road passing between Abara Delack and Kharkanas. A dozen or more windows were roughly cut into the rock above the heaps of boulders that formed the front defenses. Additionally, four squat towers lined an uneven wall, each mounted with an arbalest at their summit.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Tulla_Hold",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 925,
+                    "y": 663
+                }
+            }
+        ]
+    },
+    {
         "name": "Twill",
         "slug": "twill",
         "description": "Twill was a city in Pilott, a small nation under the dominion of the Letherii.\n",
@@ -16318,6 +16784,23 @@
                 "marker": {
                     "x": 512,
                     "y": 915
+                }
+            }
+        ]
+    },
+    {
+        "name": "Vanut Hold",
+        "slug": "vanut-hold",
+        "description": "Vanut Hold was the home of the Tiste noble Vanut family in Kurald Galain. Vanut Keep was located on the Dorssan Ryl northwest of Kharkanas and southeast of Hust Hold. It was a stone fortress of solid walls and squat towers built overlooking the road following the river.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Vanut_Hold",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1265,
+                    "y": 802
                 }
             }
         ]
@@ -16949,6 +17432,23 @@
         ]
     },
     {
+        "name": "Yannis Monastery",
+        "slug": "yannis-monastery",
+        "description": "Yannis Monastery in eastern Kurald Galain was home to the Yan Shake. It was located on the road between Kharkanas and Neret Sorr near its fellow Yedan Monastery. Its leader was Mother Sheccanto Derran.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Yannis_Monastery",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1466,
+                    "y": 714
+                }
+            }
+        ]
+    },
+    {
         "name": "Yath Alban",
         "slug": "yath-alban",
         "description": "Yath Alban was one of Seven Cities holy cities. It was found on the coast of the Kokakal Sea near the Olphara Mountains on the northwest section of the continent.\n",
@@ -16969,6 +17469,23 @@
                 "marker": {
                     "x": 706,
                     "y": 722
+                }
+            }
+        ]
+    },
+    {
+        "name": "Yedan Monastery",
+        "slug": "yedan-monastery",
+        "description": "Yedan Monastery in eastern Kurald Galain was home to the Yedan Shake. It was located on the road between Kharkanas and Neret Sorr near its fellow Yannis Monastery. Its leader was Father Skelenal.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Yedan_Monastery",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Kurald Galain",
+                "image": "/static/img/maps/Kurald_Galain.webp",
+                "marker": {
+                    "x": 1379,
+                    "y": 748
                 }
             }
         ]
