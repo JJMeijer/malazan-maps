@@ -380,6 +380,23 @@
         ]
     },
     {
+        "name": "Arudine Hills",
+        "slug": "arudine-hills",
+        "description": "The Arudine Hills were to the west of Kurald Galain near the lands of the Jaghut and the Thel Akai. They ran from the southwest to the northeast along the southern border of the Thel Akai Plateau and North Valley. Several Jaghut made their homes amongst the hills, including Suvalas and Haut. The Jheleck quarried the range's northeastern extent.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Arudine_Hills",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Thel Akai, Jaghut, Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp",
+                "marker": {
+                    "x": 934,
+                    "y": 700
+                }
+            }
+        ]
+    },
+    {
         "name": "Ashok",
         "slug": "ashok",
         "description": "Ashok was a city on the long Maadil Peninsula dividing the Kokakal Sea and the Maadil Sea on the Seven Cities subcontinent. To the city's north lay Taxila and to the south lay Lothal.\n",
@@ -3780,6 +3797,23 @@
         ]
     },
     {
+        "name": "Dog-Runners",
+        "slug": "dog-runners",
+        "description": "The Dog-Runners were a people that once lived in the forests of Kurald Galain before it became a Tiste realm. But as the forests disappeared they were driven far to the southwest, leaving only a trace of their lineage behind in the Deniers.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dog-Runners",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Thel Akai, Jaghut, Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp",
+                "marker": {
+                    "x": 903,
+                    "y": 1507
+                }
+            }
+        ]
+    },
+    {
         "name": "Dojal Hading Sea",
         "slug": "dojal-hading-sea",
         "description": "The Dojal Hading Sea was found to the southeast of Seven Cities and northwest of Seeker's Deep. Important cities along its coast included Jamdat, Teppes, Asmar, Ubaryd, Bylan, Tarxian and Dhebel. Vathar Forest was also located on its northwestern edge.\n",
@@ -4502,6 +4536,23 @@
         ]
     },
     {
+        "name": "Eltura Forest",
+        "slug": "eltura-forest",
+        "description": "The Eltura Forest was to the west of Kurald Galain near the lands of the Jaghut and the Thel Akai. It was nestled amidst a mountain range that ran along the northern border of the Thel Akai Plateau and the North Valley.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Eltura_Forest",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Thel Akai, Jaghut, Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp",
+                "marker": {
+                    "x": 801,
+                    "y": 625
+                }
+            }
+        ]
+    },
+    {
         "name": "Empire of Lether",
         "slug": "empire-of-lether",
         "description": "The denominations of the Letherii currency were the stripling, the dock, the level, the third, and the peak.\n",
@@ -4742,6 +4793,23 @@
                 "marker": {
                     "x": 647,
                     "y": 1324
+                }
+            }
+        ]
+    },
+    {
+        "name": "Exodus Road",
+        "slug": "exodus-road",
+        "description": "The Exodus Road began in the city of Omtose Phellack and crossed the Jaghut Odhan's southwestern quarter.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Exodus_Road",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Thel Akai, Jaghut, Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp",
+                "marker": {
+                    "x": 630,
+                    "y": 1065
                 }
             }
         ]
@@ -7439,6 +7507,23 @@
             {
                 "name": "Isle of Jacuruku",
                 "image": "/static/img/maps/Jacuruku.webp"
+            }
+        ]
+    },
+    {
+        "name": "Jaghut Odhan",
+        "slug": "jaghut-odhan",
+        "description": "The Jaghut Odhan was the home of the Jaghut to the far west of Kurald Galain - the land of the Tiste. It was separated from the Thel Akai of the Thel Akai Plateau by the Arudine Hills to the north. Among the settlements on the odhan was Omtose Phellack, the \"Empty City\", from which the Exodus Road extended across the Jaghut Odhan's southwestern quarter. Surrounding Omtose Phellack in the Jaghut Odhan were the keeps of the following nine Jaghut: Aimanan, Daryft, Gathras, Gedoran, Haut, Hood, Sanad, Suvalas and Varandas.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jaghut_Odhan",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Thel Akai, Jaghut, Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp",
+                "marker": {
+                    "x": 796,
+                    "y": 921
+                }
             }
         ]
     },
@@ -11029,6 +11114,23 @@
                 "marker": {
                     "x": 560,
                     "y": 566
+                }
+            }
+        ]
+    },
+    {
+        "name": "North Valley",
+        "slug": "north-valley",
+        "description": "The North Valley was to the west of Kurald Galain near the lands of the Jaghut and the Thel Akai. It opened to the Thel Akai Plateau in the west. It was bounded by mountains and Eltura Forest to the north, and by the Arudine Hills to the south.",
+        "wikiLink": "https://malazan.fandom.com/wiki/North_Valley",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Thel Akai, Jaghut, Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp",
+                "marker": {
+                    "x": 963,
+                    "y": 579
                 }
             }
         ]
@@ -16054,6 +16156,23 @@
         ]
     },
     {
+        "name": "Thel Akai Plateau",
+        "slug": "thel-akai-plateau",
+        "description": "The Thel Akai Plateau was to the west of Kurald Galain near the Western Ocean and the lands of the Jaghut. It ran from west to east between a mountain range and Eltura Forest to the north and the Arudine Hills to the south until the plateau joined the North Valley.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Thel_Akai_Plateau",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Thel Akai, Jaghut, Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp",
+                "marker": {
+                    "x": 661,
+                    "y": 768
+                }
+            }
+        ]
+    },
+    {
         "name": "Then",
         "slug": "then",
         "description": "Then was a city on the western coast of the Nap Sea in Itko Kan.  It lay north of the city of Itko Kan.  Further north on the coast was Buld.\n",
@@ -17131,6 +17250,23 @@
                 "marker": {
                     "x": 880,
                     "y": 701
+                }
+            }
+        ]
+    },
+    {
+        "name": "Western Ocean",
+        "slug": "western-ocean",
+        "description": "The Western Ocean was to the west of Kurald Galain near the lands of the Jaghut and the Thel Akai.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Western_Ocean",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Thel Akai, Jaghut, Tiste Realms",
+                "image": "/static/img/maps/Thel_Akai.webp",
+                "marker": {
+                    "x": 124,
+                    "y": 609
                 }
             }
         ]
