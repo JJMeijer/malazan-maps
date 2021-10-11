@@ -11,7 +11,6 @@ const content = require('../views/_data/content.json');
 
 
 (async () => {
-
     console.clear();
     const response = await prompts([
         {
@@ -46,20 +45,33 @@ const content = require('../views/_data/content.json');
             })),
         },
         {
-            type: 'number',
+            type: 'confirm',
+            name: 'marker',
+            message: 'Add Marker',
+            initial: true,
+        },
+        {
+            type: (_prev, values) => {
+                return values.marker ? 'number' : null;
+            },
             name: 'markerX',
             message: 'Enter X Coordinate',
         },
         {
-            type: 'number',
+            type: (_prev, values) => values.marker ? 'number' : null,
             name: 'markerY',
             message: 'Enter Y Coordinate',
         },
     ]);
 
-    const { name, type, map, markerX, markerY } = response;
+    const { name, type, map, marker, markerX, markerY } = response;
 
-    if (!name || !type || !map || !markerX || !markerY) {
+    if (!name || !type || !map || marker === undefined) {
+        console.log('Cancelled');
+        return;
+    }
+
+    if (marker && (!markerX || !markerY)) {
         console.log('Cancelled');
         return;
     }
@@ -72,10 +84,12 @@ const content = require('../views/_data/content.json');
     const wikiLink = await wikiUrl(name);
     const description = await wikiSummary(name);
 
-    map.marker = {
-        x: markerX,
-        y: markerY,
-    };
+    if (marker) {
+        map.marker = {
+            x: markerX,
+            y: markerY,
+        };
+    }
 
     const newItem = {
         name,
