@@ -1211,6 +1211,14 @@
                     "x": 615,
                     "y": 547
                 }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 800,
+                    "y": 1399
+                }
             }
         ]
     },
@@ -1637,6 +1645,14 @@
                     "x": 683,
                     "y": 559
                 }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1629,
+                    "y": 1411
+                }
             }
         ]
     },
@@ -1916,6 +1932,23 @@
                 "marker": {
                     "x": 225,
                     "y": 507
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bringer's Foot",
+        "slug": "bringers-foot",
+        "description": "Bringer's Foot was a relatively new settlement in northwestern Genabackis to the west of Silver Lake. It was only about ten years old at the time of the events of The God is Not Willing. To the west was the settlement of Muthra.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bringer%27s_Foot",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1851,
+                    "y": 332
                 }
             }
         ]
@@ -3028,6 +3061,14 @@
                     "x": 1751,
                     "y": 441
                 }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1802,
+                    "y": 598
+                }
             }
         ]
     },
@@ -3044,6 +3085,14 @@
                 "marker": {
                     "x": 1704,
                     "y": 569
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1777,
+                    "y": 448
                 }
             }
         ]
@@ -5270,6 +5319,23 @@
                 "marker": {
                     "x": 815,
                     "y": 1338
+                }
+            }
+        ]
+    },
+    {
+        "name": "Fool's Forest",
+        "slug": "fools-forest",
+        "description": "Fool's Forest was located in northwestern Genabackis on the eastern edge of the Laederon Plateau around the Silver Lake and to the east of the plains that ran along the Culvern River.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Fool%27s_Forest",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 2212,
+                    "y": 460
                 }
             }
         ]
@@ -8813,6 +8879,14 @@
                     "x": 1590,
                     "y": 284
                 }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1456,
+                    "y": 147
+                }
             }
         ]
     },
@@ -8899,11 +8973,27 @@
                 }
             },
             {
+                "name": "Northwest Genabackis",
+                "image": "/static/img/maps/Northwest_Genabackis.webp",
+                "marker": {
+                    "x": 1473,
+                    "y": 1182
+                }
+            },
+            {
                 "name": "Genabackis (GotM)",
                 "image": "/static/img/maps/Genabackis_GotM.webp",
                 "marker": {
                     "x": 719,
                     "y": 562
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1622,
+                    "y": 1531
                 }
             }
         ]
@@ -9191,6 +9281,14 @@
                 "marker": {
                     "x": 1227,
                     "y": 369
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 742,
+                    "y": 135
                 }
             }
         ]
@@ -9652,6 +9750,14 @@
                     "x": 1574,
                     "y": 671
                 }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1446,
+                    "y": 556
+                }
             }
         ]
     },
@@ -9668,6 +9774,14 @@
                 "marker": {
                     "x": 1250,
                     "y": 560
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 900,
+                    "y": 544
                 }
             }
         ]
@@ -9701,6 +9815,14 @@
                 "marker": {
                     "x": 559,
                     "y": 511
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 127,
+                    "y": 727
                 }
             }
         ]
@@ -9844,6 +9966,14 @@
                 "marker": {
                     "x": 1301,
                     "y": 750
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1129,
+                    "y": 1005
                 }
             }
         ]
@@ -10472,6 +10602,23 @@
         ]
     },
     {
+        "name": "Muthra",
+        "slug": "muthra",
+        "description": "Muthra was a settlement near the headwaters of the Culvern River below the Laederon Plateau in northwestern Genabackis. It was east of Bringer's Foot and Silver Lake.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Muthra",
+        "type": "city",
+        "maps": [
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1728,
+                    "y": 379
+                }
+            }
+        ]
+    },
+    {
         "name": "N'shad",
         "slug": "nshad",
         "description": "N'shad was a town at the northeastern end of the Clatar Sea on the Seven Cities subcontinent.\n",
@@ -10940,6 +11087,14 @@
                 "marker": {
                     "x": 1533,
                     "y": 533
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1530,
+                    "y": 621
                 }
             }
         ]
@@ -11702,6 +11857,23 @@
         ]
     },
     {
+        "name": "Orbis Forest",
+        "slug": "orbis-forest",
+        "description": "Orbis Forest ran along the southern border of Central Malyn Range in northwestern Genabackis. To its south was the settlement of Orbis. On its eastern border was Redhouse.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Orbis_Forest",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 276,
+                    "y": 279
+                }
+            }
+        ]
+    },
+    {
         "name": "Ostann",
         "slug": "ostann",
         "description": "Ostann was a city in northern Genabackis. It lay between Owndos to the northwest and Cajale to the northeast.\n",
@@ -11882,6 +12054,14 @@
                     "x": 752,
                     "y": 568
                 }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1847,
+                    "y": 1718
+                }
             }
         ]
     },
@@ -11898,6 +12078,14 @@
                 "marker": {
                     "x": 1535,
                     "y": 1274
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1687,
+                    "y": 1897
                 }
             }
         ]
@@ -11931,6 +12119,14 @@
                 "marker": {
                     "x": 719,
                     "y": 562
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1622,
+                    "y": 1531
                 }
             }
         ]
@@ -13086,6 +13282,14 @@
                 "marker": {
                     "x": 968,
                     "y": 518
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 636,
+                    "y": 331
                 }
             }
         ]
@@ -14781,6 +14985,14 @@
                     "x": 1862,
                     "y": 339
                 }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 2074,
+                    "y": 310
+                }
             }
         ]
     },
@@ -15177,6 +15389,31 @@
                 "marker": {
                     "x": 1290,
                     "y": 1076
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1119,
+                    "y": 1692
+                }
+            }
+        ]
+    },
+    {
+        "name": "Stopmouth Bay",
+        "slug": "stopmouth-bay",
+        "description": "Stopmouth Bay was located at the western end of the Owndos Sea, adjacent to the town from which it took its name. To the north was Slow Wood Swamp.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Stopmouth_Bay",
+        "type": "region",
+        "maps": [
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1285,
+                    "y": 1676
                 }
             }
         ]
@@ -15583,6 +15820,14 @@
                 "marker": {
                     "x": 813,
                     "y": 644
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 310,
+                    "y": 643
                 }
             }
         ]
@@ -16380,6 +16625,14 @@
                 "marker": {
                     "x": 560,
                     "y": 321
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1258,
+                    "y": 33
                 }
             }
         ]
@@ -17656,6 +17909,14 @@
                 "marker": {
                     "x": 1394,
                     "y": 635
+                }
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+                "marker": {
+                    "x": 1110,
+                    "y": 900
                 }
             }
         ]
