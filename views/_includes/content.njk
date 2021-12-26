@@ -56,7 +56,6 @@ layout: base.njk
                     class="object-contain lg:max-h-screen"
                     id="map-image-{{ loop.index }}"
                     alt="Map of {{ map.name }}"
-                    title="Map of {{ map.name }}"
                 >
                 {% if 'marker' in map %}
                     <img
@@ -66,7 +65,6 @@ layout: base.njk
                         data-markerx={{ map.marker.x }}
                         data-markery={{ map.marker.y }}
                         alt="{{ item.title }} marker"
-                        title="{{ item.title }} marker"
                     >
                 {% endif %}
             </div>
