@@ -5785,6 +5785,10 @@
             {
                 "name": "Genabackis (GotM)",
                 "image": "/static/img/maps/Genabackis_GotM.webp"
+            },
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp"
             }
         ]
     },
@@ -15975,6 +15979,19 @@
                     "x": 750,
                     "y": 1182
                 }
+            }
+        ]
+    },
+    {
+        "name": "The God is Not Willing",
+        "slug": "the-god-is-not-willing",
+        "description": "The God is Not Willing is the first book in the Witness Trilogy, Steven Erikson's sequel to the Malazan Book of the Fallen series.",
+        "wikiLink": "https://malazan.fandom.com/wiki/The_God_is_Not_Willing",
+        "type": "book",
+        "maps": [
+            {
+                "name": "Northwest Genabackis - Late Empire",
+                "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp"
             }
         ]
     },

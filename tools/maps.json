@@ -114,5 +114,9 @@
     {
         "name": "Thel Akai, Jaghut, Tiste Realms",
         "image": "/static/img/maps/Thel_Akai.webp"
+    },
+    {
+        "name": "Northwest Genabackis - Late Empire",
+        "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp"
     }
 ]
