@@ -24,7 +24,7 @@ yarn serve
 # npm run serve
 ```
 
-## Adding/Update new locations
+## Add/Update locations
 
 To add new locations use the [add-data](./tools/add-data.js) script. This script automatically adds the correct wiki URL and fetches the first paragraph of the Wiki page.
 
