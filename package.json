@@ -12,6 +12,7 @@
         "build:js": "node esbuild.js prod",
         "watch:js": "node esbuild.js watch",
         "add-data": "node tools/add-data",
+        "validate": "node tools/validate",
         "stats": "node tools/stats",
         "lint": "eslint -c .eslintrc"
     },
