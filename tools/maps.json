@@ -118,5 +118,9 @@
     {
         "name": "Northwest Genabackis - Late Empire",
         "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp"
+    },
+    {
+        "name": "Seven Cities (JB)",
+        "image": "/static/img/maps/Seven_Cities_JB.webp"
     }
 ]

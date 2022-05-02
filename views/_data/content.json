@@ -14689,6 +14689,10 @@
             {
                 "name": "Raraku",
                 "image": "/static/img/maps/Raraku.webp"
+            },
+            {
+                "name": "Seven Cities (JB)",
+                "image": "/static/img/maps/Seven_Cities_JB.jpg"
             }
         ]
     },
