@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
 
-import { version } from '../../package.json';
+import { version } from "../../package.json";
 
 const CACHE_NAME = `malazan-cache-${version}`;
 const CACHE_URLS = [
@@ -12,7 +12,7 @@ const CACHE_URLS = [
 
 declare const self: ServiceWorkerGlobalScope;
 
-self.addEventListener('install', (event) => {
+self.addEventListener("install", (event) => {
     const preCache = async () => {
         const cache = await caches.open(CACHE_NAME);
 
@@ -34,7 +34,7 @@ self.addEventListener('install', (event) => {
     event.waitUntil(preCache());
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener("activate", (event) => {
     self.clients.claim();
     event.waitUntil(
         caches.keys().then((cacheNames) => {
@@ -50,7 +50,7 @@ self.addEventListener('activate', (event) => {
     );
 });
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener("fetch", (event) => {
     event.respondWith(
         caches.open(CACHE_NAME).then((cache) => {
             return cache.match(event.request, { ignoreSearch: true }).then((cacheResponse) => {
@@ -58,9 +58,9 @@ self.addEventListener('fetch', (event) => {
                     cacheResponse ||
                     fetch(event.request).then((fetchResponse) => {
                         if (
-                            event.request.method === 'GET' &&
-                            (event.request.destination === 'image' ||
-                                event.request.mode === 'navigate')
+                            event.request.method === "GET" &&
+                            (event.request.destination === "image" ||
+                                event.request.mode === "navigate")
                         ) {
                             cache.put(event.request, fetchResponse.clone());
                         }

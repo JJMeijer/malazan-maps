@@ -1,35 +1,35 @@
-import { setVisibleMapTransformOrigin } from '../helpers';
+import { setVisibleMapTransformOrigin } from "../helpers";
 
 const clamp = (num: number, min: number, max: number): number => Math.min(Math.max(num, min), max);
 
 const showResetZoomButton = () => {
-    const resetButton = document.getElementById('reset-zoom-button');
+    const resetButton = document.getElementById("reset-zoom-button");
 
     if (!resetButton) {
-        throw new Error('Reset button is missing');
+        throw new Error("Reset button is missing");
     }
 
-    resetButton.classList.add('flex');
-    resetButton.classList.remove('hidden');
+    resetButton.classList.add("flex");
+    resetButton.classList.remove("hidden");
 };
 
 const hideResetZoomButton = () => {
-    const resetButton = document.getElementById('reset-zoom-button');
+    const resetButton = document.getElementById("reset-zoom-button");
 
     if (!resetButton) {
-        throw new Error('Reset button is missing');
+        throw new Error("Reset button is missing");
     }
 
-    resetButton.classList.add('hidden');
-    resetButton.classList.remove('flex');
+    resetButton.classList.add("hidden");
+    resetButton.classList.remove("flex");
 };
 
 export const setZoomAndPanListeners = (): void => {
-    const imageWrappers = document.querySelectorAll('[id^=map-imagewrapper-]');
+    const imageWrappers = document.querySelectorAll("[id^=map-imagewrapper-]");
 
     imageWrappers.forEach((imageWrapper) => {
         if (!(imageWrapper instanceof HTMLDivElement)) {
-            throw new Error('element with `map-imagewrapper-` id is not a div element');
+            throw new Error("element with `map-imagewrapper-` id is not a div element");
         }
 
         let activeTransform = false;
@@ -57,12 +57,12 @@ export const setZoomAndPanListeners = (): void => {
 
             panning = true;
 
-            imageWrapper.style.cursor = 'grabbing';
+            imageWrapper.style.cursor = "grabbing";
         };
 
         imageWrapper.onmouseup = () => {
             panning = false;
-            imageWrapper.style.cursor = 'grab';
+            imageWrapper.style.cursor = "grab";
         };
 
         imageWrapper.onmousemove = (event) => {
@@ -136,22 +136,22 @@ export const setZoomAndPanListeners = (): void => {
             activeTransform = false;
         };
 
-        window.addEventListener('resize', () => {
+        window.addEventListener("resize", () => {
             reset();
             setVisibleMapTransformOrigin();
         });
 
         const mapButtons = document.querySelectorAll('input[name="map-selector"]');
         mapButtons.forEach((element) => {
-            element.addEventListener('change', reset);
+            element.addEventListener("change", reset);
         });
 
-        const resetButton = document.getElementById('reset-zoom-button');
+        const resetButton = document.getElementById("reset-zoom-button");
 
         if (!resetButton) {
-            throw new Error('Reset button is missing');
+            throw new Error("Reset button is missing");
         }
 
-        resetButton.addEventListener('click', reset);
+        resetButton.addEventListener("click", reset);
     });
 };

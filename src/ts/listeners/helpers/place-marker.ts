@@ -2,8 +2,8 @@ import {
     getElementNaturalDimensions,
     getElementRealDimensions,
     getElementPaddings,
-} from './element-dimensions';
-import { extractMapId } from './extract-map-id';
+} from "./element-dimensions";
+import { extractMapId } from "./extract-map-id";
 
 export const placeVisibleMarker = (): void => {
     /**
@@ -17,7 +17,7 @@ export const placeVisibleMarker = (): void => {
     const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
 
     if (!(visibleImageWrapper instanceof HTMLDivElement)) {
-        throw new Error('Imagewrapper element is missing');
+        throw new Error("Imagewrapper element is missing");
     }
 
     const mapId = extractMapId(visibleImageWrapper.id);
@@ -51,7 +51,7 @@ const placeMarker = (mapId: string): void => {
     const { markerx, markery } = mapMarkerElement.dataset;
 
     if (!markerx || !markery) {
-        throw new Error('Marker coordinates not provided');
+        throw new Error("Marker coordinates not provided");
     }
 
     const markerRelativeX =
@@ -71,5 +71,5 @@ const placeMarker = (mapId: string): void => {
     mapMarkerElement.style.top = `${markerRelativeY}px`;
     mapMarkerElement.style.left = `${markerRelativeX}px`;
 
-    mapMarkerElement.classList.replace('opacity-0', 'opacity-80');
+    mapMarkerElement.classList.replace("opacity-0", "opacity-80");
 };

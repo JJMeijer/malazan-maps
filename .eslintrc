@@ -19,7 +19,8 @@
         "prettier/prettier": "error"
     },
     "ignorePatterns": [
-        "views/**/*.js",
+        "views/js/*.js",
+        "views/service-worker.js",
         "www/**/*.js",
         "!.eleventy.js"
     ],

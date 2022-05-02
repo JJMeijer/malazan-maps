@@ -1,5 +1,5 @@
-import { setVisibleMapTransformOrigin, placeVisibleMarker } from './helpers';
-import { setMapSelectorListeners, setZoomAndPanListeners } from './handlers';
+import { setVisibleMapTransformOrigin, placeVisibleMarker } from "./helpers";
+import { setMapSelectorListeners, setZoomAndPanListeners } from "./handlers";
 
 const setListeners = (): void => {
     setVisibleMapTransformOrigin();
@@ -7,7 +7,7 @@ const setListeners = (): void => {
     setMapSelectorListeners();
     placeVisibleMarker();
 
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
         placeVisibleMarker();
     });
 };
@@ -34,7 +34,7 @@ export const setMapListeners = (): void => {
         return;
     }
 
-    visibleImage.addEventListener('load', () => {
+    visibleImage.addEventListener("load", () => {
         setListeners();
     });
 };

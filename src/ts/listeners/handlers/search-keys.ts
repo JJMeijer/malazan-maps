@@ -3,12 +3,12 @@ import {
     getFocussedResultHref,
     unSetFocussedResult,
     setFocussedResult,
-} from '../helpers';
+} from "../helpers";
 
 export const searchKeysHandler = (event: KeyboardEvent): void => {
     const { key } = event;
 
-    if (key === 'ArrowDown') {
+    if (key === "ArrowDown") {
         event.preventDefault();
         const focusIndex = getFocussedResultIndex();
 
@@ -16,7 +16,7 @@ export const searchKeysHandler = (event: KeyboardEvent): void => {
         setFocussedResult(focusIndex + 1);
     }
 
-    if (key === 'ArrowUp') {
+    if (key === "ArrowUp") {
         event.preventDefault();
         const focusIndex = getFocussedResultIndex();
 
@@ -24,13 +24,13 @@ export const searchKeysHandler = (event: KeyboardEvent): void => {
         setFocussedResult(focusIndex - 1);
     }
 
-    if (key === 'Enter') {
+    if (key === "Enter") {
         event.preventDefault();
         const focusHref = getFocussedResultHref();
         window.location.href = focusHref;
     }
 
-    if (key === 'Tab') {
+    if (key === "Tab") {
         const focusIndex = getFocussedResultIndex();
         unSetFocussedResult(focusIndex);
     }

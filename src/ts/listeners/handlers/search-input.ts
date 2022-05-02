@@ -1,5 +1,5 @@
-import Fuse from 'fuse.js';
-import { Entry } from '../../types';
+import Fuse from "fuse.js";
+import { Entry } from "../../types";
 import {
     clearSearchResults,
     createNoResultElement,
@@ -8,15 +8,15 @@ import {
     insertSearchResults,
     setFocussedResult,
     showSearchResults,
-} from '../helpers';
+} from "../helpers";
 
 const fuse: Fuse<Entry> = new Fuse([], {
     includeMatches: true,
-    keys: ['name'],
+    keys: ["name"],
 });
 
 (async () => {
-    const resp = await fetch('/data.json');
+    const resp = await fetch("/data.json");
     const data = await resp.json();
     fuse.setCollection(data);
 })();
@@ -51,13 +51,13 @@ export const searchInputHandler = (event: Event): void => {
             const { item, matches } = result;
 
             if (!matches || !matches[0]) {
-                throw new Error('Matching indices missing in fuse result object');
+                throw new Error("Matching indices missing in fuse result object");
             }
 
             const indices = matches[0].indices;
             return createSearchResult(item, indices);
         })
-        .join('');
+        .join("");
 
     insertSearchResults(resultElementsHtml);
     showSearchResults();

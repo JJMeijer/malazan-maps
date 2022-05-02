@@ -1,7 +1,7 @@
 class Data {
     data() {
         return {
-            permalink: '/data.json',
+            permalink: "/data.json",
         };
     }
 

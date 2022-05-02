@@ -1,10 +1,10 @@
-import { getElementRealDimensions } from './element-dimensions';
+import { getElementRealDimensions } from "./element-dimensions";
 
 export const setVisibleMapTransformOrigin = (): void => {
     const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
 
     if (!(visibleImageWrapper instanceof HTMLDivElement)) {
-        throw new Error('Imagewrapper element is missing');
+        throw new Error("Imagewrapper element is missing");
     }
 
     const { top, left } = getElementRealDimensions(visibleImageWrapper);

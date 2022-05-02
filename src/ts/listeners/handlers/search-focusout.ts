@@ -1,4 +1,4 @@
-import { hideSearchResults } from '../helpers';
+import { hideSearchResults } from "../helpers";
 
 export const searchFocusoutHandler = (event: FocusEvent): void => {
     const relatedTarget = event.relatedTarget;
@@ -6,7 +6,7 @@ export const searchFocusoutHandler = (event: FocusEvent): void => {
         hideSearchResults();
     }
 
-    if (relatedTarget instanceof HTMLElement && !relatedTarget.matches('#search-wrapper *')) {
+    if (relatedTarget instanceof HTMLElement && !relatedTarget.matches("#search-wrapper *")) {
         hideSearchResults();
     }
 };

@@ -3,7 +3,7 @@ import {
     setLoadListener,
     setSearchListeners,
     setMapListeners,
-} from './listeners';
+} from "./listeners";
 
 const setListeners = (): void => {
     setErrorListener();
@@ -12,10 +12,10 @@ const setListeners = (): void => {
     setMapListeners();
 };
 
-if (document.readyState !== 'loading') {
+if (document.readyState !== "loading") {
     setListeners();
 } else {
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener("DOMContentLoaded", () => {
         setListeners();
     });
 }
