@@ -5,6 +5,3 @@ node_modules/
 .log
 
 www/
-views/static/js/
-views/static/css/
-views/service-worker.js

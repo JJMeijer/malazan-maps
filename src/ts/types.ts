@@ -16,7 +16,7 @@ interface MapData {
 export interface Entry {
     name: string;
     slug: string;
-    type: 'city' | 'region' | 'continent' | 'book';
+    type: "city" | "region" | "continent" | "book";
     description: string;
     wikiLink: string;
     maps: MapData[];
