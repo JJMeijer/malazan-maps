@@ -5,6 +5,13 @@ const format = require("date-fns/format");
 module.exports = function (config) {
     config.setQuietMode(true);
 
+    // Enable browserSyncUI
+    config.setBrowserSyncConfig({
+        ui: {
+            port: 3001,
+        },
+    });
+
     config.addPassthroughCopy("views/static");
     config.addPassthroughCopy("views/app.yaml");
     config.addPassthroughCopy("views/favicon.ico");

@@ -1,19 +1,20 @@
 ---
-layout: content.njk
+layout: base.njk
 date: Last Modified
 
 pagination:
-    data: content
+    data: maps
     size: 1
     alias: item
     addAllPagesToCollections: true
 
-permalink: "{{ item.type }}/{{ item.slug }}/"
+permalink: "map/{{ item.name | slugify }}/"
+
 
 eleventyComputed:
     title: "{{ item.name }}"
-    description: "{{ item.description }}"
 
 title: "{{ eleventyComputed.title }}"
-description: "{{ eleventyComputed.description }}"
+
 ---
+{% include 'components/navbar.njk' %}

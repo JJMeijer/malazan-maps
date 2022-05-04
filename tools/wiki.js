@@ -1,11 +1,11 @@
-const { default: axios } = require('axios');
-const { parse } = require('node-html-parser');
+const { default: axios } = require("axios");
+const { parse } = require("node-html-parser");
 
-const BASE_URL = 'https://malazan.fandom.com/api.php';
+const BASE_URL = "https://malazan.fandom.com/api.php";
 
 const headers = {
-    'User-Agent':
-        'MalazanMaps/1.0 (https://www.malazanmaps.com/; johan@malazanmaps.com) Axios/0.22',
+    "User-Agent":
+        "MalazanMaps/1.0 (https://www.malazanmaps.com/; johan@malazanmaps.com) Axios/0.22",
 };
 
 const wikiSearch = async (term) => {
@@ -59,24 +59,24 @@ const wikiParse = async (title) => {
 
 const wikiFirstParagraph = (text) => {
     const root = parse(text);
-    const paragraphs = root.querySelectorAll('.mw-parser-output > p');
+    const paragraphs = root.querySelectorAll(".mw-parser-output > p");
 
     for (let i = 0; i < paragraphs.length; i++) {
         const paragraph = paragraphs[i];
 
-        if (paragraph.querySelector('aside')) {
+        if (paragraph.querySelector("aside")) {
             continue;
         }
 
-        if (paragraph.querySelector('span.slug')) {
+        if (paragraph.querySelector("span.slug")) {
             continue;
         }
 
-        if (paragraph.classList.contains('mw-empty-elt')) {
+        if (paragraph.classList.contains("mw-empty-elt")) {
             continue;
         }
 
-        if (paragraph.classList.contains('slug')) {
+        if (paragraph.classList.contains("slug")) {
             continue;
         }
 
@@ -89,8 +89,8 @@ const wikiSummary = async (title) => {
     const firstParagraph = wikiFirstParagraph(pageText);
     const cleanedText = firstParagraph
         .trim()
-        .replace(/\[\d+\]/g, '')
-        .replace(/\s{2,}/g, ' ');
+        .replace(/\[\d+\]/g, "")
+        .replace(/\s{2,}/g, " ");
 
     return cleanedText;
 };

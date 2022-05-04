@@ -5,7 +5,7 @@ const fs = require("fs");
 const { wikiSearch, wikiSummary, wikiUrl } = require("./wiki");
 const { validateContent } = require("./validate");
 
-const maps = require("./maps.json");
+const maps = require("../views/_data/maps.json");
 const content = require("../views/_data/content.json");
 
 (async () => {

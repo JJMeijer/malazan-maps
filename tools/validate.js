@@ -1,43 +1,43 @@
-const Ajv = require('ajv');
-const addFormats = require('ajv-formats');
+const Ajv = require("ajv");
+const addFormats = require("ajv-formats");
 
 const ajv = new Ajv({ verbose: true });
 addFormats(ajv);
 
-const currentFile = require('../views/_data/content.json');
-const maps = require('./maps.json');
+const currentFile = require("../views/_data/content.json");
+const maps = require("./maps.json");
 
 const mapsImagePattern = `^/static/img/maps/(${maps
-    .map((x) => x.image.replace('/static/img/maps/', ''))
-    .join('|')})$`;
+    .map((x) => x.image.replace("/static/img/maps/", ""))
+    .join("|")})$`;
 
 const MapSchema = {
-    type: 'object',
+    type: "object",
     properties: {
-        name: { type: 'string' },
-        image: { type: 'string', format: 'uri-reference', pattern: mapsImagePattern },
+        name: { type: "string" },
+        image: { type: "string", format: "uri-reference", pattern: mapsImagePattern },
     },
-    required: ['name', 'image'],
+    required: ["name", "image"],
 };
 
 const ItemSchema = {
-    type: 'object',
+    type: "object",
     properties: {
-        name: { type: 'string' },
-        slug: { type: 'string', pattern: '^[a-z-]+$' },
-        description: { type: 'string' },
-        wikiLink: { type: 'string', format: 'uri', pattern: '^https://malazan.fandom.com/wiki/.+' },
-        type: { type: 'string', pattern: 'book|continent|city|region' },
+        name: { type: "string" },
+        slug: { type: "string", pattern: "^[a-z-]+$" },
+        description: { type: "string" },
+        wikiLink: { type: "string", format: "uri", pattern: "^https://malazan.fandom.com/wiki/.+" },
+        type: { type: "string", pattern: "book|continent|city|region" },
         maps: {
-            type: 'array',
+            type: "array",
             items: MapSchema,
         },
     },
-    required: ['name', 'slug', 'description', 'wikiLink', 'type', 'maps'],
+    required: ["name", "slug", "description", "wikiLink", "type", "maps"],
 };
 
 const schema = {
-    type: 'array',
+    type: "array",
     items: ItemSchema,
 };
 
