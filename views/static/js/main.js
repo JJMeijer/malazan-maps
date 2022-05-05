@@ -1390,6 +1390,9 @@
   var FOCUS_CLASSES = [FOCUSSED_RESULT, "bg-gray-200", "text-gray-800"];
   var getFocussedResultIndex = () => {
     const { children } = safeGetElementById("search-results");
+    if (children.length === 0) {
+      return -1;
+    }
     for (let i = 0; i < children.length; i++) {
       if (children[i]) {
         const element = children[i];
@@ -1570,12 +1573,16 @@
     if (key === "ArrowDown") {
       event.preventDefault();
       const focusIndex = getFocussedResultIndex();
+      if (focusIndex === -1)
+        return;
       unSetFocussedResult(focusIndex);
       setFocussedResult(focusIndex + 1);
     }
     if (key === "ArrowUp") {
       event.preventDefault();
       const focusIndex = getFocussedResultIndex();
+      if (focusIndex === -1)
+        return;
       unSetFocussedResult(focusIndex);
       setFocussedResult(focusIndex - 1);
     }
@@ -1586,6 +1593,8 @@
     }
     if (key === "Tab") {
       const focusIndex = getFocussedResultIndex();
+      if (focusIndex === -1)
+        return;
       unSetFocussedResult(focusIndex);
     }
   };

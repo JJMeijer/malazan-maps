@@ -70,6 +70,10 @@ const FOCUS_CLASSES = [FOCUSSED_RESULT, "bg-gray-200", "text-gray-800"];
 export const getFocussedResultIndex = (): number => {
     const { children } = safeGetElementById("search-results");
 
+    if (children.length === 0) {
+        return -1;
+    }
+
     for (let i = 0; i < children.length; i++) {
         if (children[i]) {
             const element = children[i] as HTMLElement;

@@ -11,6 +11,7 @@ export const searchKeysHandler = (event: KeyboardEvent): void => {
     if (key === "ArrowDown") {
         event.preventDefault();
         const focusIndex = getFocussedResultIndex();
+        if (focusIndex === -1) return;
 
         unSetFocussedResult(focusIndex);
         setFocussedResult(focusIndex + 1);
@@ -19,6 +20,7 @@ export const searchKeysHandler = (event: KeyboardEvent): void => {
     if (key === "ArrowUp") {
         event.preventDefault();
         const focusIndex = getFocussedResultIndex();
+        if (focusIndex === -1) return;
 
         unSetFocussedResult(focusIndex);
         setFocussedResult(focusIndex - 1);
@@ -32,6 +34,7 @@ export const searchKeysHandler = (event: KeyboardEvent): void => {
 
     if (key === "Tab") {
         const focusIndex = getFocussedResultIndex();
+        if (focusIndex === -1) return;
         unSetFocussedResult(focusIndex);
     }
 };
