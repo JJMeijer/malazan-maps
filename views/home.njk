@@ -20,7 +20,7 @@ banner_portrait_name: 'Genabackis Map'
     <div class="w-[85%] sm:w-96 my-4 lg:my-8">
         {% include 'components/search.njk' %}
     </div>
-    <h1 class="text-center text-lg px-16">
+    <h1 class="text-center px-16">
         {{ header }}
     </h1>
 </div>
@@ -32,12 +32,14 @@ banner_portrait_name: 'Genabackis Map'
             class="hidden md:block"
             alt="{{ banner_landscape_name }}"
             title="{{ banner_landscape_name }}"
+            loading="lazy"
         >
         <img
             src="{{ banner_portrait }}"
             class="max-h-[500px] md:hidden"
             alt="{{ banner_portrait_name }}"
             title="{{ banner_portrait_name }}"
+            loading="lazy"
         >
     </div>
 </div>
