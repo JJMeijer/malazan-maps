@@ -5,7 +5,7 @@ const ajv = new Ajv({ verbose: true });
 addFormats(ajv);
 
 const currentFile = require("../views/_data/content.json");
-const maps = require("./maps.json");
+const maps = require("../views/_data/maps.json");
 
 const mapsImagePattern = `^/static/img/maps/(${maps
     .map((x) => x.image.replace("/static/img/maps/", ""))

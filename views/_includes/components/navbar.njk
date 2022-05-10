@@ -1,13 +1,26 @@
-<div class="flex flex-row items-center w-full border-b border-gray-600 p-1 bg-primary">
-    <a href="/">
-        <p class="ml-1 p-2 text-lg">
-            Malazan Maps
-        </p>
+{% macro navbarItem(name, link) %}
+    <a
+        href="{{link}}"
+        class="text-xl py-1 mx-4 border-b-2 {% if title == name %}border-gray-100{% else %}border-transparent{% endif %} hover:border-gray-100 transition"
+    >
+        {{name}}
     </a>
-    <p class="px-1">
-        >
-    </p>
-    <p class="p-2 text-base w-1/2">
-        {{ title }}
-    </p>
+{% endmacro %}
+
+
+<div class="w-full bg-primary flex justify-center">
+    <div class="flex flex-row items-center w-3/4 py-4">
+        <a href="/" class="flex flex-row items-center">
+            <img src="/static/img/icon-64x64.png" alt="logo" class="w-10 h-10" >
+            <p class="px-1 py-2 text-2xl">
+                Malazan Maps
+            </p>
+        </a>
+        <div class="flex-grow flex flex-row justify-end">
+            {{ navbarItem("Home", "/")}}
+            {{ navbarItem("Maps", "/maps")}}
+            {{ navbarItem("Continents", "/continents")}}
+            {{ navbarItem("Books", "/books")}}
+        </div>
+    </div>
 </div>

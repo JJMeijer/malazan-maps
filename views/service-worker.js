@@ -31,7 +31,7 @@
   var version;
   var init_package = __esm({
     "package.json"() {
-      version = "1.1.10";
+      version = "1.2.1";
     }
   });
 

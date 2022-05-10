@@ -1542,9 +1542,14 @@
     const data = yield resp.json();
     fuse.setCollection(data);
   }))();
+  var previousInput = "";
   var searchInputHandler = (event) => {
-    clearSearchResults();
     const { value } = event.target;
+    if (value === previousInput && event.type == "input") {
+      return;
+    }
+    previousInput = value;
+    clearSearchResults();
     if (value.length === 0) {
       hideSearchResults();
       return;
@@ -1552,6 +1557,7 @@
     const results = fuse.search(value).slice(0, 9);
     if (results.length === 0) {
       createNoResultElement();
+      showSearchResults();
       return;
     }
     const resultElementsHtml = results.map((result) => {
@@ -1604,9 +1610,11 @@
     const relatedTarget = event.relatedTarget;
     if (relatedTarget === null) {
       hideSearchResults();
+      return;
     }
     if (relatedTarget instanceof HTMLElement && !relatedTarget.matches("#search-wrapper *")) {
       hideSearchResults();
+      return;
     }
   };
 
