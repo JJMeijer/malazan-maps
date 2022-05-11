@@ -8,16 +8,13 @@ title: Home
 header: 'Find places in the world of the Malazan Book of the Fallen series.'
 description: 'Search engine for locations in the "Malazan Book of the Fallen" Series by Steven Erikson. Intended as a reading companion to quickly find a location mentioned in the books.'
 
-banner_landscape: static/img/maps/Northwest_Genabackis.webp
-banner_landscape_name: 'Northwest Genabackis Map'
-banner_portrait: static/img/maps/Genabackis_GotM.webp
-banner_portrait_name: 'Genabackis Map'
+banner: static/img/maps/Lands_of_Fist.webp
+banner_name: 'Northwest Genabackis'
 ---
 {% include 'components/navbar.njk' %}
 
-<div class="flex flex-col items-center bg-primary w-full pb-48">
-
-    <div class="w-[85%] sm:w-96 my-4 lg:my-8">
+<div class="flex flex-col items-center bg-primary w-full h-1/3 pb-8">
+    <div class="w-[85%] sm:w-1/4 my-4 lg:my-8">
         {% include 'components/search.njk' %}
     </div>
     <h1 class="text-center px-16">
@@ -25,22 +22,16 @@ banner_portrait_name: 'Genabackis Map'
     </h1>
 </div>
 
- <div class="flex flex-col -mt-40 mx-4 bg-white rounded-md md:mx-8 md:w-3/4">
-    <div class="m-2 md:my-4 md:mx-12" id="map-image-wrapper">
+<div class="relative flex flex-col items-center flex-grow w-full bg-white">
+    <div class="flex-1 w-full bg-primary"></div>
+    <div class="flex-1 w-full"></div>
+    <div class="absolute inset-y-6 inset-x-[12.5%] flex flex-col items-center justify-center">
         <img
-            src="{{ banner_landscape }}"
-            class="hidden md:block"
-            alt="{{ banner_landscape_name }}"
-            title="{{ banner_landscape_name }}"
+            src="{{banner}}"
+            alt="{{banner_name}}"
+            title="{{banner_name}}"
             loading="lazy"
-        >
-        <img
-            src="{{ banner_portrait }}"
-            class="max-h-[500px] md:hidden"
-            alt="{{ banner_portrait_name }}"
-            title="{{ banner_portrait_name }}"
-            loading="lazy"
-        >
+            class="w-full h-full object-cover rounded-lg shadow-md shadow-gray-400">
     </div>
 </div>
 
