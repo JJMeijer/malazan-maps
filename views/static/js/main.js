@@ -1815,12 +1815,27 @@
     });
   };
 
+  // src/ts/listeners/navbar-listener.ts
+  var setNavbarListener = () => {
+    const hamburgerElement = safeGetElementById("hamburger");
+    hamburgerElement.addEventListener("change", (event) => {
+      const { checked } = event.target;
+      const navbarItemsElement = safeGetElementById("navbarItems");
+      if (checked) {
+        navbarItemsElement.classList.add("-translate-x-full");
+      } else {
+        navbarItemsElement.classList.remove("-translate-x-full");
+      }
+    });
+  };
+
   // src/ts/main.ts
   var setListeners2 = () => {
     setErrorListener();
     setLoadListener();
     setSearchListeners();
     setMapListeners();
+    setNavbarListener();
   };
   if (document.readyState !== "loading") {
     setListeners2();

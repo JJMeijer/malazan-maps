@@ -3,6 +3,7 @@ import {
     setLoadListener,
     setSearchListeners,
     setMapListeners,
+    setNavbarListener,
 } from "./listeners";
 
 const setListeners = (): void => {
@@ -10,6 +11,7 @@ const setListeners = (): void => {
     setLoadListener();
     setSearchListeners();
     setMapListeners();
+    setNavbarListener();
 };
 
 if (document.readyState !== "loading") {

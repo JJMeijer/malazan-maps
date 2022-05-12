@@ -1,7 +1,7 @@
 {% macro navbarItem(name, link) %}
     <a
         href="{{link}}"
-        class="text-xl py-1 mx-4 border-b-2 {% if title == name %}border-gray-100{% else %}border-transparent{% endif %} hover:border-gray-100 transition"
+        class="text-2xl py-2 my-2 mx-4 border-b-2 sm:text-lg sm:py-1 sm:my-0 {% if title == name %}border-gray-100{% else %}border-transparent{% endif %} hover:border-gray-100 transition"
     >
         {{name}}
     </a>
@@ -9,14 +9,41 @@
 
 
 <div class="w-full bg-primary flex justify-center">
-    <div class="flex flex-row items-center w-3/4 py-4">
-        <a href="/" class="flex flex-row items-center">
+    <div class="relative w-full flex flex-row justify-between items-center py-4 sm:w-3/4 sm:justify-start">
+        <a href="/" class="flex flex-row items-center ml-5 sm:ml-0 sm:min-w-fit">
             <img src="/static/img/icon-64x64.png" alt="logo" class="w-10 h-10" >
             <p class="px-1 py-2 text-2xl">
                 Malazan Maps
             </p>
         </a>
-        <div class="flex-grow flex flex-row justify-end">
+        <label class="flex flex-col justify-between w-7 h-6 cursor-pointer mt-1 mr-5 md:hidden">
+            <input id="hamburger" type="checkbox" class="peer hidden"/>
+            <span class="transition ease-in-out duration-500 h-1 rounded-md bg-gray-100 w-full peer-checked:-rotate-45 peer-checked:mt-3"></span>
+            <span class="transition ease-in-out duration-500 h-1 rounded-md bg-gray-100 w-full peer-checked:rotate-45 peer-checked:-mt-2"></span>
+            <span class="transition ease-in-out duration-500 h-1 rounded-md bg-gray-100 w-full peer-checked:rotate-45 peer-checked:opacity-0"></span>
+        </label>
+        <div
+            id="navbarItems"
+            class="
+                transition
+                duration-500
+                ease-in-out
+                w-full
+                flex
+                flex-col
+                items-center
+                bg-primary
+                absolute
+                top-full
+                left-full
+                pb-4
+                z-50
+                sm:pb-0
+                sm:static
+                sm:flex-grow
+                sm:flex-row
+                sm:justify-end"
+        >
             {{ navbarItem("Home", "/")}}
             {{ navbarItem("Maps", "/maps")}}
             {{ navbarItem("Continents", "/continents")}}
