@@ -133,3 +133,9 @@ export const setFocussedResult = (resultIndex: number): void => {
     const element = children[resultIndex] as HTMLElement;
     element.classList.add(...FOCUS_CLASSES);
 };
+
+export const resetSearchInput = (): void => {
+    const searchInputElement = safeGetElementById("search") as HTMLInputElement;
+    searchInputElement.value = "";
+    searchInputElement.focus();
+};

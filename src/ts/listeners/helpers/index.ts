@@ -10,6 +10,7 @@ export {
     getFocussedResultHref,
     setFocussedResult,
     unSetFocussedResult,
+    resetSearchInput,
 } from "./search-results-actions";
 export { placeVisibleMarker } from "./place-marker";
 export { extractMapId } from "./extract-map-id";

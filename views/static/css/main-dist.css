@@ -514,16 +514,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 50;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .z-30 {
   z-index: 30;
 }
 
 .z-20 {
   z-index: 20;
-}
-
-.z-40 {
-  z-index: 40;
 }
 
 .my-8 {
@@ -1166,12 +1166,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 75%;
   }
 
-  .sm\:min-w-fit {
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
-  }
-
   .sm\:flex-grow {
     flex-grow: 1;
   }
@@ -1211,10 +1205,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:w-\[60\%\] {

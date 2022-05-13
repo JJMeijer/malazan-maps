@@ -1442,6 +1442,11 @@
     const element = children[resultIndex];
     element.classList.add(...FOCUS_CLASSES);
   };
+  var resetSearchInput = () => {
+    const searchInputElement = safeGetElementById("search");
+    searchInputElement.value = "";
+    searchInputElement.focus();
+  };
 
   // src/ts/listeners/helpers/element-dimensions.ts
   var getElementNaturalDimensions = (element) => {
@@ -1602,6 +1607,10 @@
       if (focusIndex === -1)
         return;
       unSetFocussedResult(focusIndex);
+    }
+    if (key === "Escape") {
+      resetSearchInput();
+      clearSearchResults();
     }
   };
 

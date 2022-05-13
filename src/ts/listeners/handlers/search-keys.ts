@@ -3,6 +3,8 @@ import {
     getFocussedResultHref,
     unSetFocussedResult,
     setFocussedResult,
+    resetSearchInput,
+    clearSearchResults,
 } from "../helpers";
 
 export const searchKeysHandler = (event: KeyboardEvent): void => {
@@ -36,5 +38,10 @@ export const searchKeysHandler = (event: KeyboardEvent): void => {
         const focusIndex = getFocussedResultIndex();
         if (focusIndex === -1) return;
         unSetFocussedResult(focusIndex);
+    }
+
+    if (key === "Escape") {
+        resetSearchInput();
+        clearSearchResults();
     }
 };
