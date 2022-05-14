@@ -1540,7 +1540,7 @@
   // src/ts/listeners/handlers/search-input.ts
   var fuse = new Fuse([], {
     includeMatches: true,
-    keys: ["name"]
+    keys: ["name", "type"]
   });
   (() => __async(void 0, null, function* () {
     const resp = yield fetch("/data.json");

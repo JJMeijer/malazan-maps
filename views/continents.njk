@@ -5,6 +5,29 @@ date: Last Modified
 permalink: "continents/"
 
 title: "Continents"
+header: "Continents in the world of the Malazan Book of the Fallen series."
 
 ---
 {% include "components/header.njk" %}
+
+<div class="flex flex-col w-full items-center">
+    <div class="h-96 bg-primary w-full"></div>
+    <div class="flex flex-col items-center w-3/4 py-4 bg-white rounded-lg -mt-80 text-gray-700">
+        {% set cycle = cycler("odd", "even") %}
+        {% for template in collections.continents %}
+            <div class="w-[90%] rounded-lg shadow-md m-2 flex flex-row h-96 {% if cycle.next() == "even" %}justify-end{% else %}justify-start{% endif %}">
+                <div class="flex flex-col items-center justify-center w-1/2">
+                    <p class="text-2xl font-bold py-4">{{ template.data.item.name }}</p>
+                    <p class="text-center px-4 italic">{{ template.data.item.description }}</p>
+                </div>
+                <div class="w-1/2 flex">
+                    {% for map in template.data.item.maps %}
+                        {{ map.image }}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include 'components/footer.njk' %}

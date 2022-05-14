@@ -7,9 +7,9 @@
             my-2
             mx-4
             border-b-2
-            sm:text-lg
-            sm:py-1
-            sm:my-0
+            md:text-lg
+            md:py-1
+            md:my-0
             {% if title == name %}border-gray-100{% else %}border-transparent{% endif %}
             hover:border-gray-100
             transition
@@ -29,7 +29,7 @@
             justify-between
             items-center
             py-4
-            {% if alwaysShort == false %}sm:w-3/4 sm:justify-start{% endif %}
+            {% if alwaysShort == false %}md:w-3/4 md:justify-start{% endif %}
         ">
             <a
                 href="/"
@@ -39,7 +39,7 @@
                     items-center
                     ml-5
                     min-w-fit
-                    {% if alwaysShort == false %}sm:ml-0{% endif %}
+                    {% if alwaysShort == false %}md:ml-0{% endif %}
                 "
             >
                 <img src="/static/img/icon-64x64.png" alt="logo" class="w-10 h-10" >
@@ -56,7 +56,7 @@
                 cursor-pointer
                 mt-1
                 mr-5
-                {% if alwaysShort == false %}sm:hidden{% endif %}
+                {% if alwaysShort == false %}md:hidden{% endif %}
             ">
                 <input id="hamburger" type="checkbox" class="peer hidden"/>
                 <span class="transition ease-in-out duration-500 h-1 rounded-md bg-gray-100 w-full peer-checked:-rotate-45 peer-checked:mt-3"></span>
@@ -79,7 +79,7 @@
                     left-full
                     pb-4
                     z-40
-                    {% if alwaysShort == false %}sm:pb-0 sm:static sm:flex-grow sm:flex-row sm:justify-end{% endif %}
+                    {% if alwaysShort == false %}md:pb-0 md:static md:flex-grow md:flex-row md:justify-end{% endif %}
                 "
             >
                 {{ navbarItem("Home", "/")}}

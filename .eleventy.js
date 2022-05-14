@@ -54,6 +54,14 @@ module.exports = function (config) {
         return content;
     });
 
+    config.addCollection("continents", function (collectionApi) {
+        return collectionApi.getAll().filter((x) => x.url.match(/^\/continent\//));
+    });
+
+    config.addCollection("books", function (collectionApi) {
+        return collectionApi.getAll().filter((x) => x.url.match(/^\/book\//));
+    });
+
     // Set Directories
     return {
         dir: {

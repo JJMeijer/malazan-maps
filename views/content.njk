@@ -13,6 +13,7 @@ permalink: "{{ item.type }}/{{ item.slug }}/"
 eleventyComputed:
     title: "{{ item.name | safe }}"
     description: "{{ item.description | safe }}"
+    tags: "{{ item.type }}"
 
 ---
 {% import "components/navbar.njk" as navbar %}
