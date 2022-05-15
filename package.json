@@ -4,6 +4,7 @@
     "author": "Johan <johan@malazanmaps.com>",
     "license": "MIT",
     "scripts": {
+        "dev": "run-p serve js:watch css:watch",
         "serve": "eleventy --serve",
         "build:prod": "cross-env NODE_ENV=production yarn build:all",
         "build:all": "yarn css:build && yarn js:build && eleventy",
@@ -34,6 +35,7 @@
         "fuse.js": "^6.5.3",
         "html-minifier": "^4.0.0",
         "node-html-parser": "^5.3.3",
+        "npm-run-all": "^4.1.5",
         "prettier": "^2.6.2",
         "prompts": "^2.4.2",
         "slugify": "^1.6.5",
