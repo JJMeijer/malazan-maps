@@ -1,126 +1,182 @@
 [
     {
         "name": "Seven Cities (DG)",
-        "image": "/static/img/maps/Seven_Cities_DG.webp"
+        "image": "/static/img/maps/Seven_Cities_DG.webp",
+        "thumbnail": "/static/img/maps/tn/Seven_Cities_DG.webp",
+        "type": "official"
     },
     {
         "name": "Chain of Dogs - First Half",
-        "image": "/static/img/maps/Chain_of_Dogs_1.webp"
+        "image": "/static/img/maps/Chain_of_Dogs_1.webp",
+        "thumbnail": "/static/img/maps/tn/Chain_of_Dogs_1.webp",
+        "type": "official"
     },
     {
         "name": "Genabackis (MoI)",
-        "image": "/static/img/maps/Genabackis_MoI.webp"
+        "image": "/static/img/maps/Genabackis_MoI.webp",
+        "thumbnail": "/static/img/maps/tn/Genabackis_MoI.webp",
+        "type": "official"
     },
     {
         "name": "Genabackis (GotM)",
-        "image": "/static/img/maps/Genabackis_GotM.webp"
+        "image": "/static/img/maps/Genabackis_GotM.webp",
+        "thumbnail": "/static/img/maps/tn/Genabackis_GotM.webp",
+        "type": "official"
     },
     {
         "name": "Chain of Dogs - Second Half",
-        "image": "/static/img/maps/Chain_of_Dogs_2.webp"
+        "image": "/static/img/maps/Chain_of_Dogs_2.webp",
+        "thumbnail": "/static/img/maps/tn/Chain_of_Dogs_2.webp",
+        "type": "official"
     },
     {
         "name": "Quon Tali",
-        "image": "/static/img/maps/Quon_Tali.webp"
+        "image": "/static/img/maps/Quon_Tali.webp",
+        "thumbnail": "/static/img/maps/tn/Quon_Tali.webp",
+        "type": "official"
     },
     {
         "name": "Empire of Lether",
-        "image": "/static/img/maps/Lether.webp"
+        "image": "/static/img/maps/Lether.webp",
+        "thumbnail": "/static/img/maps/tn/Lether.webp",
+        "type": "official"
     },
     {
         "name": "Edur Lands",
-        "image": "/static/img/maps/Edur_Lands.webp"
+        "image": "/static/img/maps/Edur_Lands.webp",
+        "thumbnail": "/static/img/maps/tn/Edur_Lands.webp",
+        "type": "official"
     },
     {
         "name": "Isle of Jacuruku",
-        "image": "/static/img/maps/Jacuruku.webp"
+        "image": "/static/img/maps/Jacuruku.webp",
+        "thumbnail": "/static/img/maps/tn/Jacuruku.webp",
+        "type": "official"
     },
     {
         "name": "Seven Cities (BH)",
-        "image": "/static/img/maps/Seven_Cities_BH.webp"
+        "image": "/static/img/maps/Seven_Cities_BH.webp",
+        "thumbnail": "/static/img/maps/tn/Seven_Cities_BH.webp",
+        "type": "official"
     },
     {
         "name": "Assail",
-        "image": "/static/img/maps/Assail.webp"
+        "image": "/static/img/maps/Assail.webp",
+        "thumbnail": "/static/img/maps/tn/Assail.webp",
+        "type": "official"
     },
     {
         "name": "The Blood Range",
-        "image": "/static/img/maps/The_Blood_Range.webp"
+        "image": "/static/img/maps/The_Blood_Range.webp",
+        "thumbnail": "/static/img/maps/tn/The_Blood_Range.webp",
+        "type": "official"
     },
     {
         "name": "Kolanse",
-        "image": "/static/img/maps/Kolanse.webp"
+        "image": "/static/img/maps/Kolanse.webp",
+        "thumbnail": "/static/img/maps/tn/Kolanse.webp",
+        "type": "official"
     },
     {
         "name": "South Genabackis",
-        "image": "/static/img/maps/South_Genabackis.webp"
+        "image": "/static/img/maps/South_Genabackis.webp",
+        "thumbnail": "/static/img/maps/tn/South_Genabackis.webp",
+        "type": "official"
     },
     {
         "name": "Stormwall",
-        "image": "/static/img/maps/Stormwall.webp"
+        "image": "/static/img/maps/Stormwall.webp",
+        "thumbnail": "/static/img/maps/tn/Stormwall.webp",
+        "type": "official"
     },
     {
         "name": "Black Coral",
-        "image": "/static/img/maps/Black_Coral.webp"
+        "image": "/static/img/maps/Black_Coral.webp",
+        "thumbnail": "/static/img/maps/tn/Black_Coral.webp",
+        "type": "official"
     },
     {
         "name": "Malazan Empire",
-        "image": "/static/img/maps/Malazan_Empire.webp"
+        "image": "/static/img/maps/Malazan_Empire.webp",
+        "thumbnail": "/static/img/maps/tn/Malazan_Empire.webp",
+        "type": "official"
     },
     {
         "name": "Northwest Genabackis",
-        "image": "/static/img/maps/Northwest_Genabackis.webp"
+        "image": "/static/img/maps/Northwest_Genabackis.webp",
+        "thumbnail": "/static/img/maps/tn/Northwest_Genabackis.webp",
+        "type": "official"
     },
     {
         "name": "Malaz Isle",
-        "image": "/static/img/maps/Malaz_Isle.webp"
+        "image": "/static/img/maps/Malaz_Isle.webp",
+        "thumbnail": "/static/img/maps/tn/Malaz_Isle.webp",
+        "type": "official"
     },
     {
         "name": "Capustan",
-        "image": "/static/img/maps/Capustan.webp"
+        "image": "/static/img/maps/Capustan.webp",
+        "thumbnail": "/static/img/maps/tn/Capustan.webp",
+        "type": "official"
     },
     {
         "name": "Darujhistan",
-        "image": "/static/img/maps/Darujhistan.webp"
+        "image": "/static/img/maps/Darujhistan.webp",
+        "thumbnail": "/static/img/maps/tn/Darujhistan.webp",
+        "type": "official"
     },
     {
         "name": "Raraku",
-        "image": "/static/img/maps/Raraku.webp"
+        "image": "/static/img/maps/Raraku.webp",
+        "thumbnail": "/static/img/maps/tn/Raraku.webp",
+        "type": "official"
     },
     {
         "name": "Lands of Fist",
-        "image": "/static/img/maps/Lands_of_Fist.webp"
+        "image": "/static/img/maps/Lands_of_Fist.webp",
+        "thumbnail": "/static/img/maps/tn/Lands_of_Fist.webp",
+        "type": "official"
     },
     {
         "name": "Letheras",
-        "image": "/static/img/maps/Letheras.webp"
+        "image": "/static/img/maps/Letheras.webp",
+        "thumbnail": "/static/img/maps/tn/Letheras.webp",
+        "type": "official"
     },
     {
         "name": "Malaz City",
-        "image": "/static/img/maps/Malaz_City.webp"
+        "image": "/static/img/maps/Malaz_City.webp",
+        "thumbnail": "/static/img/maps/tn/Malaz_City.webp",
+        "type": "official"
     },
     {
         "name": "Li Heng",
-        "image": "/static/img/maps/Li_Heng.webp"
+        "image": "/static/img/maps/Li_Heng.webp",
+        "thumbnail": "/static/img/maps/tn/Li_Heng.webp",
+        "type": "official"
     },
     {
         "name": "Kharkanas",
-        "image": "/static/img/maps/Kharkanas.webp"
+        "image": "/static/img/maps/Kharkanas.webp",
+        "thumbnail": "/static/img/maps/tn/Kharkanas.webp",
+        "type": "official"
     },
     {
         "name": "Kurald Galain",
-        "image": "/static/img/maps/Kurald_Galain.webp"
+        "image": "/static/img/maps/Kurald_Galain.webp",
+        "thumbnail": "/static/img/maps/tn/Kurald_Galain.webp",
+        "type": "official"
     },
     {
         "name": "Thel Akai, Jaghut, Tiste Realms",
-        "image": "/static/img/maps/Thel_Akai.webp"
+        "image": "/static/img/maps/Thel_Akai.webp",
+        "thumbnail": "/static/img/maps/tn/Thel_Akai.webp",
+        "type": "official"
     },
     {
         "name": "Northwest Genabackis - Late Empire",
-        "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp"
-    },
-    {
-        "name": "Seven Cities (JB)",
-        "image": "/static/img/maps/Seven_Cities_JB.webp"
+        "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
+        "thumbnail": "/static/img/maps/tn/Northwest_Genabackis_Late_Empire.webp",
+        "type": "official"
     }
 ]

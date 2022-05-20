@@ -55,7 +55,20 @@ module.exports = function (config) {
     });
 
     config.addCollection("continents", function (collectionApi) {
-        return collectionApi.getAll().filter((x) => x.url.match(/^\/continent\//));
+        return collectionApi
+            .getAll()
+            .filter((x) => x.url.match(/^\/continent\//))
+            .sort((a, b) => {
+                if (a.data.item.maps.length > b.data.item.maps.length) {
+                    return -1;
+                }
+
+                if (a.data.item.maps.length < b.data.item.maps.length) {
+                    return 1;
+                }
+
+                return 0;
+            });
     });
 
     config.addCollection("books", function (collectionApi) {

@@ -13,7 +13,6 @@ permalink: "{{ item.type }}/{{ item.slug }}/"
 eleventyComputed:
     title: "{{ item.name | safe }}"
     description: "{{ item.description | safe }}"
-    tags: "{{ item.type }}"
 
 ---
 {% import "components/navbar.njk" as navbar %}
@@ -50,7 +49,7 @@ eleventyComputed:
                         tabindex="0"
                         class="p-2 text-[0.9rem] cursor-pointer border border-gray-200 bg-primary rounded-2xl hover:bg-gray-600 peer-checked:border-2 peer-checked:bg-gray-600"
                     >
-                        {{ map.name }}
+                        {{ maps[map.id].name }}
                     </span>
                 </label>
             {% endfor %}
@@ -68,10 +67,10 @@ eleventyComputed:
                 id="map-imagewrapper-{{ loop.index }}"
             >
                 <img
-                    src="{{ map.image }}"
+                    src="{{ maps[map.id].image }}"
                     class="object-contain lg:max-h-screen"
                     id="map-image-{{ loop.index }}"
-                    alt="Map of {{ map.name }}"
+                    alt="Map of {{ maps[map.id].name }}"
                     loading="lazy"
                 >
                 {% if 'marker' in map %}
