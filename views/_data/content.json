@@ -362,8 +362,7 @@
         "type": "region",
         "maps": [
             {
-                "name": "Thel Akai, Jaghut, Tiste Realms",
-                "image": "/static/img/maps/Thel_Akai.webp",
+                "id": 28,
                 "marker": {
                     "x": 934,
                     "y": 700
@@ -3590,8 +3589,7 @@
         "type": "region",
         "maps": [
             {
-                "name": "Thel Akai, Jaghut, Tiste Realms",
-                "image": "/static/img/maps/Thel_Akai.webp",
+                "id": 28,
                 "marker": {
                     "x": 903,
                     "y": 1507
@@ -4281,8 +4279,7 @@
         "type": "region",
         "maps": [
             {
-                "name": "Thel Akai, Jaghut, Tiste Realms",
-                "image": "/static/img/maps/Thel_Akai.webp",
+                "id": 28,
                 "marker": {
                     "x": 801,
                     "y": 625
@@ -4527,8 +4524,7 @@
         "type": "region",
         "maps": [
             {
-                "name": "Thel Akai, Jaghut, Tiste Realms",
-                "image": "/static/img/maps/Thel_Akai.webp",
+                "id": 28,
                 "marker": {
                     "x": 630,
                     "y": 1065
@@ -7070,8 +7066,7 @@
         "type": "region",
         "maps": [
             {
-                "name": "Thel Akai, Jaghut, Tiste Realms",
-                "image": "/static/img/maps/Thel_Akai.webp",
+                "id": 28,
                 "marker": {
                     "x": 796,
                     "y": 921
@@ -10503,8 +10498,7 @@
         "type": "region",
         "maps": [
             {
-                "name": "Thel Akai, Jaghut, Tiste Realms",
-                "image": "/static/img/maps/Thel_Akai.webp",
+                "id": 28,
                 "marker": {
                     "x": 963,
                     "y": 579
@@ -15279,8 +15273,7 @@
         "type": "region",
         "maps": [
             {
-                "name": "Thel Akai, Jaghut, Tiste Realms",
-                "image": "/static/img/maps/Thel_Akai.webp",
+                "id": 28,
                 "marker": {
                     "x": 661,
                     "y": 768
@@ -16314,8 +16307,7 @@
         "type": "region",
         "maps": [
             {
-                "name": "Thel Akai, Jaghut, Tiste Realms",
-                "image": "/static/img/maps/Thel_Akai.webp",
+                "id": 28,
                 "marker": {
                     "x": 124,
                     "y": 609
