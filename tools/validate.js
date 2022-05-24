@@ -24,7 +24,6 @@ const ItemSchema = {
     type: "object",
     properties: {
         name: { type: "string" },
-        slug: { type: "string", pattern: "^[a-z-]+$" },
         description: { type: "string" },
         wikiLink: { type: "string", format: "uri", pattern: "^https://malazan.fandom.com/wiki/.+" },
         type: { type: "string", pattern: "book|continent|city|region" },
@@ -33,7 +32,7 @@ const ItemSchema = {
             items: MapSchema,
         },
     },
-    required: ["name", "slug", "description", "wikiLink", "type", "maps"],
+    required: ["name", "description", "wikiLink", "type", "maps"],
 };
 
 const schema = {

@@ -4,22 +4,10 @@ export interface FocusResultInformation {
     focusHref: string;
 }
 
-interface MapData {
-    name: string;
-    image: string;
-    marker?: {
-        x: number;
-        y: number;
-    };
-}
-
 export interface Entry {
     name: string;
     slug: string;
-    type: "city" | "region" | "continent" | "book";
-    description: string;
-    wikiLink: string;
-    maps: MapData[];
+    type: "city" | "region" | "continent" | "book" | "map";
 }
 
 export interface NaturalDimensions {

@@ -1,5 +1,4 @@
 const prompts = require("prompts");
-const slugify = require("slugify");
 const fs = require("fs");
 
 const { wikiSearch, wikiSummary, wikiUrl } = require("./wiki");
@@ -74,11 +73,6 @@ const content = require("../views/_data/content.json");
         return;
     }
 
-    const slug = slugify(name, {
-        lower: true,
-        strict: true,
-    });
-
     const wikiLink = await wikiUrl(name);
     const description = await wikiSummary(name);
 
@@ -91,7 +85,6 @@ const content = require("../views/_data/content.json");
 
     const newItem = {
         name,
-        slug,
         description,
         wikiLink,
         type,

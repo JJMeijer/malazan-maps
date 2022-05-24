@@ -1,182 +1,212 @@
 [
     {
-        "name": "Seven Cities (DG)",
-        "image": "/static/img/maps/Seven_Cities_DG.webp",
-        "thumbnail": "/static/img/maps/tn/Seven_Cities_DG.webp",
-        "type": "official"
+        "name": "Seven Cities (Deadhouse Gates)",
+        "image": "/static/img/maps/seven-cities-deadhouse-gates.webp",
+        "thumbnail": "/static/img/maps/tn/seven-cities-deadhouse-gates.webp",
+        "type": "official",
+        "description": "Map showing the Seven Cities subcontinent, featured in Deadhouse Gates."
     },
     {
         "name": "Chain of Dogs - First Half",
-        "image": "/static/img/maps/Chain_of_Dogs_1.webp",
-        "thumbnail": "/static/img/maps/tn/Chain_of_Dogs_1.webp",
-        "type": "official"
+        "image": "/static/img/maps/chain-of-dogs-first-half.webp",
+        "thumbnail": "/static/img/maps/tn/chain-of-dogs-first-half.webp",
+        "type": "official",
+        "description": "Detailed map (first part) showing the route of the 7th Army. Featured in Deadhouse Gates."
     },
     {
-        "name": "Genabackis (MoI)",
-        "image": "/static/img/maps/Genabackis_MoI.webp",
-        "thumbnail": "/static/img/maps/tn/Genabackis_MoI.webp",
-        "type": "official"
+        "name": "Genabackis: The Pannion War",
+        "image": "/static/img/maps/genabackis-the-pannion-war.webp",
+        "thumbnail": "/static/img/maps/tn/genabackis-the-pannion-war.webp",
+        "type": "official",
+        "description": "Essentially the same map as in Gardens of the Moon, but with some errors fixed and borders changed. Featured in Memories of Ice."
     },
     {
-        "name": "Genabackis (GotM)",
-        "image": "/static/img/maps/Genabackis_GotM.webp",
-        "thumbnail": "/static/img/maps/tn/Genabackis_GotM.webp",
-        "type": "official"
+        "name": "Genabackis: The Malazan Campaign",
+        "image": "/static/img/maps/genabackis-the-malazan-campaign.webp",
+        "thumbnail": "/static/img/maps/tn/genabackis-the-malazan-campaign.webp",
+        "type": "official",
+        "description": "Map showing most of Genabackis (except the southern coast), featured in Gardens of the Moon."
     },
     {
         "name": "Chain of Dogs - Second Half",
-        "image": "/static/img/maps/Chain_of_Dogs_2.webp",
-        "thumbnail": "/static/img/maps/tn/Chain_of_Dogs_2.webp",
-        "type": "official"
+        "image": "/static/img/maps/chain-of-dogs-second-half.webp",
+        "thumbnail": "/static/img/maps/tn/chain-of-dogs-second-half.webp",
+        "type": "official",
+        "description": "Detailed map (second part) showing the route of the 7th Army. Featured in Deadhouse Gates."
     },
     {
-        "name": "Quon Tali",
-        "image": "/static/img/maps/Quon_Tali.webp",
-        "thumbnail": "/static/img/maps/tn/Quon_Tali.webp",
-        "type": "official"
+        "name": "Central Malazan Empire: Quon Tali",
+        "image": "/static/img/maps/central-malazan-empire-quon-tali.webp",
+        "thumbnail": "/static/img/maps/tn/central-malazan-empire-quon-tali.webp",
+        "type": "official",
+        "description": "A substantially more detailed version of the map in House of Chains, featuring only the southern part of Quon Tali. Featured in The Bonehunters, and Return of the Crimson Guard."
     },
     {
-        "name": "Empire of Lether",
-        "image": "/static/img/maps/Lether.webp",
-        "thumbnail": "/static/img/maps/tn/Lether.webp",
-        "type": "official"
+        "name": "The Empire of Lether",
+        "image": "/static/img/maps/the-empire-of-lether.webp",
+        "thumbnail": "/static/img/maps/tn/the-empire-of-lether.webp",
+        "type": "official",
+        "description": "A map showing most of the western half of Lether. Featured in Reaper's Gale and Dust of Dreams."
     },
     {
-        "name": "Edur Lands",
-        "image": "/static/img/maps/Edur_Lands.webp",
-        "thumbnail": "/static/img/maps/tn/Edur_Lands.webp",
-        "type": "official"
+        "name": "Tiste Edur Lands and North Lether Frontier",
+        "image": "/static/img/maps/tiste-edur-lands-and-north-lether-frontier.webp",
+        "thumbnail": "/static/img/maps/tn/tiste-edur-lands-and-north-lether-frontier.webp",
+        "type": "official",
+        "description": "Detailed map of the north-western part of Lether. Featured in Midnight Tides."
     },
     {
-        "name": "Isle of Jacuruku",
-        "image": "/static/img/maps/Jacuruku.webp",
-        "thumbnail": "/static/img/maps/tn/Jacuruku.webp",
-        "type": "official"
+        "name": "The Isle of Jacuruku",
+        "image": "/static/img/maps/the-isle-of-jacuruku.webp",
+        "thumbnail": "/static/img/maps/tn/the-isle-of-jacuruku.webp",
+        "type": "official",
+        "description": "A map of the island-continent of Jacuruku, featured in Blood and Bone."
     },
     {
-        "name": "Seven Cities (BH)",
-        "image": "/static/img/maps/Seven_Cities_BH.webp",
-        "thumbnail": "/static/img/maps/tn/Seven_Cities_BH.webp",
-        "type": "official"
+        "name": "Seven Cities (The Bonehunters)",
+        "image": "/static/img/maps/seven-cities-the-bonehunters.webp",
+        "thumbnail": "/static/img/maps/tn/seven-cities-the-bonehunters.webp",
+        "type": "official",
+        "description": "A redrawn and revised version of the map of the same name from Deadhouse Gates. Featured in The Bonehunters."
     },
     {
-        "name": "Assail",
-        "image": "/static/img/maps/Assail.webp",
-        "thumbnail": "/static/img/maps/tn/Assail.webp",
-        "type": "official"
+        "name": "Assail and Environs",
+        "image": "/static/img/maps/assail-and-environs.webp",
+        "thumbnail": "/static/img/maps/tn/assail-and-environs.webp",
+        "type": "official",
+        "description": "A map of the northern part of Assail, featured in Assail."
     },
     {
         "name": "The Blood Range",
-        "image": "/static/img/maps/The_Blood_Range.webp",
-        "thumbnail": "/static/img/maps/tn/The_Blood_Range.webp",
-        "type": "official"
+        "image": "/static/img/maps/the-blood-range.webp",
+        "thumbnail": "/static/img/maps/tn/the-blood-range.webp",
+        "type": "official",
+        "description": "A detailed map of the Blood Range in Assail, featured in Assail."
     },
     {
         "name": "Kolanse",
-        "image": "/static/img/maps/Kolanse.webp",
-        "thumbnail": "/static/img/maps/tn/Kolanse.webp",
-        "type": "official"
+        "image": "/static/img/maps/kolanse.webp",
+        "thumbnail": "/static/img/maps/tn/kolanse.webp",
+        "type": "official",
+        "description": "A map of eastern Lether, focusing on the kingdom of Kolanse. Featured in The Crippled God."
     },
     {
-        "name": "South Genabackis",
-        "image": "/static/img/maps/South_Genabackis.webp",
-        "thumbnail": "/static/img/maps/tn/South_Genabackis.webp",
-        "type": "official"
+        "name": "South Genabackis and Environs",
+        "image": "/static/img/maps/south-genabackis-and-environs.webp",
+        "thumbnail": "/static/img/maps/tn/south-genabackis-and-environs.webp",
+        "type": "official",
+        "description": "A map of the south coast of Genabackis, featured in Orb Sceptre Throne."
     },
     {
-        "name": "Stormwall",
-        "image": "/static/img/maps/Stormwall.webp",
-        "thumbnail": "/static/img/maps/tn/Stormwall.webp",
-        "type": "official"
+        "name": "Main Installations of the Stormwall",
+        "image": "/static/img/maps/main-installations-of-the-stormwall.webp",
+        "thumbnail": "/static/img/maps/tn/main-installations-of-the-stormwall.webp",
+        "type": "official",
+        "description": "A detailed map of the Stormwall. Featured in Stonewielder."
     },
     {
-        "name": "Black Coral",
-        "image": "/static/img/maps/Black_Coral.webp",
-        "thumbnail": "/static/img/maps/tn/Black_Coral.webp",
-        "type": "official"
+        "name": "Black Coral and Environs",
+        "image": "/static/img/maps/black-coral-and-environs.webp",
+        "thumbnail": "/static/img/maps/tn/black-coral-and-environs.webp",
+        "type": "official",
+        "description": "City map of Black Coral. Featured in Toll the Hounds."
     },
     {
-        "name": "Malazan Empire",
-        "image": "/static/img/maps/Malazan_Empire.webp",
-        "thumbnail": "/static/img/maps/tn/Malazan_Empire.webp",
-        "type": "official"
+        "name": "Central Malazan Empire",
+        "image": "/static/img/maps/central-malazan-empire.webp",
+        "thumbnail": "/static/img/maps/tn/central-malazan-empire.webp",
+        "type": "official",
+        "description": "A map showing the entirety of Quon Tali and the Falari Isles, as well as the coast of southern Seven Cities. Featured in House of Chains."
     },
     {
         "name": "Northwest Genabackis",
-        "image": "/static/img/maps/Northwest_Genabackis.webp",
-        "thumbnail": "/static/img/maps/tn/Northwest_Genabackis.webp",
-        "type": "official"
+        "image": "/static/img/maps/northwest-genabackis.webp",
+        "thumbnail": "/static/img/maps/tn/northwest-genabackis.webp",
+        "type": "official",
+        "description": "A detailed map of the Malyn and Owndos Sea regions of Genabackis. Featured in House of Chains."
     },
     {
         "name": "Malaz Isle",
-        "image": "/static/img/maps/Malaz_Isle.webp",
-        "thumbnail": "/static/img/maps/tn/Malaz_Isle.webp",
-        "type": "official"
+        "image": "/static/img/maps/malaz-isle.webp",
+        "thumbnail": "/static/img/maps/tn/malaz-isle.webp",
+        "type": "official",
+        "description": "A map of Malaz Island, featured in Night of Knives."
     },
     {
-        "name": "Capustan",
-        "image": "/static/img/maps/Capustan.webp",
-        "thumbnail": "/static/img/maps/tn/Capustan.webp",
-        "type": "official"
+        "name": "Capustan: Eastern Genabackis",
+        "image": "/static/img/maps/capustan-eastern-genabackis.webp",
+        "thumbnail": "/static/img/maps/tn/capustan-eastern-genabackis.webp",
+        "type": "official",
+        "description": "City map of Capustan. Featured in Memories of Ice."
     },
     {
         "name": "Darujhistan",
-        "image": "/static/img/maps/Darujhistan.webp",
-        "thumbnail": "/static/img/maps/tn/Darujhistan.webp",
-        "type": "official"
+        "image": "/static/img/maps/darujhistan.webp",
+        "thumbnail": "/static/img/maps/tn/darujhistan.webp",
+        "type": "official",
+        "description": "City map of Darujhistan, featured in Gardens of the Moon, Toll the Hounds and Orb Sceptre Throne."
     },
     {
-        "name": "Raraku",
-        "image": "/static/img/maps/Raraku.webp",
-        "thumbnail": "/static/img/maps/tn/Raraku.webp",
-        "type": "official"
+        "name": "Pan'arak Oasis: Raraku's Heart",
+        "image": "/static/img/maps/pan-arak-oasis-raraku-s-heart.webp",
+        "thumbnail": "/static/img/maps/tn/pan-arak-oasis-raraku-s-heart.webp",
+        "type": "official",
+        "description": "Detailed map of the Pan'arak Oasis in Seven Cities. Featured in House of Chains."
     },
     {
-        "name": "Lands of Fist",
-        "image": "/static/img/maps/Lands_of_Fist.webp",
-        "thumbnail": "/static/img/maps/tn/Lands_of_Fist.webp",
-        "type": "official"
+        "name": "The Lands of Fist",
+        "image": "/static/img/maps/the-lands-of-fist.webp",
+        "thumbnail": "/static/img/maps/tn/the-lands-of-fist.webp",
+        "type": "official",
+        "description": "A map of the Fistian subcontinent, featured in Stonewielder."
     },
     {
-        "name": "Letheras",
-        "image": "/static/img/maps/Letheras.webp",
-        "thumbnail": "/static/img/maps/tn/Letheras.webp",
-        "type": "official"
+        "name": "Central Letheras",
+        "image": "/static/img/maps/central-letheras.webp",
+        "thumbnail": "/static/img/maps/tn/central-letheras.webp",
+        "type": "official",
+        "description": "City map of Letheras. Featured in Midnight Tides."
     },
     {
         "name": "Malaz City",
-        "image": "/static/img/maps/Malaz_City.webp",
-        "thumbnail": "/static/img/maps/tn/Malaz_City.webp",
-        "type": "official"
+        "image": "/static/img/maps/malaz-city.webp",
+        "thumbnail": "/static/img/maps/tn/malaz-city.webp",
+        "type": "official",
+        "description": "City map of Malaz City drawn by Neil Gower. Featured in The Bonehunters and the Transworld and Tor versions of Night of Knives."
     },
     {
         "name": "Li Heng",
-        "image": "/static/img/maps/Li_Heng.webp",
-        "thumbnail": "/static/img/maps/tn/Li_Heng.webp",
-        "type": "official"
+        "image": "/static/img/maps/li-heng.webp",
+        "thumbnail": "/static/img/maps/tn/li-heng.webp",
+        "type": "official",
+        "description": "City map of Li Heng in Quon Tali, featured in Dancer's Lament."
     },
     {
         "name": "Kharkanas",
-        "image": "/static/img/maps/Kharkanas.webp",
-        "thumbnail": "/static/img/maps/tn/Kharkanas.webp",
-        "type": "official"
+        "image": "/static/img/maps/kharkanas.webp",
+        "thumbnail": "/static/img/maps/tn/kharkanas.webp",
+        "type": "official",
+        "description": "City map of Kharkanas in Forge of Darkness and Fall of Light. Note that these lands may not reside on the Malazan world."
     },
     {
         "name": "Kurald Galain",
-        "image": "/static/img/maps/Kurald_Galain.webp",
-        "thumbnail": "/static/img/maps/tn/Kurald_Galain.webp",
-        "type": "official"
+        "image": "/static/img/maps/kurald-galain.webp",
+        "thumbnail": "/static/img/maps/tn/kurald-galain.webp",
+        "type": "official",
+        "description": "A map of the lands of Kurald Galain in Forge of Darkness and Fall of Light. Note that these lands may not reside on the Malazan world."
     },
     {
         "name": "Thel Akai, Jaghut, Tiste Realms",
-        "image": "/static/img/maps/Thel_Akai.webp",
-        "thumbnail": "/static/img/maps/tn/Thel_Akai.webp",
-        "type": "official"
+        "image": "/static/img/maps/thel-akai-jaghut-tiste-realms.webp",
+        "thumbnail": "/static/img/maps/tn/thel-akai-jaghut-tiste-realms.webp",
+        "type": "official",
+        "description": "A map of the lands in Forge of Darkness and Fall of Light. Note that these lands may not reside on the Malazan world."
     },
     {
         "name": "Northwest Genabackis - Late Empire",
-        "image": "/static/img/maps/Northwest_Genabackis_Late_Empire.webp",
-        "thumbnail": "/static/img/maps/tn/Northwest_Genabackis_Late_Empire.webp",
-        "type": "official"
+        "image": "/static/img/maps/northwest-genabackis-late-empire.webp",
+        "thumbnail": "/static/img/maps/tn/northwest-genabackis-late-empire.webp",
+        "type": "official",
+        "description": "An updated map of northwest Genabackis, featured in The God is Not Willing."
     }
 ]

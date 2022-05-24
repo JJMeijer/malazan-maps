@@ -9,7 +9,7 @@ permalink: /sitemap.xml
         <loc>https://www.malazanmaps.com{{ item.url }}</loc>
         <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>{% if item.fileSlug == 'places' %}0.8{% else %}0.5{% endif %}</priority>
+        <priority>0.5</priority>
     </url>
     {%- endif %}
 {%- endfor %}

@@ -2,7 +2,7 @@
  * Return all places registered for a certain map. Currently not in use, but can be used
  * for map pages to display relevant place information on hover or tap.
  */
-const slugify = require("slugify");
+const slugify = require("@sindresorhus/slugify");
 
 class Places {
     data() {
@@ -12,7 +12,8 @@ class Places {
                 size: 1,
                 alias: "map",
             },
-            permalink: ({ map: { name } }) => `map/${slugify(name)}/places.json`,
+            permalink: ({ map: { name } }) =>
+                `map/${slugify(name, { decamelize: false })}/places.json`,
         };
     }
 

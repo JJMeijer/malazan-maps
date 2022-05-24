@@ -510,12 +510,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .z-30 {
@@ -524,6 +524,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-20 {
   z-index: 20;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .my-8 {
@@ -637,6 +641,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .max-h-28 {
   max-height: 7rem;
 }
@@ -673,10 +681,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-24 {
   width: 6rem;
 }
@@ -699,6 +703,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .min-w-fit {
@@ -1336,5 +1344,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:w-3\/4 {
     width: 75%;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 }

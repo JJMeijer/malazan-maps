@@ -13,6 +13,7 @@ permalink: "map/{{ item.name | slugify }}/"
 eleventyComputed:
     title: "{{ item.name | safe }}"
     header: "{{ item.name | safe }}"
+    description: "{{ item.description | safe }}"
 ---
 {% import "components/navbar.njk" as navbar %}
 
@@ -24,13 +25,13 @@ eleventyComputed:
             {% include 'components/search.njk' %}
         </div>
 
-        <h1 class="mb-4 text-2xl font-bold text-center">
+        <h1 class="m-4 text-2xl font-bold text-center">
             {{ title }}
         </h1>
 
         <div class="w-full lg:my-8 pb-8">
-            <p class="text-center px-4 text-base hidden">
-                {{ description }} (<a class="underline whitespace-nowrap hover:text-blue-500" target="_blank" rel="nofollow noopener" href="{{ item.wikiLink }}">wiki</a>)
+            <p class="text-center px-6 text-lg">
+                {{ description }}
             </p>
         </div>
 
@@ -71,12 +72,12 @@ eleventyComputed:
                 translate-x-0
                 translate-y-0
             "
-            id="map-imagewrapper"
+            id="map-imagewrapper-1"
         >
             <img
                 src="{{ item.image }}"
                 class="object-contain lg:max-h-screen"
-                id="map-image"
+                id="map-image-1"
                 alt="Map of {{ item.name }}"
                 loading="lazy"
             >
