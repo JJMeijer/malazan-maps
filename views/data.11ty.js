@@ -1,5 +1,3 @@
-const slugify = require("@sindresorhus/slugify");
-
 class Data {
     data() {
         return {
@@ -8,18 +6,18 @@ class Data {
     }
 
     render({ content, maps }) {
-        const contentData = content.map(({ name, type }) => {
+        const contentData = content.map(({ name, slug, type }) => {
             return {
                 name,
-                slug: slugify(name, { decamelize: false }),
+                slug,
                 type,
             };
         });
 
-        const mapsData = maps.map(({ name }) => {
+        const mapsData = maps.map(({ name, slug }) => {
             return {
                 name,
-                slug: slugify(name, { decamelize: false }),
+                slug,
                 type: "map",
             };
         });

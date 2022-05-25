@@ -510,12 +510,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .z-30 {
@@ -577,8 +577,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: auto;
 }
 
-.-mt-80 {
-  margin-top: -20rem;
+.-mt-\[23rem\] {
+  margin-top: -23rem;
 }
 
 .-mt-32 {
@@ -595,6 +595,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-5 {
   margin-right: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -617,8 +629,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 24rem;
 }
 
-.h-24 {
-  height: 6rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-full {
@@ -639,10 +651,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-12 {
   height: 3rem;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .max-h-28 {
@@ -681,8 +689,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95%;
 }
 
-.w-24 {
-  width: 6rem;
+.w-16 {
+  width: 4rem;
 }
 
 .w-\[90\%\] {
@@ -703,10 +711,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-1\/4 {
   width: 25%;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .min-w-fit {
@@ -813,6 +817,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-t-2xl {
@@ -923,6 +931,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -943,14 +956,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .py-2 {
@@ -994,6 +1007,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1018,11 +1035,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[0\.9rem\] {
   font-size: 0.9rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-lg {
@@ -1068,6 +1080,14 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .caret-transparent {
   caret-color: transparent;
 }
@@ -1104,6 +1124,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-gray-300 {
   --tw-shadow-color: #d1d5db;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1123,6 +1149,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visited\:text-blue-400:visited {
+  color: rgb(96 165 250 );
+}
+
+.visited\:text-gray-500:visited {
+  color: rgb(107 114 128 );
+}
+
+.visited\:text-gray-300:visited {
+  color: rgb(209 213 219 );
+}
+
+.visited\:text-gray-400:visited {
+  color: rgb(156 163 175 );
+}
+
+.visited\:decoration-blue-400:visited {
+  -webkit-text-decoration-color: #60a5fa;
+          text-decoration-color: #60a5fa;
 }
 
 .hover\:border-primary:hover {
@@ -1222,6 +1269,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px) {
   .md\:static {
     position: static;
+  }
+
+  .md\:z-50 {
+    z-index: 50;
   }
 
   .md\:mx-8 {
