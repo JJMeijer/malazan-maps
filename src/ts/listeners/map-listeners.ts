@@ -14,7 +14,7 @@ const setListeners = (): void => {
 
 export const setMapListeners = (): void => {
     const visibleImage = document.querySelector(
-        '[id^="map-imagewrapper-"]:not(.hidden) [id^="map-image-"',
+        '[id^="map-imagewrapper-"]:not(.hidden) .map-image',
     );
 
     /**

@@ -10,7 +10,7 @@ export const placeVisibleMarker = (): void => {
      * Check if a marker element is on the page because they are only
      * there on city & region pages
      */
-    if (document.querySelectorAll('[id^="map-marker-"]').length === 0) {
+    if (document.querySelectorAll(".map-marker").length === 0) {
         return;
     }
 
@@ -26,12 +26,13 @@ export const placeVisibleMarker = (): void => {
 
 const placeMarker = (mapId: string): void => {
     const mapImageWrapperElement = document.getElementById(`map-imagewrapper-${mapId}`);
-    const mapImageElement = document.getElementById(`map-image-${mapId}`);
-    const mapMarkerElement = document.getElementById(`map-marker-${mapId}`);
 
     if (!(mapImageWrapperElement instanceof HTMLDivElement)) {
         throw new Error(`Imagewrapper for mapId ${mapId} is missing`);
     }
+
+    const mapImageElement = mapImageWrapperElement.querySelector(".map-image");
+    const mapMarkerElement = mapImageWrapperElement.querySelector(".map-marker");
 
     if (!(mapImageElement instanceof HTMLImageElement)) {
         throw new Error(`Image for mapId ${mapId} is missing`);

@@ -68,16 +68,14 @@ eleventyComputed:
             >
                 <img
                     src="{{ maps[map.id].image }}"
-                    class="object-contain lg:max-h-screen"
-                    id="map-image-{{ loop.index }}"
+                    class="map-image object-contain lg:max-h-screen"
                     alt="Map of {{ maps[map.id].name }}"
                     loading="lazy"
                 >
                 {% if 'marker' in map %}
                     <img
                         src="/static/img/marker.webp"
-                        class="absolute opacity-0 w-5 h-5 sm:w-7 sm:h-7 object-contain"
-                        id="map-marker-{{ loop.index }}"
+                        class="map-marker absolute opacity-0 w-5 h-5 sm:w-7 sm:h-7 object-contain"
                         data-markerx={{ map.marker.x }}
                         data-markery={{ map.marker.y }}
                         alt="{{ item.title }} marker"

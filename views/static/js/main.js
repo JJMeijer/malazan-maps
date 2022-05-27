@@ -1489,7 +1489,7 @@
 
   // src/ts/listeners/helpers/place-marker.ts
   var placeVisibleMarker = () => {
-    if (document.querySelectorAll('[id^="map-marker-"]').length === 0) {
+    if (document.querySelectorAll(".map-marker").length === 0) {
       return;
     }
     const visibleImageWrapper = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden)');
@@ -1501,11 +1501,11 @@
   };
   var placeMarker = (mapId) => {
     const mapImageWrapperElement = document.getElementById(`map-imagewrapper-${mapId}`);
-    const mapImageElement = document.getElementById(`map-image-${mapId}`);
-    const mapMarkerElement = document.getElementById(`map-marker-${mapId}`);
     if (!(mapImageWrapperElement instanceof HTMLDivElement)) {
       throw new Error(`Imagewrapper for mapId ${mapId} is missing`);
     }
+    const mapImageElement = mapImageWrapperElement.querySelector(".map-image");
+    const mapMarkerElement = mapImageWrapperElement.querySelector(".map-marker");
     if (!(mapImageElement instanceof HTMLImageElement)) {
       throw new Error(`Image for mapId ${mapId} is missing`);
     }
@@ -1661,6 +1661,9 @@
       const setTransform = () => {
         imageWrapper.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
       };
+      const calculateDistance = (touch0, touch1) => {
+        return Math.hypot(touch0.pageX - touch1.pageX, touch0.pageY - touch1.pageY);
+      };
       imageWrapper.onmousedown = (event) => {
         event.preventDefault();
         const { clientX, clientY, buttons } = event;
@@ -1754,8 +1757,19 @@
       throw new Error("Imagewrapper for selected map is missing");
     }
     selectedImageWrapper.classList.remove("hidden");
-    setVisibleMapTransformOrigin();
-    placeVisibleMarker();
+    const selectedImage = selectedImageWrapper.querySelector(".map-image");
+    if (!(selectedImage instanceof HTMLImageElement)) {
+      throw new Error("Image for selected map is missing");
+    }
+    if (selectedImage.complete) {
+      setVisibleMapTransformOrigin();
+      placeVisibleMarker();
+    } else {
+      selectedImage.addEventListener("load", () => {
+        setVisibleMapTransformOrigin();
+        placeVisibleMarker();
+      });
+    }
   };
   var setMapSelectorListeners = () => {
     const mapButtons = document.querySelectorAll('input[name="map-selector"]');
@@ -1811,7 +1825,7 @@
     });
   };
   var setMapListeners = () => {
-    const visibleImage = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden) [id^="map-image-"');
+    const visibleImage = document.querySelector('[id^="map-imagewrapper-"]:not(.hidden) .map-image');
     if (!(visibleImage instanceof HTMLImageElement)) {
       return;
     }

@@ -16,15 +16,30 @@ const handleMapSelectorChange = (event: Event) => {
     });
 
     const selectedImageWrapper = document.getElementById(`map-imagewrapper-${mapId}`);
-
     if (!(selectedImageWrapper instanceof HTMLElement)) {
         throw new Error("Imagewrapper for selected map is missing");
     }
 
     selectedImageWrapper.classList.remove("hidden");
 
-    setVisibleMapTransformOrigin();
-    placeVisibleMarker();
+    const selectedImage = selectedImageWrapper.querySelector(".map-image");
+    if (!(selectedImage instanceof HTMLImageElement)) {
+        throw new Error("Image for selected map is missing");
+    }
+
+    /**
+     * Because map images are lazy-loaded it's possible we need to wait
+     * for the image to be there before the transform-origin is set and the marker is placed
+     */
+    if (selectedImage.complete) {
+        setVisibleMapTransformOrigin();
+        placeVisibleMarker();
+    } else {
+        selectedImage.addEventListener("load", () => {
+            setVisibleMapTransformOrigin();
+            placeVisibleMarker();
+        });
+    }
 };
 
 export const setMapSelectorListeners = (): void => {
