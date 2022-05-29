@@ -469,6 +469,8 @@
         "description": "Assail is the sixth novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.",
         "wikiLink": "https://malazan.fandom.com/wiki/Assail_(novel)",
         "type": "book",
+        "series": "Novels of the Malazan Empire",
+        "number": 6,
         "maps": [
             {
                 "id": 10
@@ -1396,6 +1398,8 @@
         "description": "Blood and Bone is the fifth novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.",
         "wikiLink": "https://malazan.fandom.com/wiki/Blood_and_Bone",
         "type": "book",
+        "series":"Novels of the Malazan Empire",
+        "number": 5,
         "maps": [
             {
                 "id": 8
@@ -3113,6 +3117,8 @@
         "description": "Dancer's Lament is the first book in the early-empire trilogy, Path to Ascendancy, written by Ian C. Esslemont. It was released in the UK on the 25th of February 2016 and in the US on the 31st of May 2016.",
         "wikiLink": "https://malazan.fandom.com/wiki/Dancer%27s_Lament",
         "type": "book",
+        "series": "Path to Ascendancy",
+        "number": 1,
         "maps": [
             {
                 "id": 5
@@ -3206,6 +3212,8 @@
         "description": "Deadhouse Gates is a novel by Steven Erikson. First released in 2000 in Great Britain and Canada, it was published by Tor in 2005 for the United States. It is the second book of ten in the Malazan Book of the Fallen series.",
         "wikiLink": "https://malazan.fandom.com/wiki/Deadhouse_Gates",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 2,
         "maps": [
             {
                 "id": 0
@@ -3224,6 +3232,8 @@
         "description": "Deadhouse Landing is the second book in the Path to Ascendancy series by Ian C. Esslemont. It was released in the UK on the 16th of November 2017 and in the US on the 14th of November 2017.",
         "wikiLink": "https://malazan.fandom.com/wiki/Deadhouse_Landing",
         "type": "book",
+        "series": "Path to Ascendancy",
+        "number": 2,
         "maps": [
             {
                 "id": 5
@@ -3997,6 +4007,8 @@
         "description": "Dust of Dreams is the ninth novel in the Malazan Book of the Fallen epic fantasy series. It was first published in Canada and the UK in 2009.",
         "wikiLink": "https://malazan.fandom.com/wiki/Dust_of_Dreams",
         "type": "book",
+        "series":"Malazan Book of the Fallen",
+        "number": 9,
         "maps": [
             {
                 "id": 6
@@ -4639,6 +4651,8 @@
         "description": "Fall of Light is the title of the second book in Steven Erikson's Kharkanas Trilogy. It was released on the 21st of April 2016 in the UK and on the 26th of April 2016 in the US.",
         "wikiLink": "https://malazan.fandom.com/wiki/Fall_of_Light",
         "type": "book",
+        "series": "Kharkanas Trilogy",
+        "number": 2,
         "maps": [
             {
                 "id": 27
@@ -5062,6 +5076,8 @@
         "description": "Forge of Darkness is the first novel of Steven Erikson's Kharkanas Trilogy, a prequel series that takes place hundreds of thousands of years before his Malazan Book of the Fallen series. It was first published in the UK and US in 2012.",
         "wikiLink": "https://malazan.fandom.com/wiki/Forge_of_Darkness",
         "type": "book",
+        "series": "Kharkanas Trilogy",
+        "number": 1,
         "maps": [
             {
                 "id": 27
@@ -5300,6 +5316,8 @@
         "description": "Gardens of the Moon is the first novel in the Malazan Book of the Fallen epic fantasy series. It was written by Steven Erikson in 1991 and extensively revised over several years before first being published by Bantam Books on April 1, 1999 in Great Britain and Canada.",
         "wikiLink": "https://malazan.fandom.com/wiki/Gardens_of_the_Moon",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 1,
         "maps": [
             {
                 "id": 20
@@ -6675,6 +6693,8 @@
         "description": "House of Chains is the fourth book in the Malazan Book of the Fallen. It was released in the UK and Canada in January 2002 and in the US August 2006 by Tor.",
         "wikiLink": "https://malazan.fandom.com/wiki/House_of_Chains",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 4,
         "maps": [
             {
                 "id": 17
@@ -7830,6 +7850,8 @@
         "description": "Kellanved's Reach is the title for the third book in Ian C. Esslemont's Path to Ascendancy series. It is the sequel to Deadhouse Landing and takes place about one month after the events of that novel.",
         "wikiLink": "https://malazan.fandom.com/wiki/Kellanved%27s_Reach",
         "type": "book",
+        "series": "Path to Ascendancy",
+        "number": 3,
         "maps": [
             {
                 "id": 5
@@ -9381,6 +9403,8 @@
         "description": "Memories of Ice is the third book in Steven Erikson's series The Malazan Book of the Fallen. It was released in the UK and Canada in January 2001 and in the US in November 2005.",
         "wikiLink": "https://malazan.fandom.com/wiki/Memories_of_Ice",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 3,
         "maps": [
             {
                 "id": 2
@@ -9520,6 +9544,8 @@
         "description": "Midnight Tides is the fifth book in the Malazan Book of the Fallen. It was first published in the UK and Canada in March 2004 and in the US in April 2007.",
         "wikiLink": "https://malazan.fandom.com/wiki/Midnight_Tides",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 5,
         "maps": [
             {
                 "id": 7
@@ -10275,6 +10301,8 @@
         "description": "Night of Knives is the first novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.",
         "wikiLink": "https://malazan.fandom.com/wiki/Night_of_Knives",
         "type": "book",
+        "series": "Novels of the Malazan Empire",
+        "number": 1,
         "maps": [
             {
                 "id": 18
@@ -11001,6 +11029,8 @@
         "description": "Orb Sceptre Throne is the fourth novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.",
         "wikiLink": "https://malazan.fandom.com/wiki/Orb_Sceptre_Throne",
         "type": "book",
+        "series": "Novels of the Malazan Empire",
+        "number": 4,
         "maps": [
             {
                 "id": 20
@@ -12331,6 +12361,8 @@
         "description": "Reaper's Gale is the seventh novel the Malazan Book of the Fallen epic fantasy series. It was published in the UK May 7, 2007, in Canada June 5, 2007, and in the US on March 4, 2008.",
         "wikiLink": "https://malazan.fandom.com/wiki/Reaper's_Gale",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 7,
         "maps": [
             {
                 "id": 6
@@ -12453,6 +12485,8 @@
         "description": "Return of the Crimson Guard is the second high fantasy novel by Canadian author Ian C. Esslemont set in the world of the Malazan Book of the Fallen, co-created with Esslemont's friend and colleague Steven Erikson. Chronologically, Return of the Crimson Guard takes place after the events in Erikson's sixth Malazan novel, The Bonehunters.",
         "wikiLink": "https://malazan.fandom.com/wiki/Return_of_the_Crimson_Guard",
         "type": "book",
+        "series": "Novels of the Malazan Empire",
+        "number": 2,
         "maps": [
             {
                 "id": 5
@@ -14272,6 +14306,8 @@
         "description": "Stonewielder is the third novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.",
         "wikiLink": "https://malazan.fandom.com/wiki/Stonewielder",
         "type": "book",
+        "series": "Novels of the Malazan Empire",
+        "number": 3,
         "maps": [
             {
                 "id": 22
@@ -15025,6 +15061,8 @@
         "description": "The Bonehunters is the sixth novel the Malazan Book of the Fallen epic fantasy series. It was first published in the UK and Canada on March 1, 2006 and in the US in September 2007.",
         "wikiLink": "https://malazan.fandom.com/wiki/The_Bonehunters",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 6,
         "maps": [
             {
                 "id": 9
@@ -15043,6 +15081,8 @@
         "description": "The Crippled God is the tenth and final volume of Canadian author Steven Erikson's epic fantasy series, the Malazan Book of the Fallen. In an interview, Erikson had mentioned that this book would be the second half of the series finale, with Dust of Dreams ending on a cliffhanger.",
         "wikiLink": "https://malazan.fandom.com/wiki/The_Crippled_God",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 10,
         "maps": [
             {
                 "id": 12
@@ -15094,6 +15134,8 @@
         "description": "The God is Not Willing is the first book in the Witness Trilogy, Steven Erikson's sequel to the Malazan Book of the Fallen series.",
         "wikiLink": "https://malazan.fandom.com/wiki/The_God_is_Not_Willing",
         "type": "book",
+        "series": "Witness Trilogy",
+        "number": 1,
         "maps": [
             {
                 "id": 29
@@ -15477,6 +15519,8 @@
         "description": "Toll the Hounds is the eighth novel in the Malazan Book of the Fallen epic fantasy series by Steven Erikson. It was first published in the UK and Canada on June 30, 2008, and in the US on September 16, 2008.",
         "wikiLink": "https://malazan.fandom.com/wiki/Toll_the_Hounds",
         "type": "book",
+        "series": "Malazan Book of the Fallen",
+        "number": 8,
         "maps": [
             {
                 "id": 20

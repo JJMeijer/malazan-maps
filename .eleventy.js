@@ -72,7 +72,24 @@ module.exports = function (config) {
     });
 
     config.addCollection("books", function (collectionApi) {
-        return collectionApi.getAll().filter((x) => x.url.match(/^\/book\//));
+        return collectionApi
+            .getAll()
+            .filter((x) => x.url.match(/^\/book\//))
+            .sort((a, b) => {
+                if (a.data.item.series === b.data.item.series) {
+                    return a.data.item.number < b.data.item.number
+                        ? -1
+                        : a.data.item.number > b.data.item.number
+                        ? 1
+                        : 0;
+                }
+
+                return a.data.item.series > b.data.item.series
+                    ? -1
+                    : a.data.item.series < b.data.item.series
+                    ? 1
+                    : 0;
+            });
     });
 
     // Set Directories
