@@ -4,6 +4,7 @@ import {
     setSearchListeners,
     setMapListeners,
     setNavbarListener,
+    setAccordeonListener,
 } from "./listeners";
 
 const setListeners = (): void => {
@@ -12,6 +13,7 @@ const setListeners = (): void => {
     setSearchListeners();
     setMapListeners();
     setNavbarListener();
+    setAccordeonListener();
 };
 
 if (document.readyState !== "loading") {
