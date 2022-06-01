@@ -12,9 +12,7 @@
         "css:build": "tailwindcss -i src/css/main.css -o views/static/css/main-dist.css --minify",
         "js:build": "node esbuild.js prod",
         "js:watch": "node esbuild.js watch",
-        "add-data": "node tools/add-data",
-        "validate": "node tools/validate",
-        "stats": "node tools/stats",
+        "add-data": "node tools/add-data.mjs",
         "lint": "eslint -c .eslintrc"
     },
     "devDependencies": {
@@ -22,8 +20,6 @@
         "@sindresorhus/slugify": "^2.1.0",
         "@typescript-eslint/eslint-plugin": "^5.21.0",
         "@typescript-eslint/parser": "^5.21.0",
-        "ajv": "^8.11.0",
-        "ajv-formats": "^2.1.1",
         "axios": "^0.27.2",
         "colors": "^1.4.0",
         "cross-env": "^7.0.3",

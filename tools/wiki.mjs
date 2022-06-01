@@ -1,5 +1,5 @@
-const { default: axios } = require("axios");
-const { parse } = require("node-html-parser");
+import axios from "axios";
+import { parse } from "node-html-parser";
 
 const BASE_URL = "https://malazan.fandom.com/api.php";
 
@@ -8,7 +8,7 @@ const headers = {
         "MalazanMaps/1.0 (https://www.malazanmaps.com/; johan@malazanmaps.com) Axios/0.22",
 };
 
-const wikiSearch = async (term) => {
+export const wikiSearch = async (term) => {
     const encodedTerm = encodeURIComponent(term);
     const qs = `?action=query&list=search&srsearch=${encodedTerm}&utf8=&format=json`;
     const url = `${BASE_URL}${qs}`;
@@ -25,7 +25,7 @@ const wikiSearch = async (term) => {
     }));
 };
 
-const wikiUrl = async (title) => {
+export const wikiUrl = async (title) => {
     const encodedTitle = encodeURIComponent(title);
     const qs = `?action=query&titles=${encodedTitle}&prop=info&inprop=url&formatversion=2&format=json`;
     const url = `${BASE_URL}${qs}`;
@@ -84,7 +84,7 @@ const wikiFirstParagraph = (text) => {
     }
 };
 
-const wikiSummary = async (title) => {
+export const wikiSummary = async (title) => {
     const pageText = await wikiParse(title);
     const firstParagraph = wikiFirstParagraph(pageText);
     const cleanedText = firstParagraph
@@ -93,10 +93,4 @@ const wikiSummary = async (title) => {
         .replace(/\s{2,}/g, " ");
 
     return cleanedText;
-};
-
-module.exports = {
-    wikiSearch,
-    wikiSummary,
-    wikiUrl,
 };

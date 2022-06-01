@@ -9,11 +9,11 @@ title: "Books"
 ---
 {% include "components/header.njk" %}
 
-{% macro bookList(serie, checked) %}
-    <div class="accordeon-parent flex flex-col w-full my-4">
-        <label class="sticky flex flex-row justify-center">
-            <h2 class="text-xl text-left font-bold w-3/4">{{ serie }}</h2>
-            <div class="flex flex-row items-center w-9 ml-4">
+{% macro bookList(serie, checked, last) %}
+    <div class="accordeon-parent flex flex-col w-full py-2 px-2 {% if not last %}border-b border-gray-300 border-opacity-80{% endif %}">
+        <label class="flex flex-row justify-between px-4 py-4">
+            <h2 class="text-xl text-left font-bold">{{ serie }}</h2>
+            <div class="flex flex-row items-center w-9 ml-4 cursor-pointer">
                 <input type="checkbox" class="accordeon-checkbox peer hidden" {% if checked == true %}checked{% endif %}>
                 <span class="transition ease-in-out duration-500 w-1/2 h-1 bg-gray-700 rotate-45 -mr-[0.21rem] rounded-lg peer-checked:-rotate-45"></span>
                 <span class="transition ease-in-out duration-500 w-1/2 h-1 bg-gray-700 -rotate-45 -ml-[0.21rem] rounded-lg peer-checked:rotate-45"></span>
@@ -22,7 +22,7 @@ title: "Books"
         <div class="accordeon-content transition ease-in-out duration-500 flex flex-row flex-wrap justify-center items-stretch w-full overflow-hidden {% if checked == true %}max-h-full opacity-100{% else %}max-h-0 opacity-0{% endif %}">
             {% for template in collections.books %}
                 {% if template.data.item.series == serie %}
-                    <div class="flex w-[95%] md:w-1/2 px-2 py-4">
+                    <div class="flex w-[95%] px-2 py-4 md:w-1/2 2xl:w-1/3">
                         <div class="flex flex-col justify-start items-center rounded-xl bg-white">
                             <div class="flex flex-col items-center justify-center w-full">
                                 <h3 class="text-2xl font-bold py-4">{{ template.data.item.name }}</h3>
@@ -64,12 +64,12 @@ title: "Books"
 
 <div class="flex flex-col w-full items-center lg:bg-gray-100">
     <div class="h-96 bg-primary w-full"></div>
-    <div class="flex flex-col w-full -mt-[23rem] pb-4 xl:w-5/6 2xl:w-3/4 rounded-lg bg-gray-100 text-gray-700 min-h-screen">
-        {{ bookList("Malazan Book of the Fallen", true)}}
-        {{ bookList("Novels of the Malazan Empire", false)}}
-        {{ bookList("Kharkanas Trilogy", false)}}
-        {{ bookList("Path to Ascendancy", false)}}
-        {{ bookList("Witness Trilogy", false)}}
+    <div class="flex flex-col w-full -mt-[23rem] pb-4 rounded-lg bg-gray-100 text-gray-700 min-h-screen xl:w-5/6 2xl:w-3/4">
+        {{ bookList("Malazan Book of the Fallen", true, false)}}
+        {{ bookList("Novels of the Malazan Empire", false, false)}}
+        {{ bookList("Kharkanas Trilogy", false, false)}}
+        {{ bookList("Path to Ascendancy", false, false)}}
+        {{ bookList("Witness Trilogy", false, true)}}
     </div>
 </div>
 

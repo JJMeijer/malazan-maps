@@ -1,11 +1,14 @@
-const prompts = require("prompts");
-const fs = require("fs");
+import prompts from "prompts";
+import { readFileSync, writeFileSync } from "fs";
+import slugify from "@sindresorhus/slugify";
 
-const { wikiSearch, wikiSummary, wikiUrl } = require("./wiki");
-const { validateContent } = require("./validate");
+import { wikiSearch, wikiSummary, wikiUrl } from "./wiki.mjs";
 
-const maps = require("../views/_data/maps.json");
-const content = require("../views/_data/content.json");
+const maps_file = readFileSync("views/_data/maps.json");
+const maps = JSON.parse(maps_file);
+
+const content_file = readFileSync("views/_data/content.json");
+const content = JSON.parse(content_file);
 
 (async () => {
     console.clear();
@@ -34,11 +37,11 @@ const content = require("../views/_data/content.json");
         },
         {
             type: "autocomplete",
-            name: "map",
+            name: "mapId",
             message: "Select a Map",
-            choices: maps.map((x) => ({
+            choices: maps.map((x, index) => ({
                 title: x.name,
-                value: x,
+                value: index + 1,
             })),
         },
         {
@@ -61,9 +64,9 @@ const content = require("../views/_data/content.json");
         },
     ]);
 
-    const { name, type, map, marker, markerX, markerY } = response;
+    const { name, type, mapId, marker, markerX, markerY } = response;
 
-    if (!name || !type || !map || marker === undefined) {
+    if (!name || !type || !mapId || marker === undefined) {
         console.log("Cancelled");
         return;
     }
@@ -73,8 +76,13 @@ const content = require("../views/_data/content.json");
         return;
     }
 
+    const slug = slugify(name, { decamelize: false });
     const wikiLink = await wikiUrl(name);
     const description = await wikiSummary(name);
+
+    const map = {
+        id: mapId - 1,
+    };
 
     if (marker) {
         map.marker = {
@@ -85,6 +93,7 @@ const content = require("../views/_data/content.json");
 
     const newItem = {
         name,
+        slug,
         description,
         wikiLink,
         type,
@@ -98,18 +107,13 @@ const content = require("../views/_data/content.json");
         content.push(newItem);
         content.sort((a, b) => a.name.localeCompare(b.name));
 
-        validateContent(content);
-
-        fs.writeFileSync(
-            __dirname + "/../views/_data/content.json",
-            JSON.stringify(content, null, 4),
-        );
+        writeFileSync(__dirname + "views/_data/content.json", JSON.stringify(content, null, 4));
         console.log(`Added new item: ${newItem.name}`);
         return;
     }
 
     const existingMap = content[existingItemIndex].maps.findIndex(
-        (map) => map.name === newItem.maps[0].name,
+        (map) => map.id === newItem.maps[0].id,
     );
 
     if (existingMap > -1) {
@@ -118,7 +122,8 @@ const content = require("../views/_data/content.json");
     }
 
     content[existingItemIndex].maps.push(newItem.maps[0]);
-    validateContent();
-    fs.writeFileSync(__dirname + "/../views/_data/content.json", JSON.stringify(content, null, 4));
-    console.log(`Added map "${newItem.maps[0].name}" to existing Content Item "${newItem.name}".`);
+    writeFileSync("views/_data/content.json", JSON.stringify(content, null, 4));
+    console.log(
+        `Added map "${maps[newItem.maps[0].id].name}" to existing Content Item "${newItem.name}".`,
+    );
 })();
