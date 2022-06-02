@@ -23,12 +23,12 @@ title: "Books"
             {% for template in collections.books %}
                 {% if template.data.item.series == serie %}
                     <div class="flex w-[95%] px-2 py-4 md:w-1/2 2xl:w-1/3">
-                        <div class="flex flex-col justify-start items-center rounded-xl bg-white">
-                            <div class="flex flex-col items-center justify-center w-full">
+                        <div class="flex flex-col justify-start items-center rounded-xl bg-white pb-4">
+                            <div class="flex flex-col items-center w-full min-h-[50%]">
                                 <h3 class="text-2xl font-bold py-4">{{ template.data.item.name }}</h3>
                                 <p class="text-center px-4 pb-4 italic">{{ template.data.item.description }}</p>
                             </div>
-                            <div class="flex flex-row items-center w-full flex-wrap px-2 pt-4 pb-8">
+                            <div class="flex flex-col w-full px-2 pt-4 pb-8">
                                 {% for map in template.data.item.maps %}
                                     <a
                                     href="/map/{{ maps[map.id].slug }}/"
