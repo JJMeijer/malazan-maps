@@ -1,11 +1,7 @@
 import { setVisibleMapTransformOrigin } from "../helpers";
-import { extractMapId } from "../helpers";
 import { placeVisibleMarker } from "../helpers";
 
-const handleMapSelectorChange = (event: Event) => {
-    const target = event.target as HTMLElement;
-    const mapId = extractMapId(target.id);
-
+const handleMapSelectorChange = (selectedIndex: number) => {
     const mapWrappers = document.querySelectorAll("[id^=map-imagewrapper-]");
 
     // Hide all maps
@@ -15,7 +11,7 @@ const handleMapSelectorChange = (event: Event) => {
         }
     });
 
-    const selectedImageWrapper = document.getElementById(`map-imagewrapper-${mapId}`);
+    const selectedImageWrapper = document.getElementById(`map-imagewrapper-${selectedIndex}`);
     if (!(selectedImageWrapper instanceof HTMLElement)) {
         throw new Error("Imagewrapper for selected map is missing");
     }
@@ -43,39 +39,14 @@ const handleMapSelectorChange = (event: Event) => {
 };
 
 export const setMapSelectorListeners = (): void => {
-    const mapButtons = document.querySelectorAll('input[name="map-selector"]');
-    const mapButtonSpans = document.querySelectorAll('input[name="map-selector"]~span');
+    const mapSelector = document.getElementById("map-selector");
 
-    mapButtons.forEach((element) => {
-        if (!(element instanceof HTMLInputElement)) {
-            throw new Error("Map Input has unexpected type");
-        }
+    if (!(mapSelector instanceof HTMLSelectElement)) {
+        return;
+    }
 
-        element.addEventListener("change", (event) => {
-            handleMapSelectorChange(event);
-        });
-    });
-
-    mapButtonSpans.forEach((element) => {
-        if (!(element instanceof HTMLSpanElement)) {
-            throw new Error("Map button has unexpected type");
-        }
-
-        element.addEventListener("keydown", (event) => {
-            const { key } = event;
-
-            if (key === "Enter") {
-                const inputSibling = element.previousElementSibling;
-
-                if (!(inputSibling instanceof HTMLInputElement)) {
-                    throw new Error("Map Button input element missing");
-                }
-
-                inputSibling.checked = true;
-
-                const changeEvent = new Event("change");
-                inputSibling.dispatchEvent(changeEvent);
-            }
-        });
+    mapSelector.addEventListener("change", () => {
+        const { selectedIndex } = mapSelector;
+        handleMapSelectorChange(selectedIndex);
     });
 };

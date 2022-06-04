@@ -1540,7 +1540,16 @@
   // src/ts/listeners/handlers/search-input.ts
   var fuse = new Fuse([], {
     includeMatches: true,
-    keys: ["name", "type"]
+    keys: [
+      {
+        name: "name",
+        weight: 0.7
+      },
+      {
+        name: "type",
+        weight: 0.3
+      }
+    ]
   });
   (() => __async(void 0, null, function* () {
     const resp = yield fetch("/data.json");
@@ -1616,7 +1625,7 @@
 
   // src/ts/listeners/handlers/search-focusout.ts
   var searchFocusoutHandler = (event) => {
-    const relatedTarget = event.relatedTarget;
+    const { relatedTarget } = event;
     if (relatedTarget === null) {
       hideSearchResults();
       return;
@@ -1743,16 +1752,14 @@
   };
 
   // src/ts/listeners/handlers/map-map-selectors.ts
-  var handleMapSelectorChange = (event) => {
-    const target = event.target;
-    const mapId = extractMapId(target.id);
+  var handleMapSelectorChange = (selectedIndex) => {
     const mapWrappers = document.querySelectorAll("[id^=map-imagewrapper-]");
     mapWrappers.forEach((mapWrapper) => {
       if (!mapWrapper.classList.contains("hidden")) {
         mapWrapper.classList.add("hidden");
       }
     });
-    const selectedImageWrapper = document.getElementById(`map-imagewrapper-${mapId}`);
+    const selectedImageWrapper = document.getElementById(`map-imagewrapper-${selectedIndex}`);
     if (!(selectedImageWrapper instanceof HTMLElement)) {
       throw new Error("Imagewrapper for selected map is missing");
     }
@@ -1772,32 +1779,13 @@
     }
   };
   var setMapSelectorListeners = () => {
-    const mapButtons = document.querySelectorAll('input[name="map-selector"]');
-    const mapButtonSpans = document.querySelectorAll('input[name="map-selector"]~span');
-    mapButtons.forEach((element) => {
-      if (!(element instanceof HTMLInputElement)) {
-        throw new Error("Map Input has unexpected type");
-      }
-      element.addEventListener("change", (event) => {
-        handleMapSelectorChange(event);
-      });
-    });
-    mapButtonSpans.forEach((element) => {
-      if (!(element instanceof HTMLSpanElement)) {
-        throw new Error("Map button has unexpected type");
-      }
-      element.addEventListener("keydown", (event) => {
-        const { key } = event;
-        if (key === "Enter") {
-          const inputSibling = element.previousElementSibling;
-          if (!(inputSibling instanceof HTMLInputElement)) {
-            throw new Error("Map Button input element missing");
-          }
-          inputSibling.checked = true;
-          const changeEvent = new Event("change");
-          inputSibling.dispatchEvent(changeEvent);
-        }
-      });
+    const mapSelector = document.getElementById("map-selector");
+    if (!(mapSelector instanceof HTMLSelectElement)) {
+      return;
+    }
+    mapSelector.addEventListener("change", () => {
+      const { selectedIndex } = mapSelector;
+      handleMapSelectorChange(selectedIndex);
     });
   };
 
@@ -1839,15 +1827,37 @@
   };
 
   // src/ts/listeners/navbar-listener.ts
+  var hideNavbar = () => {
+    const navbarItemsElement = safeGetElementById("navbarItems");
+    navbarItemsElement.classList.remove("-translate-x-full");
+  };
+  var showNavbar = () => {
+    const navbarItemsElement = safeGetElementById("navbarItems");
+    navbarItemsElement.classList.add("-translate-x-full");
+  };
+  var checkHamburger = () => {
+    const hamburgerElement = safeGetElementById("hamburger");
+    hamburgerElement.checked = !hamburgerElement.checked;
+  };
+  var navbarActiveClickListener = (event) => {
+    const { target } = event;
+    if (target instanceof HTMLElement && target.matches("#navbarItems *")) {
+      return;
+    }
+    checkHamburger();
+    hideNavbar();
+    document.removeEventListener("click", navbarActiveClickListener);
+  };
   var setNavbarListener = () => {
     const hamburgerElement = safeGetElementById("hamburger");
     hamburgerElement.addEventListener("change", (event) => {
       const { checked } = event.target;
-      const navbarItemsElement = safeGetElementById("navbarItems");
       if (checked) {
-        navbarItemsElement.classList.add("-translate-x-full");
+        showNavbar();
+        document.addEventListener("click", navbarActiveClickListener);
       } else {
-        navbarItemsElement.classList.remove("-translate-x-full");
+        hideNavbar();
+        document.removeEventListener("click", navbarActiveClickListener);
       }
     });
   };

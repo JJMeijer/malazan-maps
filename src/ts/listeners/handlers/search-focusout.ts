@@ -1,7 +1,7 @@
 import { hideSearchResults } from "../helpers";
 
 export const searchFocusoutHandler = (event: FocusEvent): void => {
-    const relatedTarget = event.relatedTarget;
+    const { relatedTarget } = event;
     if (relatedTarget === null) {
         hideSearchResults();
         return;

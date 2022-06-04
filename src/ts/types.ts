@@ -7,7 +7,7 @@ export interface FocusResultInformation {
 export interface Entry {
     name: string;
     slug: string;
-    type: "city" | "region" | "continent" | "book" | "map";
+    type: "city" | "region" | "continent" | "book";
 }
 
 export interface NaturalDimensions {

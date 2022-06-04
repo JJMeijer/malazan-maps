@@ -1,91 +1,27 @@
-{% macro navbarItem(name, link) %}
-    <a
-        href="{{link}}"
-        class="
-            text-2xl
-            py-2
-            my-4
-            mx-4
-            border-b-2
-            md:text-lg
-            md:py-1
-            md:my-0
-            {% if title == name %}border-gray-100{% else %}border-transparent{% endif %}
-            hover:border-gray-100
-            transition
-        "
-    >
-        {{name}}
+{% macro navbarItem(name, link, title) %}
+    <a href="{{link}}" class="group w-full text-center my-4 px-4 {% if alwaysShort == false %}md:w-auto{% endif %}">
+        <span class="transition duration-500 ease-in-out py-2 text-2xl border-b-2 {% if title == name %}border-gray-100{% else %}border-transparent{% endif %} group-hover:border-gray-100 md:text-lg">{{name}}</span>
     </a>
 {% endmacro %}
 
-{% macro navbar(alwaysShort) %}
+{% macro navbar(alwaysShort, title) %}
     <div class="w-full bg-primary flex justify-center">
-        <div class="
-            relative
-            w-full
-            flex
-            flex-row
-            justify-between
-            items-center
-            py-6
-            {% if alwaysShort == false %}md:justify-start md:px-4 xl:px-0 xl:w-5/6 2xl:w-3/4{% endif %}
-        ">
-            <a
-                href="/"
-                class="
-                    flex
-                    flex-row
-                    items-center
-                    ml-5
-                    min-w-fit
-                    {% if alwaysShort == false %}md:ml-0{% endif %}
-                "
-            >
-                <img src="/static/img/icon-64x64.png" alt="logo" class="w-10 h-10" >
-                <p class="px-1 py-2 text-2xl">
-                    Malazan Maps
-                </p>
+        <div class=" relative w-full flex flex-row justify-between items-center py-6 {% if alwaysShort == false %}md:justify-start md:px-4 md:py-3 xl:px-0 xl:w-5/6 2xl:w-3/4{% endif %}">
+            <a href="/" class=" flex flex-row items-center ml-5 min-w-fit {% if alwaysShort == false %}md:ml-0{% endif %}">
+                <img src="/static/img/icon-64x64.png" alt="logo" class="w-10 h-10">
+                <p class="px-1 py-2 text-2xl">Malazan Maps</p>
             </a>
-            <label class="
-                flex
-                flex-col
-                justify-between
-                w-7
-                h-6
-                cursor-pointer
-                mt-1
-                mr-5
-                {% if alwaysShort == false %}md:hidden{% endif %}
-            ">
+            <label class=" flex flex-col justify-between w-7 h-6 cursor-pointer mt-1 mr-5 {% if alwaysShort == false %}md:hidden{% endif %}">
                 <input id="hamburger" type="checkbox" class="peer hidden"/>
                 <span class="transition ease-in-out duration-500 h-1 rounded-md bg-gray-100 w-full peer-checked:-rotate-45 peer-checked:mt-3"></span>
                 <span class="transition ease-in-out duration-500 h-1 rounded-md bg-gray-100 w-full peer-checked:rotate-45 peer-checked:-mt-2"></span>
                 <span class="transition ease-in-out duration-500 h-1 rounded-md bg-gray-100 w-full peer-checked:rotate-45 peer-checked:opacity-0"></span>
             </label>
-            <div
-                id="navbarItems"
-                class="
-                    transition
-                    duration-500
-                    ease-in-out
-                    w-full
-                    flex
-                    flex-col
-                    items-center
-                    bg-primary
-                    absolute
-                    top-full
-                    left-full
-                    pb-4
-                    z-40
-                    {% if alwaysShort == false %}md:pb-0 md:static md:flex-grow md:flex-row md:justify-end{% endif %}
-                "
-            >
-                {{ navbarItem("Home", "/")}}
-                {{ navbarItem("Maps", "/maps")}}
-                {{ navbarItem("Books", "/books")}}
-                {{ navbarItem("Continents", "/continents")}}
+            <div id="navbarItems" class=" transition duration-500 ease-in-out w-full flex flex-col items-center bg-primary absolute top-full left-full pb-4 z-40 {% if alwaysShort == false %}md:pb-0 md:static md:flex-grow md:flex-row md:justify-end{% endif %}">
+                {{ navbarItem("Home", "/", title)}}
+                {{ navbarItem("Maps", "/maps", title)}}
+                {{ navbarItem("Books", "/books", title)}}
+                {{ navbarItem("Continents", "/continents", title)}}
             </div>
         </div>
     </div>

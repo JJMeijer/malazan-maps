@@ -12,7 +12,16 @@ import {
 
 const fuse: Fuse<Entry> = new Fuse([], {
     includeMatches: true,
-    keys: ["name", "type"],
+    keys: [
+        {
+            name: "name",
+            weight: 0.7,
+        },
+        {
+            name: "type",
+            weight: 0.3,
+        },
+    ],
 });
 
 (async () => {

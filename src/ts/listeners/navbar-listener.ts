@@ -1,17 +1,43 @@
 import { safeGetElementById } from "./helpers";
 
+const hideNavbar = (): void => {
+    const navbarItemsElement = safeGetElementById("navbarItems");
+    navbarItemsElement.classList.remove("-translate-x-full");
+};
+
+const showNavbar = (): void => {
+    const navbarItemsElement = safeGetElementById("navbarItems");
+    navbarItemsElement.classList.add("-translate-x-full");
+};
+
+const checkHamburger = (): void => {
+    const hamburgerElement = safeGetElementById("hamburger") as HTMLInputElement;
+    hamburgerElement.checked = !hamburgerElement.checked;
+};
+
+const navbarActiveClickListener = (event: MouseEvent): void => {
+    const { target } = event;
+    if (target instanceof HTMLElement && target.matches("#navbarItems *")) {
+        return;
+    }
+
+    checkHamburger();
+    hideNavbar();
+    document.removeEventListener("click", navbarActiveClickListener);
+};
+
 export const setNavbarListener = (): void => {
     const hamburgerElement = safeGetElementById("hamburger");
 
     hamburgerElement.addEventListener("change", (event) => {
         const { checked } = event.target as HTMLInputElement;
 
-        const navbarItemsElement = safeGetElementById("navbarItems");
-
         if (checked) {
-            navbarItemsElement.classList.add("-translate-x-full");
+            showNavbar();
+            document.addEventListener("click", navbarActiveClickListener);
         } else {
-            navbarItemsElement.classList.remove("-translate-x-full");
+            hideNavbar();
+            document.removeEventListener("click", navbarActiveClickListener);
         }
     });
 };

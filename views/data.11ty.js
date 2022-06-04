@@ -5,7 +5,7 @@ class Data {
         };
     }
 
-    render({ content, maps }) {
+    render({ content }) {
         const contentData = content.map(({ name, slug, type }) => {
             return {
                 name,
@@ -14,15 +14,7 @@ class Data {
             };
         });
 
-        const mapsData = maps.map(({ name, slug }) => {
-            return {
-                name,
-                slug,
-                type: "map",
-            };
-        });
-
-        return JSON.stringify([...contentData, ...mapsData]);
+        return JSON.stringify(contentData);
     }
 }
 
