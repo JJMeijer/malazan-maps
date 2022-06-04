@@ -48,7 +48,7 @@ eleventyComputed:
         </div>
     </div>
 
-    <div id="maps" class="z-50 flex justify-center items-center flex-1 w-full relative overflow-hidden bg-primary rounded-lg lg:w-2/3 xl:w-3/4 lg:max-h-screen lg:bg-white">
+    <div id="maps" class="flex justify-center items-center flex-1 w-full relative overflow-hidden bg-primary rounded-lg lg:w-2/3 xl:w-3/4 lg:max-h-screen lg:bg-white md:z-50">
         {% for map in item.maps %}
             <div
                 class="{% if loop.index > 1 %}hidden{% endif %} relative flex rounded-md bg-white p-4 cursor-grab origin-center transform scale-1 translate-x-0 translate-y-0"
