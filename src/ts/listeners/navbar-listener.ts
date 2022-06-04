@@ -21,6 +21,10 @@ const navbarActiveClickListener = (event: MouseEvent): void => {
         return;
     }
 
+    if (target instanceof HTMLElement && target.matches("#hamburger-label, #hamburger-label *")) {
+        return;
+    }
+
     checkHamburger();
     hideNavbar();
     document.removeEventListener("click", navbarActiveClickListener);
