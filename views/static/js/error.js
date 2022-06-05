@@ -1,3 +1,1 @@
-(() => {
-})();
-//# sourceMappingURL=error.js.map
+(()=>{})();
