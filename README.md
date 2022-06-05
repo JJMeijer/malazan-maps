@@ -17,11 +17,11 @@ yarn install
 # npm install
 ```
 
-### Serve site locally
+### Run Dev setup (Tailwind watch, esbuild watch & eleventy serve)
 
 ```bash
-yarn serve
-# npm run serve
+yarn dev
+# npm run dev
 ```
 
 ## Add/Update locations
@@ -31,11 +31,4 @@ To add new locations use the [add-data](./tools/add-data.js) script. This script
 ```bash
 yarn add-data
 # npm run add-data
-```
-
-It's also possible to update the [data file](./views/_data/content.json) directly. After changing the file use the [validate script](./tools/validate.js) to check if the data file still has the expected schema.
-
-```bash
-yarn validate
-# npm run validate
 ```
