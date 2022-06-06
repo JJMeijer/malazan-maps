@@ -17,18 +17,9 @@ yarn install
 # npm install
 ```
 
-### Run Dev setup (Tailwind watch, esbuild watch & eleventy serve)
+### Run Dev setup (TailwindCSS watch, ESBuild watch & Eleventy serve)
 
 ```bash
 yarn dev
 # npm run dev
-```
-
-## Add/Update locations
-
-To add new locations use the [add-data](./tools/add-data.js) script. This script automatically adds the correct wiki URL and fetches the first paragraph of the Wiki page.
-
-```bash
-yarn add-data
-# npm run add-data
 ```
