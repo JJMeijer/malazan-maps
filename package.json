@@ -1,20 +1,18 @@
 {
     "name": "malazan-maps",
-    "version": "1.3.8",
+    "version": "1.4.0",
     "author": "Johan <johan@malazanmaps.com>",
     "license": "MIT",
     "scripts": {
         "dev": "run-p serve js:watch css:watch",
         "serve": "eleventy --serve",
-        "cleanup": "yarn del views/static/js views/static/css www",
-        "build:prod": "cross-env NODE_ENV=production yarn build:all",
-        "build:all": "yarn cleanup && yarn css:build && yarn js:build && eleventy",
+        "build": "cross-env NODE_ENV=production yarn build:all",
+        "build:all": "yarn del www && yarn css:build && yarn js:build && eleventy",
         "css:watch": "tailwindcss -i src/css/main.css -o views/static/css/main-dist.css -w",
         "css:build": "yarn del views/static/css && tailwindcss -i src/css/main.css -o views/static/css/main-dist.css --minify",
         "js:build": "yarn del views/static/js && node esbuild.js prod",
         "js:watch": "node esbuild.js watch",
-        "add-data": "node tools/add-data.mjs",
-        "lint": "eslint -c .eslintrc"
+        "add-data": "node tools/add-data.mjs"
     },
     "devDependencies": {
         "@11ty/eleventy": "^1.0.1",

@@ -13,7 +13,7 @@ const handleMapSelectorChange = (selectedIndex: number) => {
 
     const selectedImageWrapper = document.getElementById(`map-imagewrapper-${selectedIndex}`);
     if (!(selectedImageWrapper instanceof HTMLElement)) {
-        throw new Error("imagewrapper for selected map is missing");
+        throw new Error("Imagewrapper for selected map is missing");
     }
 
     selectedImageWrapper.classList.remove("hidden");
