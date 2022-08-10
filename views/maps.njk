@@ -15,12 +15,14 @@ header: ""
         <div class="flex flex-row flex-wrap justify-center items-stretch w-full">
             {% for map in maps | sort(attribute="name") %}
                 <a href="/map/{{ map.slug }}/" class="flex w-[95%] px-2 py-4 md:w-1/2 xl:w-1/3 2xl:w-1/4 cursor-pointer">
-                    <div class="flex flex-col pt-4 justify-start items-center w-full rounded-xl shadow-sm bg-white hover:shadow-lg">
-                        <div class="h-48 w-72">
-                            <img src="{{map.thumbnail}}" class="h-full w-full object-cover rounded-full border-2 border-gray-200" loading="lazy">
+                    <div class="h-80 flex flex-col py-4 justify-start items-center w-full rounded-xl shadow-sm bg-white hover:shadow-lg">
+                        <div class="h-4/5 w-full flex justify-center px-2">
+                            <div class="h-full aspect-square">
+                                <img src="{{map.thumbnail}}" class="h-full w-full object-cover rounded-full border-2 border-gray-200" loading="lazy">
+                            </div>
                         </div>
-                        <div class="flex flex-col items-center w-full">
-                            <h2 class="text-xl font-bold p-4 text-center">{{ map.name }}</h2>
+                        <div class="h-1/5 flex flex-col items-center w-full">
+                            <h2 class="text-lg font-bold p-4 text-center">{{ map.name }}</h2>
                         </div>
                     </div>
                 </a>
