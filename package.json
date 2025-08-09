@@ -6,11 +6,11 @@
     "scripts": {
         "dev": "run-p serve js:watch css:watch",
         "serve": "eleventy --serve",
-        "build": "cross-env NODE_ENV=production yarn build:all",
-        "build:all": "yarn del www && yarn css:build && yarn js:build && eleventy",
+        "build": "cross-env NODE_ENV=production pnpm build:all",
+        "build:all": "pnpm del www && pnpm css:build && pnpm js:build && eleventy",
         "css:watch": "tailwindcss -i src/css/main.css -o views/static/css/main-dist.css -w",
-        "css:build": "yarn del views/static/css && tailwindcss -i src/css/main.css -o views/static/css/main-dist.css --minify",
-        "js:build": "yarn del views/static/js && node esbuild.js prod",
+        "css:build": "pnpm del views/static/css && tailwindcss -i src/css/main.css -o views/static/css/main-dist.css --minify",
+        "js:build": "pnpm del views/static/js && node esbuild.js prod",
         "js:watch": "node esbuild.js watch",
         "add-data": "node tools/add-data.mjs"
     },

@@ -13,13 +13,13 @@ Search engine for maps & locations in the Malazan world by Steven Erikson & Ian 
 ### Install dependencies
 
 ```bash
-yarn install
+pnpm install
 # npm install
 ```
 
 ### Run Dev setup (TailwindCSS watch, ESBuild watch & Eleventy serve)
 
 ```bash
-yarn dev
+pnpm dev
 # npm run dev
 ```
