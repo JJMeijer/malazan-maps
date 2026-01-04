@@ -1,4 +1,1 @@
-"use strict";
-(() => {
-})();
-//# sourceMappingURL=error.js.map
+"use strict";(()=>{})();

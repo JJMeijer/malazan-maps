@@ -1,6 +1,8 @@
 import prompts from "prompts";
 import { readFileSync, writeFileSync } from "fs";
 import slugify from "@sindresorhus/slugify";
+import { fileURLToPath } from "url";
+import path from "path";
 
 import { wikiSearch, wikiSummary, wikiUrl } from "./wiki.mjs";
 
@@ -9,6 +11,10 @@ const maps = JSON.parse(maps_file);
 
 const content_file = readFileSync("views/_data/content.json");
 const content = JSON.parse(content_file);
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const contentPath = path.join(__dirname, "..", "views", "_data", "content.json");
 
 (async () => {
     console.clear();
@@ -107,7 +113,7 @@ const content = JSON.parse(content_file);
         content.push(newItem);
         content.sort((a, b) => a.name.localeCompare(b.name));
 
-        writeFileSync(__dirname + "views/_data/content.json", JSON.stringify(content, null, 4));
+        writeFileSync(contentPath, JSON.stringify(content, null, 4));
         console.log(`Added new item: ${newItem.name}`);
         return;
     }
@@ -122,7 +128,7 @@ const content = JSON.parse(content_file);
     }
 
     content[existingItemIndex].maps.push(newItem.maps[0]);
-    writeFileSync("views/_data/content.json", JSON.stringify(content, null, 4));
+    writeFileSync(contentPath, JSON.stringify(content, null, 4));
     console.log(
         `Added map "${maps[newItem.maps[0].id].name}" to existing Content Item "${newItem.name}".`,
     );
