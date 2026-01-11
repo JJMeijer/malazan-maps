@@ -1,6 +1,6 @@
 {
     "name": "malazan-maps",
-    "version": "1.4.6",
+    "version": "1.5.1",
     "author": "Johan <johan@malazanmaps.com>",
     "license": "MIT",
     "scripts": {
@@ -19,23 +19,26 @@
         "@sindresorhus/slugify": "^2.2.1",
         "@typescript-eslint/eslint-plugin": "^5.62.0",
         "@typescript-eslint/parser": "^5.62.0",
-        "axios": "^0.27.2",
-        "colors": "^1.4.0",
         "cross-env": "^7.0.3",
         "date-fns": "^2.30.0",
         "del-cli": "^4.0.1",
-        "esbuild": "^0.14.54",
+        "esbuild": "^0.27.2",
         "eslint": "^8.57.1",
         "eslint-config-prettier": "^8.10.2",
         "eslint-plugin-import": "^2.32.0",
         "eslint-plugin-prettier": "^4.2.5",
-        "fuse.js": "^6.6.2",
-        "html-minifier": "^4.0.0",
-        "node-html-parser": "^5.4.2",
+        "fuse.js": "^7.1.0",
+        "html-minifier-next": "^4.17.0",
+        "node-html-parser": "^7.0.2",
         "npm-run-all": "^4.1.5",
-        "prettier": "^2.8.8",
+        "prettier": "^3.7.4",
         "prompts": "^2.4.2",
         "tailwindcss": "^3.4.19",
-        "typescript": "^4.9.5"
+        "typescript": "^5.9.3"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "esbuild"
+        ]
     }
 }

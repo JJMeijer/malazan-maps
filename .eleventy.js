@@ -1,5 +1,5 @@
 /* eslint-env node */
-const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier-next");
 const format = require("date-fns/format");
 
 module.exports = function (config) {
@@ -34,9 +34,9 @@ module.exports = function (config) {
     });
 
     // Minify Html on prod
-    config.addTransform("htmlmin", function (content, outputPath) {
+    config.addTransform("htmlmin", async function (content, outputPath) {
         if (outputPath && outputPath.endsWith(".html")) {
-            let minified = htmlmin.minify(content, {
+            let minified = await htmlmin.minify(content, {
                 useShortDoctype: true,
                 removeComments: true,
                 collapseWhitespace: true,

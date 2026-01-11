@@ -1,11 +1,9 @@
-import axios from "axios";
 import { parse } from "node-html-parser";
 
 const BASE_URL = "https://malazan.fandom.com/api.php";
 
 const headers = {
-    "User-Agent":
-        "MalazanMaps/1.0 (https://www.malazanmaps.com/; johan@malazanmaps.com) Axios/0.22",
+    "User-Agent": "MalazanMaps/1.0 (https://www.malazanmaps.com/; johan@malazanmaps.com)",
 };
 
 export const wikiSearch = async (term) => {
@@ -14,10 +12,8 @@ export const wikiSearch = async (term) => {
     const url = `${BASE_URL}${qs}`;
 
     const {
-        data: {
-            query: { search },
-        },
-    } = await axios.get(url, { headers: headers });
+        query: { search },
+    } = await fetch(url, { headers: headers }).then((res) => res.json());
 
     return search.map((item) => ({
         title: item.title,
@@ -29,13 +25,11 @@ export const wikiUrl = async (title) => {
     const encodedTitle = encodeURIComponent(title);
     const qs = `?action=query&titles=${encodedTitle}&prop=info&inprop=url&formatversion=2&format=json`;
     const url = `${BASE_URL}${qs}`;
-    const response = await axios.get(url, { headers: headers });
+    const response = await fetch(url, { headers: headers }).then((res) => res.json());
 
     const {
-        data: {
-            query: {
-                pages: [{ fullurl }],
-            },
+        query: {
+            pages: [{ fullurl }],
         },
     } = response;
 
@@ -46,12 +40,10 @@ const wikiParse = async (title) => {
     const encodedTitle = encodeURIComponent(title);
     const qs = `?action=parse&page=${encodedTitle}&prop=text&formatversion=2&format=json`;
     const url = `${BASE_URL}${qs}`;
-    const response = await axios.get(url, { headers: headers });
+    const response = await fetch(url, { headers: headers }).then((res) => res.json());
 
     const {
-        data: {
-            parse: { text },
-        },
+        parse: { text },
     } = await response;
 
     return text;
