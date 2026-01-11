@@ -21,11 +21,11 @@ class Places {
 
     render(data) {
         const {
-            content,
+            locations,
             pagination: { pageNumber: mapIndex },
         } = data;
 
-        const places = content.filter((place) => {
+        const places = locations.filter((place) => {
             return place.maps.find((x) => x.id === mapIndex && x.marker);
         });
 

@@ -15,7 +15,7 @@
         "add-data": "node tools/add-data.mjs"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^1.0.2",
+        "@11ty/eleventy": "^3.1.2",
         "@sindresorhus/slugify": "^2.2.1",
         "@typescript-eslint/eslint-plugin": "^5.62.0",
         "@typescript-eslint/parser": "^5.62.0",

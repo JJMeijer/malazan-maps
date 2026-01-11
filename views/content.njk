@@ -3,7 +3,7 @@ layout: base.njk
 date: Last Modified
 
 pagination:
-    data: content
+    data: locations
     size: 1
     alias: item
     addAllPagesToCollections: true
@@ -31,14 +31,17 @@ eleventyComputed:
 
         <div class="w-full lg:my-4 {% if item.maps|length == 1 %}pb-8{% endif %}">
             <p class="text-center px-4 text-base">
-                {{ description }} (<a class="underline whitespace-nowrap hover:text-blue-500" target="_blank" rel="nofollow noopener" href="{{ item.wikiLink }}">wiki</a>)
+                {{ description }} (<a class="underline whitespace-nowrap hover:text-blue-500"
+                    target="_blank" rel="nofollow noopener" href="{{ item.wikiLink }}">wiki</a>)
             </p>
         </div>
 
-        <div class="{% if item.maps|length == 1 %}hidden{% endif %} flex flex-row flex-wrap justify-center px-2 py-8 w-full">
-            <select id="map-selector" class="w-[85%] px-2 py-2 rounded-lg bg-primary text-gray-100 text-base border-2 border-gray-400 outline-none">
+        <div
+            class="{% if item.maps|length == 1 %}hidden{% endif %} flex flex-row flex-wrap justify-center px-2 py-8 w-full">
+            <select id="map-selector"
+                class="w-[85%] px-2 py-2 rounded-lg bg-primary text-gray-100 text-base border-2 border-gray-400 outline-none">
                 {% for map in item.maps %}
-                    <option class="bg-white text-gray-800 text-base">{{ maps[map.id].name }}</option>
+                <option class="bg-white text-gray-800 text-base">{{ maps[map.id].name }}</option>
                 {% endfor %}
             </select>
         </div>
@@ -48,37 +51,25 @@ eleventyComputed:
         </div>
     </div>
 
-    <div id="maps" class="flex justify-center items-center flex-1 w-full relative overflow-hidden bg-primary rounded-lg lg:w-2/3 xl:w-3/4 lg:max-h-screen lg:bg-white md:z-50">
+    <div id="maps"
+        class="flex justify-center items-center flex-1 w-full relative overflow-hidden bg-primary rounded-lg lg:w-2/3 xl:w-3/4 lg:max-h-screen lg:bg-white md:z-50">
         {% for map in item.maps %}
-            <div
-                class="{% if loop.index > 1 %}hidden{% endif %} relative flex rounded-md bg-white p-4 cursor-grab origin-center transform scale-1 translate-x-0 translate-y-0"
-                id="map-imagewrapper-{{ loop.index0 }}"
-            >
-                <img
-                    src="{{ maps[map.id].image }}"
-                    class="map-image object-contain lg:max-h-screen"
-                    alt="Map of {{ maps[map.id].name }}"
-                >
-                {% if 'marker' in map %}
-                    <img
-                        src="/static/img/marker.webp"
-                        class="map-marker absolute opacity-0 w-5 h-5 sm:w-7 sm:h-7 object-contain"
-                        data-markerx={{ map.marker.x }}
-                        data-markery={{ map.marker.y }}
-                        alt="{{ item.title }} marker"
-                    >
-                {% endif %}
-            </div>
+        <div class="{% if loop.index > 1 %}hidden{% endif %} relative flex rounded-md bg-white p-4 cursor-grab origin-center transform scale-1 translate-x-0 translate-y-0"
+            id="map-imagewrapper-{{ loop.index0 }}">
+            <img src="{{ maps[map.id].image }}" class="map-image object-contain lg:max-h-screen"
+                alt="Map of {{ maps[map.id].name }}">
+            {% if 'marker' in map %}
+            <img src="/static/img/marker.webp"
+                class="map-marker absolute opacity-0 w-5 h-5 sm:w-7 sm:h-7 object-contain"
+                data-markerx={{ map.marker.x }} data-markery={{ map.marker.y }}
+                alt="{{ item.title }} marker">
+            {% endif %}
+        </div>
         {% endfor %}
-        <div
-            class="hidden justify-center items-center bg-gray-800 opacity-80 absolute top-[5%] left-[90%] w-10 h-10 lg:w-16 lg:h-16 p-1 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:opacity-100"
+        <div class="hidden justify-center items-center bg-gray-800 opacity-80 absolute top-[5%] left-[90%] w-10 h-10 lg:w-16 lg:h-16 p-1 cursor-pointer rounded-full shadow-lg hover:bg-primary hover:opacity-100"
             id="reset-zoom-button">
-            <img
-                src="/static/img/reset-zoom.webp"
-                class="object-contain w-3/4"
-                alt="Reset Zoom Button"
-                title="Reset Zoom Button"
-            >
+            <img src="/static/img/reset-zoom.webp" class="object-contain w-3/4"
+                alt="Reset Zoom Button" title="Reset Zoom Button">
         </div>
     </div>
 </div>

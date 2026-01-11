@@ -9,12 +9,12 @@ import { wikiSearch, wikiSummary, wikiUrl } from "./wiki.mjs";
 const maps_file = readFileSync("views/_data/maps.json");
 const maps = JSON.parse(maps_file);
 
-const content_file = readFileSync("views/_data/content.json");
-const content = JSON.parse(content_file);
+const locationsFile = readFileSync("views/_data/locations.json");
+const locations = JSON.parse(locationsFile);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const contentPath = path.join(__dirname, "..", "views", "_data", "content.json");
+const locationsPath = path.join(__dirname, "..", "views", "_data", "locations.json");
 
 (async () => {
     console.clear();
@@ -106,19 +106,19 @@ const contentPath = path.join(__dirname, "..", "views", "_data", "content.json")
         maps: [map],
     };
 
-    const existingItemIndex = content.findIndex((item) => item.name === name);
+    const existingItemIndex = locations.findIndex((item) => item.name === name);
     const isNew = existingItemIndex === -1;
 
     if (isNew) {
-        content.push(newItem);
-        content.sort((a, b) => a.name.localeCompare(b.name));
+        locations.push(newItem);
+        locations.sort((a, b) => a.name.localeCompare(b.name));
 
-        writeFileSync(contentPath, JSON.stringify(content, null, 4));
+        writeFileSync(locationsPath, JSON.stringify(locations, null, 4));
         console.log(`Added new item: ${newItem.name}`);
         return;
     }
 
-    const existingMap = content[existingItemIndex].maps.findIndex(
+    const existingMap = locations[existingItemIndex].maps.findIndex(
         (map) => map.id === newItem.maps[0].id,
     );
 
@@ -127,8 +127,8 @@ const contentPath = path.join(__dirname, "..", "views", "_data", "content.json")
         return;
     }
 
-    content[existingItemIndex].maps.push(newItem.maps[0]);
-    writeFileSync(contentPath, JSON.stringify(content, null, 4));
+    locations[existingItemIndex].maps.push(newItem.maps[0]);
+    writeFileSync(locationsPath, JSON.stringify(locations, null, 4));
     console.log(
         `Added map "${maps[newItem.maps[0].id].name}" to existing Content Item "${newItem.name}".`,
     );

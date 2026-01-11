@@ -5,8 +5,8 @@ class Data {
         };
     }
 
-    render({ content }) {
-        const contentData = content.map(({ name, slug, type }) => {
+    render({ locations }) {
+        const contentData = locations.map(({ name, slug, type }) => {
             return {
                 name,
                 slug,

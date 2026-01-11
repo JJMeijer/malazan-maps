@@ -1,6 +1,6 @@
-const content = require("../views/_data/content.json");
+const locations = require("../views/_data/locations.json");
 
-const result = content.sort((a, b) => {
+const result = locations.sort((a, b) => {
     if (a.description.length > b.description.length) {
         return -1;
     }
