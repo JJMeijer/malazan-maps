@@ -23,4 +23,4 @@ class AssetLinks {
     }
 }
 
-module.exports = AssetLinks;
+export default AssetLinks;

@@ -48,4 +48,4 @@ class Places {
     }
 }
 
-module.exports = Places;
+export default Places;
