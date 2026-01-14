@@ -44,11 +44,6 @@ export const setZoomAndPanListeners = (): void => {
             imageWrapper.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
         };
 
-        // Calculate distance between two fingers
-        const calculateDistance = (touch0: Touch, touch1: Touch) => {
-            return Math.hypot(touch0.pageX - touch1.pageX, touch0.pageY - touch1.pageY);
-        };
-
         imageWrapper.onmousedown = (event) => {
             event.preventDefault();
             const { clientX, clientY, buttons } = event;

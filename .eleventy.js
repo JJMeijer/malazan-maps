@@ -1,8 +1,7 @@
-/* eslint-env node */
-const htmlmin = require("html-minifier-next");
-const format = require("date-fns/format");
+import htmlmin from "html-minifier-next";
+import { format } from "date-fns";
 
-module.exports = function (config) {
+export default function (config) {
     config.setQuietMode(true);
 
     config.addPassthroughCopy("views/static");
@@ -73,15 +72,15 @@ module.exports = function (config) {
                     return a.data.item.number < b.data.item.number
                         ? -1
                         : a.data.item.number > b.data.item.number
-                        ? 1
-                        : 0;
+                          ? 1
+                          : 0;
                 }
 
                 return a.data.item.series > b.data.item.series
                     ? -1
                     : a.data.item.series < b.data.item.series
-                    ? 1
-                    : 0;
+                      ? 1
+                      : 0;
             });
     });
 
@@ -92,4 +91,4 @@ module.exports = function (config) {
             output: "www",
         },
     };
-};
+}

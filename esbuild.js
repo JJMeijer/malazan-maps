@@ -1,5 +1,4 @@
-/* eslint-env node */
-const esbuild = require("esbuild");
+import esbuild from "esbuild";
 
 const [command] = process.argv.slice(2);
 
