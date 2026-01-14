@@ -4,7 +4,7 @@ import slugify from "@sindresorhus/slugify";
 import { fileURLToPath } from "url";
 import path from "path";
 
-import { wikiSearch, wikiSummary, wikiUrl } from "./wiki.mjs";
+import { wikiSearch, wikiSummary, wikiUrl } from "./wiki.js";
 
 const maps_file = readFileSync("views/_data/maps.json");
 const maps = JSON.parse(maps_file);
