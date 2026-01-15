@@ -118,9 +118,7 @@ const locationsPath = path.join(__dirname, "..", "views", "_data", "locations.js
         return;
     }
 
-    const existingMap = locations[existingItemIndex].maps.findIndex(
-        (map) => map.id === newItem.maps[0].id,
-    );
+    const existingMap = locations[existingItemIndex].maps.findIndex((map) => map.id === newItem.maps[0].id);
 
     if (existingMap > -1) {
         console.log(`Item With provided map already exists`);
@@ -129,7 +127,5 @@ const locationsPath = path.join(__dirname, "..", "views", "_data", "locations.js
 
     locations[existingItemIndex].maps.push(newItem.maps[0]);
     writeFileSync(locationsPath, JSON.stringify(locations, null, 4));
-    console.log(
-        `Added map "${maps[newItem.maps[0].id].name}" to existing Content Item "${newItem.name}".`,
-    );
+    console.log(`Added map "${maps[newItem.maps[0].id].name}" to existing Content Item "${newItem.name}".`);
 })();

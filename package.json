@@ -13,7 +13,8 @@
         "css:build": "pnpm del views/static/css && tailwindcss -i src/css/main.css -o views/static/css/main-dist.css --minify",
         "js:build": "pnpm del views/static/js && node esbuild.js prod",
         "js:watch": "node esbuild.js watch",
-        "add-data": "node tools/add-data.mjs"
+        "add-data": "node tools/add-data.js",
+        "redo-map": "node tools/redo-map.js"
     },
     "devDependencies": {
         "@11ty/eleventy": "^3.1.2",
