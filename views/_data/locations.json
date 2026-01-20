@@ -1026,8 +1026,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 566,
-                    "y": 912
+                    "x": 430,
+                    "y": 896
                 }
             }
         ]
@@ -1065,8 +1065,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1228,
-                    "y": 873
+                    "x": 926,
+                    "y": 884
                 }
             }
         ]
@@ -1398,7 +1398,7 @@
         "description": "Blood and Bone is the fifth novel by Canadian author Ian Cameron Esslemont. It is set in the world of the Malazan Book of the Fallen, a ten-volume epic fantasy series by Esslemont's friend and colleague Steven Erikson. Esslemont and Erikson co-created the Malazan world in the 1980s.",
         "wikiLink": "https://malazan.fandom.com/wiki/Blood_and_Bone",
         "type": "book",
-        "series":"Novels of the Malazan Empire",
+        "series": "Novels of the Malazan Empire",
         "number": 5,
         "maps": [
             {
@@ -2089,8 +2089,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 554,
-                    "y": 836
+                    "x": 432,
+                    "y": 838
                 }
             }
         ]
@@ -2445,8 +2445,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 750,
-                    "y": 1761
+                    "x": 566,
+                    "y": 1558
                 }
             }
         ]
@@ -2461,8 +2461,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 830,
-                    "y": 1967
+                    "x": 642,
+                    "y": 1720
                 }
             }
         ]
@@ -2775,7 +2775,7 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 540,
+                    "x": 384,
                     "y": 540
                 }
             }
@@ -3018,8 +3018,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 334,
-                    "y": 2016
+                    "x": 258,
+                    "y": 1749
                 }
             }
         ]
@@ -3041,8 +3041,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 334,
-                    "y": 2016
+                    "x": 258,
+                    "y": 1749
                 }
             }
         ]
@@ -3365,8 +3365,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1038,
-                    "y": 1092
+                    "x": 777,
+                    "y": 1059
                 }
             }
         ]
@@ -4007,7 +4007,7 @@
         "description": "Dust of Dreams is the ninth novel in the Malazan Book of the Fallen epic fantasy series. It was first published in Canada and the UK in 2009.",
         "wikiLink": "https://malazan.fandom.com/wiki/Dust_of_Dreams",
         "type": "book",
-        "series":"Malazan Book of the Fallen",
+        "series": "Malazan Book of the Fallen",
         "number": 9,
         "maps": [
             {
@@ -4577,8 +4577,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 436,
-                    "y": 854
+                    "x": 358,
+                    "y": 851
                 }
             }
         ]
@@ -4593,8 +4593,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1326,
-                    "y": 1055
+                    "x": 358,
+                    "y": 851
                 }
             }
         ]
@@ -4616,8 +4616,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1359,
-                    "y": 545
+                    "x": 1050,
+                    "y": 606
                 }
             }
         ]
@@ -4762,8 +4762,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 503,
-                    "y": 1300
+                    "x": 448,
+                    "y": 1240
                 }
             }
         ]
@@ -5787,8 +5787,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 503,
-                    "y": 1300
+                    "x": 448,
+                    "y": 1240
                 }
             }
         ]
@@ -7164,8 +7164,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1286,
-                    "y": 2202
+                    "x": 982,
+                    "y": 1872
                 }
             }
         ]
@@ -7689,8 +7689,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1422,
-                    "y": 1868
+                    "x": 1098,
+                    "y": 1617
                 }
             }
         ]
@@ -8780,8 +8780,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 580,
-                    "y": 1814
+                    "x": 439,
+                    "y": 1595
                 }
             }
         ]
@@ -8998,8 +8998,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1280,
-                    "y": 2166
+                    "x": 982,
+                    "y": 1872
                 }
             },
             {
@@ -9042,8 +9042,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1286,
-                    "y": 2202
+                    "x": 1008,
+                    "y": 1848
                 }
             }
         ]
@@ -10028,8 +10028,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 941,
-                    "y": 2022
+                    "x": 718,
+                    "y": 1754
                 }
             }
         ]
@@ -10067,8 +10067,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 941,
-                    "y": 2022
+                    "x": 718,
+                    "y": 1754
                 }
             }
         ]
@@ -12020,8 +12020,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 220,
-                    "y": 1540
+                    "x": 176,
+                    "y": 1382
                 }
             }
         ]
@@ -12131,8 +12131,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 206,
-                    "y": 1692
+                    "x": 174,
+                    "y": 1503
                 }
             }
         ]
@@ -14476,8 +14476,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1360,
-                    "y": 894
+                    "x": 1043,
+                    "y": 893
                 }
             }
         ]
@@ -14492,8 +14492,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1394,
-                    "y": 878
+                    "x": 1074,
+                    "y": 884
                 }
             }
         ]
@@ -14508,8 +14508,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 936,
-                    "y": 948
+                    "x": 699,
+                    "y": 954
                 }
             }
         ]
@@ -15900,8 +15900,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1210,
-                    "y": 1685
+                    "x": 911,
+                    "y": 1499
                 }
             }
         ]
@@ -16225,8 +16225,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 940,
-                    "y": 740
+                    "x": 714,
+                    "y": 774
                 }
             }
         ]
@@ -16241,8 +16241,8 @@
             {
                 "id": 16,
                 "marker": {
-                    "x": 1089,
-                    "y": 641
+                    "x": 858,
+                    "y": 721
                 }
             }
         ]

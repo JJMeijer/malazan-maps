@@ -238,5 +238,13 @@
         "image": "/static/img/maps/northwest-genabackis-late-empire.webp",
         "thumbnail": "/static/img/maps/tn/northwest-genabackis-late-empire.webp",
         "type": "official"
+    },
+    {
+        "name": "Falar & Environs",
+        "slug": "falar-and-environs",
+        "description": "Falar & Environs, As compiled from diverse sources by Imperial Historian Feroot. Featured in Forge of the High Mage.",
+        "image": "/static/img/maps/falar-and-environs.webp",
+        "thumbnail": "/static/img/maps/tn/falar-and-environs.webp",
+        "type": "official"
     }
 ]

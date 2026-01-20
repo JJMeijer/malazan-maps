@@ -78,7 +78,7 @@ const saveProgressFile = (mapId, progress) =>
             message: async (_prev, values) => {
                 const { mapId } = values;
 
-                await prompts(
+                const results = await prompts(
                     progress.map((item, index) => ({
                         type: (prev) => {
                             if (prev && index > 0) {
@@ -95,6 +95,18 @@ const saveProgressFile = (mapId, progress) =>
                         message: `coordinates for ${item.name} in x, y format:`,
                     })),
                 );
+
+                // save last item
+                const lastItem = progress[progress.length - 1];
+                if (lastItem.x === null || lastItem.y === null) {
+                    const lastCoords = results[`${lastItem.slug}`];
+                    if (lastCoords) {
+                        const [x, y] = lastCoords.split(",").map((coord) => parseFloat(coord.trim()));
+                        lastItem.x = x;
+                        lastItem.y = y;
+                        saveProgressFile(mapId, progress);
+                    }
+                }
 
                 return "Done!";
             },
@@ -126,7 +138,7 @@ const saveProgressFile = (mapId, progress) =>
                 }
             });
             // save locations file
-            writeFileSync("views/_data/location2.json", JSON.stringify(locations, null, 4));
+            writeFileSync("views/_data/locations.json", JSON.stringify(locations, null, 4));
         }
     }
 })();
