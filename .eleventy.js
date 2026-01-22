@@ -76,11 +76,7 @@ export default function (config) {
                           : 0;
                 }
 
-                return a.data.item.series > b.data.item.series
-                    ? -1
-                    : a.data.item.series < b.data.item.series
-                      ? 1
-                      : 0;
+                return a.data.item.series > b.data.item.series ? -1 : a.data.item.series < b.data.item.series ? 1 : 0;
             });
     });
 

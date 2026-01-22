@@ -5366,6 +5366,23 @@
         ]
     },
     {
+        "name": "Forge of the High Mage",
+        "slug": "forge-of-the-high-mage",
+        "description": "Forge of the High Mage is the fourth book in the Path to Ascendancy series by Ian C. Esslemont. The book involves \"Malaz expansionism into the Falaran sub-continent.\"",
+        "wikiLink": "https://malazan.fandom.com/wiki/Forge_of_the_High_Mage",
+        "type": "book",
+        "number": 4,
+        "series": "Path to Ascendancy",
+        "maps": [
+            {
+                "id": 16
+            },
+            {
+                "id": 30
+            }
+        ]
+    },
+    {
         "name": "Fort Drii",
         "slug": "fort-drii",
         "description": "Fort Drii was situated on the eastern shore of the Fist Sea in Skolati.",
@@ -12768,6 +12785,9 @@
             },
             {
                 "id": 16
+            },
+            {
+                "id": 30
             }
         ]
     },
