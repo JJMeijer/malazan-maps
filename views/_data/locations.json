@@ -623,6 +623,22 @@
         ]
     },
     {
+        "name": "Bada",
+        "slug": "bada",
+        "description": "Bada was a settlement on one of the larger islands in the north of the Falari Isles on the coast of the Walk Sea. The north and eastern coast of the island faced the open waters of the Woad Ocean and Stretch Ocean. On their own islands to the west and south, respectively, were Torvo and Chenang.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Bada",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 2070,
+                    "y": 402
+                }
+            }
+        ]
+    },
+    {
         "name": "Bael",
         "slug": "bael",
         "description": "Bael was a sub-continent (or possibly a region within Assail) situated south of Assail and southeast of Korelri. It was bordered on its eastern shores by the Domain Ocean. The tribes of Bael worshipped a god known as Father Wind.",
@@ -1029,6 +1045,13 @@
                     "x": 430,
                     "y": 896
                 }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1036,
+                    "y": 1203
+                }
             }
         ]
     },
@@ -1067,6 +1090,29 @@
                 "marker": {
                     "x": 926,
                     "y": 884
+                }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1831,
+                    "y": 1105
+                }
+            }
+        ]
+    },
+    {
+        "name": "Belikan",
+        "slug": "belikan",
+        "description": "Belikan was a settlement on Delanss Island in the Falari Isles. It was located at the eastern end of the island's northern coast near Iguan facing the Strom Sea. Not far to the northeast was a smaller island where the city of Belid was located.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Belikan",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1737,
+                    "y": 1215
                 }
             }
         ]
@@ -2108,6 +2154,13 @@
                     "x": 432,
                     "y": 838
                 }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 915,
+                    "y": 1029
+                }
             }
         ]
     },
@@ -2500,6 +2553,22 @@
         ]
     },
     {
+        "name": "Chenang",
+        "slug": "chenang",
+        "description": "Chenang was a settlement on one of the larger islands in the north of the Falari Isles on the coast of the Walk Sea. The eastern coast of the island faced the open waters of the Stretch Ocean. On their own islands to the north and northwest, respectively, were Bada and Torvo. The island of the Lurk settlement was to the south.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Chenang",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 2066,
+                    "y": 544
+                }
+            }
+        ]
+    },
+    {
         "name": "Children Ridge Mountains",
         "slug": "children-ridge-mountains",
         "description": "The Children Ridge Mountains in the Lands of Fist surrounded the Tower Sea on Remnant Isle.",
@@ -2619,6 +2688,22 @@
                 "marker": {
                     "x": 390,
                     "y": 1112
+                }
+            }
+        ]
+    },
+    {
+        "name": "Clump",
+        "slug": "clump",
+        "description": "Clump was a settlement on the west coast of one of the larger Falari Isles along the Old Guando Sea. It was north of Walk and southwest of Tenak. In living memory, the entirety of Clump had been washed away by tidal wave more than three chains high that had been released by the eruption of Mount Lessen.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Clump",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1422,
+                    "y": 782
                 }
             }
         ]
@@ -2913,6 +2998,22 @@
         ]
     },
     {
+        "name": "Curaca",
+        "slug": "curaca",
+        "description": "Curaca was a city on the northeastern coast of Jook Isle in the Falari Isles.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Curaca",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 997,
+                    "y": 745
+                }
+            }
+        ]
+    },
+    {
         "name": "Cursed Lands",
         "slug": "cursed-lands",
         "description": "The Cursed Lands were located along the southwestern coast of Genabackis between the ruins of Morn and Ilem.",
@@ -2924,6 +3025,22 @@
                 "marker": {
                     "x": 444,
                     "y": 799
+                }
+            }
+        ]
+    },
+    {
+        "name": "Cutip",
+        "slug": "cutip",
+        "description": "Cutip was a city on the west coast of Jook Isle along the Jook Strait in the Falari Isles. To its northeast was Curaca, to its southeast was Gung, and to its south was Jook.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Cutip",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 948,
+                    "y": 814
                 }
             }
         ]
@@ -3347,6 +3464,22 @@
         ]
     },
     {
+        "name": "Deep Wood Isle",
+        "slug": "deep-wood-isle",
+        "description": "Deep Wood Isle was one of several islands separating the Lure Sea from the Old Guando Sea in the Falari Isles. To its immediate south was Silver Caye, and to its west was Cabil.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Deep_Wood_Isle",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1066,
+                    "y": 1047
+                }
+            }
+        ]
+    },
+    {
         "name": "Deepwaters",
         "slug": "deepwaters",
         "description": "Deepwaters was the northeastern region of the inland Dracons Sea on the continent of Lether.",
@@ -3390,6 +3523,22 @@
                 "marker": {
                     "x": 777,
                     "y": 1059
+                }
+            }
+        ]
+    },
+    {
+        "name": "Delanss",
+        "slug": "delanss",
+        "description": "Delanss (sometimes spelled Delans) was the capital city of Delanss Island, the second most populous of the Falari Isles north of Quon Tali. Its nearest neighbours were Iguan to the east and Wett to the west.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Delanss",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1602,
+                    "y": 1332
                 }
             }
         ]
@@ -3502,6 +3651,38 @@
                 "marker": {
                     "x": 474,
                     "y": 1118
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dhab",
+        "slug": "dhab",
+        "description": "Dhab was a settlement on one of the larger islands in the north of the Falari Isles where it lay on the coast of the Dhab Strait that linked the Cragg Ocean to the Walk Sea. Further east on the same island was Jrapp. South across the strait was the much larger island that was home to Walk and the fortress city of Jick.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dhab",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1556,
+                    "y": 358
+                }
+            }
+        ]
+    },
+    {
+        "name": "Dhab Strait",
+        "slug": "dhab-strait",
+        "description": "The Dhab Strait was located in the north of the Falari Isles connecting the Cragg Ocean to the Walk Sea. On the northern side of the strait lay the city of Dhab.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Dhab_Strait",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1510,
+                    "y": 386
                 }
             }
         ]
@@ -4658,6 +4839,13 @@
                     "x": 1050,
                     "y": 606
                 }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 2262,
+                    "y": 344
+                }
             }
         ]
     },
@@ -4716,6 +4904,22 @@
                 "marker": {
                     "x": 1267,
                     "y": 770
+                }
+            }
+        ]
+    },
+    {
+        "name": "Fallen Towers",
+        "slug": "fallen-towers",
+        "description": "Fallen Towers was a settlement on Delanss Island in the Falari Isles. It was located towards the western end of the island's northern coast between Ictor and Wett facing the Strom Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Fallen_Towers",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1470,
+                    "y": 1320
                 }
             }
         ]
@@ -5009,6 +5213,22 @@
                 "marker": {
                     "x": 1529,
                     "y": 291
+                }
+            }
+        ]
+    },
+    {
+        "name": "Flood Isle",
+        "slug": "flood-isle",
+        "description": "Flood Isle was one of the larger islands in the eastern Falari Isles and was home to the Flood settlement. Its western shored faced the Walk Sea, while its eastern shore faced the Strike Ocean. The tiny Sparrow Pass Island and the dangerous shoals of the Sparrow Pass Cut lay to the north. To the east was Strike Island and to the south was the island of Belid.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Flood_Isle",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1902,
+                    "y": 982
                 }
             }
         ]
@@ -5762,6 +5982,22 @@
         ]
     },
     {
+        "name": "Gorge",
+        "slug": "gorge",
+        "description": "Gorge was a settlement on the eastern coast of the Falar mainland facing the Strait of Lure. To its north were the city of Belade and the promontory known as East Reach.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Gorge",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1023,
+                    "y": 1291
+                }
+            }
+        ]
+    },
+    {
         "name": "Goss (city)",
         "slug": "goss-city",
         "description": "Goss was one of the larger cities in the nation of Isthmus. It was located on the western shore of Sea Iban.",
@@ -6195,6 +6431,22 @@
         ]
     },
     {
+        "name": "Gung",
+        "slug": "gung",
+        "description": "Gung was a city on the southern coast of Jook Isle in the Falari Isles. To its west was Cutip and Jook, and to its northwest was Curaca.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Gung",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1048,
+                    "y": 844
+                }
+            }
+        ]
+    },
+    {
         "name": "Guran",
         "slug": "guran",
         "description": "Guran was an ancient inland city on the subcontinent of Seven Cities. It was a major trade center on the southwestern shore of the Karas Sea, roughly halfway between Halaf and Caron Tepasi.",
@@ -6470,6 +6722,38 @@
                 "marker": {
                     "x": 827,
                     "y": 1755
+                }
+            }
+        ]
+    },
+    {
+        "name": "Heft",
+        "slug": "heft",
+        "description": "Heft was a settlement on one of the larger islands in the north of the Falari Isles. It was located on the coast of the Walk Sea near where the Heft Strait led north to the Woad Ocean. Further southeast on the same island was Torvo. To its west across the Heft Strait lay Jrapp.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Heft",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1834,
+                    "y": 360
+                }
+            }
+        ]
+    },
+    {
+        "name": "Heft Strait",
+        "slug": "heft-strait",
+        "description": "The Heft Strait was located in the north of the Falari Isles connecting the Woad Ocean to the Walk Sea. On either side of the strait lay the cities of Heft (in the east) and Jrapp (in the west).",
+        "wikiLink": "https://malazan.fandom.com/wiki/Heft_Strait",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1780,
+                    "y": 346
                 }
             }
         ]
@@ -6962,6 +7246,22 @@
         ]
     },
     {
+        "name": "Ictor",
+        "slug": "ictor",
+        "description": "Ictor was an atypically small Falari city on the western side of Delanss Island in the Falari Isles that resembled more a frontier outpost or colony. To its north was the confluence of the Old Guando Sea and Strom Sea, while to the west was the Strait of Lure which separated the island from the Falar mainland. To its east was the settlement of Fallen Towers.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Ictor",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1305,
+                    "y": 1288
+                }
+            }
+        ]
+    },
+    {
         "name": "Idryb",
         "slug": "idryb",
         "description": "Idryb was a Quon Talian city on the Idryn river between Li Heng and Ipras. To the northwest was Ifaran.",
@@ -6989,6 +7289,22 @@
                 "marker": {
                     "x": 824,
                     "y": 523
+                }
+            }
+        ]
+    },
+    {
+        "name": "Iguan",
+        "slug": "iguan",
+        "description": "Iguan was a settlement on Delanss Island in the Falari Isles. It was located towards the eastern end of the island's northern coast between Delanss and Belikan facing the Strom Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Iguan",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1660,
+                    "y": 1263
                 }
             }
         ]
@@ -7446,6 +7762,54 @@
         ]
     },
     {
+        "name": "Jick",
+        "slug": "jick",
+        "description": "Jick was a fortress city considered to be the most secure of all the settlements in the Falari Isles. It was built into the cliffs of the rugged Walk Mountains on the northwest shore of the Walk Sea and featured a narrow harbour filled with fishing vessels and merchant ships. The town was governed by a ruling family and mayor. The local temple of Mael was led by a ranking priest named Gaddeth.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jick",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1480,
+                    "y": 534
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jook",
+        "slug": "jook",
+        "description": "Jook was a city on the southern coast of Jook Isle near the Jook Strait in the Falari Isles. To its north were Cutip and Curaca, and to its east was Gung.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jook",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 967,
+                    "y": 879
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jook Strait",
+        "slug": "jook-strait",
+        "description": "Jook Strait separated Jook Isle from mainland Falar. It linked the Cragg Sea to the inland Lure Sea that ringed Cabil.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jook_Strait",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 898,
+                    "y": 855
+                }
+            }
+        ]
+    },
+    {
         "name": "Jour",
         "slug": "jour",
         "description": "Jour was the capital city of the Empire of Jourilan. It was located at the base of Damos Bay on the Empire's northwestern border.",
@@ -7473,6 +7837,22 @@
                 "marker": {
                     "x": 501,
                     "y": 1577
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jrapp",
+        "slug": "jrapp",
+        "description": "Jrapp was a settlement on one of the larger islands in the north of the Falari Isles on the coast of the Walk Sea. Further west on the same island was Dhab. To its east across the Heft Strait lay Heft.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Jrapp",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1684,
+                    "y": 378
                 }
             }
         ]
@@ -7794,6 +8174,13 @@
                 "marker": {
                     "x": 1098,
                     "y": 1617
+                }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 970,
+                    "y": 1516
                 }
             }
         ]
@@ -8343,6 +8730,22 @@
                 "marker": {
                     "x": 965,
                     "y": 1820
+                }
+            }
+        ]
+    },
+    {
+        "name": "Kynarl",
+        "slug": "kynarl",
+        "description": "The Falari island of Kynarl, or Kayanarle, was the ancient and semi-mythical seat of the height of Old Falar's civilization. It was located in the Walk Sea near the centre of a ring of similar islands that in the time of the Malazan Empire was known as Rubble Isle. It was home to an old palace where kings and queens had ruled in ancient times, and hosted a diverse number of temples and holy shrines dedicated to the region's many gods, demi-god champions, spirits, and honoured ancestors. It was most famous for housing the greatest library in Falar and possibly the world. Only the fabled collection of scrolls and elder knowledge rumoured to be housed in Darujhistan was believed to be its superior.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Kynarl",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1826,
+                    "y": 712
                 }
             }
         ]
@@ -9048,6 +9451,38 @@
         ]
     },
     {
+        "name": "Lure Sea",
+        "slug": "lure-sea",
+        "description": "The Lure Sea in the Falari Isles encircled the island bearing the Falari capital city of Cabil, separating it from the mainland. Like most of the waters in the archipelago, it was relatively shallow and pale green in colour. The sea was heavily traveled and bustling with shipping traffic.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Lure_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 864,
+                    "y": 1126
+                }
+            }
+        ]
+    },
+    {
+        "name": "Lurk Isle",
+        "slug": "lurk-isle",
+        "description": "Lurk Isle was one of the larger islands in the eastern Falari Isles and was home to the Lurk settlement. Its western shored faced the Walk Sea and Rubble Isle, while its eastern shore faced the Stretch Ocean. The treacherous shoals of the Sparrow Pass Cut lay to the east, and to the north was Chenang.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Lurk_Isle",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1994,
+                    "y": 684
+                }
+            }
+        ]
+    },
+    {
         "name": "Maadil Sea",
         "slug": "maadil-sea",
         "description": "The Maadil Sea was found on the northern part of the continent of Seven Cities. The mainland itself stretched from the sea's most northwestern reaches to the southeast. Various inhabited islands also lined its northern edge.",
@@ -9163,6 +9598,13 @@
                 "marker": {
                     "x": 1008,
                     "y": 1848
+                }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 957,
+                    "y": 1554
                 }
             }
         ]
@@ -10000,6 +10442,22 @@
                 "marker": {
                     "x": 1086,
                     "y": 980
+                }
+            }
+        ]
+    },
+    {
+        "name": "Muheres",
+        "slug": "muheres",
+        "description": "Muheres was a town on the northern coast of the Falar mainland bordering the Lure Sea. Pull was to its west and Belade and Gorge were to its east. To the north, across the waters of the Lure Sea, was Cabil, the capital of Falar.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Muheres",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 865,
+                    "y": 1245
                 }
             }
         ]
@@ -10853,6 +11311,38 @@
                 "marker": {
                     "x": 236,
                     "y": 588
+                }
+            }
+        ]
+    },
+    {
+        "name": "Old Guando Isle",
+        "slug": "old-guando-isle",
+        "description": "Old Guando Isle was located in the centre of the Falari Isles at the crossroads of the Old Guando Sea, the Strom Sea, and the Walk Sea. It was the site of Guando, Falar's old abandoned capital and temple complex, which now existed only as a tumbled pile of white marble ruins and stone-flagged streets reached by a narrow water channel. Guando was still occupied away from the ruins as a small coastal village comprised of daub huts and supported by a collection of fishing dories.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Old_Guando_Isle",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1512,
+                    "y": 1078
+                }
+            }
+        ]
+    },
+    {
+        "name": "Old Guando Sea",
+        "slug": "old-guando-sea",
+        "description": "Old Guando Sea was the stretch of water between Old Guando Isle and Cabil in the Falari Isles. Like most of the waters in the archipelago, it was relatively shallow and pale green in colour.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Old_Guando_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1344,
+                    "y": 984
                 }
             }
         ]
@@ -13880,6 +14370,13 @@
             },
             {
                 "id": 21
+            },
+            {
+                "id": 16,
+                "marker": {
+                    "x": 237,
+                    "y": 369
+                }
             }
         ]
     },
@@ -14145,6 +14642,22 @@
         ]
     },
     {
+        "name": "Silver Caye",
+        "slug": "silver-caye",
+        "description": "Silver Caye was just north of the Falar mainland and one of several islands separating the Lure Sea from the Old Guando Sea in the Falari Isles. To its immediate north was Deep Wood Isle, and to its west was Cabil. The city of Belade and the promontory known as East Reach were just across the water to the south.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Silver_Caye",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1089,
+                    "y": 1126
+                }
+            }
+        ]
+    },
+    {
         "name": "Silver Lake",
         "slug": "silver-lake",
         "description": "Silver Lake was a Nathii settlement on a lake by the same name east of the Laederon Plateau (home of the Teblor tribes) in Northern Genabackis. ",
@@ -14218,6 +14731,22 @@
                 "marker": {
                     "x": 1014,
                     "y": 1121
+                }
+            }
+        ]
+    },
+    {
+        "name": "Sleep Isle",
+        "slug": "sleep-isle",
+        "description": "Sleep Isle was a small island in the Falari Isles located between War Isle and Walk with the Old Guando Sea on its west coast and the Walk Sea on its east coast.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Sleep_Isle",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1496,
+                    "y": 924
                 }
             }
         ]
@@ -14376,6 +14905,38 @@
                 "marker": {
                     "x": 1602,
                     "y": 816
+                }
+            }
+        ]
+    },
+    {
+        "name": "Sparrow Pass Cut",
+        "slug": "sparrow-pass-cut",
+        "description": "Sparrow Pass Cut was a treacherous stretch of shallow, rocky, and shoal-filled waters in the eastern Falari Isles. It deceptively appeared to offer the quickest most direct route east from the Walk Sea to the larger ocean, but few Falari ever dared its waters. Its graveyard of ships was a byword for treachery and loss among the Falari population.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Sparrow_Pass_Cut",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 2006,
+                    "y": 806
+                }
+            }
+        ]
+    },
+    {
+        "name": "Sparrow Pass Island",
+        "slug": "sparrow-pass-island",
+        "description": "Sparrow Pass Island was a small island in the eastern Falari Isles at the entrance to the treacherous and deadly stretch of water known as Sparrow Pass Cut.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Sparrow_Pass_Island",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1930,
+                    "y": 882
                 }
             }
         ]
@@ -14669,6 +15230,13 @@
                     "x": 1043,
                     "y": 893
                 }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 2202,
+                    "y": 910
+                }
             }
         ]
     },
@@ -14689,6 +15257,22 @@
         ]
     },
     {
+        "name": "Strike Ocean",
+        "slug": "strike-ocean",
+        "description": "The Strike Ocean lay south of Strike Island in the Falari Isles.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Strike_Ocean",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 2101,
+                    "y": 1362
+                }
+            }
+        ]
+    },
+    {
         "name": "Strom Sea",
         "slug": "strom-sea",
         "description": "The Strom Sea was located in the interior of the Falari Isles, between Delanss Island and the Walk Sea and adjacent to the Cragg Sea.",
@@ -14700,6 +15284,13 @@
                 "marker": {
                     "x": 699,
                     "y": 954
+                }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1560,
+                    "y": 1190
                 }
             }
         ]
@@ -15113,6 +15704,22 @@
         ]
     },
     {
+        "name": "Tenak",
+        "slug": "tenak",
+        "description": "Tenak was a city on the east coast of one of the larger Falari Isles along the Walk Sea. It was north of Walk and south of the fortress city of Jick.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Tenak",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1554,
+                    "y": 690
+                }
+            }
+        ]
+    },
+    {
         "name": "Tenumb",
         "slug": "tenumb",
         "description": "Tenumb was a town located north of the Clatar Sea on Seven Cities. It was one of several towns on a river that ran southwards to Geleen and the sea.  To the north were the Jhena Mountains and the Vathar Forest.  To the south was the town of Penalh.",
@@ -15376,6 +15983,22 @@
                 "marker": {
                     "x": 396,
                     "y": 930
+                }
+            }
+        ]
+    },
+    {
+        "name": "The Ice Sea",
+        "slug": "the-ice-sea",
+        "description": "The Ice Sea was the icy cold body of water between Delanss Island and the Ice Wastes of Quon Tali. The Quon Tali coastline near the Great Fenn Range consisted of rocky cliffs and forest, and was was apparently uninhabited.",
+        "wikiLink": "https://malazan.fandom.com/wiki/The_Ice_Sea",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1336,
+                    "y": 1688
                 }
             }
         ]
@@ -15748,6 +16371,22 @@
                 "marker": {
                     "x": 928,
                     "y": 806
+                }
+            }
+        ]
+    },
+    {
+        "name": "Torvo",
+        "slug": "torvo",
+        "description": "Torvo was a settlement on one of the larger islands in the north of the Falari Isles on the coast of the Walk Sea. To the northwest on the same island was Heft. To the east, on their own islands, were Bada and Chenang.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Torvo",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1930,
+                    "y": 432
                 }
             }
         ]
@@ -16441,6 +17080,13 @@
                     "x": 714,
                     "y": 774
                 }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1492,
+                    "y": 842
+                }
             }
         ]
     },
@@ -16456,6 +17102,29 @@
                 "marker": {
                     "x": 858,
                     "y": 721
+                }
+            },
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1718,
+                    "y": 720
+                }
+            }
+        ]
+    },
+    {
+        "name": "War Isle",
+        "slug": "war-isle",
+        "description": "War Isle was a tiny spot of land in the Falari Isles located between Sleep Isle and Old Guando Isle with the Walk Sea to its east and Old Guando Sea to its west. It was home to a few coastal fishing villages so paltry they were barely worthy of names. The collection of huts on the south and western coasts were known as South village and West village, respectively. The largest settlement was the collection of huts known as Deep Cove built on the cliff-top above the island's eastern deep cove. Here was a long pier, the island's temple to Mael, and a ramshackle tavern that served ikkor.",
+        "wikiLink": "https://malazan.fandom.com/wiki/War_Isle",
+        "type": "region",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1492,
+                    "y": 988
                 }
             }
         ]
@@ -16568,6 +17237,22 @@
                 "marker": {
                     "x": 124,
                     "y": 609
+                }
+            }
+        ]
+    },
+    {
+        "name": "Wett",
+        "slug": "wett",
+        "description": "Wett was a settlement on Delanss Island in the Falari Isles. It was located on the centre of the northern coast between Delanss and Fallen Towers facing the Strom Sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Wett",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1533,
+                    "y": 1365
                 }
             }
         ]
@@ -16726,6 +17411,22 @@
                 "marker": {
                     "x": 1285,
                     "y": 1158
+                }
+            }
+        ]
+    },
+    {
+        "name": "Woad",
+        "slug": "woad",
+        "description": "Woad was a settlement on a small island in the far north of the Falari Isles amidst the Woad Ocean. It was north of Jrapp, Heft, and the Heft Strait. It had a busy harbour. The journey from Woad to Cabil, the Falari capital, was an unhurried three day voyage by sea.",
+        "wikiLink": "https://malazan.fandom.com/wiki/Woad",
+        "type": "city",
+        "maps": [
+            {
+                "id": 30,
+                "marker": {
+                    "x": 1740,
+                    "y": 148
                 }
             }
         ]
