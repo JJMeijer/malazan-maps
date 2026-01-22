@@ -48,7 +48,9 @@ jobs:
       with:
         workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
 
-    # - id: deploy
-    #   uses: 'google-github-actions/deploy-appengine@v3'
-    #   with:
-    #     project_id: ${{ secrets.GCP_PROJECT_ID }}
+    - id: deploy
+      uses: 'google-github-actions/deploy-appengine@v3'
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        working_directory: './www'
+        promote: false
