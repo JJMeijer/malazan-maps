@@ -31,7 +31,24 @@ jobs:
     - id: checkout
       uses: actions/checkout@v6
 
+    - id: pnpm-install
+      uses: pnpm/action-setup@v4
+      with:
+        version: 10
+        cache: true
+
+    - id: pnpm-deps
+      run: pnpm install
+
+    - id: build
+      run: pnpm build:all
+
     - id: auth
       uses: 'google-github-actions/auth@v3'
       with:
         workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
+
+    # - id: deploy
+    #   uses: 'google-github-actions/deploy-appengine@v3'
+    #   with:
+    #     project_id: ${{ secrets.GCP_PROJECT_ID }}
