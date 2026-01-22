@@ -9,6 +9,16 @@ on:
       - '.eleventy.js'
       - '.github/workflows/deploy.yml'
 
+  # for testing right now
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'views/**'
+      - '.eleventy.js'
+      - '.github/workflows/deploy.yml'
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,11 +26,11 @@ jobs:
       contents: read
       id-token: write
 
-      steps:
-      - id: checkout
-        uses: actions/checkout@v6
+    steps:
+    - id: checkout
+      uses: actions/checkout@v6
 
-      - id: auth
-        uses: 'google-github-actions/auth@v3'
-        with:
-          workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
+    - id: auth
+      uses: 'google-github-actions/auth@v3'
+      with:
+        workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
