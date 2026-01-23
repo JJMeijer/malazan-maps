@@ -43,7 +43,7 @@ jobs:
     - id: build
       run: pnpm build:all
 
-    - id: auth
+    - id: authh
       uses: 'google-github-actions/auth@v3'
       with:
         workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
