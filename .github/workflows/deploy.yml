@@ -11,6 +11,7 @@ on:
 jobs:
     release-and-deploy:
         runs-on: ubuntu-latest
+        environment: prod
         permissions:
             contents: write
             id-token: write
