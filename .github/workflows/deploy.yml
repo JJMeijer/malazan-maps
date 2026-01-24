@@ -31,15 +31,29 @@ jobs:
             - name: Install dependencies
               run: pnpm install
 
+            - name: Save pre-bump commit
+              id: pre-bump
+              run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+
             - name: Automated Version Bump
+              id: bump
               run: |
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
                   pnpm version patch -m "chore: bump version to %s [skip ci]"
+                  echo "tag=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
                   git push --follow-tags
 
             - name: Build
+              id: build
               run: pnpm build:all
+
+            - name: Rollback version on build failure
+              if: failure() && steps.build.outcome == 'failure'
+              run: |
+                  git push origin :refs/tags/${{ steps.bump.outputs.tag }}
+                  git reset --hard ${{ steps.pre-bump.outputs.sha }}
+                  git push --force
 
             - name: Auth to Google Cloud
               uses: "google-github-actions/auth@v3"
