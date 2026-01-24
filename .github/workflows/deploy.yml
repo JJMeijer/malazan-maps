@@ -1,57 +1,70 @@
-name: Deploy
+name: Release & Deploy
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - 'src/**'
-      - 'views/**'
-      - '.eleventy.js'
-      - '.github/workflows/deploy.yml'
-
-  # for testing right now
-  push:
-    branches:
-      - main
-    paths:
-      - 'src/**'
-      - 'views/**'
-      - '.eleventy.js'
-      - '.github/workflows/deploy.yml'
+    push:
+        branches:
+            - main
+        paths:
+            - "src/**"
+            - "views/**"
+            - ".eleventy.js"
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    environment: prod
-    permissions:
-      contents: read
-      id-token: write
+    release-and-deploy:
+        runs-on: ubuntu-latest
+        environment: prod
+        permissions:
+            contents: write
+            id-token: write
 
-    steps:
-    - id: checkout
-      uses: actions/checkout@v6
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+                  token: ${{ secrets.GITHUB_TOKEN }}
 
-    - id: pnpm-install
-      uses: pnpm/action-setup@v4
-      with:
-        version: 10
-        cache: true
+            - name: Setup PNPM
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 10
+                  cache: true
 
-    - id: pnpm-deps
-      run: pnpm install
+            - name: Install dependencies
+              run: pnpm install
 
-    - id: build
-      run: pnpm build:all
+            - name: Save pre-bump commit
+              id: pre-bump
+              run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
-    - id: authh
-      uses: 'google-github-actions/auth@v3'
-      with:
-        workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
-        service_account: ${{ secrets.SERVICE_ACCOUNT }}
+            - name: Automated Version Bump
+              id: bump
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  pnpm version patch -m "chore: bump version to %s [skip ci]"
+                  echo "tag=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
+                  git push --follow-tags
 
-    - id: deploy
-      uses: 'google-github-actions/deploy-appengine@v3'
-      with:
-        project_id: ${{ secrets.GCP_PROJECT_ID }}
-        working_directory: './www'
-        promote: false
+            - name: Build
+              id: build
+              run: pnpm build:all
+
+            - name: Rollback version on build failure
+              if: failure() && steps.build.outcome == 'failure'
+              run: |
+                  git push origin :refs/tags/${{ steps.bump.outputs.tag }}
+                  git reset --hard ${{ steps.pre-bump.outputs.sha }}
+                  git push --force
+
+            - name: Auth to Google Cloud
+              uses: "google-github-actions/auth@v3"
+              with:
+                  workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
+                  service_account: ${{ secrets.SERVICE_ACCOUNT }}
+
+            - name: Deploy to App Engine
+              uses: "google-github-actions/deploy-appengine@v3"
+              with:
+                  project_id: ${{ secrets.GCP_PROJECT_ID }}
+                  working_directory: "./www"
+                  promote: true
