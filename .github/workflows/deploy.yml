@@ -67,4 +67,4 @@ jobs:
               with:
                   project_id: ${{ secrets.GCP_PROJECT_ID }}
                   working_directory: "./www"
-                  promote: true
+                  promote: false
