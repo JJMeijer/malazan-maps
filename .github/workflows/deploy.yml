@@ -47,6 +47,7 @@ jobs:
       uses: 'google-github-actions/auth@v3'
       with:
         workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
+        service_account: ${{ secrets.SERVICE_ACCOUNT }}
 
     - id: deploy
       uses: 'google-github-actions/deploy-appengine@v3'
