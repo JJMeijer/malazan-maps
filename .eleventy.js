@@ -62,6 +62,7 @@ export default function (config) {
                 return 0;
             });
     });
+  
     config.addCollection("books", function (collectionApi) {
         return collectionApi
             .getAll()
